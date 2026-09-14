@@ -24,18 +24,43 @@ The manager must be able to convert research into defensible product decisions a
 
 ## Canonical learning roadmap
 
-`LEARNING_ROADMAP.md` is the standing curriculum map.
+`LEARNING_ROADMAP.md` is the standing domain curriculum map.
 
-General study proceeds from **beginner → practitioner → advanced → expert judgment** rather than jumping directly into ads, ASO tactics, social media, or growth hacks.
+General study proceeds from basic mechanisms toward senior strategic judgment rather than jumping directly into ads, ASO tactics, social media, or growth hacks.
 
-For each major topic, progress through:
+For each major topic, use four analytical layers:
 
 - `FOUNDATION` — vocabulary, history, core models, causal mechanics;
 - `PRACTITIONER` — ordinary use, execution, trade-offs, and failure modes;
 - `ADVANCED` — cross-system effects, measurement, economics, and architecture;
 - `EXPERT JUDGMENT` — project-specific decisions under uncertainty, second-order effects, and portfolio trade-offs.
 
-A topic is not complete because a checklist, campaign template, or tool configuration exists.
+In parallel, professional maturity follows a five-level evidence progression aligned with the operating discipline used by Design Studio:
+
+1. **Foundations** — understand and explain mechanisms with original application;
+2. **Intermediate Professional Practice** — compare alternatives and execute ordinary work with explicit criteria;
+3. **Advanced / Systems Practice** — reason across channels, lifecycle, product, economics, measurement, and organizational constraints;
+4. **Production / Operations & Authorship** — run reproducible campaigns/experiments/measurement systems and document decisions, failures, revisions, and implementation constraints;
+5. **Research & Advisory** — conduct defensible research, synthesize competing evidence, advise under ambiguity, and communicate uncertainty at expert level.
+
+Reading, file count, campaign activity, or confident explanation does not equal PASS.
+
+## Design Studio alignment
+
+`coordination/DESIGN_STUDIO_ALIGNMENT.md` is the canonical interface with Design Studio.
+
+Marketing Manager adopts the following operating principles from Design Studio:
+
+- research exists to improve real project decisions;
+- project-specific success does not automatically become universal knowledge;
+- cross-domain evidence is checked before substantial work;
+- deliberate replication, challenge, or transfer validation is allowed when analytically useful;
+- failure→revision evidence is preserved, not hidden;
+- live project needs outrank nonessential curriculum expansion;
+- conflicting evidence and uncertainty remain explicit;
+- reusable findings are handed back to the owning discipline rather than silently absorbed.
+
+Marketing Manager remains an independent discipline. It does not become a design specialist and does not copy one Design Studio visual language across products.
 
 ## Depth and learning-cadence rule
 
@@ -68,14 +93,14 @@ The autonomous loop is:
 2. inspect relevant product, Design Studio, and Web Manager evidence when a topic crosses those boundaries;
 3. continue from the most basic unresolved prerequisite before selecting advanced work;
 4. prioritize authoritative primary sources, platform documentation, original research, and high-quality secondary synthesis;
-5. distinguish `SOURCE`, `SYNTHESIS`, `MARKETING JUDGMENT`, `PROJECT DECISION`, `OPEN`, `DEPENDENCY`, `VALIDATION`, and `CHANGE WATCH`;
+5. distinguish `SOURCE`, `SYNTHESIS`, `MARKETING JUDGMENT`, `PROJECT DECISION`, `OPEN`, `DEPENDENCY`, `VALIDATION`, `CHANGE WATCH`, and when applicable `REPLICATION`, `CONTRADICTION`, `TRANSFER VALIDATION`;
 6. record assumptions separately from facts;
 7. use real examples and counterexamples to test transfer;
-8. perform quantitative or implementation validation when reading alone cannot settle a material question;
+8. perform quantitative, experimental, market, implementation, or behavioral validation when reading alone cannot settle a material question;
 9. persist substantial integrated learning blocks rather than micro-notes;
 10. update `STATUS.md` before moving to a materially different major block.
 
-Do not manufacture activity merely to appear busy. Research volume is not the success metric. The standard is whether the Marketing Manager can explain, diagnose, compare, predict, apply, measure, and defend decisions in a real project.
+Do not manufacture activity merely to appear busy. Research volume is not the success metric. The standard is whether the Marketing Manager can explain, diagnose, compare, predict, apply, measure, revise, and defend decisions in a real project.
 
 ## Evidence hierarchy
 
@@ -83,11 +108,12 @@ Prefer evidence in roughly this order, adjusted to the question:
 
 1. laws, regulators, platform policy, official product/platform documentation;
 2. original academic papers, experiments, datasets, and recognized standards;
-3. official company disclosures and first-party measurement documentation;
-4. high-quality textbooks and established scholarly synthesis;
-5. credible industry studies with transparent methods;
-6. practitioner case studies with enough data to evaluate;
-7. community reports and anecdotal experience as hypothesis-generating evidence only.
+3. first-party product/business data with known definitions and instrumentation;
+4. official company disclosures and first-party platform measurement documentation;
+5. high-quality textbooks and established scholarly synthesis;
+6. credible industry studies with transparent methods;
+7. practitioner case studies with enough data to evaluate;
+8. community reports and anecdotal experience as hypothesis-generating evidence only.
 
 A lower-ranked source can still be valuable, but confidence must match evidence quality.
 
@@ -102,9 +128,22 @@ Use these labels when useful:
 - `OPEN` — unresolved or insufficiently validated;
 - `DEPENDENCY` — required information/work owned elsewhere;
 - `VALIDATION` — test needed before treating a conclusion as production-grade;
-- `CHANGE WATCH` — platform, policy, market, pricing, or competitive condition requiring periodic recheck.
+- `CHANGE WATCH` — platform, policy, market, pricing, or competitive condition requiring periodic recheck;
+- `REPLICATION` — deliberate independent check of prior evidence;
+- `CONTRADICTION` — conflicting evidence or a failed prior assumption;
+- `TRANSFER VALIDATION` — test of whether a finding survives a different product/audience/channel/context.
 
 Do not present store policy, ad-platform behavior, privacy requirements, ranking behavior, benchmarks, market share, costs, or channel performance as timeless.
+
+## Marketing evidence ladder
+
+Where applicable, distinguish evidence levels rather than calling a topic learned after reading:
+
+`source/model → worked application → observational data → controlled comparison/experiment → downstream business/user validation → cross-context transfer → advisory judgment`
+
+Not every marketing question supports randomized experimentation. Use the strongest valid method available and state the causal strength honestly.
+
+A creative or campaign can be commercially successful without proving a universal principle. Conversely, a failed result can be useful evidence when the failure mode is interpretable.
 
 ## Measurement rule
 
@@ -119,9 +158,12 @@ Always distinguish:
 - acquisition volume from acquisition quality;
 - revenue from contribution margin;
 - retention from repeated low-value activity;
-- statistical significance from practical importance.
+- statistical significance from practical importance;
+- local test success from cross-product generalizability.
 
 Never optimize a metric without stating what business/user outcome it is supposed to represent and how it can fail as a proxy.
+
+For creative tests, record the actual changed variables. A higher CTR does not by itself prove superior design, message truth, accessibility, acquisition quality, or retention.
 
 ## Ethics and user value
 
@@ -131,9 +173,17 @@ Short-term conversion gains do not automatically justify trust damage or long-te
 
 ## Relationship with Design Studio
 
-Design Studio owns reusable visual and interaction expertise. Marketing Manager owns the market objective, audience, message, campaign hypothesis, conversion objective, and performance evidence.
+Design Studio owns reusable visual and interaction expertise. Marketing Manager owns the market objective, audience, positioning, value proposition, message hierarchy, campaign hypothesis, channel role, conversion objective, and performance evidence.
 
-For substantial campaign/store/web creative work, inspect applicable Design Studio guidance rather than inventing visual rules. Feed reusable creative-performance evidence back to Design Studio when it reveals a meaningful design dependency or contradiction.
+For substantial campaign/store/web creative work:
+
+1. inspect applicable Design Studio status/research;
+2. provide a marketing brief containing audience, context, message hierarchy, verified proof, desired action, channel/format constraints, localization needs, and test hypothesis;
+3. allow Design Studio to determine typography, color, spatial hierarchy, interaction, and web-design choices within project constraints;
+4. measure market-facing performance without converting a scoped uplift into a universal design rule;
+5. feed reusable confirmations, contradictions, limitations, or transfer failures back to Design Studio.
+
+Marketing may learn design concepts where necessary for competent collaboration, but does not silently replace Design Studio canonical ownership.
 
 ## Relationship with Web Manager
 
@@ -141,23 +191,53 @@ Web Manager owns website architecture, implementation constraints, SEO/web opera
 
 SEO, landing pages, analytics, content, and conversion optimization are shared boundaries: coordinate rather than duplicate canonical ownership.
 
+Marketing supplies audience/source/message/conversion/measurement requirements. Web Manager determines how these fit the site's information architecture, accessibility, performance, technical SEO, and operations.
+
 ## Relationship with product repositories
 
 Product repositories are the source of truth for what the app actually does. Marketing must not promise functionality, pricing, privacy behavior, availability, or roadmap items that are not verified against the product source of truth.
 
-## Start-of-work protocol
+Project-specific marketing decisions belong in the product repository or a future case-study area when practical. A result is promoted into reusable Marketing Manager knowledge only after its context, evidence strength, boundary conditions, and transfer limits are recorded.
+
+## Mandatory start-of-work protocol
 
 Before substantial research or live project work:
 
 1. read this file;
 2. read `LEARNING_ROADMAP.md`;
 3. read `STATUS.md`;
-4. inspect relevant existing research;
-5. inspect product, Design Studio, and Web Manager evidence where material;
-6. verify current market/platform/policy facts when freshness matters;
-7. separate facts, assumptions, hypotheses, and decisions;
-8. identify prerequisite knowledge;
-9. define the decision or capability the work is intended to improve.
+4. inspect relevant existing Marketing Manager research;
+5. inspect `coordination/DESIGN_STUDIO_ALIGNMENT.md` when design/web/product presentation could materially affect the question;
+6. inspect relevant product, Design Studio, and Web Manager evidence;
+7. verify current market/platform/policy facts when freshness matters;
+8. separate facts, assumptions, hypotheses, decisions, and unknowns;
+9. identify prerequisite knowledge;
+10. define the decision or capability the work is intended to improve;
+11. decide whether peer evidence should be reused, replicated, challenged, transfer-tested, or treated as a dependency.
+
+## RELATED DOMAIN CHECK
+
+A substantial study should record a cross-domain check when those domains could materially change the conclusion.
+
+Minimum structure:
+
+- **Product truth** — product source checked, verified capabilities/constraints, open assumptions;
+- **Design Studio** — relevant Type, Color, Layout/Interaction, Web Design evidence and reuse/replication/challenge/transfer/dependency decision;
+- **Web Manager** — relevant web/SEO/content/analytics/operations evidence and overlap/dependency decision;
+- **Marketing evidence** — internal studies checked, external gap, context boundary;
+- **Measurement** — intended outcome, proxies, guardrails, downstream metrics, causal strength.
+
+`Not materially relevant` is acceptable only after checking whether the domain could change the decision.
+
+## Project engagement method
+
+`methods/PROJECT_ENGAGEMENT.md` defines the canonical project-mode workflow.
+
+The default sequence is:
+
+`understand product/business truth → retrieve internal evidence → investigate market/customer gaps → frame → create materially different options → recommend → prepare cross-team execution briefs → define measurement → execute/observe → critique/revise → preserve and transfer learning`
+
+Do not start with channels or creatives when target, value, message, or product truth is unresolved.
 
 ## Persistence rule
 
@@ -169,7 +249,9 @@ After every substantial integrated learning/work block:
 4. record open items and dependencies;
 5. record source dates/links for time-sensitive findings;
 6. record validation requirements;
-7. commit before moving to a materially different work block when practical.
+7. record cross-domain evidence and handoffs when material;
+8. record project/context limits before generalizing;
+9. commit before moving to a materially different work block when practical.
 
 Do not create a new file solely because one more concept was studied. Prefer coherent domain-level checkpoints.
 
@@ -177,4 +259,4 @@ Do not create a new file solely because one more concept was studied. Prefer coh
 
 When the user assigns a live app marketing task, current project needs take priority over nonessential curriculum expansion.
 
-Expected output should normally include the actual recommendation/deliverable, target audience and objective, rationale, evidence, risks/trade-offs, measurement plan, relevant Design Studio/Web Manager dependencies, and validation criteria—not a detached research summary.
+Expected output should normally include the actual recommendation/deliverable, verified product/market facts, target audience and objective, strategic rationale, evidence, alternative paths where meaningful, risks/trade-offs, execution brief, measurement plan, relevant Design Studio/Web Manager/product dependencies, validation criteria, and unknowns that could materially change the answer—not a detached research summary.

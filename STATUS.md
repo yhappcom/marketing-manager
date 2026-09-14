@@ -6,7 +6,7 @@ Last updated: 2026-09-15
 
 **Stage 1 — Marketing Foundations**
 
-Repository initialization is complete enough to begin substantive study. No live app-marketing assignment currently overrides the curriculum.
+Repository governance is initialized and the first substantive integrated foundation checkpoint is complete. No live app-marketing assignment currently overrides the curriculum.
 
 ## Completed setup
 
@@ -15,44 +15,58 @@ Repository initialization is complete enough to begin substantive study. No live
 - operating instructions created in `AGENTS.md`;
 - beginner-to-expert curriculum created in `LEARNING_ROADMAP.md`;
 - evidence vocabulary and measurement rules established;
-- Design Studio / Web Manager / product-repository coordination rules defined.
+- Design Studio / Web Manager / product-repository coordination rules defined;
+- `research/README.md` evidence and artifact conventions established.
 
-## Current learning objective
+## Completed substantive research
 
-Build a first-principles model of marketing before moving into app-store tactics, paid acquisition, social content, or growth tooling.
+### `research/001_marketing_foundations.md`
 
-Immediate foundation block:
+First integrated checkpoint completed around:
 
-1. what marketing is and how its scope evolved;
-2. exchange, value, utility, demand, willingness to pay, and customer choice;
-3. distinction between marketing, advertising, promotion, sales, product marketing, and growth;
-4. value creation, communication, delivery, and capture;
-5. market/customer/category/channel vocabulary;
-6. 4P and related models—origin, utility, and limits;
-7. basic consumer decision mechanisms, information asymmetry, trust, search cost, perceived risk, and switching cost;
-8. demand creation vs demand capture;
-9. owned / earned / paid / community / partner distribution;
-10. basic lifecycle and unit-economics concepts.
+- marketing as a value/exchange system rather than an advertising synonym;
+- creation, communication, delivery, and exchange as distinct but connected marketing concerns;
+- historical expansion from goods/transaction-centered thinking toward relationship/service/value-in-use perspectives;
+- customer orientation vs broader market orientation;
+- origins of the marketing mix and the compression from Borden’s broader mix to McCarthy’s 4Ps;
+- 4Ps as a coverage framework rather than a complete strategy or causal model;
+- distinctions among marketing, advertising, promotion, sales, product marketing, and growth;
+- first app-marketing system model linking market reality → offer/value → access → communication → exchange/economics → realized outcome → measurement;
+- foundation errors to avoid, including optimizing installs or platform metrics without user/business value.
 
-## Known gaps
+Primary/academic anchors used include the American Marketing Association definition of marketing; Vargo & Lusch (2004); Kohli & Jaworski (1990); marketing-mix historical evidence; and peer-reviewed critiques of the 4P classification.
 
-- no integrated Stage 1 research checkpoint yet;
-- no marketing-source index yet;
-- no product-specific marketing baselines yet;
-- no platform change-watch ledger yet;
-- no quantitative marketing model templates yet.
+## Current retained judgment
 
-These are not failures; they are planned outputs of later integrated work blocks.
+- Marketing is broader than promotion and advertising.
+- Product experience, pricing, distribution/access, communication, exchange terms, and realized customer value interact as one market system.
+- Customer feedback is evidence, not an automatic roadmap.
+- Frameworks such as 4Ps are decision aids, not reality or complete strategy.
+- Acquisition quality must eventually reconcile with activation, retention, business economics, and causal measurement.
+- Platform metrics are proxies unless connected to the user/business outcome they are intended to represent.
 
-## Next actions
+## Unresolved Stage 1 prerequisites
 
-- create `research/README.md` and evidence conventions;
-- complete the first integrated Marketing Foundations study using authoritative sources and established scholarly synthesis;
-- record model limitations and common category errors, not only definitions;
-- update this file when the Stage 1 block materially advances.
+The next integrated block should deepen the economic and behavioral substrate:
+
+1. needs, wants, demand, utility, willingness to pay, and opportunity cost;
+2. consumer choice, uncertainty, bounded rationality, heuristics, and context effects;
+3. information asymmetry, trust, perceived risk, search cost, and switching cost;
+4. brand as memory, meaning, expectation, and risk-reduction mechanism;
+5. demand creation vs demand capture;
+6. owned / earned / paid / community / partner distribution;
+7. introductory unit economics: revenue, gross margin, contribution margin, CAC, LTV, and payback;
+8. why retention changes allowable acquisition economics.
+
+## Planned later infrastructure
+
+- marketing source/reference index when the research base becomes large enough to justify one;
+- platform/policy change-watch ledger before entering current App Store/Google Play and paid-media stages;
+- quantitative marketing model templates in the analytics/economics stages;
+- product-specific marketing baselines when a live app is assigned.
 
 ## Progress interpretation
 
-Do not report percentage completion from file count. Curriculum progress should be judged by demonstrated capability at each stage's exit criteria.
+Do not report percentage completion from file count. Curriculum progress is judged by demonstrated capability at stage exit criteria.
 
-Current status: **foundation setup complete; substantive Stage 1 learning starting.**
+Current status: **Stage 1 active; first integrated foundation checkpoint complete; economic/behavioral foundations next.**

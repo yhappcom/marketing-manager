@@ -6,11 +6,11 @@ Last updated: 2026-09-15
 
 **Stage 1 — Marketing Foundations + mandatory yhappcom applied foundation supplement**
 
-Repository governance is initialized, Design Studio alignment is complete, and company-specific marketing/monetization constraints are now incorporated into the Foundation stage.
+Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has now advanced through two additional integrated research blocks on customer choice/value and niche/community distribution.
 
 No live app-marketing assignment currently overrides the curriculum.
 
-## Company operating context now locked into Foundation
+## Company operating context locked into Foundation
 
 Canonical context:
 
@@ -19,7 +19,7 @@ Canonical context:
 
 Current business constraints and owner preferences:
 
-- marketing should default to **little or no direct cash spend**;
+- marketing should default to little or no direct cash spend;
 - App Store / Google Play pages are core marketing surfaces;
 - Reddit/community/blog/editorial operation is a primary growth capability;
 - social media should be used selectively based on real audience-channel fit;
@@ -28,122 +28,120 @@ Current business constraints and owner preferences:
 - LogMate currently targets airline/professional pilots;
 - current monetization assumption is advertising revenue as the primary/only intended revenue path unless the owner changes that policy;
 - cluttered, intrusive, or access-limiting advertising is contrary to owner preference;
-- Marketing Manager must maximize **sustainable ad revenue subject to usability, trust, retention, accessibility, and performance constraints**.
+- Marketing Manager must maximize sustainable ad revenue subject to usability, trust, retention, accessibility, and performance constraints.
 
-“Zero-cost marketing” is interpreted as minimizing cash acquisition spend, not as assuming content, community, creative, engineering, measurement, or owner time has no cost.
-
-## Completed setup
-
-- canonical repository established;
-- mission and ownership boundaries defined;
-- Design Studio / Web Manager / product-repository coordination rules defined;
-- `coordination/DESIGN_STUDIO_ALIGNMENT.md` added;
-- `methods/PROJECT_ENGAGEMENT.md` added;
-- company context file added;
-- mandatory Stage 1 applied-foundations supplement added;
-- `AGENTS.md` updated so company context and the applied supplement are mandatory reads;
-- evidence vocabulary, transfer rules, monetization guardrails, and measurement rules established.
+“Zero-cost marketing” means minimizing cash acquisition spend, not assuming owner time, content, moderation, design, engineering, measurement, or opportunity cost is zero.
 
 ## Completed substantive research
 
 ### `research/001_marketing_foundations.md`
 
-Valid Foundation evidence covering:
+Foundation evidence covering marketing as a value/exchange system, marketing-mix history/limits, market orientation, and the distinction between marketing, advertising, promotion, sales, product marketing, and growth.
 
-- marketing as a value/exchange system rather than an advertising synonym;
-- creation, communication, delivery, and exchange;
-- market/customer orientation;
-- historical marketing-mix development and 4P limitations;
-- distinctions among marketing, promotion, advertising, sales, product marketing, and growth;
-- first app-marketing system model linking market reality → value → access → communication → exchange/economics → realized outcome → measurement.
+### `research/002_choice_value_uncertainty_trust.md`
 
-This remains valid but is **not sufficient to complete Stage 1**.
+Integrated economic/behavioral foundation completed around:
 
-## New mandatory Stage 1 applied blocks
+- perceived value versus objective product capability/quality;
+- monetary and non-monetary user sacrifice;
+- utility/opportunity-cost discipline;
+- why a free app still has adoption and usage costs;
+- bounded rationality;
+- heuristics and framing under uncertainty;
+- information search cost;
+- information asymmetry;
+- brand credibility as a signal under uncertainty;
+- switching costs and status-quo competition;
+- implications for niche-app adoption and restrained advertising.
 
-The Foundation stage now explicitly includes:
+Primary anchors include Zeithaml (1988), Simon (1955), Tversky & Kahneman (1974/1981), Stigler (1961), Akerlof (1970), Erdem & Swait (2004), and Klemperer (1987).
 
-1. **Niche-market marketing**
-   - relevant-user penetration instead of broad reach by default;
-   - specialist vocabulary, proof, trust, switching barriers, finite-market ceilings;
-   - separate reasoning for MintTap and LogMate.
+Key retained mechanism:
 
-2. **Cash-light / organic distribution economics**
-   - owned, earned, community, referral, partner, store, search, blog, and selective social;
-   - zero media spend vs real labor/opportunity cost;
-   - durability, platform dependence, and organic saturation.
+`objective capability → perceived relevance/benefit → search cost/uncertainty/trust → comparison with status quo → switching/setup cost → trial → realized value → usage friction/ad burden → retention/referral → long-run monetizable usage`.
 
-3. **App Store / Google Play as marketing assets**
-   - discovery, evaluation, trust, conversion, screenshots/message sequencing, ratings/reviews, localization, promise continuity.
+Important conclusion: **zero-dollar price does not mean zero user cost.** Time, attention, learning, setup, data migration, uncertainty, trust, privacy concerns, and advertising burden can all suppress adoption or retention.
 
-4. **Community / Reddit / blog operations**
-   - contribution-first community behavior;
-   - anti-spam norms;
-   - owned vs third-party communities;
-   - educational content and feedback loops.
+### `research/003_niche_distribution_community_economics.md`
 
-5. **Selective SNS strategy**
-   - audience-channel fit before presence;
-   - durable discovery vs transient reach;
-   - production burden and repurposing quality.
+Integrated niche/community foundation completed around:
 
-6. **Ad-supported app economics**
-   - users → sessions → ad opportunities → requests/fills/impressions → revenue;
-   - eCPM/RPM/fill concepts at Foundation level;
-   - geography, format, placement, frequency, privacy/policy constraints.
+- why specialist markets should optimize relevant-user penetration rather than gross reach;
+- finite-market ceilings and penetration thinking;
+- consumer knowledge and specialist information needs;
+- community as a social system rather than free ad inventory;
+- virtual-community participation and norms;
+- network structure and diffusion across clusters;
+- positive and negative word of mouth;
+- why virality is not the default company objective;
+- cash cost versus labor/opportunity cost;
+- demand capture versus demand creation;
+- community overfitting risk;
+- mechanism-based organic channel selection.
 
-7. **Advertising UX and sustainable monetization**
-   - interruption, clutter, latency, accidental-click risk, abandonment, retention, ratings, trust, accessibility;
-   - short-term impressions/revenue versus long-term retained-user revenue.
+Primary anchors include Ratchford (2001), Muniz & O'Guinn (2001), Kozinets (1999), Granovetter (1973), Anderson (1998), and Berger & Milkman (2012).
 
-8. **Integrated niche-app growth model**
-   - specialist value → credible discovery → store/community trust → install → activation → retention → restrained ad monetization → reviews/referrals → more qualified discovery.
-
-## Required Foundation exercises before Stage 1 can pass
-
-The Stage 1 supplement requires practical outputs, including:
-
-- MintTap niche map;
-- LogMate niche map;
-- zero/low-cash channel matrix;
-- store-page diagnostic model;
-- community anti-spam failure/revision analysis;
-- ad-revenue tree;
-- ad-UX trade-off matrix;
-- MintTap vs LogMate strategy comparison showing why one playbook should not be copied to both apps.
-
-Reading alone will not satisfy these gates.
+A preliminary zero/low-cash channel matrix now exists at mechanism level covering store pages, owned web/blog, Reddit/community, owned communities, social feeds, search/SEO, referral/WOM, partnerships, and email/newsletter. Product-specific rankings remain intentionally unfilled until evidence is gathered.
 
 ## Current retained judgment
 
 - Marketing is broader than promotion and advertising.
-- For current yhappcom products, broad reach is not automatically valuable; relevant niche penetration and retention matter more.
-- App Store / Google Play pages are not administrative listings; they are core discovery, trust, and conversion surfaces.
-- Community is not free ad inventory; trust must be earned through useful participation and content.
+- Broad reach is not automatically valuable for current yhappcom products; relevant niche penetration, credibility, retention, and referral matter more.
+- A free app still imposes non-monetary costs on users.
+- Perceived value is not identical to objective quality or feature count.
+- Users operate with limited information, time, attention, and computational capacity.
+- Search cost makes clear, durable, relevant information economically valuable.
+- Information asymmetry makes trust and credible proof central to adoption.
+- A better product does not automatically win when switching, setup, learning, or trust costs are high.
+- Community is not free advertising inventory; promotion can destroy the trust on which the channel depends.
+- Word of mouth can amplify failure as well as success.
+- Virality is not the default content objective; usefulness, credibility, and relevant transmission are more aligned with the current portfolio.
+- Organic marketing has real labor and opportunity cost.
+- App Store / Google Play pages are core discovery, trust, and conversion surfaces.
 - Social-media presence is not itself a goal.
-- Paid acquisition must be understood professionally but is not the default operational recommendation under current company direction.
-- Advertising revenue cannot be optimized independently from retention and product quality.
-- A higher ad-impression count or short-term revenue result is not automatically superior if it harms the core task, trust, retention, accessibility, or ratings.
-- MintTap and LogMate require separate audience, channel, message, community, store, and ad-monetization judgments.
+- Advertising revenue cannot be optimized independently from user sacrifice, product quality, retention, trust, accessibility, and performance.
+- MintTap and LogMate require separate audience, network, store, content, social, and monetization judgments.
+
+## Foundation exercises still required before Stage 1 can pass
+
+- MintTap niche map;
+- LogMate niche map;
+- product-specific zero/low-cash channel matrix;
+- store-page diagnostic model;
+- community anti-spam failure/revision analysis;
+- ad-revenue tree;
+- ad-UX trade-off matrix;
+- MintTap vs LogMate strategy comparison.
+
+Reading alone will not satisfy these gates.
 
 ## Next integrated learning sequence
 
-Before moving to advanced ASO/community/channel tactics, continue Stage 1 in this order:
+1. **cash-light acquisition economics and measurement**
+   - owned/earned/community/search effort accounting;
+   - durable versus transient content;
+   - qualified organic acquisition;
+   - assisted attribution and measurement limits;
+   - opportunity cost and channel stopping rules.
 
-1. economic/behavioral substrate: needs, demand, utility, choice, uncertainty, trust, search/switching cost;
-2. niche-market economics and concentrated distribution;
-3. organic/cash-light acquisition economics and opportunity cost;
-4. store/community/blog/social fundamentals;
-5. ad-supported revenue mechanics and UX-constrained monetization;
-6. complete the mandatory Stage 1 exercises using MintTap and LogMate as separate applied cases;
-7. critique the results and identify which findings are product-specific versus transferable.
+2. **product-specific niche maps**
+   - inspect MintTap and LogMate product truth;
+   - identify status quo/substitutes, switching barriers, trust questions, and likely discovery surfaces;
+   - separate verified facts from hypotheses.
 
-Current platform-specific store, Reddit, social, privacy, and ad-network rules will be verified from current primary sources when each operational block begins.
+3. **store/community/blog/social fundamentals**
+   - then verify current Apple/Google/Reddit/social rules from first-party sources before operational recommendations.
+
+4. **ad-supported revenue mechanics and UX-constrained monetization**
+   - users → sessions → opportunities → requests/fills/impressions → revenue;
+   - retention and ad burden as long-run constraints.
+
+5. Complete and critique the mandatory Stage 1 exercises, distinguishing product-specific findings from reusable knowledge.
 
 ## Planned later infrastructure
 
 - marketing source/reference index when research volume justifies it;
-- platform/policy change-watch ledger before operational App Store/Google Play, social, community, or ad-network work;
+- platform/policy change-watch ledger before operational store/social/community/ad-network work;
 - quantitative marketing/ad-revenue model templates;
 - product-specific marketing case studies when live assignments begin;
 - reusable Design Studio/Web Manager handoff templates after real collaboration produces evidence about necessary inputs.
@@ -152,4 +150,4 @@ Current platform-specific store, Reddit, social, privacy, and ad-network rules w
 
 Do not report percentage completion from file count. Curriculum progress is judged by demonstrated capability, evidence quality, applied exercises, and ability to advise real products.
 
-Current status: **Stage 1 active; company niche/organic/ad-supported constraints incorporated; applied Foundation exercises are now mandatory before progression.**
+Current status: **Stage 1 active; general marketing foundation + economic/behavioral choice foundation + niche/community distribution foundation completed; cash-light acquisition economics and product-specific niche mapping are next.**

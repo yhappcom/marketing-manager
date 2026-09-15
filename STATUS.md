@@ -8,7 +8,9 @@ Last updated: 2026-09-15
 
 Research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`; Stage 1 review is in `curriculum/STAGE1_GATE_REVIEW.md`.
 
-Stage 2 has now completed its first specialist-depth block: `research/020_sparse_niche_experimentation_decision_quality.md`.
+Stage 2 specialist-depth blocks completed:
+- `research/020_sparse_niche_experimentation_decision_quality.md`
+- `research/021_value_of_information_reversibility_experiment_priority.md`
 
 ## Locked company operating context
 
@@ -32,36 +34,36 @@ Optimization chain:
 Weak growth diagnosis:
 `discoverability → intent/audience → Store/message/proof → activation → core-value retention → durable distribution → monetization execution`
 
-## Stage 2 new retained conclusions — research 020
+## Stage 2 retained conclusions — 020 + 021
 
-Sparse specialist traffic requires a different operating discipline from high-volume consumer experimentation.
+### Sparse experiment interpretation (020)
 
-Every experiment now separates:
-1. data validity;
-2. effect estimate;
-3. uncertainty;
-4. business/practical significance.
+Every experiment separates data validity, effect estimate, uncertainty and business/practical significance. MPME is predeclared; INVALID and INCONCLUSIVE remain distinct; sparse traffic normally supports one high-contrast treatment vs control rather than many cosmetic variants; acquisition and monetization wins retain downstream quality guardrails.
 
-New company rules:
+### Value of information / experiment priority (021)
 
-- predeclare the decision, primary metric, guardrails, minimum practically meaningful effect (MPME), traffic/observation constraint and decision states before exposure;
-- statistical significance/confidence is not practical significance;
-- validate assignment/logging before interpreting winners; Sample Ratio Mismatch or other structural telemetry failure makes a result INVALID until diagnosed;
-- `INVALID` and `INCONCLUSIVE` are distinct states;
-- do not repeatedly peek at a conventional fixed-horizon test and stop merely when a favorable threshold appears;
-- preserve Apple/Google native statistical semantics instead of recomputing a homemade cross-store winner label;
-- sparse traffic should normally be spent on one high-contrast treatment vs control, not many cosmetic variants;
-- pooling is permitted only when the causal question remains coherent and the rationale is recorded;
-- post-hoc micro-segment winner hunting is exploratory, not confirmatory;
-- acquisition wins remain subject to activation/retention/trust guardrails; ad-revenue wins remain subject to task/retention guardrails;
-- when reachable traffic cannot resolve a decision at useful cost, `INCONCLUSIVE` is the correct outcome rather than forced winner selection.
+New company rule: **experimentation itself must earn its opportunity cost.**
 
-Current platform mapping retained:
+Decision heuristic:
 
-- Apple PPO uses platform-native Bayesian analysis, begins appearing in Analytics after at least five test-attributed first-time downloads, can label treatments Better/Worse at 90% confidence, and can mark tests Likely to be Inconclusive. Up to three treatments are allowed, but sparse traffic should not use all arms merely because they exist.
-- Google Play Store Listing Experiments support up to two variants vs current listing, expose MDE/confidence controls, estimate required time/sample, support More Data Needed/Draw outcomes, and auto-stop after six months. Company MPME remains a business threshold distinct from blindly accepting a platform default.
+`research priority ≈ probability useful evidence changes the decision × consequence of choosing better × affected future population/use × useful decision lifetime − evidence cost − delay cost − opportunity cost`
 
-Representative MintTap/LogMate experiment designs are recorded as HYPOTHETICAL only; no live performance has been fabricated.
+This is a qualitative operating heuristic derived from decision-analysis/VOI principles, not a pseudo-precise EVSI calculation.
+
+Five decision routes are now canonical:
+1. **ACT + MONITOR** — cheap/reversible, low downside, adequate existing evidence;
+2. **OBSERVE / TRIANGULATE** — causal proof unnecessary for a reversible choice but relevant independent signals can improve it;
+3. **CONTROLLED EXPERIMENT** — consequential uncertainty, meaningful wrong-choice cost, resolvable MPME, and randomization materially improves decision quality;
+4. **RESEARCH FIRST** — hypothesis itself is not mature enough to spend experimental traffic;
+5. **DEFER / DO NOT RESEARCH** — low consequence, evidence cannot change action, decision expires before resolution, or another question has higher value.
+
+Reversibility classes R1–R4 now control evidentiary burden. Trust/policy/factual/regulatory boundaries are not experiment variables: authoritative evidence decides them.
+
+Scarce traffic is treated as a portfolio resource. Candidate experiments compete for eligible users, calendar time and labor. Do not fragment traffic across low-value questions or keep underpowered tests alive merely to force a winner.
+
+Operational monitoring of a reversible implemented choice is explicitly separated from invalid repeated significance peeking in a fixed-horizon experiment.
+
+MintTap/LogMate examples in 021 remain HYPOTHETICAL; no live performance data is inferred.
 
 ## Capability state
 
@@ -69,7 +71,8 @@ FOUNDATION COMPLETE:
 - Stage 1 marketing/value/trust, niche distribution, cash-light acquisition, Store, measurement, demand, positioning, activation/retention, SEO, selective social, community, ad monetization and launch systems.
 
 STAGE 2 SPECIALIST DEPTH COMPLETE:
-- sparse-niche experiment validity / uncertainty / practical-significance foundation (`020`).
+- sparse-niche experiment validity / uncertainty / practical significance (`020`);
+- value-of-information / reversibility / experiment-priority / opportunity-cost routing (`021`).
 
 LIVE VALIDATION REQUIRED:
 - MintTap/LogMate audience, CEP, channel, Store, content and positioning maps;
@@ -81,17 +84,16 @@ LIVE VALIDATION REQUIRED:
 - launch cohort quality.
 
 NOT YET BASELINED / NEXT THEORY GAPS:
-1. sequential decision economics and experiment prioritization under scarce traffic/time;
-2. when observational evidence is sufficient for reversible decisions vs when controlled testing is worth the delay;
-3. multi-app portfolio labor/resource allocation.
+1. sequential monitoring/stopping and staged commitment under sparse evidence, including boundaries between operational monitoring and formal sequential inference;
+2. multi-app portfolio labor/resource allocation;
+3. evidence-decay / external-validity rules: when prior learning transfers across app, geography, platform, version or time and when it must be revalidated.
 
 ## Next integrated learning sequence — Stage 2
 
-1. Build **experiment prioritization / value-of-information / opportunity-cost** rules for scarce specialist traffic and labor.
-2. Separate reversible low-cost decisions from irreversible/high-risk decisions so not every marketing choice requires an A/B test.
-3. Deepen sequential monitoring/stopping principles without inventing platform statistical guarantees.
-4. Apply the framework to representative Store/content/community/ad choices for MintTap and LogMate without fabricating data.
-5. Later build the multi-app portfolio labor-allocation system before simultaneous growth programs make it operationally necessary.
+1. Deepen **sequential monitoring/stopping and staged-commitment principles** without inventing platform statistical guarantees.
+2. Build evidence-transfer/external-validity rules so MintTap/LogMate/future-app learning is reused without assuming false equivalence.
+3. Apply 020–021 decision routing to representative Store/content/community/ad queues without fabricating performance.
+4. Build the multi-app portfolio labor-allocation system before simultaneous growth programs make it operationally necessary.
 
 ## Major OPEN / LIVE VALIDATION
 
@@ -106,7 +108,8 @@ NOT YET BASELINED / NEXT THEORY GAPS:
 - content/Search Console baseline;
 - social audience-fit evidence;
 - actual release/launch cohort evidence;
-- real Store traffic ceiling and experiment resolution time.
+- real Store traffic ceiling and experiment resolution time;
+- prioritized live experiment/research queue using 021.
 
 ### LogMate
 - launch geography/segment/regulatory boundaries;
@@ -117,7 +120,8 @@ NOT YET BASELINED / NEXT THEORY GAPS:
 - current pilot-community permissions;
 - Store/content/social evidence after launch;
 - first launch execution evidence;
-- realistic launch traffic ceiling for experimentation.
+- realistic launch traffic ceiling for experimentation;
+- prioritized launch-learning queue using 021.
 
 ### Company-wide
 - labor-time accounting convention;
@@ -126,17 +130,18 @@ NOT YET BASELINED / NEXT THEORY GAPS:
 - privacy-compliant measurement implementation;
 - long-run ad revenue per retained user;
 - native Apple/Google metric reporting without definition loss;
-- experiment registry implementation using the 020 schema;
+- experiment registry implementation using 020–021 schemas;
 - empirically refined MPME/rollback/stop thresholds;
 - distinctive-asset measurement timing;
 - live content inventory/maintenance workflow;
 - populated community permission ledger;
 - reusable launch record populated from actual launches;
-- sequential/value-of-information decision framework;
+- sequential monitoring/stopping framework;
+- evidence-transfer/external-validity framework;
 - portfolio-level labor/resource allocation framework.
 
 ## Progress interpretation
 
-Do not report completion by file count. Stage 1 is complete because its domains form one coherent decision system. Stage 2 is judged by whether sparse evidence can be converted into disciplined decisions without false precision.
+Do not report completion by file count. Stage 1 is complete because its domains form one coherent decision system. Stage 2 is judged by whether scarce evidence, traffic and labor can be converted into disciplined decisions without false precision or low-value research.
 
-Current status: **Stage 2 active; sparse-niche experimentation/decision-quality foundation complete. Next: experiment prioritization, value of information, reversibility and opportunity-cost decisions.**
+Current status: **Stage 2 active; sparse-experiment interpretation and value-of-information/experiment-priority systems complete. Next: sequential monitoring/stopping and staged commitment under sparse evidence.**

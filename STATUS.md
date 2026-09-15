@@ -6,7 +6,7 @@ Last updated: 2026-09-15
 
 **Stage 1 — Marketing Foundations + mandatory yhappcom applied foundation supplement**
 
-Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **eight integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
+Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **nine integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
 
 No live app-marketing assignment currently overrides the curriculum.
 
@@ -41,93 +41,60 @@ Current business constraints and owner preferences:
 5. `research/005_ad_supported_unit_economics_and_ux_guardrails.md` — ad revenue tree and retention/trust/task-completion guardrails.
 6. `research/006_store_page_diagnostic_model.md` — source intent through store evaluation, proof, install, onboarding and realized-value diagnostic model.
 7. `research/007_community_anti_spam_failure_revision_model.md` — permission-gated contribution-first community model; Reddit/site/community rule validation.
-8. `research/008_zero_low_cash_channel_matrix.md` — **NEW: product-specific MintTap/LogMate channel prioritization model and first evidence-bounded matrix.**
+8. `research/008_zero_low_cash_channel_matrix.md` — product-specific MintTap/LogMate channel prioritization model and first evidence-bounded matrix.
+9. `research/009_measurement_architecture.md` — **NEW: privacy-aware source→store→activation→retention→ad-revenue measurement architecture, cohort/missing-data rules and minimum dashboard contract.**
 
-## New retained conclusions from research 008
+## New retained conclusions from research 009
 
-A channel must not be ranked by reach alone. Working evaluation dimensions now include:
+Marketing measurement is now modeled as a diagnostic chain rather than one attribution number:
 
-- audience fit;
-- intent proximity;
-- proof fit;
-- durability;
-- learning value;
-- compounding potential;
-- measurement feasibility;
-- effort efficiency;
-- permission as a hard gate for promotional tactics.
+`source exposure/click → store/landing visit → download/install → first open → activation → retained core-value use → eligible ad opportunity → request → match → impression → revenue`
 
-Do not collapse these into a fake-precision ROI score before product analytics exist.
+Key rules:
 
-### MintTap first-pass priorities
+- attribution does not establish incrementality;
+- install/download is not activation;
+- platform downloads, first opens, installations and active users must not be mixed as equivalent populations;
+- every KPI requires numerator, denominator, population, time window and source definition;
+- missing values use `OBSERVED / DERIVED / ESTIMATED / UNKNOWN`; unknown never silently becomes zero;
+- privacy-thresholded/suppressed small cohorts are not zero-performance cohorts;
+- sparse niche traffic should not be over-segmented;
+- marketing should optimize toward activated retained users and sustainable ad-bearing usage, not cheapest installs;
+- deterministic cross-platform identity stitching is not required for useful marketing decisions and should not be created merely to make attribution look complete.
 
-**Tier A**
+Apple's current first-party App Store Connect acquisition, campaign-link and Custom Product Page analytics were revalidated 2026-09-15. Apple can connect source/campaign/page evidence with downstream usage/commercial metrics at supported aggregate dimensions, while applying privacy thresholds/suppression to small groups. This makes store-native aggregate measurement a preferred evidence layer for cash-constrained niche acquisition.
 
-- App Store / Google Play default listing as mandatory conversion infrastructure;
-- segmented/custom store pages once enough traffic exists to learn;
-- owned searchable specialist content on distribution/ROC/cost-basis/split/tracking problems;
-- external YieldMax communities for research, but not direct promotion until permission is verified.
+Google Play's exact current acquisition-report field/attribution contract remains deliberately OPEN until an authoritative first-party documentation pass is complete; community/help-thread behavior is not being promoted to canonical implementation fact.
 
-**Tier B**
+### Candidate activation hypotheses — not yet canonical KPIs
 
-- owned `r/MintTapforYieldMax` as support, education, trust, feedback and assisted-acquisition infrastructure;
-- permitted specialist-community contribution.
+**MintTap:** activation should represent establishment of a usable tracked YieldMax position/portfolio plus access to meaningful portfolio/distribution value, not mere install/open/onboarding completion.
 
-**Tier C / experimental**
+**LogMate:** activation should represent establishment of usable logbook data (e.g. valid record/import plus meaningful logbook access), not mere install/open.
 
-- broad generic finance social posting until a concentrated YieldMax audience and repeatable format are evidenced.
-
-Current YieldMax first-party fund pages were checked 2026-09-15 and continue to expose recurring distribution/share, declaration/ex/record/payable date and ROC information. This validates the existence of recurring specialist information objects suitable for MintTap education/data content; it does **not** by itself prove search demand.
-
-### LogMate first-pass priorities
-
-**Tier A**
-
-- App Store / Google Play default listing;
-- segmented/custom store pages once traffic supports learning;
-- owned searchable task content around migration, backup/export, duplicate handling, digital-logbook workflow, data ownership and device workflow;
-- `r/flying` as a research/contribution surface, not normal organic commercial distribution.
-
-**Discovery required**
-
-- other pilot/professional communities must each be checked for audience composition, activity quality and commercial-post permission before acquisition scoring.
-
-**Tier C / experimental**
-
-- broad aviation social posting until a specific pilot audience cluster and repeatable content format are demonstrated.
-
-### Cross-product low-cash portfolio
-
-Current preferred architecture:
-
-1. store conversion infrastructure;
-2. owned durable problem-solving/searchable content;
-3. specialist communities as listening/contribution systems, with promotion permission-gated;
-4. owned community/support surfaces for trust, feedback, retention and referral;
-5. selective social experiments rather than universal cross-posting.
-
-This is intentionally demand-capture-heavy for an early cash-constrained niche-app company. Broad awareness creation is not rejected, but it should not consume scarce labor without product-specific evidence of efficient relevant reach.
+Both require production workflow and retention validation before event definitions are frozen.
 
 ## Applied exercises — progress
 
 1. MintTap niche map — FIRST PASS COMPLETE; market/search/source/retention validation open.
 2. LogMate niche map — FIRST PASS COMPLETE; geography/regulatory/segment/interview validation open.
-3. **product-specific zero/low-cash channel matrix — FIRST EVIDENCE-BOUNDED PASS COMPLETE in `research/008`; live analytics validation open.**
+3. product-specific zero/low-cash channel matrix — FIRST EVIDENCE-BOUNDED PASS COMPLETE in `research/008`; live analytics validation open.
 4. store-page diagnostic model — FOUNDATION COMPLETE in `research/006`; live-listing/product-data validation open.
 5. community anti-spam failure/revision analysis — FOUNDATION COMPLETE in `research/007`; live community permission ledger remains operational work.
 6. ad-revenue tree — FOUNDATION COMPLETE in `research/005`; product-data application open.
 7. ad-UX trade-off matrix — framework established in `research/005`; product-specific placement scoring open.
 8. MintTap vs LogMate strategy comparison — FIRST PASS COMPLETE.
+9. **measurement architecture — FOUNDATION COMPLETE in `research/009`; Google Play authoritative field mapping and live telemetry implementation remain open.**
 
 Reading alone does not satisfy remaining gates.
 
 ## Next integrated learning sequence
 
-1. Build the **measurement architecture** connecting `source → store/landing page → install → activation → retention → ad opportunities/impressions → revenue`, including source tagging, cohort logic, missing-data labeling and privacy boundaries.
-2. Inspect MintTap's current ad implementation/telemetry availability before placement recommendations.
+1. Complete the **Google Play first-party acquisition/custom-listing measurement mapping** against `research/009`; freeze only fields/behaviors supported by authoritative current documentation.
+2. Inspect MintTap's current ad implementation/telemetry availability before placement or event-schema recommendations.
 3. Continue Stage 1 brand / demand-creation-vs-capture / funnel-model foundations where unresolved.
 4. Build a practical community permission ledger when live campaign planning begins.
-5. When live listings are available, apply `research/006` and `008` to actual MintTap and LogMate pages and acquisition data rather than inventing performance.
+5. When live listings are available, apply `research/006`, `008`, and `009` to actual MintTap and LogMate pages/acquisition cohorts rather than inventing performance.
 
 ## Major OPEN / VALIDATION
 
@@ -135,7 +102,8 @@ Reading alone does not satisfy remaining gates.
 
 - current App Store / Google Play listings and organic search visibility;
 - acquisition-source mix and source tagging;
-- activation definition and D7/D30 retention;
+- canonical activation definition and D7/D30 core-value retention;
+- current analytics event schema;
 - current ad format/location/frequency;
 - request/match/show/eCPM/Ads-ARPU metrics;
 - user search-query and web-search-demand data;
@@ -152,6 +120,7 @@ Reading alone does not satisfy remaining gates.
 - current competitor price/feature matrix;
 - actual search demand;
 - import-source priorities;
+- canonical activation definition;
 - ad model at launch;
 - pilot interviews / observed workflows;
 - target-community permission beyond r/flying;
@@ -160,9 +129,10 @@ Reading alone does not satisfy remaining gates.
 ### Company-wide
 
 - internal labor-time accounting convention;
-- channel-level source tagging;
+- canonical source/campaign registry implementation;
 - activation/retention event definitions;
-- privacy-compliant marketing/ad measurement architecture;
+- privacy-compliant marketing/ad measurement implementation;
+- Google Play authoritative acquisition/custom-listing field mapping;
 - long-run ad revenue per retained user;
 - operational owner/account disclosure convention for community participation.
 
@@ -179,4 +149,4 @@ Reading alone does not satisfy remaining gates.
 
 Do not report percentage completion from file count. Curriculum progress is judged by demonstrated capability, evidence quality, applied exercises, and ability to advise real products.
 
-Current status: **Stage 1 active; eight integrated Foundation research blocks complete; product-specific zero/low-cash channel matrix first pass complete; measurement architecture is next.**
+Current status: **Stage 1 active; nine integrated Foundation research blocks complete; privacy-aware measurement architecture Foundation complete; Google Play authoritative measurement mapping is next.**

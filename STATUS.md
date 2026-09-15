@@ -44,18 +44,7 @@ Native metric definitions are preserved. Apple and Google Store funnels remain s
 
 ### Live Evidence Registry — COMPLETE V1
 
-`LIVE_EVIDENCE_REGISTRY_TEMPLATE.md` now operationalizes the evidence protocol as an append-only audit layer. It defines:
-
-- observation-level evidence IDs;
-- native metric-definition versioning;
-- explicit missingness states;
-- comparability groups;
-- baseline-change events;
-- T0–T4 transfer and decay triggers;
-- Decision Record linkage;
-- sparse-niche safeguards against over-segmentation and false zeroes.
-
-A key new operating rule is **do not overwrite history when a definition changes**. Historical observations retain the metric-definition version that applied when captured; a platform reporting change creates a new definition/baseline boundary.
+`LIVE_EVIDENCE_REGISTRY_TEMPLATE.md` operationalizes the evidence protocol as an append-only audit layer with observation IDs, metric-definition versioning, missingness states, comparability groups, baseline-change events, T0–T4 transfer/decay, Decision Record linkage, and sparse-niche safeguards.
 
 ### Product baseline checklists — COMPLETE V1
 
@@ -63,11 +52,26 @@ A key new operating rule is **do not overwrite history when a definition changes
 
 ### Campaign/source semantics — COMPLETE V1
 
-Current Apple campaign-link documentation was revalidated on 2026-09-16. Apple campaign links use campaign (`ct`) and provider (`pt`) tokens; `pt` identifies the developer account and must not be reinterpreted as an ad-network/source field. Apple currently attributes a first-time download when it occurs within 24 hours after campaign-link/token use. Campaign dashboard visibility is thresholded, and detailed reporting applies privacy protections.
+Apple campaign/source semantics and Google's 2026 Store Listing Performance metric-definition break are recorded. Historical observations retain the native definition that applied when captured; definition changes create a series/baseline boundary rather than silent splicing.
 
-Current Google Play documentation was also revalidated: 2026 Store Listing Performance reporting shifted toward click/intent-based measurement. Historical acquisition-rate series and newer visitors/clicks/CTR series therefore require metric-definition versioning and a series break rather than silent splicing.
+### Niche community evidence operations — COMPLETE V1
 
-For owned/community naming, identifiers should describe origin/surface/objective/period/real variant only. They must not encode unobserved claims such as `high-intent` or `converted`.
+`research/025_niche_community_evidence_operations.md` now defines community participation as a governed evidence/trust surface before it is a distribution surface.
+
+New operating rules:
+
+- `community relevance != promotion permission`;
+- no universal self-promotion ratio is assumed; current local rules/moderator authority govern;
+- use C0 Listen / C1 Contribute / C2 Research / C3 Disclose+Mention / C4 Promote modes;
+- mixed research+distribution activity is treated as promotional for permission purposes;
+- disclosure does not create permission;
+- community observations enter the evidence system as qualitative evidence, not prevalence estimates;
+- naturalistic observations, elicited responses, moderator-policy evidence, and promotional responses are not silently pooled;
+- upvotes/comments are not market-size estimates;
+- community consensus never establishes financial, tax, regulatory, or professional truth;
+- community goodwill is constrained capital and may outweigh short-run attributed installs.
+
+A reusable Community Permission Ledger schema is defined. Permission is recorded per community with rule snapshot, promotion state, permitted/prohibited formats, disclosure/link/flair conditions, moderator evidence, scope, and recheck triggers. Lack of removal is not permission.
 
 ## Capability state
 
@@ -75,27 +79,27 @@ For owned/community naming, identifiers should describe origin/surface/objective
 
 **STAGE 2 COMPLETE:** sparse inference; VOI/reversibility; monitoring/stopping; transfer/decay; multi-app labor allocation; decision routing; integration gate.
 
-**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics.
+**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community evidence operations and permission-led execution gate.
 
-**LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; community permissions; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
+**LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
 
 ## Next learning sequence
 
-1. Deepen **niche community evidence operations**: permission-ledger design, research-vs-promotion boundaries, disclosure, moderator interaction, and how to extract useful qualitative demand evidence without turning communities into acquisition funnels.
-2. Build a reusable **content evidence lifecycle** connecting problem-cluster research → authoritative source validation → article/store/community asset → Search Console/native evidence → refresh/decay trigger, with special attention to MintTap financial-information freshness and LogMate professional/regulatory content.
-3. Deepen **ad-revenue quality economics** beyond eCPM: eligible-use inventory, session/task-state exposure, impression opportunity, latency/abandonment/retention guardrails, and when additional inventory destroys long-run value.
+1. Build a reusable **content evidence lifecycle** connecting problem-cluster research → authoritative source validation → article/store/community asset → Search Console/native evidence → refresh/decay trigger, with special attention to MintTap financial-information freshness and LogMate professional/regulatory content.
+2. Deepen **ad-revenue quality economics** beyond eCPM: eligible-use inventory, session/task-state exposure, impression opportunity, latency/abandonment/retention guardrails, and when additional inventory destroys long-run value.
+3. Then evaluate whether **selective social distribution** needs a deeper specialist-audience operating layer or is already sufficiently covered by Stage 1 + evidence/portfolio systems. Do not create a new framework merely to add breadth.
 4. Populate actual evidence only when first-party/native data is available. Do not substitute generic estimates.
 
 ## Major unresolved live questions
 
 ### MintTap
-Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community permissions; content/Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence.
+Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content/Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence.
 
 ### LogMate
-Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community permissions; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.
+Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.
 
 ### Company-wide
-Measured labor capacity; maintenance demand by asset/channel; privacy-compliant ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; content inventory; permission ledger; reusable launch record; proof that reusable assets reduce later labor.
+Measured labor capacity; maintenance demand by asset/channel; privacy-compliant ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; content inventory; populated permission ledger; reusable launch record; proof that reusable assets reduce later labor.
 
 ## Progress interpretation
 

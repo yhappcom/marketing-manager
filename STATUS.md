@@ -6,7 +6,7 @@ Last updated: 2026-09-15
 
 **Stage 1 — Marketing Foundations + mandatory yhappcom applied foundation supplement**
 
-Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **ten integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
+Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **eleven integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
 
 No live app-marketing assignment currently overrides the curriculum.
 
@@ -43,70 +43,80 @@ Current business constraints and owner preferences:
 7. `research/007_community_anti_spam_failure_revision_model.md` — permission-gated contribution-first community model; Reddit/site/community rule validation.
 8. `research/008_zero_low_cash_channel_matrix.md` — product-specific MintTap/LogMate channel prioritization model and first evidence-bounded matrix.
 9. `research/009_measurement_architecture.md` — privacy-aware source→store→activation→retention→ad-revenue measurement architecture, cohort/missing-data rules and minimum dashboard contract.
-10. `research/010_google_play_measurement_mapping.md` — **NEW: current first-party Google Play 2026 acquisition/store-listing measurement mapping, intent-click transition, custom-listing/experiment contract, privacy boundaries and Apple-vs-Play metric normalization rules.**
+10. `research/010_google_play_measurement_mapping.md` — current first-party Google Play 2026 acquisition/store-listing measurement mapping, intent-click transition, custom-listing/experiment contract, privacy boundaries and Apple-vs-Play metric normalization rules.
+11. `research/011_demand_creation_vs_capture.md` — **NEW: demand-state operating model separating underlying need, active category demand and brand choice; capture vs demand-development channel jobs and cash-light allocation rules.**
 
-## New retained conclusions from research 010
+## New retained conclusions from research 010–011
 
-Google Play's store-listing reporting model materially changed in 2026. Current first-party documentation states that from June 2026 primary store-listing performance metrics are based on unique user intent clicks, and from July 2026 the reporting focus shifted from completed acquisition outcomes toward intent.
+### Google Play 2026 measurement
 
-Canonical Android diagnostic chain is now:
+Google Play's current Store Listing reports center on unique user intent clicks/CTR while completed acquisitions remain available in other Play Console/exports. The Android diagnostic chain is therefore:
 
 `source/listing visit → install/open/pre-register intent click → completed store acquisition → first open → activation → retained core-value use → ad opportunity → request → match → impression → ad revenue`
 
-Key rules:
+Native Apple and Google metrics must not be flattened into one unlabeled `conversion rate` column.
 
-- current Play listing CTR is an intent-click metric, not automatically a successful-install rate;
-- completed store-listing acquisitions remain available in Grow users / Statistics / exports and must be named separately;
-- `store-listing acquisition`, `install`, `first open`, and `activation` are distinct populations/events;
-- Store Listing reports do not represent every Google Play acquisition surface, so Store Listing totals need not equal total Play acquisition;
-- current reporting can segment by supported dimensions including traffic source, search term, country/region, language, UTM source/campaign, install state and default/custom listing;
-- Google Play currently supports up to 50 Custom Store Listings, but niche traffic must not be fragmented simply because capacity exists;
-- Store Listing Experiments currently optimize store-level target metrics such as unique user install/open/pre-registration clicks and do not prove downstream activation, retention or ad-revenue improvement;
-- retained installer reporting indicates continued installation, not recurring product use;
-- sparse/thresholded data and `Other` groupings must not be converted to zero;
-- Play buyer/commerce metrics are not a substitute for yhappcom's ad-supported user value.
+### Demand state
 
-Cross-store reporting must normalize concept layers instead of forcing Apple's and Google's differently defined native `conversion` metrics into one fake comparable column.
+Company channel selection now distinguishes:
+
+- **explicit active demand** — capture through store/search/high-intent surfaces;
+- **problem-aware but category-uncommitted demand** — educate and connect the real problem to a solution path;
+- **latent/low-salience demand** — build relevant mental availability around specialist category-entry situations only where audience density and effort economics justify it.
+
+Demand creation is not defined as manufacturing unlimited need. It means increasing salience/understanding of a real problem, use situation, solution category or brand among relevant specialist users.
+
+Key operating rules:
+
+- actual store search terms/source behavior outrank founder keyword intuition;
+- store/SEO optimization cannot capture query demand that does not exist;
+- broad awareness posting is not justified merely because it costs no cash;
+- cash-light demand development should favor durable specialist assets that can be searched, linked, updated or reused;
+- community contribution is primarily education/problem-development unless an explicit user question creates capture intent;
+- `Audience Fit × Permission Gate × Demand-State Fit × Proof Fit × Durability × Measurement/Learning Value × Effort Efficiency` is now the conceptual channel-selection stack;
+- MintTap likely requires both capture and specialist education around ROC/distribution/split tracking problems, but actual query volume remains unverified;
+- LogMate likely does not need to create broad demand for logbooks; it should capture existing category intent and develop salience around migration, import, backup, data continuity and workflow problems.
 
 ## Applied exercises — progress
 
 1. MintTap niche map — FIRST PASS COMPLETE; market/search/source/retention validation open.
 2. LogMate niche map — FIRST PASS COMPLETE; geography/regulatory/segment/interview validation open.
-3. product-specific zero/low-cash channel matrix — FIRST EVIDENCE-BOUNDED PASS COMPLETE in `research/008`; live analytics validation open.
+3. product-specific zero/low-cash channel matrix — FIRST EVIDENCE-BOUNDED PASS COMPLETE in `research/008`; now demand-state interpretation added by `research/011`; live analytics validation open.
 4. store-page diagnostic model — FOUNDATION COMPLETE in `research/006`; live-listing/product-data validation open.
 5. community anti-spam failure/revision analysis — FOUNDATION COMPLETE in `research/007`; live community permission ledger remains operational work.
 6. ad-revenue tree — FOUNDATION COMPLETE in `research/005`; product-data application open.
 7. ad-UX trade-off matrix — framework established in `research/005`; product-specific placement scoring open.
 8. MintTap vs LogMate strategy comparison — FIRST PASS COMPLETE.
 9. measurement architecture — FOUNDATION COMPLETE in `research/009`.
-10. **Google Play authoritative acquisition/custom-listing field mapping — FOUNDATION COMPLETE in `research/010`; live Play Console application remains open.**
+10. Google Play authoritative acquisition/custom-listing field mapping — FOUNDATION COMPLETE in `research/010`; live Play Console application remains open.
+11. **demand creation vs capture — FOUNDATION COMPLETE in `research/011`; real search/community demand validation remains open.**
 
 Reading alone does not satisfy remaining gates.
 
 ## Next integrated learning sequence
 
-1. Build the **demand creation vs demand capture** Foundation and connect it explicitly to `research/008` so zero-cost channel choices are based on the state of market demand rather than channel popularity.
-2. Build an **App Store vs Google Play store-optimization operating framework** that preserves each platform's native metric definitions while giving yhappcom one common diagnostic model.
+1. Build the **App Store vs Google Play Store Optimization operating framework** using `research/006`, `009`, `010`, and `011`; preserve each platform's metric/metadata/experiment differences while creating one company diagnostic procedure.
+2. Deepen **positioning / brand foundations** for narrow professional apps: category frame, target problem, promise, reasons-to-believe, trust signals and distinctive assets.
 3. Inspect MintTap's current ad implementation/telemetry availability before placement or event-schema recommendations.
-4. Continue Stage 1 brand / positioning / funnel-model foundations where unresolved.
+4. Continue Stage 1 funnel-model / retention foundations where unresolved.
 5. Build a practical community permission ledger when live campaign planning begins.
-6. When live listings are available, apply `research/006`, `008`, `009`, and `010` to actual MintTap and LogMate pages/acquisition cohorts rather than inventing performance.
+6. When live listings are available, apply the frameworks to actual MintTap and LogMate pages and cohorts rather than inventing performance.
 
 ## Major OPEN / VALIDATION
 
 ### MintTap
 
 - current App Store / Google Play listings and organic search visibility;
+- actual Store search terms and web-search demand volume;
 - acquisition-source mix and source tagging;
 - canonical activation definition and D7/D30 core-value retention;
 - current analytics event schema;
 - current ad format/location/frequency;
 - request/match/show/eCPM/Ads-ARPU metrics;
-- user search-query and web-search-demand data;
 - competitor tracker map;
 - community assisted-attribution behavior;
 - authoritative current self-promotion/commercial-post permission for each external YieldMax community;
-- page-level conversion segmented by source/territory/device when available.
+- page-level conversion/CTR segmented by source/territory/device under each platform's native definition.
 
 ### LogMate
 
@@ -114,7 +124,7 @@ Reading alone does not satisfy remaining gates.
 - regulatory/airline-positioning boundaries;
 - professional-airline vs student/GA audience split;
 - current competitor price/feature matrix;
-- actual search demand;
+- actual store/web search demand;
 - import-source priorities;
 - canonical activation definition;
 - ad model at launch;
@@ -130,7 +140,8 @@ Reading alone does not satisfy remaining gates.
 - privacy-compliant marketing/ad measurement implementation;
 - long-run ad revenue per retained user;
 - operational owner/account disclosure convention for community participation;
-- common reporting schema that maps Apple and Google Play native metrics without erasing their definition differences.
+- common reporting schema that maps Apple and Google Play native metrics without erasing their definition differences;
+- empirical rule for reallocating labor between active-demand capture and demand-development work.
 
 ## Planned later infrastructure
 
@@ -145,4 +156,4 @@ Reading alone does not satisfy remaining gates.
 
 Do not report percentage completion from file count. Curriculum progress is judged by demonstrated capability, evidence quality, applied exercises, and ability to advise real products.
 
-Current status: **Stage 1 active; ten integrated Foundation research blocks complete; Google Play 2026 measurement mapping validated; demand-creation vs demand-capture is next.**
+Current status: **Stage 1 active; eleven integrated Foundation research blocks complete; Google Play measurement and demand-state foundations complete; cross-store Store Optimization operating framework is next.**

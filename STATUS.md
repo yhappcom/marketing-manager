@@ -6,7 +6,7 @@ Last updated: 2026-09-15
 
 **Stage 1 — Marketing Foundations + mandatory yhappcom applied foundation supplement**
 
-Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **thirteen integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
+Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **fourteen integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
 
 No live app-marketing assignment currently overrides the curriculum.
 
@@ -46,28 +46,29 @@ Current business constraints and owner preferences:
 10. `research/010_google_play_measurement_mapping.md` — current first-party Google Play 2026 acquisition/store-listing measurement mapping, intent-click transition, custom-listing/experiment contract, privacy boundaries and Apple-vs-Play metric normalization rules.
 11. `research/011_demand_creation_vs_capture.md` — demand-state operating model separating underlying need, active category demand and brand choice; capture vs demand-development channel jobs and cash-light allocation rules.
 12. `research/012_cross_store_optimization_operating_framework.md` — one evidence→intent→listing→experiment→downstream-validation operating loop for Apple/Google while preserving native metadata, segmentation, creative and metric differences.
-13. `research/013_positioning_brand_foundations_for_specialist_apps.md` — **NEW: specialist-app category/CEP→positioning→proof→trust→brand-identification operating model; separates positioning, messaging, visual identity and evidence-backed distinctive assets.**
+13. `research/013_positioning_brand_foundations_for_specialist_apps.md` — specialist-app category/CEP→positioning→proof→trust→brand-identification operating model; separates positioning, messaging, visual identity and evidence-backed distinctive assets.
+14. `research/014_activation_retention_promise_quality.md` — **NEW: promise→first-use→meaningful activation→core-value retention→sustainable ad-bearing use model; promise-mismatch taxonomy and downstream acquisition-quality guardrails.**
 
-## New retained conclusions from research 013
+## New retained conclusions from research 014
 
-The company brand/positioning backbone is now modeled as:
+The post-acquisition quality chain is now modeled as:
 
-`buyer situation / CEP → category recognition → relevant promise → product-near proof → trust/risk reduction → consistent brand identification → repeated retrieval`
+`audience/situation → marketing promise → install/open expectation → first-use path → meaningful activation → repeated core-value behavior → retention → sustainable ad-bearing usage`
 
 Key rules:
 
-- positioning is not a slogan and brand is not a logo/color exercise;
-- Category Entry Points are buyer/category situations and must not be invented merely by inspecting product features;
-- category frame, positioning, surface-specific messaging and distinctive brand assets are separate layers;
-- a color/logo/type treatment is only a **candidate brand element** until category buyers actually link it to the brand with sufficient recognition/uniqueness;
-- early-stage preference testing is not distinctive-asset measurement;
-- do not force unsupported `only we can say this` uniqueness claims; category clarity, relevance, credible proof, reduced risk and retrievability can all matter to specialist adoption;
-- store metadata is a compressed expression of positioning and must be clear/accurate before visual execution begins;
-- screenshots and other creative should favor product-near reasons-to-believe over generic superiority adjectives;
-- stable recognition cues can coexist with variable CEP/problem/proof messages; consistency does not require identical creative;
-- Marketing Manager specifies category buyer, CEP/intent, proposition, proof hierarchy, trust requirement and measurement; Design Studio owns visual execution; Web Manager receives search/problem intent plus evidence-backed claim requirements.
+- download, install, `first_open`, account creation and onboarding completion are not automatically activation;
+- activation must represent first meaningful product value and remains a hypothesis until its relationship with later core-value use is validated;
+- distinguish app-open retention from **core-value retention** and workflow-cadence retention;
+- specialist utilities must not inherit arbitrary daily-use targets from entertainment/social categories;
+- Apple App Store Connect retention excludes install-never-open devices from its retention population and usage data depends on diagnostics/usage opt-in and privacy thresholds; it is not equivalent to `all downloads retained`;
+- `first_open` in Firebase is an install/reinstall first-open signal, not a value event;
+- acquisition creative can improve store response while damaging activation/retention through audience, capability, effort, scope, monetization or evidence mismatch;
+- every acquisition experiment should therefore carry downstream activation/retention/trust guardrails where sample and observation windows permit;
+- privacy-suppressed or sparse niche cohorts remain `INCONCLUSIVE`, not zero or losing cohorts;
+- long-run optimization should move toward relevant reach → qualified activation → retained core-value use → naturally eligible ad opportunity → realized revenue.
 
-Candidate MintTap and LogMate positioning backbones were recorded as HYPOTHESES only; no unvalidated feature, regulatory, investment, synchronization or safety claim was promoted to canonical copy.
+Candidate MintTap and LogMate activation/retention behaviors remain HYPOTHESES pending product telemetry and observed workflows.
 
 ## Applied exercises — progress
 
@@ -83,19 +84,19 @@ Candidate MintTap and LogMate positioning backbones were recorded as HYPOTHESES 
 10. Google Play authoritative acquisition/custom-listing field mapping — FOUNDATION COMPLETE in `research/010`; live Play Console application remains open.
 11. demand creation vs capture — FOUNDATION COMPLETE in `research/011`; real search/community demand validation remains open.
 12. cross-store Store Optimization operating framework — FOUNDATION COMPLETE in `research/012`; actual listing audits/experiments await live store data.
-13. **specialist-app positioning/brand foundation — FOUNDATION COMPLETE in `research/013`; buyer research and live brand-recognition evidence remain open.**
+13. specialist-app positioning/brand foundation — FOUNDATION COMPLETE in `research/013`; buyer research and live brand-recognition evidence remain open.
+14. **activation/retention/promise-quality foundation — FOUNDATION COMPLETE in `research/014`; activation hypotheses and cadence require live behavioral validation.**
 
 Reading alone does not satisfy remaining gates.
 
 ## Next integrated learning sequence
 
-1. Build **funnel / activation / retention foundations** connecting acquisition promise to first meaningful value and repeated core-value behavior.
-2. Model **promise mismatch / low-quality acquisition**: how store, content, community or social messages can increase installs while reducing activation/retention/trust.
+1. Build the **owned-content / SEO operating system** using demand states, CEPs, positioning, evidence-backed proof, updateability and measurable store/product handoff.
+2. Deepen the **selective-social operating system** only after audience/channel evidence, repeatable content job and measurement rules are defined.
 3. Inspect MintTap's current ad implementation/telemetry availability before placement or event-schema recommendations.
-4. Deepen **owned-content / SEO operating system** using demand states, CEPs, positioning and evidence-backed proof.
-5. Deepen **selective-social operating system** only after audience/channel evidence, repeatable content job and measurement rules are defined.
-6. Build a practical community permission ledger when live campaign planning begins.
-7. When live listings are available, apply `research/006`, `008`–`013` to actual MintTap and LogMate pages/cohorts rather than inventing performance.
+4. Build a practical community permission ledger when live campaign planning begins.
+5. Develop activation-event validation and core-value retention analysis once production telemetry exists.
+6. When live listings are available, apply `research/006`, `008`–`014` to actual MintTap and LogMate pages/cohorts rather than inventing performance.
 
 ## Major OPEN / VALIDATION
 
@@ -104,7 +105,7 @@ Reading alone does not satisfy remaining gates.
 - current App Store / Google Play listings and organic search visibility;
 - actual Store search terms and web-search demand volume;
 - acquisition-source mix and source tagging;
-- canonical activation definition and D7/D30 core-value retention;
+- canonical activation definition and D7/D30/core-workflow retention;
 - current analytics event schema;
 - current ad format/location/frequency;
 - request/match/show/eCPM/Ads-ARPU metrics;
@@ -113,7 +114,8 @@ Reading alone does not satisfy remaining gates.
 - authoritative current self-promotion/commercial-post permission for each external YieldMax community;
 - page-level conversion/CTR segmented by source/territory/device under each platform's native definition;
 - which candidate intents (portfolio/distribution/ROC/split/cost-basis) deserve default vs intent-specific store treatment;
-- category-buyer evidence for priority CEPs and any distinctive brand-element recognition.
+- category-buyer evidence for priority CEPs and any distinctive brand-element recognition;
+- whether candidate activation events predict later core-value use.
 
 ### LogMate
 
@@ -123,26 +125,28 @@ Reading alone does not satisfy remaining gates.
 - current competitor price/feature matrix;
 - actual store/web search demand;
 - import-source priorities;
-- canonical activation definition;
+- canonical activation definition and natural workflow retention cadence;
 - ad model at launch;
 - pilot interviews / observed workflows;
 - target-community permission beyond r/flying;
 - actual listing and page→activation measurement once launched;
 - whether migration/import deserves a distinct intent-specific listing based on observed switching barriers;
-- category-buyer evidence for priority CEPs and future brand recognition.
+- category-buyer evidence for priority CEPs and future brand recognition;
+- whether candidate activation events predict later core-value use.
 
 ### Company-wide
 
 - internal labor-time accounting convention;
 - canonical source/campaign registry implementation;
-- activation/retention event definitions;
+- activation/retention event definitions and validation method;
 - privacy-compliant marketing/ad measurement implementation;
 - long-run ad revenue per retained user;
 - operational owner/account disclosure convention for community participation;
 - common reporting schema that maps Apple and Google Play native metrics without erasing their definition differences;
 - empirical rule for reallocating labor between active-demand capture and demand-development work;
 - store experiment registry/template retaining native platform definitions and downstream guardrails;
-- evidence threshold/timing for formal distinctive-asset measurement in small category populations.
+- evidence threshold/timing for formal distinctive-asset measurement in small category populations;
+- content inventory/refresh/measurement system for owned search assets.
 
 ## Planned later infrastructure
 
@@ -157,4 +161,4 @@ Reading alone does not satisfy remaining gates.
 
 Do not report percentage completion from file count. Curriculum progress is judged by demonstrated capability, evidence quality, applied exercises, and ability to advise real products.
 
-Current status: **Stage 1 active; thirteen integrated Foundation research blocks complete; specialist-app positioning/brand foundation complete; funnel/activation/retention foundation is next.**
+Current status: **Stage 1 active; fourteen integrated Foundation research blocks complete; activation/retention/promise-quality foundation complete; owned-content/SEO operating system is next.**

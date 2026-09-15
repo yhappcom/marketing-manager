@@ -62,6 +62,15 @@ Unavailable elements remain UNKNOWN/NOT_INSTRUMENTED; attribution is not reconst
 
 Apple Store surface semantics were revalidated 2026-09-16: Product Page Optimization (PPO) and Custom Product Pages (CPP) are separate operating objects. PPO is a randomized default-product-page experiment surface (up to three treatments for supported assets); CPP is a separately routed/localized page surface (up to 70 pages) with unique URLs/keywords and page-level analytics. PPO is not available for CPP. A CPP-specific conversion observation is not automatically causal lift versus default because traffic selection can differ.
 
+### Authoritative platform delta — iOS/iPadOS 27 Store discovery surfaces
+`research/029_ios27_app_store_discovery_surface_change.md` records an allowed post-freeze delta. Apple's WWDC26 discovery guidance makes Store creative a multi-surface problem: discovery/search-result recognition, product-page persuasion, and routed-message continuity should be treated as distinct creative jobs rather than assuming one screenshot sequence serves all jobs. CPP remains routing/observational evidence; PPO remains the native randomized default-page experiment surface. September 9, 2026 App Store Connect release notes also add screenshot/preview specifications for new device classes, creating a Store-asset maintenance/expiry trigger.
+
+New operating tuple for material Store creative:
+
+`target intent → discovery surface → asset role → default/CPP routing → downstream destination → native measurement → evidence class → device/display coverage → expiry trigger`
+
+Do not create CPPs simply because Apple allows many; sparse specialist traffic makes fragmentation costly.
+
 ## Capability state
 
 **FOUNDATION COMPLETE:** value/trust, niche distribution, cash-light acquisition, Store, measurement, demand, positioning, activation/retention, SEO, selective social, community, ad monetization, launch.
@@ -70,27 +79,30 @@ Apple Store surface semantics were revalidated 2026-09-16: Product Page Optimiza
 
 **APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community operations; content evidence lifecycle; ad-revenue quality economics; selective social governance; cross-surface integration/handoff rules.
 
+**POST-FREEZE AUTHORITATIVE DELTAS:** 029 iOS/iPadOS 27 App Store discovery-surface/asset-role change.
+
 **LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; social audience-fit/account economics; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
 
 ## Next learning / operating sequence
 
-1. **Do not extend general theory by default.** Application Readiness V1 is frozen.
+1. **Do not extend general theory by default.** Application Readiness V1 remains frozen.
 2. Shift to live-decision support and first-party evidence collection as actual MintTap/LogMate data becomes available.
 3. Open Decision Records for material choices, populate the minimum native evidence needed, and allocate labor to the current bottleneck.
 4. Research a new topic only if a live decision cannot be represented/routed, an authoritative platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
 5. Continue periodic authoritative-source revalidation for volatile Store/platform/ad/community rules, but report only changes that alter an operating rule.
+6. Next high-value live-readiness task, absent first-party metrics: inspect product repositories for current Store asset/analytics/ad instrumentation readiness and identify only concrete measurement gaps; do not infer missing product behavior.
 
 ## Major unresolved live questions
 
 ### MintTap
-Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; social audience concentration and account economics; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence.
+Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; social audience concentration and account economics; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence; iOS 27 discovery-asset/device coverage.
 
 ### LogMate
-Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; social audience concentration and professional-credibility value; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.
+Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; social audience concentration and professional-credibility value; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence; pre-launch iOS 27 discovery-asset plan.
 
 ### Company-wide
 Measured labor capacity; maintenance demand by asset/channel; privacy-compliant ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; populated content claim ledger; populated permission ledger; social account maintenance/qualified-response baselines; reusable launch record; proof that reusable assets reduce later labor.
 
 ## Progress interpretation
 
-Do not report progress by file count. The current objective is a trustworthy, reusable operating system for real niche-app growth. Missing live evidence remains explicitly unknown. Further learning now follows real evidence and concrete execution failures rather than accumulating adjacent theory.
+Do not report progress by file count. The current objective is a trustworthy, reusable operating system for real niche-app growth. Missing live evidence remains explicitly unknown. Further learning now follows real evidence, authoritative platform deltas, and concrete execution failures rather than accumulating adjacent theory.

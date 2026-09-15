@@ -4,149 +4,76 @@ Last updated: 2026-09-15
 
 ## Current phase
 
-**Stage 1 — FOUNDATION COMPLETE. Stage 2 — Sparse-Niche Decision Science ACTIVE.**
+**Stage 1 — FOUNDATION COMPLETE. Stage 2 — Sparse-Niche Decision Science ACTIVE; integration gate next.**
 
-Research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`; Stage 1 review is in `curriculum/STAGE1_GATE_REVIEW.md`.
-
-Stage 2 specialist-depth blocks completed:
+Stage 1 research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`. Stage 2 completed research:
 - `research/020_sparse_niche_experimentation_decision_quality.md`
 - `research/021_value_of_information_reversibility_experiment_priority.md`
 - `research/022_sequential_monitoring_stopping_staged_commitment.md`
 - `research/023_evidence_transfer_external_validity_decay.md`
+- `research/024_multi_app_portfolio_labor_allocation.md`
 
-## Locked company operating context
+Applied artifact: `playbook/MARKETING_DECISION_QUEUE.md`.
 
-Canonical context:
-- `context/COMPANY_MARKETING_CONSTRAINTS.md`
-- `curriculum/STAGE1_YHAPPCOM_APPLIED_FOUNDATIONS.md`
+## Locked operating context
 
-Operating constraints remain: default to little/no direct cash spend; Store pages and owned/community/editorial surfaces are core growth assets; social is selective/evidence-gated; MintTap and LogMate serve narrow specialist audiences; advertising is the current intended monetization path unless owner policy changes; intrusive/deceptive/access-limiting advertising is unacceptable; sustainable ad revenue is optimized subject to usability, trust, retention, accessibility, performance and policy. Zero-cash never means zero labor/opportunity cost.
+Default to little/no direct cash spend. Store, owned/editorial and permission-respecting community surfaces are core growth assets; social is selective/evidence-gated. MintTap and LogMate serve narrow specialist audiences. Advertising is the intended monetization path unless owner policy changes, but intrusive/deceptive/access-limiting ads are unacceptable. Optimize sustainable ad revenue subject to usability, trust, retention, accessibility, performance and policy. Zero-cash never means zero labor/opportunity cost.
 
-## Stage 1 synthesis
+## Canonical growth system
 
-Canonical operating artifact: `playbook/MARKETING_PLAYBOOK_V1.md`
-
-Optimization chain:
 `relevant demand → credible promise → qualified acquisition → meaningful activation → repeated core value → sustainable ad-bearing use`
 
-Weak growth diagnosis:
-`discoverability → intent/audience → Store/message/proof → activation → core-value retention → durable distribution → monetization execution`
+Diagnose weak growth in that order rather than reflexively adding promotion.
 
-## Stage 2 retained conclusions — 020–023
+## Stage 2 retained system
 
-### Sparse experiment interpretation (020)
-Every experiment separates data validity, effect estimate, uncertainty and business/practical significance. MPME is predeclared; INVALID and INCONCLUSIVE remain distinct; sparse traffic normally supports one high-contrast treatment vs control rather than many cosmetic variants; acquisition and monetization wins retain downstream quality guardrails.
+**020 — Sparse experiments:** separate validity, effect estimate, uncertainty and practical significance. Predeclare MPME. INVALID and INCONCLUSIVE are distinct. Prefer one high-contrast treatment vs control when traffic is scarce.
 
-### Value of information / experiment priority (021)
-Experimentation itself must earn its opportunity cost. Five canonical routes remain ACT + MONITOR, OBSERVE/TRIANGULATE, CONTROLLED EXPERIMENT, RESEARCH FIRST, and DEFER/DO NOT RESEARCH. Reversibility controls evidentiary burden; scarce traffic is a portfolio resource.
+**021 — VOI/reversibility:** experimentation must earn its opportunity cost. Routes: ACT+MONITOR, OBSERVE/TRIANGULATE, CONTROLLED EXPERIMENT, RESEARCH FIRST, DEFER. Reversibility controls evidentiary burden; scarce traffic is a portfolio resource.
 
-### Sequential monitoring / stopping / staged commitment (022)
-`HEALTH LOOK ≠ DECISION LOOK`. Fixed-horizon, formal sequential, and operational staged-commitment contracts remain distinct. Stop reasons are SUCCESS, HARM, INVALID, FUTILITY/LOW-VOI, MAX-HORIZON INCONCLUSIVE, or EXTERNAL/OBSOLETE. Staged exposure controls downside but does not manufacture causal certainty.
+**022 — Stopping:** `HEALTH LOOK ≠ DECISION LOOK`. Keep fixed-horizon, genuine sequential inference and operational staged commitment distinct. Stop states: SUCCESS, HARM, INVALID, FUTILITY/LOW-VOI, MAX-HORIZON INCONCLUSIVE, EXTERNAL/OBSOLETE.
 
-### Evidence transfer / external validity / decay (023)
-New canonical distinction:
+**023 — Transfer/decay:** `credible in source context ≠ transferable to target context`. Use T0–T4. Transfer is mechanism-first and evidence decay is trigger-based. Never transport policy, regulation or factual truth by analogy.
 
-`credible in source context ≠ transferable to target context`
+**024 — Portfolio labor allocation:** zero-cash marketing is capacity-constrained marketing. Allocate Marketing/Design/Web/Engineering/qualified-traffic capacity to decision packages, not equally to apps or by task count. Mandatory trust/policy protection is separated from discretionary growth. Discretionary work is bottleneck-first and compares durable value, evidence, VOI, time-to-signal, reversibility/downside, constrained-capability cost, maintenance tail, reuse/option value and expiry risk. Do not invent a universal weighted score before empirical calibration.
 
-Evidence is classified T0–T4:
-- T0 DIRECTLY REUSABLE OPERATING PRINCIPLE;
-- T1 REUSABLE WITH CONTEXT CHECK;
-- T2 PRIOR / HYPOTHESIS ONLY;
-- T3 TARGET REVALIDATION REQUIRED BEFORE MATERIAL COMMITMENT;
-- T4 NON-TRANSFERABLE / OBSOLETE.
+Canonical marginal allocation question:
 
-Transfer checks product, audience, CEP/job, platform, geography/language, acquisition source, product version, market/competition, time and measurement definition. Transfer is mechanism-first: similarity of labels or interfaces is not enough.
+`If only one additional focused block of the constrained capability were available, which decision package would most improve or clarify the current limiting factor without disproportionate maintenance or trust cost?`
 
-Evidence decay is trigger-based, not a universal 30/90/365-day expiry. Revalidation triggers include platform/policy changes, product/onboarding/monetization changes, analytics-definition changes, source/audience mix shifts, competitor/category drift, regulation/tax/legal changes, localization expansion, community-rule changes and unexplained sustained baseline divergence.
+Limit portfolio WIP and reprioritize on evidence/bottleneck/dependency/harm/capacity triggers rather than every new idea. New owned/community/social assets must declare maintenance ownership before expansion.
 
-Company rule:
-`reuse principles aggressively; reuse empirical magnitudes cautiously; revalidate mechanisms when context can change the effect; never transport policy, regulatory or factual truth by analogy.`
+## Decision Queue
 
-Apple's current localization guidance reinforces market-specific adaptation: metadata/screenshots and marketing strategy should be localized/adapted, and channel popularity may differ materially by market. Translation alone is not treated as transferred market evidence.
+`playbook/MARKETING_DECISION_QUEUE.md` operationalizes 020–023 with representative MintTap/LogMate Store, content, community and ad decisions without fabricating live performance. Every material decision records bottleneck, mechanism, evidence, MPME where applicable, wrong-decision cost, reversibility, VOI, route, stopping contract, T0–T4 transfer status, dependency and next action.
 
 ## Capability state
 
-FOUNDATION COMPLETE:
-- Stage 1 marketing/value/trust, niche distribution, cash-light acquisition, Store, measurement, demand, positioning, activation/retention, SEO, selective social, community, ad monetization and launch systems.
+**FOUNDATION COMPLETE:** Stage 1 value/trust, niche distribution, cash-light acquisition, Store, measurement, demand, positioning, activation/retention, SEO, selective social, community, ad monetization and launch systems.
 
-STAGE 2 SPECIALIST DEPTH COMPLETE:
-- sparse-niche experiment validity / uncertainty / practical significance (`020`);
-- value-of-information / reversibility / experiment-priority / opportunity-cost routing (`021`);
-- sequential monitoring/stopping and staged commitment (`022`);
-- evidence transfer / external validity / evidence decay (`023`).
+**STAGE 2 SPECIALIST DEPTH COMPLETE:** sparse inference (020); VOI/reversibility (021); monitoring/stopping (022); transfer/decay (023); multi-app labor allocation (024); representative decision routing.
 
-LIVE VALIDATION REQUIRED:
-- MintTap/LogMate audience, CEP, channel, Store, content and positioning maps;
-- activation definitions and natural retention cadence;
-- social audience fit;
-- community permission states;
-- actual Store/search performance;
-- ad implementation and long-run monetization effects;
-- launch cohort quality;
-- product-specific workflow/calendar cycles, harm thresholds and useful experiment horizons;
-- empirical transfer records across platform/geography/version once comparable live evidence exists.
+**LIVE VALIDATION REQUIRED:** actual MintTap/LogMate audience/channel/Store/content/positioning evidence; activation and natural retention cadence; community permissions; Store/search baselines and traffic ceilings; ad implementation and long-run effects; launch cohort quality; product-specific workflow cycles and harm thresholds; cross-context transfer records; actual Marketing/Design/Web/Engineering capacity and recurring maintenance demand.
 
-NOT YET BASELINED / NEXT THEORY GAPS:
-1. representative application of 020–023 to Store/content/community/ad decision queues without fabricated performance;
-2. multi-app portfolio labor/resource allocation;
-3. Stage 2 integration/gate review after applied decision routing and portfolio allocation are complete.
+## Next integrated learning sequence
 
-## Next integrated learning sequence — Stage 2
+1. Perform a **Stage 2 Gate Review** across 020–024 and the Decision Queue. Verify the system can answer what deserves evidence, how sparse evidence is interpreted, when to stop, what transfers, and where the next constrained labor block goes.
+2. Create one **reusable decision/portfolio record template** combining evidence provenance, MPME/VOI, route, stopping contract, T0–T4, capability cost, maintenance tail and reprioritization trigger.
+3. If the gate exposes no material theory gap, stop expanding Stage 2 theory and move to application/live-validation readiness rather than manufacturing adjacent research topics.
 
-1. Apply **020–023** to representative Store/content/community/ad decision queues, explicitly choosing ACT/MONITOR vs OBSERVE vs EXPERIMENT vs RESEARCH FIRST vs DEFER and attaching transfer/decay status.
-2. Build the **multi-app portfolio labor-allocation system**: allocate scarce Marketing Manager/Design/Web/engineering time by expected decision value, bottleneck severity, evidence quality, reversibility, strategic option value and maintenance burden rather than app count or urgency theater.
-3. Integrate Stage 2 into a reusable decision record/template and perform a Stage 2 gate review instead of indefinitely adding theory files.
-
-## Major OPEN / LIVE VALIDATION
+## Major open validation
 
 ### MintTap
-- current Store listings/search visibility/search terms;
-- acquisition-source mix/tagging;
-- canonical activation and core-workflow retention;
-- analytics event schema;
-- actual ad units/formats/task states/frequency/latency/serving metrics and retention effects;
-- competitor tracker map;
-- current external YieldMax-community permissions;
-- content/Search Console baseline;
-- social audience-fit evidence;
-- actual release/launch cohort evidence;
-- real Store traffic ceiling and experiment resolution time;
-- prioritized live experiment/research queue using 020–023;
-- natural workflow/calendar cycles and product-specific harm/rollback thresholds;
-- target-context evidence before transferring U.S./Korean, iOS/Android, old/new-version results.
+Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; competitor map; YieldMax-community permissions; content/Search Console baseline; social audience fit; launch cohort evidence; Store experiment resolution time; populated live decision queue; product-specific rollback thresholds; U.S./Korean and iOS/Android transfer evidence.
 
 ### LogMate
-- launch geography/segment/regulatory boundaries;
-- actual demand/competitor/import priorities;
-- activation/workflow cadence;
-- ad model/placement policy;
-- pilot interviews/workflow observation;
-- current pilot-community permissions;
-- Store/content/social evidence after launch;
-- first launch execution evidence;
-- realistic launch traffic ceiling for experimentation;
-- prioritized launch-learning queue using 020–023;
-- natural workflow/calendar cycles and product-specific harm/rollback thresholds;
-- jurisdiction/platform/workflow comparability before transporting pilot evidence.
+Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observation/interviews; community permissions; post-launch Store/content/social evidence; launch traffic ceiling; populated learning queue; product-specific rollback thresholds; jurisdiction/platform/workflow transfer evidence.
 
 ### Company-wide
-- labor-time accounting convention;
-- source/campaign registry implementation;
-- activation validation method;
-- privacy-compliant measurement implementation;
-- long-run ad revenue per retained user;
-- native Apple/Google metric reporting without definition loss;
-- experiment registry implementation using 020–023 schemas;
-- evidence-transfer record implementation with T0–T4 and drift triggers;
-- empirically refined MPME/rollback/stop thresholds;
-- distinctive-asset measurement timing;
-- live content inventory/maintenance workflow;
-- populated community permission ledger;
-- reusable launch record populated from actual launches;
-- portfolio-level labor/resource allocation framework.
+Labor-time/capacity baseline; maintenance demand by asset/channel; source/campaign registry; privacy-compliant measurement; long-run ad revenue per retained user; native Apple/Google metric preservation; experiment/evidence-transfer registry; empirical MPME/stop thresholds; content inventory; permission ledger; reusable launch record; proof that reusable assets actually reduce later labor.
 
 ## Progress interpretation
 
-Do not report completion by file count. Stage 1 is complete because its domains form one coherent decision system. Stage 2 is judged by whether scarce evidence, traffic and labor can be converted into disciplined decisions without false precision, invalid stopping, low-value research or false transfer across contexts.
+Do not report completion by file count. Stage 2 is successful only if scarce evidence, traffic and labor can be converted into disciplined decisions without false precision, invalid stopping, low-value research, false transfer, resource churn or optimization of a non-constraint.
 
-Current status: **Stage 2 active; sparse interpretation, VOI/prioritization, sequential monitoring/stopping, and evidence transfer/decay are complete. Next: representative decision-queue application, then portfolio labor allocation.**
+Current status: **020–024 and the applied Decision Queue are assembled. Next: Stage 2 integration/gate review and reusable record template.**

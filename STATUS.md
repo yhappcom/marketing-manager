@@ -39,42 +39,39 @@ Stage 2 Gate: **PASS**. Further methodology is added only when a live decision e
 ## Application-readiness progress
 
 ### Evidence provenance & baseline measurement — COMPLETE V1
-
 Native metric definitions are preserved. Apple and Google Store funnels remain separate at the native layer. Numeric zero is distinct from UNKNOWN, SUPPRESSED, NOT_INSTRUMENTED, NOT_APPLICABLE, and INVALID. Attribution stops where measurement stops. Baselines respect product/store/analytics change boundaries and natural workflow cycles.
 
 ### Live Evidence Registry — COMPLETE V1
-
 `LIVE_EVIDENCE_REGISTRY_TEMPLATE.md` operationalizes the evidence protocol as an append-only audit layer with observation IDs, metric-definition versioning, missingness states, comparability groups, baseline-change events, T0–T4 transfer/decay, Decision Record linkage, and sparse-niche safeguards.
 
 ### Product baseline checklists — COMPLETE V1
-
 `PRODUCT_BASELINE_CHECKLISTS.md` instantiates the registry for MintTap and LogMate without invented values. MintTap covers Store, activation/retention, Search Console/content, YieldMax community permissions, ads, and decision readiness. LogMate explicitly permits pre-launch UNKNOWN states and separates proposition/pilot evidence from Store baselines that do not yet exist.
 
 ### Campaign/source semantics — COMPLETE V1
-
 Apple campaign/source semantics and Google's 2026 Store Listing Performance metric-definition break are recorded. Historical observations retain the native definition that applied when captured; definition changes create a series/baseline boundary rather than silent splicing.
 
 ### Niche community evidence operations — COMPLETE V1
-
 `research/025_niche_community_evidence_operations.md` defines community participation as a governed evidence/trust surface before it is a distribution surface. Community relevance does not imply promotion permission; qualitative observations do not become prevalence estimates; permission and goodwill are constrained capital.
 
 ### Content evidence lifecycle — COMPLETE V1
+`research/026_content_evidence_lifecycle.md` connects specialist problem discovery to authoritative validation, claim-level provenance, publication, native performance evidence, and factual refresh/decay. Search performance and factual validity remain separate state machines.
 
-`research/026_content_evidence_lifecycle.md` now connects specialist problem discovery to authoritative validation, claim-level provenance, publication, native performance evidence, and factual refresh/decay.
+### Ad-revenue quality economics — COMPLETE V1
+`research/027_ad_revenue_quality_economics.md` replaces impression maximization with quality-adjusted inventory economics. Monetizable opportunity is distinct from maximum ad insertion. Product states are classified before format selection; possible, eligible, served and quality-adjusted inventory are separate. Revenue decisions pass policy/trust, eligibility, measurement and incremental-value gates. Short-run eCPM/ARPDAU cannot substitute for retained-use economics.
 
-Locked operating rules:
+Locked ad operating rules:
 
-- search performance and factual validity are separate state machines;
-- traffic never validates a financial/tax/regulatory/professional claim;
-- consequential content uses a claim ledger with source tier, scope, state, and refresh trigger;
-- freshness is trigger-first, calendar-second; no universal 30/90/365-day expiry is assumed;
-- visible `last updated` dates change only after material content changes; internal `last_checked` may differ;
-- content state is CURRENT / REVIEW_DUE / PARTIALLY_STALE / RETRACT_OR_ARCHIVE;
-- MintTap separates U.S. tax concepts, issuer/fund classification, Korean tax/brokerage handling, and app tracking behavior;
-- LogMate binds regulatory claims to jurisdiction/authority and labels operator practice separately;
-- factual truth, audience truth, and commercial truth require different evidence and cannot substitute for one another.
+- protect FIRST_VALUE/ONBOARDING and precision TASK_CRITICAL states from interruptive inventory by default;
+- a navigation transition is not automatically a natural break;
+- app-open eligibility requires a genuine loading/waiting state; do not show on first use or after main content is already reached;
+- banners consume viewport and interaction safety even when non-interstitial; proximity to interactive controls is an accidental-click risk;
+- suspicious CTR is an implementation-review signal, not automatically a success signal;
+- severe policy/trust/workflow harm can trigger rollback before revenue uplift is resolved;
+- expand retained useful use and quality-adjusted eligible inventory before increasing interruption/frequency;
+- no universal ad frequency cap is invented without live evidence;
+- MintTap placement effects do not transfer to LogMate as effect-size evidence.
 
-Google Search guidance, current IRS ROC/nondividend-distribution material, and FAA logbook guidance were revalidated on 2026-09-16 for this protocol.
+Current Google AdMob/Google Play app-open, adaptive-banner, accidental-click and disruptive-ad guidance was revalidated on 2026-09-16 for this protocol.
 
 ## Capability state
 
@@ -82,15 +79,15 @@ Google Search guidance, current IRS ROC/nondividend-distribution material, and F
 
 **STAGE 2 COMPLETE:** sparse inference; VOI/reversibility; monitoring/stopping; transfer/decay; multi-app labor allocation; decision routing; integration gate.
 
-**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community evidence operations; content evidence lifecycle and claim-level freshness control.
+**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community evidence operations; content evidence lifecycle and claim-level freshness control; ad-revenue quality economics and task-state inventory governance.
 
 **LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
 
 ## Next learning sequence
 
-1. Deepen **ad-revenue quality economics** beyond eCPM: eligible-use inventory, session/task-state exposure, impression opportunity, latency/abandonment/retention guardrails, and when additional inventory destroys long-run value. Explicitly distinguish monetizable opportunity from maximum ad insertion.
-2. Then evaluate whether **selective social distribution** needs a deeper specialist-audience operating layer or is already sufficiently covered by Stage 1 + evidence/community/portfolio systems. Add a framework only if a real execution gap remains.
-3. After that, perform an **Application Readiness integration check** across evidence, community, content, ads, Store, and launch. Do not extend methodology for its own sake.
+1. Evaluate **selective social distribution for specialist audiences** against Stage 1 + community/evidence/portfolio systems. Deepen only genuine gaps: platform-role selection, content atomization without duplication, account maintenance economics, weak-attribution handling, and stop/continue criteria. Do not build a generic social-media playbook if existing systems already cover it.
+2. Then perform an **Application Readiness integration check** across evidence, community, content, ads, Store and launch. Identify any operational gaps rather than extending methodology for its own sake.
+3. If integration passes, freeze Application Readiness V1 and shift learning toward live-decision support and evidence collection as first-party data becomes available.
 4. Populate actual evidence only when first-party/native data is available. Do not substitute generic estimates.
 
 ## Major unresolved live questions

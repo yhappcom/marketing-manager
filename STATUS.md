@@ -73,33 +73,36 @@ Locked ad operating rules:
 
 Current Google AdMob/Google Play app-open, adaptive-banner, accidental-click and disruptive-ad guidance was revalidated on 2026-09-16 for this protocol.
 
+### Selective social distribution — COMPLETE V1
+`research/028_selective_social_distribution_specialist_audiences.md` makes recurring social presence evidence-gated rather than mandatory. Each account must have a distinct platform role (discovery, credibility, return, listening, or routing), target-audience fit evidence, provenance-preserving native adaptation, explicit maintenance economics, a weak-attribution evidence ladder, and continue/pause/stop governance. Generic cross-posting, engagement bait, algorithm-chasing cadence rules, and broad reach without target qualification are not company strategy. Current LinkedIn and Meta platform direction on authentic/original vs recycled/inauthentic content was revalidated on 2026-09-16.
+
 ## Capability state
 
 **FOUNDATION COMPLETE:** value/trust, niche distribution, cash-light acquisition, Store, measurement, demand, positioning, activation/retention, SEO, selective social, community, ad monetization, launch.
 
 **STAGE 2 COMPLETE:** sparse inference; VOI/reversibility; monitoring/stopping; transfer/decay; multi-app labor allocation; decision routing; integration gate.
 
-**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community evidence operations; content evidence lifecycle and claim-level freshness control; ad-revenue quality economics and task-state inventory governance.
+**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community evidence operations; content evidence lifecycle and claim-level freshness control; ad-revenue quality economics and task-state inventory governance; selective social platform-role/maintenance/attribution governance.
 
-**LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
+**LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; social audience-fit/account economics; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
 
 ## Next learning sequence
 
-1. Evaluate **selective social distribution for specialist audiences** against Stage 1 + community/evidence/portfolio systems. Deepen only genuine gaps: platform-role selection, content atomization without duplication, account maintenance economics, weak-attribution handling, and stop/continue criteria. Do not build a generic social-media playbook if existing systems already cover it.
-2. Then perform an **Application Readiness integration check** across evidence, community, content, ads, Store and launch. Identify any operational gaps rather than extending methodology for its own sake.
-3. If integration passes, freeze Application Readiness V1 and shift learning toward live-decision support and evidence collection as first-party data becomes available.
+1. Perform an **Application Readiness integration check** across evidence, Store, community, content, selective social, ads and launch. Test whether the operating system can route realistic MintTap/LogMate decisions without adding new methodology.
+2. Identify only concrete operational gaps: missing handoffs, incompatible records, evidence states that cannot be represented, or decisions that cannot be routed. Fix those rather than extending theory.
+3. If integration passes, freeze Application Readiness V1 and shift learning toward live-decision support, first-party evidence collection, and product-specific validation as data becomes available.
 4. Populate actual evidence only when first-party/native data is available. Do not substitute generic estimates.
 
 ## Major unresolved live questions
 
 ### MintTap
-Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence.
+Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; social audience concentration and account economics; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence.
 
 ### LogMate
-Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.
+Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; social audience concentration and professional-credibility value; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.
 
 ### Company-wide
-Measured labor capacity; maintenance demand by asset/channel; privacy-compliant ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; populated content claim ledger; populated permission ledger; reusable launch record; proof that reusable assets reduce later labor.
+Measured labor capacity; maintenance demand by asset/channel; privacy-compliant ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; populated content claim ledger; populated permission ledger; social account maintenance/qualified-response baselines; reusable launch record; proof that reusable assets reduce later labor.
 
 ## Progress interpretation
 

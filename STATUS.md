@@ -6,7 +6,7 @@ Last updated: 2026-09-15
 
 **Stage 1 — Marketing Foundations + mandatory yhappcom applied foundation supplement**
 
-Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **fifteen integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
+Repository governance is initialized, Design Studio alignment is complete, company-specific marketing/monetization constraints are incorporated, and Stage 1 has advanced through **sixteen integrated Foundation research blocks** plus applied MintTap/LogMate niche mapping.
 
 No live app-marketing assignment currently overrides the curriculum.
 
@@ -48,31 +48,31 @@ Current business constraints and owner preferences:
 12. `research/012_cross_store_optimization_operating_framework.md` — one evidence→intent→listing→experiment→downstream-validation operating loop for Apple/Google while preserving native metadata, segmentation, creative and metric differences.
 13. `research/013_positioning_brand_foundations_for_specialist_apps.md` — specialist-app category/CEP→positioning→proof→trust→brand-identification operating model; separates positioning, messaging, visual identity and evidence-backed distinctive assets.
 14. `research/014_activation_retention_promise_quality.md` — promise→first-use→meaningful activation→core-value retention→sustainable ad-bearing use model; promise-mismatch taxonomy and downstream acquisition-quality guardrails.
-15. `research/015_owned_content_seo_operating_system.md` — **NEW: evidence-tiered, people-first owned-content system linking specialist problems/CEPs to useful assets, technical discoverability, trust, store/product handoff, activation, maintenance and measurement.**
+15. `research/015_owned_content_seo_operating_system.md` — evidence-tiered, people-first owned-content system linking specialist problems/CEPs to useful assets, technical discoverability, trust, store/product handoff, activation, maintenance and measurement.
+16. `research/016_selective_social_operating_system.md` — **NEW: evidence-gated social-channel admission, platform-job separation, native metric discipline, labor accounting, repurposing loop and explicit continue/revise/park rules for specialist apps.**
 
-## New retained conclusions from research 015
+## New retained conclusions from research 016
 
-Owned content is now modeled as:
+Social is now modeled as:
 
-`real audience problem / CEP → evidence of demand → useful owned asset → search/discovery eligibility → satisfying problem resolution → credible product relevance → store/product handoff → activation → retained value`
+`audience evidence → platform role → repeatable content job → native value → qualified interaction → owned/store handoff where appropriate → activation/retention evidence → continue/revise/stop`
 
 Key rules:
 
-- content volume and publishing cadence are not success metrics;
-- first-party demand evidence outranks internally invented keyword lists;
-- content opportunities are classified from observed first-party demand through authoritative recurring workflows, community observation and hypothesis-only topics;
-- every asset requires a primary job such as explain, diagnose, calculate, compare, guide, reference, proof or migration support;
-- Google’s people-first guidance supports original analysis, clear sourcing, demonstrable expertise, authorship and user satisfaction rather than search-engine-first mass production;
-- MintTap financial-information content requires especially strong source/trust boundaries because financial-stability topics can fall within YMYL-sensitive evaluation;
-- important owned pages must be crawlable/indexable, internally linked, text-accessible and canonically managed; a sitemap helps discovery but does not guarantee indexing;
-- structured data is an eligibility/understanding aid, not a ranking shortcut;
-- Google currently states that AI Overviews/AI Mode require no special AI file, special schema or separate optimization layer beyond foundational SEO and Search eligibility;
-- every content asset receives a maintenance class so data-sensitive, product-sensitive, evergreen and experimental pages are reviewed appropriately;
-- stale high-stakes content is worse than having no page;
-- owned content is evaluated by qualified discovery and downstream activation/retention value, not traffic alone;
-- do not create large sets of near-identical ticker/source pages unless each page provides independently useful and maintainable value.
-
-MintTap and LogMate topic clusters in research 015 remain HYPOTHESES until Search Console, store-search, support, community and product evidence validates priority.
+- social media is not a mandatory acquisition channel and every platform must have a defined job;
+- recurring labor requires evidence of audience presence, context fit, permission, repeatable content, proof fit, measurement/learning path and acceptable labor cost;
+- platform presence does not equal problem-context fit;
+- permission remains a hard gate for promotional use;
+- owned durable content and rented feed distribution are distinct assets and should not be valued identically;
+- provide native value before asking for an outbound click; teaser-only link extraction and filler cadence are rejected;
+- preserve platform-native metric definitions rather than inventing a universal engagement rate;
+- X view counts are not unique reach and may include repeated/self views under X's current definition;
+- LinkedIn provides post/audience analytics including professional demographic dimensions, but this does not itself prove professional-pilot audience fit for LogMate;
+- YouTube distinguishes subscribers from active audience and exposes monthly/new/casual/regular/returning viewer measures useful for specialist education/demo assessment;
+- vanity reach/followers are not revenue-equivalent; acquisition use must retain activation/retention guardrails from research 014;
+- social tests require labor budgets and explicit continue/revise/park rules;
+- one useful evidence-backed idea can flow through owned content and platform-native adaptations, with social questions feeding back into product/store/content learning;
+- MintTap X/YouTube and LogMate YouTube/LinkedIn remain TEST CANDIDATES, not operating requirements; unsupported platforms remain parked.
 
 ## Applied exercises — progress
 
@@ -90,18 +90,19 @@ MintTap and LogMate topic clusters in research 015 remain HYPOTHESES until Searc
 12. cross-store Store Optimization operating framework — FOUNDATION COMPLETE in `research/012`; actual listing audits/experiments await live store data.
 13. specialist-app positioning/brand foundation — FOUNDATION COMPLETE in `research/013`; buyer research and live brand-recognition evidence remain open.
 14. activation/retention/promise-quality foundation — FOUNDATION COMPLETE in `research/014`; activation hypotheses and cadence require live behavioral validation.
-15. **owned-content/SEO operating system — FOUNDATION COMPLETE in `research/015`; live Search Console/content-inventory implementation and demand validation remain open.**
+15. owned-content/SEO operating system — FOUNDATION COMPLETE in `research/015`; live Search Console/content-inventory implementation and demand validation remain open.
+16. **selective-social operating system — FOUNDATION COMPLETE in `research/016`; actual audience-platform tests and downstream cohorts remain open.**
 
 Reading alone does not satisfy remaining gates.
 
 ## Next integrated learning sequence
 
-1. Build the **selective-social operating system** only after audience/channel evidence, repeatable content job and measurement/exit rules are defined.
-2. Inspect MintTap's current ad implementation/telemetry availability before placement or event-schema recommendations.
+1. Deepen **ad-supported monetization/UX** from the existing revenue tree into placement, frequency, latency, session/task-state, retention and experiment decision rules while preserving the owner’s non-intrusive constraint.
+2. Inspect MintTap's current ad implementation/telemetry availability before product-specific placement or event-schema recommendations.
 3. Build a practical community permission ledger when live campaign planning begins.
 4. Develop activation-event validation and core-value retention analysis once production telemetry exists.
 5. Implement an owned-content inventory/refresh system when Web Manager/site operations are ready for live content work.
-6. When live listings and search data are available, apply `research/006`, `008`–`015` to actual MintTap and LogMate pages/cohorts rather than inventing performance.
+6. Later combine store, owned content, community and selective social into a reusable launch/distribution playbook after remaining Stage 1 foundations are complete.
 
 ## Major OPEN / VALIDATION
 
@@ -123,7 +124,8 @@ Reading alone does not satisfy remaining gates.
 - whether candidate activation events predict later core-value use;
 - Search Console query/impression/click baseline and index coverage for minttap.app;
 - which ROC/distribution/split/tracking content opportunities are observed demand versus internal hypotheses;
-- source/reviewer/maintenance ownership for finance-sensitive content.
+- source/reviewer/maintenance ownership for finance-sensitive content;
+- evidence that X or YouTube reaches qualified YieldMax-oriented users and produces useful learning/downstream value.
 
 ### LogMate
 
@@ -142,7 +144,8 @@ Reading alone does not satisfy remaining gates.
 - category-buyer evidence for priority CEPs and future brand recognition;
 - whether candidate activation events predict later core-value use;
 - Search Console baseline once a public site/content surface exists;
-- primary-authority review process for jurisdiction-specific logbook/regulatory education.
+- primary-authority review process for jurisdiction-specific logbook/regulatory education;
+- evidence that YouTube or LinkedIn reaches qualified professional pilots in the relevant problem context.
 
 ### Company-wide
 
@@ -156,8 +159,9 @@ Reading alone does not satisfy remaining gates.
 - empirical rule for reallocating labor between active-demand capture and demand-development work;
 - store experiment registry/template retaining native platform definitions and downstream guardrails;
 - evidence threshold/timing for formal distinctive-asset measurement in small category populations;
-- **live content inventory, source/reviewer ownership, maintenance-class workflow and Search Console baseline for owned search assets;**
-- evidence-based rule for when a social platform deserves ongoing labor.
+- live content inventory, source/reviewer ownership, maintenance-class workflow and Search Console baseline for owned search assets;
+- **evidence-based platform admission and labor-budget thresholds for social operation;**
+- **current first-party Instagram/Threads measurement/policy mapping only if either platform becomes a real test candidate.**
 
 ## Planned later infrastructure
 
@@ -172,4 +176,4 @@ Reading alone does not satisfy remaining gates.
 
 Do not report percentage completion from file count. Curriculum progress is judged by demonstrated capability, evidence quality, applied exercises, and ability to advise real products.
 
-Current status: **Stage 1 active; fifteen integrated Foundation research blocks complete; owned-content/SEO operating system complete; selective-social operating system is next.**
+Current status: **Stage 1 active; sixteen integrated Foundation research blocks complete; selective-social operating system complete; deeper ad-supported monetization/UX decision system is next.**

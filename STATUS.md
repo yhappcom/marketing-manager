@@ -4,9 +4,9 @@ Last updated: 2026-09-16
 
 ## Current phase
 
-**Stage 1 — FOUNDATION COMPLETE. Stage 2 — Sparse-Niche Decision Science COMPLETE. Application & Live-Validation Readiness — IN PROGRESS.**
+**Stage 1 — FOUNDATION COMPLETE. Stage 2 — Sparse-Niche Decision Science COMPLETE. Application Readiness V1 — COMPLETE / FROZEN FOR LIVE VALIDATION.**
 
-Stage 1 research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`. Stage 2 research 020–024 is integrated and gate-reviewed in `curriculum/STAGE2_GATE_REVIEW.md`.
+Stage 1 research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`. Stage 2 research 020–024 is integrated and gate-reviewed in `curriculum/STAGE2_GATE_REVIEW.md`. Application Readiness integration is gate-reviewed in `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`.
 
 ## Canonical applied system
 
@@ -15,6 +15,7 @@ Stage 1 research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`
 - `playbook/EVIDENCE_PROVENANCE_BASELINE_PROTOCOL.md`
 - `playbook/LIVE_EVIDENCE_REGISTRY_TEMPLATE.md`
 - `playbook/PRODUCT_BASELINE_CHECKLISTS.md`
+- `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`
 
 Canonical growth chain:
 
@@ -36,45 +37,30 @@ Default to little/no direct cash spend. Store, owned/editorial, and permission-r
 
 Stage 2 Gate: **PASS**. Further methodology is added only when a live decision exposes a specific framework failure.
 
-## Application-readiness progress
+## Application Readiness V1 — COMPLETE
 
-### Evidence provenance & baseline measurement — COMPLETE V1
+### Evidence provenance & baseline measurement
 Native metric definitions are preserved. Apple and Google Store funnels remain separate at the native layer. Numeric zero is distinct from UNKNOWN, SUPPRESSED, NOT_INSTRUMENTED, NOT_APPLICABLE, and INVALID. Attribution stops where measurement stops. Baselines respect product/store/analytics change boundaries and natural workflow cycles.
 
-### Live Evidence Registry — COMPLETE V1
-`LIVE_EVIDENCE_REGISTRY_TEMPLATE.md` operationalizes the evidence protocol as an append-only audit layer with observation IDs, metric-definition versioning, missingness states, comparability groups, baseline-change events, T0–T4 transfer/decay, Decision Record linkage, and sparse-niche safeguards.
+### Live Evidence Registry and product checklists
+`LIVE_EVIDENCE_REGISTRY_TEMPLATE.md` provides the append-only audit layer. `PRODUCT_BASELINE_CHECKLISTS.md` instantiates it for MintTap and LogMate without invented values; LogMate pre-launch Store states may remain UNKNOWN.
 
-### Product baseline checklists — COMPLETE V1
-`PRODUCT_BASELINE_CHECKLISTS.md` instantiates the registry for MintTap and LogMate without invented values. MintTap covers Store, activation/retention, Search Console/content, YieldMax community permissions, ads, and decision readiness. LogMate explicitly permits pre-launch UNKNOWN states and separates proposition/pilot evidence from Store baselines that do not yet exist.
+### Community, content and social
+`research/025_niche_community_evidence_operations.md` governs permission, qualitative evidence and goodwill. `research/026_content_evidence_lifecycle.md` governs claim-level provenance/freshness. `research/028_selective_social_distribution_specialist_audiences.md` makes recurring social presence role- and evidence-gated rather than mandatory.
 
-### Campaign/source semantics — COMPLETE V1
-Apple campaign/source semantics and Google's 2026 Store Listing Performance metric-definition break are recorded. Historical observations retain the native definition that applied when captured; definition changes create a series/baseline boundary rather than silent splicing.
+### Ad-revenue quality economics
+`research/027_ad_revenue_quality_economics.md` replaces impression maximization with quality-adjusted inventory economics. Protect FIRST_VALUE/ONBOARDING and precision TASK_CRITICAL states from interruptive inventory by default; classify workflow state before format; treat suspicious CTR as an implementation-review signal; optimize retained useful use before increasing interruption/frequency.
 
-### Niche community evidence operations — COMPLETE V1
-`research/025_niche_community_evidence_operations.md` defines community participation as a governed evidence/trust surface before it is a distribution surface. Community relevance does not imply promotion permission; qualitative observations do not become prevalence estimates; permission and goodwill are constrained capital.
+### Integration gate — PASS
+`curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md` tested realistic MintTap/LogMate decisions spanning Store, community, content, social, ads, launch and cross-app labor allocation. All were routable without new general methodology.
 
-### Content evidence lifecycle — COMPLETE V1
-`research/026_content_evidence_lifecycle.md` connects specialist problem discovery to authoritative validation, claim-level provenance, publication, native performance evidence, and factual refresh/decay. Search performance and factual validity remain separate state machines.
+One concrete handoff gap was fixed: every material distribution asset must now identify both its upstream provenance and downstream measurement/decision destination using the minimum tuple:
 
-### Ad-revenue quality economics — COMPLETE V1
-`research/027_ad_revenue_quality_economics.md` replaces impression maximization with quality-adjusted inventory economics. Monetizable opportunity is distinct from maximum ad insertion. Product states are classified before format selection; possible, eligible, served and quality-adjusted inventory are separate. Revenue decisions pass policy/trust, eligibility, measurement and incremental-value gates. Short-run eCPM/ARPDAU cannot substitute for retained-use economics.
+`source evidence/claim IDs → asset/change ID → surface + permission/eligibility state → native measurement ID/definition → linked Decision Record`
 
-Locked ad operating rules:
+Unavailable elements remain UNKNOWN/NOT_INSTRUMENTED; attribution is not reconstructed after the fact.
 
-- protect FIRST_VALUE/ONBOARDING and precision TASK_CRITICAL states from interruptive inventory by default;
-- a navigation transition is not automatically a natural break;
-- app-open eligibility requires a genuine loading/waiting state; do not show on first use or after main content is already reached;
-- banners consume viewport and interaction safety even when non-interstitial; proximity to interactive controls is an accidental-click risk;
-- suspicious CTR is an implementation-review signal, not automatically a success signal;
-- severe policy/trust/workflow harm can trigger rollback before revenue uplift is resolved;
-- expand retained useful use and quality-adjusted eligible inventory before increasing interruption/frequency;
-- no universal ad frequency cap is invented without live evidence;
-- MintTap placement effects do not transfer to LogMate as effect-size evidence.
-
-Current Google AdMob/Google Play app-open, adaptive-banner, accidental-click and disruptive-ad guidance was revalidated on 2026-09-16 for this protocol.
-
-### Selective social distribution — COMPLETE V1
-`research/028_selective_social_distribution_specialist_audiences.md` makes recurring social presence evidence-gated rather than mandatory. Each account must have a distinct platform role (discovery, credibility, return, listening, or routing), target-audience fit evidence, provenance-preserving native adaptation, explicit maintenance economics, a weak-attribution evidence ladder, and continue/pause/stop governance. Generic cross-posting, engagement bait, algorithm-chasing cadence rules, and broad reach without target qualification are not company strategy. Current LinkedIn and Meta platform direction on authentic/original vs recycled/inauthentic content was revalidated on 2026-09-16.
+Apple Store surface semantics were revalidated 2026-09-16: Product Page Optimization (PPO) and Custom Product Pages (CPP) are separate operating objects. PPO is a randomized default-product-page experiment surface (up to three treatments for supported assets); CPP is a separately routed/localized page surface (up to 70 pages) with unique URLs/keywords and page-level analytics. PPO is not available for CPP. A CPP-specific conversion observation is not automatically causal lift versus default because traffic selection can differ.
 
 ## Capability state
 
@@ -82,16 +68,17 @@ Current Google AdMob/Google Play app-open, adaptive-banner, accidental-click and
 
 **STAGE 2 COMPLETE:** sparse inference; VOI/reversibility; monitoring/stopping; transfer/decay; multi-app labor allocation; decision routing; integration gate.
 
-**APPLICATION READINESS COMPLETE V1:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community evidence operations; content evidence lifecycle and claim-level freshness control; ad-revenue quality economics and task-state inventory governance; selective social platform-role/maintenance/attribution governance.
+**APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community operations; content evidence lifecycle; ad-revenue quality economics; selective social governance; cross-surface integration/handoff rules.
 
 **LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; social audience-fit/account economics; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
 
-## Next learning sequence
+## Next learning / operating sequence
 
-1. Perform an **Application Readiness integration check** across evidence, Store, community, content, selective social, ads and launch. Test whether the operating system can route realistic MintTap/LogMate decisions without adding new methodology.
-2. Identify only concrete operational gaps: missing handoffs, incompatible records, evidence states that cannot be represented, or decisions that cannot be routed. Fix those rather than extending theory.
-3. If integration passes, freeze Application Readiness V1 and shift learning toward live-decision support, first-party evidence collection, and product-specific validation as data becomes available.
-4. Populate actual evidence only when first-party/native data is available. Do not substitute generic estimates.
+1. **Do not extend general theory by default.** Application Readiness V1 is frozen.
+2. Shift to live-decision support and first-party evidence collection as actual MintTap/LogMate data becomes available.
+3. Open Decision Records for material choices, populate the minimum native evidence needed, and allocate labor to the current bottleneck.
+4. Research a new topic only if a live decision cannot be represented/routed, an authoritative platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
+5. Continue periodic authoritative-source revalidation for volatile Store/platform/ad/community rules, but report only changes that alter an operating rule.
 
 ## Major unresolved live questions
 
@@ -106,4 +93,4 @@ Measured labor capacity; maintenance demand by asset/channel; privacy-compliant 
 
 ## Progress interpretation
 
-Do not report progress by file count. The current objective is a trustworthy, reusable operating system for real niche-app growth. Missing live evidence remains explicitly unknown. Research now moves only into areas that materially improve execution quality rather than repeating completed foundation theory.
+Do not report progress by file count. The current objective is a trustworthy, reusable operating system for real niche-app growth. Missing live evidence remains explicitly unknown. Further learning now follows real evidence and concrete execution failures rather than accumulating adjacent theory.

@@ -11,6 +11,7 @@ Research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`; Stage 
 Stage 2 specialist-depth blocks completed:
 - `research/020_sparse_niche_experimentation_decision_quality.md`
 - `research/021_value_of_information_reversibility_experiment_priority.md`
+- `research/022_sequential_monitoring_stopping_staged_commitment.md`
 
 ## Locked company operating context
 
@@ -22,11 +23,7 @@ Operating constraints remain: default to little/no direct cash spend; Store page
 
 ## Stage 1 synthesis
 
-Canonical operating artifact:
-- `playbook/MARKETING_PLAYBOOK_V1.md`
-
-Review artifact:
-- `curriculum/STAGE1_GATE_REVIEW.md`
+Canonical operating artifact: `playbook/MARKETING_PLAYBOOK_V1.md`
 
 Optimization chain:
 `relevant demand → credible promise → qualified acquisition → meaningful activation → repeated core value → sustainable ad-bearing use`
@@ -34,36 +31,35 @@ Optimization chain:
 Weak growth diagnosis:
 `discoverability → intent/audience → Store/message/proof → activation → core-value retention → durable distribution → monetization execution`
 
-## Stage 2 retained conclusions — 020 + 021
+## Stage 2 retained conclusions — 020–022
 
 ### Sparse experiment interpretation (020)
-
 Every experiment separates data validity, effect estimate, uncertainty and business/practical significance. MPME is predeclared; INVALID and INCONCLUSIVE remain distinct; sparse traffic normally supports one high-contrast treatment vs control rather than many cosmetic variants; acquisition and monetization wins retain downstream quality guardrails.
 
 ### Value of information / experiment priority (021)
+Experimentation itself must earn its opportunity cost. Five canonical routes remain ACT + MONITOR, OBSERVE/TRIANGULATE, CONTROLLED EXPERIMENT, RESEARCH FIRST, and DEFER/DO NOT RESEARCH. Reversibility controls evidentiary burden; scarce traffic is a portfolio resource.
 
-New company rule: **experimentation itself must earn its opportunity cost.**
+### Sequential monitoring / stopping / staged commitment (022)
+New canonical distinction:
 
-Decision heuristic:
+`HEALTH LOOK ≠ DECISION LOOK`
 
-`research priority ≈ probability useful evidence changes the decision × consequence of choosing better × affected future population/use × useful decision lifetime − evidence cost − delay cost − opportunity cost`
+Operational health may be monitored during any experiment for assignment/instrumentation failure, crashes, policy/trust problems, severe guardrail harm or broken treatment. That permission does not authorize early winner selection from ordinary fixed-horizon statistics.
 
-This is a qualitative operating heuristic derived from decision-analysis/VOI principles, not a pseudo-precise EVSI calculation.
+Three monitoring contracts are now separated:
+1. **FIXED HORIZON** — health looks allowed; inferential decision follows the predeclared endpoint/method.
+2. **FORMAL SEQUENTIAL** — interim decision-making only when the exact configured statistical method supports sequential inference; vendor guarantees never transfer to another platform/method by analogy.
+3. **OPERATIONAL STAGED COMMITMENT** — gradually broaden exposure to control downside; rollout evidence is not automatically causal A/B proof.
 
-Five decision routes are now canonical:
-1. **ACT + MONITOR** — cheap/reversible, low downside, adequate existing evidence;
-2. **OBSERVE / TRIANGULATE** — causal proof unnecessary for a reversible choice but relevant independent signals can improve it;
-3. **CONTROLLED EXPERIMENT** — consequential uncertainty, meaningful wrong-choice cost, resolvable MPME, and randomization materially improves decision quality;
-4. **RESEARCH FIRST** — hypothesis itself is not mature enough to spend experimental traffic;
-5. **DEFER / DO NOT RESEARCH** — low consequence, evidence cannot change action, decision expires before resolution, or another question has higher value.
+Stop reasons are standardized as SUCCESS, HARM, INVALID, FUTILITY/LOW-VOI, MAX-HORIZON INCONCLUSIVE, or EXTERNAL/OBSOLETE. “Not significant” is not equivalence; an inconclusive stop is not proof of no effect.
 
-Reversibility classes R1–R4 now control evidentiary burden. Trust/policy/factual/regulatory boundaries are not experiment variables: authoritative evidence decides them.
+Sparse specialist apps may require both an evidence/sample condition and minimum relevant workflow/calendar coverage. No universal 7/14-day rule is assumed.
 
-Scarce traffic is treated as a portfolio resource. Candidate experiments compete for eligible users, calendar time and labor. Do not fragment traffic across low-value questions or keep underpowered tests alive merely to force a winner.
+Company rule:
+`monitor continuously for health ≠ decide continuously from ordinary statistics`
 
-Operational monitoring of a reversible implemented choice is explicitly separated from invalid repeated significance peeking in a fixed-horizon experiment.
-
-MintTap/LogMate examples in 021 remain HYPOTHETICAL; no live performance data is inferred.
+and
+`staged exposure reduces commitment risk; it does not manufacture causal certainty.`
 
 ## Capability state
 
@@ -72,7 +68,8 @@ FOUNDATION COMPLETE:
 
 STAGE 2 SPECIALIST DEPTH COMPLETE:
 - sparse-niche experiment validity / uncertainty / practical significance (`020`);
-- value-of-information / reversibility / experiment-priority / opportunity-cost routing (`021`).
+- value-of-information / reversibility / experiment-priority / opportunity-cost routing (`021`);
+- sequential monitoring/stopping, health-vs-decision looks, staged commitment and stop taxonomy (`022`).
 
 LIVE VALIDATION REQUIRED:
 - MintTap/LogMate audience, CEP, channel, Store, content and positioning maps;
@@ -81,19 +78,20 @@ LIVE VALIDATION REQUIRED:
 - community permission states;
 - actual Store/search performance;
 - ad implementation and long-run monetization effects;
-- launch cohort quality.
+- launch cohort quality;
+- product-specific workflow/calendar cycles, harm thresholds and useful experiment horizons.
 
 NOT YET BASELINED / NEXT THEORY GAPS:
-1. sequential monitoring/stopping and staged commitment under sparse evidence, including boundaries between operational monitoring and formal sequential inference;
+1. evidence-decay / external-validity rules: when prior learning transfers across app, geography, platform, version, audience or time and when it must be revalidated;
 2. multi-app portfolio labor/resource allocation;
-3. evidence-decay / external-validity rules: when prior learning transfers across app, geography, platform, version or time and when it must be revalidated.
+3. representative application of 020–022 to Store/content/community/ad decision queues without fabricated performance.
 
 ## Next integrated learning sequence — Stage 2
 
-1. Deepen **sequential monitoring/stopping and staged-commitment principles** without inventing platform statistical guarantees.
-2. Build evidence-transfer/external-validity rules so MintTap/LogMate/future-app learning is reused without assuming false equivalence.
-3. Apply 020–021 decision routing to representative Store/content/community/ad queues without fabricating performance.
-4. Build the multi-app portfolio labor-allocation system before simultaneous growth programs make it operationally necessary.
+1. Build **evidence-transfer / external-validity / evidence-decay rules** so MintTap, LogMate and future-app learning can be reused without assuming false equivalence.
+2. Apply 020–022 decision routing and monitoring contracts to representative Store/content/community/ad queues.
+3. Build the multi-app portfolio labor-allocation system before simultaneous growth programs make it operationally necessary.
+4. Revisit Stage 2 gate after those capabilities are integrated rather than adding endless standalone topics.
 
 ## Major OPEN / LIVE VALIDATION
 
@@ -109,7 +107,8 @@ NOT YET BASELINED / NEXT THEORY GAPS:
 - social audience-fit evidence;
 - actual release/launch cohort evidence;
 - real Store traffic ceiling and experiment resolution time;
-- prioritized live experiment/research queue using 021.
+- prioritized live experiment/research queue using 021;
+- natural workflow/calendar cycles and product-specific harm/rollback thresholds for 022.
 
 ### LogMate
 - launch geography/segment/regulatory boundaries;
@@ -121,7 +120,8 @@ NOT YET BASELINED / NEXT THEORY GAPS:
 - Store/content/social evidence after launch;
 - first launch execution evidence;
 - realistic launch traffic ceiling for experimentation;
-- prioritized launch-learning queue using 021.
+- prioritized launch-learning queue using 021;
+- natural workflow/calendar cycles and product-specific harm/rollback thresholds for 022.
 
 ### Company-wide
 - labor-time accounting convention;
@@ -130,18 +130,17 @@ NOT YET BASELINED / NEXT THEORY GAPS:
 - privacy-compliant measurement implementation;
 - long-run ad revenue per retained user;
 - native Apple/Google metric reporting without definition loss;
-- experiment registry implementation using 020–021 schemas;
+- experiment registry implementation using 020–022 schemas;
 - empirically refined MPME/rollback/stop thresholds;
 - distinctive-asset measurement timing;
 - live content inventory/maintenance workflow;
 - populated community permission ledger;
 - reusable launch record populated from actual launches;
-- sequential monitoring/stopping framework;
 - evidence-transfer/external-validity framework;
 - portfolio-level labor/resource allocation framework.
 
 ## Progress interpretation
 
-Do not report completion by file count. Stage 1 is complete because its domains form one coherent decision system. Stage 2 is judged by whether scarce evidence, traffic and labor can be converted into disciplined decisions without false precision or low-value research.
+Do not report completion by file count. Stage 1 is complete because its domains form one coherent decision system. Stage 2 is judged by whether scarce evidence, traffic and labor can be converted into disciplined decisions without false precision, invalid stopping, or low-value research.
 
-Current status: **Stage 2 active; sparse-experiment interpretation and value-of-information/experiment-priority systems complete. Next: sequential monitoring/stopping and staged commitment under sparse evidence.**
+Current status: **Stage 2 active; sparse interpretation, VOI/prioritization, and sequential monitoring/stopping/staged commitment are complete. Next: evidence transfer, external validity and evidence decay.**

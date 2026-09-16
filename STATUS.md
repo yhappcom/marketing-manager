@@ -24,6 +24,7 @@ Default to little/no direct cash spend. Store, owned/editorial, permission-respe
 - `playbook/LIVE_EVIDENCE_REGISTRY_TEMPLATE.md`
 - `playbook/PRODUCT_BASELINE_CHECKLISTS.md`
 - `playbook/INTENT_ROUTE_REGISTRY_TEMPLATE.md`
+- `playbook/STORE_PROOF_REGISTRY_TEMPLATE.md`
 - `playbook/MINTTAP_CODEX_MEASUREMENT_EXTRACTION_V1.md`
 - `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`
 
@@ -87,18 +88,14 @@ Operational artifacts:
 - `live_data/minttap/measurement_snapshot_v1.template.json`
 - `live_data/minttap/README.md`
 
-The actual Codex/Firebase sync and first snapshot are now a **separate execution track** handled independently. Marketing research must continue without waiting for that track.
+The actual Codex/Firebase sync and first snapshot are a **separate execution track** handled independently. Marketing research continues without waiting for that track.
 
 ### 042 — cross-surface intent routing for niche apps
 `research/042_cross_surface_intent_routing_for_niche_apps.md`
 
-Current first-party platform capabilities support a stronger zero-cash acquisition architecture than sending every source to one generic Store page.
+Current Apple CPP and Google Play CSL capabilities support a stronger zero-cash acquisition architecture than sending every source to one generic Store page.
 
-Apple currently supports up to 70 Custom Product Pages with unique URLs, differentiated screenshots/previews/promotional text/keywords, optional approved deep links, keyword-based search routing and page-level analytics. App Store campaign links can separately measure meaningful source packages, subject to privacy thresholds.
-
-Google Play currently supports up to 50 Custom Store Listings, including URL-, keyword-, country- and behavior/segment-targeted listings. URL-routed CSLs preserve external intent into the Store. Store performance can be analyzed by Store listing, traffic source, search term and UTM source/campaign. Since July 2026, Play Store-listing performance centers on unique Install/Open/Pre-register clicks rather than treating successful acquisition as the primary listing metric.
-
-The platform limits are capacity ceilings, not route targets. Sparse niche apps should use:
+Sparse niche apps should use:
 
 `many content assets → few source campaigns → very few durable intent routes → one coherent first-value promise`
 
@@ -111,6 +108,47 @@ Only if this is true should a new CPP/CSL route be created. Otherwise reuse an e
 Operational template:
 
 - `playbook/INTENT_ROUTE_REGISTRY_TEMPLATE.md`
+
+### 043 — specialist Store proof architecture
+`research/043_specialist_store_proof_architecture.md`
+
+The Store page is now modeled as an ordered proof system rather than a feature gallery.
+
+Current Apple guidance says up to the first three screenshots may appear in search when no app preview is present; Apple recommends leading with the strongest benefits/features and actual in-use experience. Google Play likewise reuses screenshots across Store/search/home/promotional surfaces and explicitly prioritizes actual UI in the first three screenshots.
+
+New company **Proof Triad** for specialist apps:
+
+1. **Recognition proof** — the qualified user immediately recognizes their exact job/problem.
+2. **Outcome proof** — actual UI shows the useful result the product produces.
+3. **Specialist proof** — one real domain-specific hard case demonstrates competence beyond a generic tool.
+
+Later assets follow a controlled Store Proof Stack:
+
+`recognition → outcome → specialist competence → workflow → trust/control → breadth → return value`
+
+A screenshot slot is justified by a pre-install uncertainty it resolves, not by the mere existence of a feature.
+
+Evidence classes:
+
+- E1 UI evidence
+- E2 computed-result evidence
+- E3 workflow evidence
+- E4 trust/control evidence
+- E5 social/scale evidence
+
+Company default is **E1/E2/E3/E4 before E5**. Real product evidence should dominate the first assets; awards/testimonials/generic CTA should not displace actual UI proof.
+
+Video is optional. For sparse specialist apps, add an App Store/Play preview video only when motion materially explains core value better than stills and the maintenance/localization burden is justified. “No video” is a valid deliberate choice.
+
+New operating rule — **Proof Before Breadth**:
+
+`first prove fit → then prove value → then prove specialist competence → then prove trust/workflow → only then show breadth`
+
+Operational template:
+
+- `playbook/STORE_PROOF_REGISTRY_TEMPLATE.md`
+
+Marketing owns intent, uncertainty, evidence, proof order and measurement. Design Studio owns visual composition, typography, crop/scale, color hierarchy, accessibility and final asset production.
 
 ## Current MintTap measurement state
 
@@ -147,9 +185,9 @@ Marketing research does **not** pause while waiting for Track A.
 ### Track B — continuing marketing research and system building
 
 1. Build evidence-based Intent Route candidates from recurring community/search/content problems rather than channel labels.
-2. Audit MintTap's current default App Store/Google Play message against the highest-value recurring YieldMax-investor intents.
-3. Develop the Store proof hierarchy: what belongs in first screenshot / subsequent proof / description / source content for specialist trust-heavy apps.
-4. Deepen community question-mining methodology so Reddit/blog activity feeds route discovery rather than becoming repetitive promotion.
+2. Use the Proof Triad/Store Proof Stack to evaluate Store creative and avoid generic feature dumping.
+3. Audit MintTap's actual current App Store/Google Play asset sequence against the proof framework before recommending redesign.
+4. Deepen community question-mining methodology so Reddit/blog activity feeds route discovery rather than repetitive promotion.
 5. Define source-package taxonomy for Apple campaign links and Google UTM tracking without over-fragmenting sparse traffic.
 6. Continue selective social research only where a target-qualified audience and routing role can be demonstrated.
 7. Coordinate visual Store assets with Design Studio and owned-web execution with Web Manager; Marketing owns audience/problem/promise/evidence requirements.
@@ -159,17 +197,18 @@ Marketing research does **not** pause while waiting for Track A.
 
 Priority order unless new evidence changes the queue:
 
-1. **Specialist Store proof architecture** — translate a narrow user problem into Store creative/text/proof sequencing without generic feature dumping.
-2. **Community → intent-route evidence mining** — rigorous method to turn repeated Reddit/blog/search questions into route candidates and content decisions while respecting promotion rules.
-3. **Source-package measurement taxonomy** — stable Apple campaign / Google UTM naming and consolidation rules for sparse traffic.
-4. **MintTap route inventory** — only after enough evidence has been assembled to avoid speculative segmentation.
-5. **LogMate launch-route inventory** — only after current implemented capabilities are sufficiently established.
+1. **Community → intent-route evidence mining** — rigorous method to turn repeated Reddit/blog/search questions into route candidates and content decisions while respecting promotion rules.
+2. **Source-package measurement taxonomy** — stable Apple campaign / Google UTM naming and consolidation rules for sparse traffic.
+3. **Specialist localization semantics** — adapt professional terminology/claims by market rather than literal translation.
+4. **MintTap Store proof audit** — audit actual live listing creative only after collecting current Store assets/evidence; hand visual remediation to Design Studio.
+5. **MintTap route inventory** — only after enough community/search/content evidence exists to avoid speculative segmentation.
+6. **LogMate launch-route/proof inventory** — only after implemented capabilities are sufficiently established.
 
 ## Major unresolved questions
 
 ### MintTap
 
-Actual runtime event inventory; AdMob↔Firebase linkage; activation/useful-return telemetry; Home ad revenue/harm; Store/search/source baseline; recurring community/search intent distribution; current default Store message fit; content freshness and claim inventory; Search Console baseline; Store experiment resolution.
+Actual runtime event inventory; AdMob↔Firebase linkage; activation/useful-return telemetry; Home ad revenue/harm; Store/search/source baseline; recurring community/search intent distribution; actual current Store Proof Triad quality; content freshness and claim inventory; Search Console baseline; Store experiment resolution.
 
 ### LogMate
 

@@ -28,6 +28,7 @@ Default to little/no direct cash spend. Store, owned/editorial, permission-respe
 - `playbook/COMMUNITY_INTENT_EVIDENCE_REGISTRY_TEMPLATE.md`
 - `playbook/SOURCE_PACKAGE_REGISTRY_TEMPLATE.md`
 - `playbook/MINTTAP_CODEX_MEASUREMENT_EXTRACTION_V1.md`
+- `playbook/MINTTAP_CROSS_FUNCTIONAL_ACTIVATION_REMEDIATION_BRIEF.md`
 - `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`
 
 Minimum material-asset handoff tuple:
@@ -38,7 +39,9 @@ Unavailable elements remain `UNKNOWN/NOT_INSTRUMENTED`. Attribution is not recon
 
 ## Canonical MintTap release state
 
-**MintTap 1.0.29 is RELEASED.** Repository branch `1.0.29`, previously audited at head `736bbc99a41c14130d82aeaa17ac81f0fc835a65`, remains the release-version implementation reference unless newer first-party release information supersedes it.
+**MintTap 1.0.29 is RELEASED.** Repository branch `1.0.29`, audited at head `736bbc99a41c14130d82aeaa17ac81f0fc835a65`, remains the release-version implementation reference unless newer first-party release information supersedes it.
+
+Owner-observed product state: the app has been released for roughly four months and only two accounts are known to show sustained use; one is the owner's separate account. This is treated as a **critical activation warning**, not a numerical retention rate, because the historical install/eligible cohort denominator is not available.
 
 ## Post-freeze live-readiness / operating deltas
 
@@ -65,22 +68,43 @@ Codex/Firebase→GitHub→Marketing Manager bridge is **PROVEN OPERATIONAL** for
 ### 046 — source-package measurement taxonomy
 `research/046_source_package_measurement_taxonomy.md`
 
-Sparse-niche acquisition measurement now uses a cross-platform **Source Package** above Apple/Google native parameters:
+Sparse-niche acquisition measurement uses a cross-platform **Source Package** above Apple/Google native parameters:
 
 `asset → source package → intent route → Store proof → first value → useful return → sustainable ad-bearing use`
 
-Required package tuple:
+Required tuple:
 
 `product × route × source-family × audience/market × lifecycle-window`
 
-New rules:
+Rules: **Package Before Parameter**, **Decision Before Granularity**, **Accumulate Before Splitting**, **Missing Is Not Zero**.
 
-- **Package Before Parameter** — define the decision package before Apple/Google tags.
-- **Decision Before Granularity** — a new measurement dimension requires a distinct decision, not merely a new post/asset.
-- **Accumulate Before Splitting** — sparse specialist traffic remains consolidated until evidence and volume justify segmentation.
-- **Missing Is Not Zero** — privacy thresholds, Other, unavailable fields and uninstrumented paths remain unknown/aggregated.
+### 047 — MintTap activation-barrier cross-functional diagnosis
+`research/047_minttap_activation_barrier_cross_functional_diagnosis.md`
 
-Apple campaign dashboard metrics are thresholded at 5 in the selected date range, making per-post campaign-token fragmentation particularly harmful for sparse traffic. Google UTM values are case-sensitive and inconsistent naming fragments reporting; Google Play also suppresses/groups low-volume acquisition data. Operational artifact: `playbook/SOURCE_PACKAGE_REGISTRY_TEMPLATE.md`.
+This is now the highest-priority live product diagnosis.
+
+Cross-functional evidence converges on **activation / time-to-first-value** as the strongest current bottleneck hypothesis, rather than a simple lack of promotion. Causal proof is still incomplete because historical GA4 funnel data is unavailable.
+
+Exact 1.0.29 + Design Studio findings:
+
+- Welcome provides auth plus Browse Demo, but only limited proof of why setup effort is worthwhile before sign-in.
+- Browse Demo is a strong product-comprehension asset, but protected actions mostly end in a read-only message rather than preserving the user's intent into sign-in/setup.
+- onboarding is configuration-first: language, country, currency, portfolio name, tax rate and notification configuration all appear before personal portfolio value;
+- notification permission is requested immediately on onboarding entry, before holdings/reminder value exists;
+- the first empty-Home tutorial sends users only to manual Add Transaction;
+- CSV/XLSX Import is already sophisticated but is one level deeper in the Add Transaction AppBar and is not a peer first-data choice;
+- onboarding already creates an initial portfolio, yet when Home is on `All Portfolios`, first Add Transaction passes no portfolio ID and the transaction screen leaves even a sole portfolio unselected;
+- after first value, Home exposes many important metrics at similar priority and inserts the inline ad between summary and holdings.
+
+Design Studio's existing MintTap audit independently diagnoses **information hierarchy, not information deficit**, and configuration-first onboarding. Its current preliminary Home direction is **Option B — Decision-First Portfolio Summary**, to be treated as a prototype baseline rather than a proven winner.
+
+New operating rule:
+
+`reduce obvious reversible activation friction → instrument first value → observe target users → then scale acquisition`
+
+Canonical collaboration brief:
+
+`playbook/MINTTAP_CROSS_FUNCTIONAL_ACTIVATION_REMEDIATION_BRIEF.md`
 
 ## Current MintTap measurement state
 
@@ -94,6 +118,7 @@ Apple campaign dashboard metrics are thresholded at 5 in the selected date range
 - readable profile population: 129; 7 have recorded recency, 122 missing.
 - account-recency retention baseline: **NOT YET VALID**.
 - Codex extraction bridge: **PROVEN OPERATIONAL**.
+- user-observed sustained-use evidence: **critical qualitative warning; not convertible to a retention rate without denominator**.
 
 ## Measurement access and privacy rule
 
@@ -103,46 +128,118 @@ Preferred access ordering:
 
 Never commit credentials, UID/email, raw `user_pseudo_id`, per-user investment data, raw device identifiers or stable pseudonymous user rows. Default exported minimum cell size: 5. `missing != inactive`; `observed users != eligible cohort`.
 
-## Two parallel operating tracks
+## Three parallel operating tracks
 
 ### Track A — live measurement execution
 
 1. Resolve GA4 property discovery/read permission without guessing IDs or modifying production configuration.
 2. Continue periodic aggregate Firestore snapshots until `lastActiveAt` coverage is stable enough for cohort interpretation.
 3. Once GA4 is readable, retrieve actual event inventory, version/platform distribution, `first_open/session_start/user_engagement/app_start`, automatic `ad_impression`, and aggregate ad revenue.
-4. Keep app redeploy unnecessary until existing telemetry is exhausted.
+4. Add/verify semantic first-value measurement in the remediation release; do not reconstruct it historically from weaker proxies.
 
 ### Track B — continuing marketing research/system building
 
-1. Apply evidence ladder and permission registry to future community/search observations.
-2. Use content as a lower-cost validation layer before multiplying Store routes.
-3. Preserve Proof Triad/Store Proof Stack for route-specific Store creative.
-4. Apply Source Package taxonomy before creating Apple campaign tokens or Google UTM campaigns.
-5. Develop specialist localization semantics rather than literal translation.
-6. Populate MintTap route/package inventory only from sufficient independent evidence.
-7. Continue LogMate pre-launch research without claims ahead of implementation.
-8. Coordinate visuals with Design Studio and owned-web execution with Web Manager.
+1. Continue specialist-app marketing learning independently of remediation implementation.
+2. Apply community evidence/permission frameworks to real target communities.
+3. Preserve Intent Route, Store Proof and Source Package governance.
+4. Continue specialist localization semantics rather than literal translation.
+5. Develop controlled Store/community growth plans that can restart once activation improves.
+6. Continue LogMate pre-launch research without claims ahead of implementation.
 
-## Immediate next research targets
+### Track C — MintTap activation / retention remediation — HIGHEST LIVE PRODUCT PRIORITY
 
-1. **Specialist localization semantics** — professional/tax/regulatory terminology and claims by market rather than literal translation.
-2. **Community permission operations** — turn actual target-community rules into a maintained permission ledger when concrete target communities are selected.
-3. **MintTap route + Source Package inventory** — only after sufficient real community/search/content evidence exists.
-4. **MintTap Store proof audit** — audit live listing creative against verified route/proof evidence; visual remediation belongs to Design Studio.
-5. **LogMate launch-route/proof inventory** — only after implemented capabilities are sufficiently established.
-6. **Source-package live validation** — once native acquisition data is available, test whether current package granularity reaches observable thresholds before enabling asset-level dimensions.
+#### Tranche 1 — activation rescue / relatively reversible
+
+1. Defer onboarding notification permission until the user has holdings and the reminder benefit is understandable.
+2. Auto-select the sole valid portfolio when only one exists, subject to exact invariant review.
+3. Make `Import my transactions` and `Add my first holding` peer first-data paths for an empty account.
+4. Turn Browse Demo protected-action attempts into a context-preserving `track my portfolio` sign-in/setup bridge rather than a dead-end read-only message.
+5. Implement/verify `first_portfolio_value_ready_v1` without investment-content parameters.
+6. Relocate the Home inline ad after a complete semantic value block when implementation review confirms low risk.
+
+#### Tranche 2 — structural UX
+
+1. Recompose onboarding around minimum-required setup and progressive disclosure while preserving calculation/data invariants.
+2. Prototype and validate Design Studio Option B Home hierarchy.
+3. Simplify normal Buy presentation while preserving market-price/FX automation and expert options.
+4. Introduce contextual notification invitation after first value.
+
+#### Tranche 3 — controlled growth restart
+
+1. Refresh Store Proof Triad after activation flow is credible.
+2. Evaluate CSV/XLSX Import as first-class Store/web proof because it directly reduces bootstrap cost for existing investors.
+3. Align `minttap.app` setup/import/support content with the actual repaired flow.
+4. Restart controlled Reddit/blog/source-package acquisition and evaluate source → Store → semantic first value, not installs alone.
+
+## Cross-functional ownership
+
+### Marketing Manager
+Own activation economics, first-value semantics, first-data segmentation, target-user research, Store/source promise, measurement gates and acquisition restart/stop decisions.
+
+### Design Studio
+Own activation-flow interaction/layout, empty-state chooser, demo→real handoff, onboarding recomposition, Option B Home prototype, ad relocation/layout stability and accessibility/human task validation. Content Design may perform bounded terminology work but is still early in its curriculum.
+
+### Web Manager
+Its curriculum is mature, but actual `minttap.app` production state remains OPEN until verified. Once the app bootstrap flow is settled, own setup/import guidance, support/FAQ, cross-surface expectation continuity and web operational acceptance.
+
+### Software Engineering Studio / product Codex
+Software Engineering Studio remains Foundation-stage; use it for bounded contract/invariant review, not as final architectural authority. Exact 1.0.29 product code/Codex evidence controls implementation truth: onboarding prerequisites, currency invariants, sole-portfolio selection, direct Import routing, demo intent resume, notification lifecycle and once-per-account activation recording.
+
+## Human validation requirement
+
+Passive analytics alone is insufficient at the current user volume. Recruit approximately **5–8 target YieldMax investors if feasible** through permission-respecting zero-cash channels, using sanitized/test data so real financial disclosure is unnecessary.
+
+Validate tasks rather than preferences:
+
+- understand MintTap's specialist job;
+- explore demo;
+- decide to track own portfolio;
+- complete minimum setup;
+- naturally choose Import vs Manual;
+- reach first personal portfolio result;
+- explain portfolio outcome/distributions/payback;
+- identify a real reason to return.
+
+Capture time-to-first-value, hesitation, import discovery, wrong turns/backtracking, terminology confusion and Home comprehension. Do not claim improved UX until task evidence exists.
+
+## Acquisition policy while activation is unresolved
+
+Do not stop marketing learning, useful community participation or content research. But **do not maximize installs into the current high-friction path**.
+
+Use acquisition primarily for:
+
+- demand/intent research;
+- usability participant recruitment;
+- problem-language validation;
+- community trust;
+- small source-package baselines.
+
+The scarce niche audience should not be consumed as unmeasured top-of-funnel traffic while first-value friction remains unresolved.
+
+## Immediate next research / operating targets
+
+1. **Track C execution:** bounded engineering/design review of the six Tranche-1 activation-rescue changes.
+2. **Specialist localization semantics:** continue the next pure research block in parallel.
+3. **Community permission operations:** identify target YieldMax communities suitable for research/usability recruitment and maintain their actual rules.
+4. **MintTap live Store proof audit:** after first-use remediation direction is fixed, audit current listing against actual Proof Triad and Import discoverability.
+5. **Web activation-support audit:** verify actual `minttap.app` state before assigning setup/import content work.
+6. **Controlled user validation:** prepare sanitized Import/manual test data and task script for 5–8 target users.
+7. **LogMate research:** continue independently without importing MintTap-specific solutions uncritically.
 
 ## Major unresolved questions
 
 ### MintTap
-GA4 property access; runtime event inventory; AdMob↔Firebase linkage; activation/useful-return telemetry; ad revenue/harm; stable `lastActiveAt` coverage; valid account-recency cohort definition; Store/search/source baseline; actual independent community/search intent distribution; target-community promotion permissions; live Store Proof Triad quality; Search Console baseline; first real Source Package volume.
+
+GA4 property access; historical install denominator; runtime event inventory; auth-provider abandonment; onboarding abandonment; demo→real conversion; Import discovery; manual-vs-import time-to-first-value; AdMob↔Firebase linkage; activation/useful-return telemetry; ad revenue/harm; stable `lastActiveAt` coverage; valid account-recency cohort definition; Store/search/source baseline; target-community permissions; live Store Proof quality; Search Console baseline; whether Option B improves real task performance.
 
 ### LogMate
+
 Production local-ledger/persistence; first-value validation; launch geography/segment/regulatory boundaries; demand/competitor/import priorities; analytics; retention cadence; ad model; pilot observations; professional-community permissions; regulatory authority mapping; launch traffic ceiling.
 
 ### Company-wide
-Native Firebase/GA4 access path; measured labor capacity; maintenance demand; long-run ad revenue per retained user; empirical stop thresholds; populated permission/claim ledgers; social qualified-response baselines; reusable launch records; evidence that routes/packages improve downstream user quality rather than Store conversion alone.
+
+Native Firebase/GA4 access path; measured labor capacity; maintenance demand; long-run ad revenue per retained user; empirical stop thresholds; populated permission/claim ledgers; social qualified-response baselines; reusable launch records; evidence that cross-functional activation remediation improves downstream user quality rather than cosmetic Store conversion alone.
 
 ## Progress interpretation
 
-Do not report progress by file count. The objective is a trustworthy reusable operating system for specialist-app growth. Missing live evidence remains explicitly unknown. Research moves to the next material operating gap rather than repeating established theory.
+Do not report progress by file count. The current highest-value problem is whether a target specialist user can reach personal first value with acceptable effort and understand why to return. Marketing learning continues, but product activation remediation has priority over scaling acquisition until evidence changes that conclusion.

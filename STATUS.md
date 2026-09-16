@@ -34,15 +34,16 @@ Owner-observed sustained use remains a critical activation warning, not a numeri
 - 056 Semantic First-Value Measurement Contract — **Semantic Boundary Before Funnel Metric**.
 - 057 MintTap First-Value Engineering Invariant Audit — **Tutorial State Is Not Measurement State**, **Attainment State Is Not Observation State**, **Durable Identity Before Deduplication**, **Render Boundary Before Route Boundary**, **Historical Unknown Stays Unknown**.
 - 058 MintTap Import Schema → Activation Fixture — **Schema Before Fixture**, **Parse Success Is Not Activation**, **Remove Confounds Before Comparing Routes**, **Currency Is an Activation Variable**.
+- 059 Route Discovery vs Route Efficiency Experiment Design — **Separate Discovery From Execution**, **Economic Equivalence Before Route Comparison**, **Prepared Input Is a Boundary, Not Free Work**, **Comprehension Beats Stopwatch**.
 
-## 058 — import schema / activation fixture
-`research/058_minttap_import_schema_activation_fixture.md`
+## 059 — normalized route experiment architecture
+`research/059_route_discovery_vs_route_efficiency_experiment_design.md`
 
-The actual 1.0.29 import schema is now verified from first-party release code. Canonical fields are `date`, `ticker`, `type`, `quantity`, `price`, `exchangeRate`, `memo`, `isDividendReinvestment`. Date/ticker/type/quantity/price are required; exchange rate is additionally required when the user's default currency is not USD. Memo and dividend-reinvestment are optional. The parser validates supported ticker, recognized buy/sell semantics, positive quantity/price, and currency-dependent exchange-rate requirements.
+The previous M1 and I1 fixtures cannot support direct Manual-vs-Import timing because transaction count and economic facts differ. Direct route comparison now uses normalized N1: the same three synthetic CONY/TSLY buy transactions for both Manual and Import. The schema-valid USD CSV remains `playbook/fixtures/minttap_i1_usd.csv`; Manual receives the identical facts in neutral human-readable form.
 
-The shipped template generator also proves that Import is localized rather than English-only, with localized headers/value tokens and a locked-header note. A schema-valid USD I1 CSV fixture now exists at `playbook/fixtures/minttap_i1_usd.csv`. It intentionally avoids sell-lot, reinvestment and FX confounds so the first fresh-user study can isolate route discovery and import comprehension.
+Two experiments are now explicitly separated. Study D measures unprompted route discovery and therefore does not assign a route. Study E measures intrinsic route execution and therefore assigns/counterbalances Manual versus Import after the participant reaches the route entry point. A single study cannot cleanly estimate both questions: route assignment destroys discovery evidence, while self-selection confounds route-efficiency comparison.
 
-Import parse/file-selection success remains an intermediate state. Activation still requires review/import completion followed by the semantic personal-result boundary defined in 056/057.
+Prepared-file timing is not end-to-end Import timing. Template/file preparation must be measured separately before any comparative ease/speed claim is allowed. Route preference also cannot be based on stopwatch alone: S2/S3 errors, review confidence and V3 comprehension remain acceptance constraints.
 
 ## Parallel tracks
 
@@ -55,19 +56,19 @@ Continue reusable niche-launch systems from actual product evidence. Community p
 ### Track C — MintTap activation / retention remediation — highest live-product priority
 Tranche 1 remains: defer notification permission; auto-select a sole portfolio subject to invariant review; expose Import and Manual as peer first-data paths; preserve Demo protected-action intent through sign-in/setup; implement/verify semantic first-value telemetry; relocate the Home inline ad after a complete value block if low risk.
 
-Tranche 1 has explicit acceptance architecture plus synthetic Manual/Import validation specifications. Import schema uncertainty is now closed for CSV; the USD I1 fixture is executable. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
+Tranche 1 has explicit acceptance architecture plus synthetic Manual/Import validation specifications. Import schema uncertainty is closed for CSV; the USD N1 Import fixture is executable. Direct Manual-vs-Import comparison now has an economically equivalent N1 Manual counterpart and explicit Study D/Study E boundaries. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
 
 ## Immediate next targets
-1. Audit the actual 1.0.29 UI path for Import discovery → template download → file selection → mapping/review → completion, and map each step to V1/V2 acceptance.
-2. Normalize M1 and I1 to the same economic dataset before comparative timing/friction claims.
-3. Verify localized Import/review semantics for KRW and at least one non-English path; currency-dependent required fields are now a known activation variable.
+1. Audit the actual 1.0.29 UI path for Import discovery → template download → file selection → mapping/review → completion when first-party source is accessible, and map each step to V1/V2 acceptance.
+2. Run/prepare N1 Study D and Study E protocols; do not mix route discovery with route-efficiency claims.
+3. Verify localized Import/review semantics for KRW and at least one non-English path; currency-dependent required fields are a known activation variable.
 4. Engineering handoff/review for 056+057: exact durable first-value marker, atomic compare/set, meaningful-result predicate, deletion epoch and Analytics-consent behavior.
 5. Audit exact current live Store creative when first-party assets are available.
 6. Run a MintTap high-risk localization ledger pilot using verified specialist terminology only.
 7. Build LogMate Promise-to-Value and pre-launch acceptance maps only from implemented capabilities.
 
 ## Unresolved questions
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery and UI-path performance; Manual-vs-Import qualitative first-value performance; CSV-vs-XLSX UX equivalence; localized Import comprehension; first-value implementation and exact result predicate; atomic persistence/eligibility semantics; account-deletion identity epoch; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery and UI-path performance; Manual-vs-Import qualitative first-value performance; end-to-end Import preparation burden; CSV-vs-XLSX UX equivalence; localized Import comprehension; first-value implementation and exact result predicate; atomic persistence/eligibility semantics; account-deletion identity epoch; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
 
 LogMate: production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; terminology conventions; launch traffic ceiling.
 

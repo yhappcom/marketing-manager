@@ -1,0 +1,4 @@
+date,ticker,type,quantity,price,memo,isDividendReinvestment
+2026-06-05,CONY,buy,10,12.00,fixture-I1,false
+2026-06-12,TSLY,buy,8,9.50,fixture-I1,false
+2026-07-03,CONY,buy,5,11.40,fixture-I1,false

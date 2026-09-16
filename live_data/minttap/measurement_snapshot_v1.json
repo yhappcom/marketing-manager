@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-16T06:35:37Z",
+  "source_window": {
+    "complete_day_start": "2026-08-19",
+    "complete_day_end": "2026-09-15",
+    "timezone_note": "GA4 property reporting timezone is UNKNOWN because the linked property could not be read; partial current day excluded.",
+    "partial_day_included": false
+  },
+  "release_scope": {
+    "target_release": "1.0.29",
+    "repository_ref": "1.0.29",
+    "platforms": [],
+    "notes": [
+      "yieldmax_tracker GitHub ref 1.0.29 resolved to 736bbc99a41c14130d82aeaa17ac81f0fc835a65.",
+      "GA4 version/platform activity could not be queried because the GA4 property ID could not be verified."
+    ]
+  },
+  "source_status": {
+    "ga4_data_api": {
+      "status": "BLOCKED_GA_PROPERTY_ID",
+      "detail": "Firebase Management analyticsDetails discovery returned HTTP 403 for the active Google principal; no verified GA4 property ID was available for a Data API request."
+    },
+    "firestore": {
+      "status": "AVAILABLE",
+      "detail": "Read-only aggregate query of users/{uid}.lastActiveAt completed successfully; no document IDs or user rows were exported."
+    },
+    "bigquery": {
+      "status": "NOT_LINKED",
+      "detail": "A successful read-only BigQuery dataset listing for yieldmax-tracker-7fc07 returned no datasets; no existing GA4 export dataset was observed."
+    }
+  },
+  "ga4": {
+    "event_inventory": [],
+    "daily_usage": [],
+    "focal_events": [],
+    "ad_monetization": [],
+    "version_platform": [],
+    "acquisition_optional": []
+  },
+  "firestore": {
+    "account_recency": {
+      "status": "AVAILABLE",
+      "as_of": "2026-09-16T06:35:37Z",
+      "profiles_total_readable": 129,
+      "profiles_with_last_active_at": 7,
+      "profiles_missing_last_active_at": 122,
+      "active_within_24h": null,
+      "active_within_7d": 6,
+      "active_within_30d": 7,
+      "inactive_31_to_90d": null,
+      "inactive_over_90d": null,
+      "future_or_invalid_timestamp_count": 0,
+      "notes": [
+        "lastActiveAt is a coarse authenticated-account recency signal, not GA DAU, WAU, MAU, or a session metric.",
+        "active_within_24h (1) and inactive bucket values below the minimum cell size were suppressed as null.",
+        "Missing lastActiveAt is preserved as missing, not treated as inactive."
+      ]
+    }
+  },
+  "quality": {
+    "minimum_cell_size": 5,
+    "suppressed_segment_count": 3,
+    "missingness_notes": [
+      "GA4 event inventory, usage, focal-event, advertising-revenue, and version/platform reports are unavailable because the linked GA4 property ID is not accessible to the active principal.",
+      "GA4 event absence cannot be inferred from this snapshot; first_open, session_start, user_engagement, app_start, and ad_impression remain UNKNOWN at runtime.",
+      "AdMob is present in the 1.0.29 source and Firebase Analytics is initialized, but remote AdMob-to-Firebase/Analytics linkage and revenue evidence are NOT_VERIFIED.",
+      "No existing BigQuery dataset/export was observed in the accessible project."
+    ],
+    "validation_passed": true,
+    "query_or_method_version": "minttap-codex-measurement-v1; firestore-rest-lastActiveAt-aggregate; ga4-discovery-2026-09-16"
+  }
+}

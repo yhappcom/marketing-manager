@@ -6,7 +6,7 @@ Last updated: 2026-09-16
 
 **Stage 1 — FOUNDATION COMPLETE. Stage 2 — Sparse-Niche Decision Science COMPLETE. Application Readiness V1 — COMPLETE / FROZEN FOR LIVE VALIDATION.**
 
-General theory remains frozen by default. New work follows live product evidence, authoritative platform changes, or concrete framework failures.
+General theory remains frozen by default. New work follows live product evidence, authoritative platform changes, concrete framework failures, or operational gaps exposed by MintTap/LogMate.
 
 Canonical growth chain:
 
@@ -23,8 +23,9 @@ Default to little/no direct cash spend. Store, owned/editorial, permission-respe
 - `playbook/EVIDENCE_PROVENANCE_BASELINE_PROTOCOL.md`
 - `playbook/LIVE_EVIDENCE_REGISTRY_TEMPLATE.md`
 - `playbook/PRODUCT_BASELINE_CHECKLISTS.md`
-- `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`
+- `playbook/INTENT_ROUTE_REGISTRY_TEMPLATE.md`
 - `playbook/MINTTAP_CODEX_MEASUREMENT_EXTRACTION_V1.md`
+- `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`
 
 Minimum material-asset handoff tuple:
 
@@ -40,15 +41,15 @@ First-party owner information supersedes earlier public-crawler uncertainty. Rep
 
 Platform-specific exact build numbers, phased rollout, territory availability and exact binary↔commit provenance remain separate facts when a decision requires them.
 
-## Post-freeze live-readiness deltas
+## Post-freeze live-readiness / operating deltas
 
 ### 029 — Store discovery surface change
 `research/029_ios27_app_store_discovery_surface_change.md`
 
-Store creative now has distinct discovery/search recognition, product-page persuasion and routed-message-continuity jobs. Apple PPO/CPP semantics remain separate.
+Store creative has distinct discovery/search recognition, product-page persuasion and routed-message-continuity jobs. Apple PPO and CPP remain different instruments.
 
 ### 030–032 — instrumentation audit and source recovery
-Initial default-branch inspection did not represent the live MintTap implementation. Version branches recovered the full product source; never equate default branch with production without evidence.
+Initial default-branch inspection did not represent the live MintTap implementation. Version branches recovered the full product source. Never equate default branch with production without evidence.
 
 ### 033–034 — activation/ad lifecycle
 `lastActiveAt` is a coarse authenticated-account recency signal only. MintTap first value is a **CODE-VERIFIED EVENT BOUNDARY / NOT YET VERIFIED AS INSTRUMENTED** at the successful normal authenticated Home calculated-state boundary with `summary.positions.isNotEmpty`.
@@ -74,32 +75,42 @@ Do not purchase Windsor.ai Basic/Standard for the current MintTap problem. Defau
 
 `native free analytics → zero-cash bridge/export → first-party BigQuery when raw evidence is needed → paid connector only after repeated operational bottleneck`
 
-### 040 — Codex ↔ Firebase bridge
-Current ChatGPT connector discovery does not expose native Firebase/Firestore/BigQuery access directly to this conversation. Owner confirms Codex can access Firebase.
-
-Preferred architecture:
+### 040–041 — Codex ↔ Firebase bridge and executable extraction contract
+Owner confirms Codex can access Firebase while this chat has no native Firebase/Firestore/BigQuery connector. Preferred bridge:
 
 `Firebase / Firestore / GA4 / BigQuery → Codex read-only access → local privacy filtering/aggregation → marketing-manager GitHub snapshot → Marketing Manager chat`
 
-GitHub is a non-sensitive evidence handoff layer, never a raw user-data warehouse.
-
-### 041 — executable MintTap measurement extraction contract
-`research/041_minttap_measurement_extraction_contract.md`
-
-The bridge is now executable rather than conceptual.
-
-Current official GA4 Data API supports the dimensions/metrics needed for the first pass, including runtime event inventory, app version/platform, engagement and aggregate advertising revenue. BigQuery is optional validation when already linked, not a prerequisite.
-
-MintTap 1.0.29 code verifies that `users/{uid}.lastActiveAt` is updated with a Firestore server timestamp for coarse authenticated activity. It remains account-recency evidence, not sessions or GA DAU/WAU/MAU.
-
-New operational artifacts:
+Operational artifacts:
 
 - `playbook/MINTTAP_CODEX_MEASUREMENT_EXTRACTION_V1.md`
 - `live_data/minttap/measurement_snapshot_v1.schema.json`
 - `live_data/minttap/measurement_snapshot_v1.template.json`
 - `live_data/minttap/README.md`
 
-The next gate is an actual Codex extraction that creates `live_data/minttap/measurement_snapshot_v1.json`.
+The actual Codex/Firebase sync and first snapshot are now a **separate execution track** handled independently. Marketing research must continue without waiting for that track.
+
+### 042 — cross-surface intent routing for niche apps
+`research/042_cross_surface_intent_routing_for_niche_apps.md`
+
+Current first-party platform capabilities support a stronger zero-cash acquisition architecture than sending every source to one generic Store page.
+
+Apple currently supports up to 70 Custom Product Pages with unique URLs, differentiated screenshots/previews/promotional text/keywords, optional approved deep links, keyword-based search routing and page-level analytics. App Store campaign links can separately measure meaningful source packages, subject to privacy thresholds.
+
+Google Play currently supports up to 50 Custom Store Listings, including URL-, keyword-, country- and behavior/segment-targeted listings. URL-routed CSLs preserve external intent into the Store. Store performance can be analyzed by Store listing, traffic source, search term and UTM source/campaign. Since July 2026, Play Store-listing performance centers on unique Install/Open/Pre-register clicks rather than treating successful acquisition as the primary listing metric.
+
+The platform limits are capacity ceilings, not route targets. Sparse niche apps should use:
+
+`many content assets → few source campaigns → very few durable intent routes → one coherent first-value promise`
+
+New company Route Consolidation Rule:
+
+`distinct intent × distinct Store story × measurable traffic × supported product value > maintenance + fragmentation cost`
+
+Only if this is true should a new CPP/CSL route be created. Otherwise reuse an existing route and distinguish source through campaign/UTM metadata.
+
+Operational template:
+
+- `playbook/INTENT_ROUTE_REGISTRY_TEMPLATE.md`
 
 ## Current MintTap measurement state
 
@@ -113,9 +124,7 @@ The next gate is an actual Codex extraction that creates `live_data/minttap/meas
 - AdMob↔Firebase automatic `ad_impression`: runtime/console linkage **UNKNOWN**.
 - `lastActiveAt`: release-version coarse account-recency signal.
 - Actual activation, useful-return cadence, ad impression frequency, paid value and retention/harm: **NOT YET BASELINED**.
-- Direct Firebase access from this chat: **NOT CURRENTLY AVAILABLE THROUGH A NATIVE CONNECTOR**.
-- Codex Firebase access: **OWNER-CONFIRMED AVAILABLE**.
-- Codex extraction specification/schema: **READY FOR FIRST LIVE RUN**.
+- Codex extraction specification/schema: **READY FOR FIRST LIVE RUN**, execution handled separately.
 
 ## Measurement access and privacy rule
 
@@ -127,37 +136,40 @@ Never commit Firebase credentials, UID/email, raw `user_pseudo_id`, per-user inv
 
 Default exported minimum cell size: **5**. Missing/unavailable data must never be silently converted to zero.
 
-Every metric must declare its unit: GA user/device-oriented population, account, session, event/impression, etc. Do not silently join GA device/user metrics to Firestore account recency.
+## Two parallel operating tracks
 
-## Immediate operating sequence
+### Track A — live measurement execution
 
-1. **Run the first Codex extraction contract.** Use `playbook/MINTTAP_CODEX_MEASUREMENT_EXTRACTION_V1.md` against the actual MintTap Firebase/GA4 environment.
-2. Create/update `live_data/minttap/measurement_snapshot_v1.json` only after validating it against the schema and privacy gates.
-3. First snapshot must determine actual 1.0.29 event inventory; `first_open/session_start/user_engagement/app_start`; `ad_impression` presence; aggregate ad-revenue availability; app-version/platform mix; Firestore `lastActiveAt` account-recency.
-4. If an equivalent semantic activation/useful-return event already exists at runtime under another name, inspect its semantics before proposing new app code.
-5. If absent, preserve future engineering handoff for one-time `first_portfolio_value_ready_v1` and deduplicated `portfolio_value_viewed_v1`; no investment-content parameters.
-6. Keep detail-return ad recreation unchanged until impression/revenue evidence can be compared with useful-use and harm guardrails.
-7. Establish acquisition→activation, activation→useful-return and useful-use→ad-revenue baselines only after source semantics align.
-8. Open channel/ad-frequency Decision Records only after live baseline evidence exists.
-9. Do not purchase paid analytics infrastructure unless the 039 cost gate is passed.
-10. Reuse the same privileged-source→aggregate-evidence architecture for LogMate when product telemetry becomes available.
+Handled independently through Codex/Firebase. When a validated `live_data/minttap/measurement_snapshot_v1.json` appears, Marketing Manager will consume it and open evidence-based measurement/monetization decisions.
 
-## First snapshot success questions
+Marketing research does **not** pause while waiting for Track A.
 
-1. Which events are actually observed for released 1.0.29?
-2. Are `first_open`, `session_start`, `user_engagement`, `app_start` and `ad_impression` present?
-3. Is GA `totalAdRevenue` queryable and non-missing?
-4. What proportion of current activity comes from 1.0.29 by platform?
-5. What account-recency distribution exists from Firestore `lastActiveAt`?
-6. Which requested metrics are blocked by permissions, missing linkage, instrumentation or reporting limits?
+### Track B — continuing marketing research and system building
 
-Do not reconstruct historical semantic activation from weaker proxies.
+1. Build evidence-based Intent Route candidates from recurring community/search/content problems rather than channel labels.
+2. Audit MintTap's current default App Store/Google Play message against the highest-value recurring YieldMax-investor intents.
+3. Develop the Store proof hierarchy: what belongs in first screenshot / subsequent proof / description / source content for specialist trust-heavy apps.
+4. Deepen community question-mining methodology so Reddit/blog activity feeds route discovery rather than becoming repetitive promotion.
+5. Define source-package taxonomy for Apple campaign links and Google UTM tracking without over-fragmenting sparse traffic.
+6. Continue selective social research only where a target-qualified audience and routing role can be demonstrated.
+7. Coordinate visual Store assets with Design Studio and owned-web execution with Web Manager; Marketing owns audience/problem/promise/evidence requirements.
+8. Continue LogMate pre-launch research without making claims ahead of product implementation.
 
-## Major unresolved live questions
+## Immediate next research targets
+
+Priority order unless new evidence changes the queue:
+
+1. **Specialist Store proof architecture** — translate a narrow user problem into Store creative/text/proof sequencing without generic feature dumping.
+2. **Community → intent-route evidence mining** — rigorous method to turn repeated Reddit/blog/search questions into route candidates and content decisions while respecting promotion rules.
+3. **Source-package measurement taxonomy** — stable Apple campaign / Google UTM naming and consolidation rules for sparse traffic.
+4. **MintTap route inventory** — only after enough evidence has been assembled to avoid speculative segmentation.
+5. **LogMate launch-route inventory** — only after current implemented capabilities are sufficiently established.
+
+## Major unresolved questions
 
 ### MintTap
 
-Actual runtime event inventory; existing activation/useful-return event semantics; AdMob↔Firebase linkage; automatic `ad_impression` coverage; actual activation rate/time-to-first-value; useful-return cadence; GA activity vs account-recency differences; Home inline-ad impressions/revenue per useful-use window; retention/harm; Store/search/source baseline; community permissions; content freshness; Search Console baseline; Store experiment resolution.
+Actual runtime event inventory; AdMob↔Firebase linkage; activation/useful-return telemetry; Home ad revenue/harm; Store/search/source baseline; recurring community/search intent distribution; current default Store message fit; content freshness and claim inventory; Search Console baseline; Store experiment resolution.
 
 ### LogMate
 
@@ -165,8 +177,8 @@ Production local-ledger/persistence; validation of FlightRecord first value; lau
 
 ### Company-wide
 
-Native Firebase/GA4 access path for this chat; measured labor capacity; maintenance demand; privacy-compliant event/ingestion path; long-run ad revenue per retained user; empirical stop thresholds; populated claim/permission ledgers; social qualified-response baselines; reusable launch records; proof that reusable assets reduce later labor.
+Native Firebase/GA4 access path for this chat; measured labor capacity; maintenance demand; long-run ad revenue per retained user; empirical stop thresholds; populated claim/permission ledgers; social qualified-response baselines; reusable launch records; proof that reusable assets reduce later labor; evidence that routed Store experiences improve downstream user quality rather than Store conversion alone.
 
 ## Progress interpretation
 
-Do not report progress by file count. The current bottleneck is **live first-party evidence**, not missing marketing theory. Further learning follows actual snapshots, authoritative platform deltas and concrete execution failures.
+Do not report progress by file count. The objective is a trustworthy reusable operating system for specialist-app growth. Missing live evidence remains explicitly unknown. Research should move to the next material operating gap rather than repeat established theory.

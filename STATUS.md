@@ -71,6 +71,11 @@ New operating tuple for material Store creative:
 
 Do not create CPPs simply because Apple allows many; sparse specialist traffic makes fragmentation costly.
 
+### Live-readiness repository audit — product instrumentation
+`research/030_product_instrumentation_readiness_audit.md` inspects the current default-branch product repositories rather than extending theory. MintTap/yieldmax_tracker currently declares `firebase_core` but not `firebase_analytics` or `google_mobile_ads`; LogMate declares Firebase Auth/Core/Cloud Functions but likewise not `firebase_analytics` or `google_mobile_ads`. Repository searches did not find those analytics/ad SDK APIs. This is **NOT OBSERVED IN CURRENT REPOSITORY**, not proof of production absence.
+
+Operational consequence: Store-native metrics may answer Store questions, but current repository evidence does not establish the first-party event path needed to connect qualified acquisition to meaningful first value, repeated core value, safe ad opportunities, and durable ad revenue. Do not infer activation/retention from Store installs or spend scarce niche traffic merely to create unmeasurable volume.
+
 ## Capability state
 
 **FOUNDATION COMPLETE:** value/trust, niche distribution, cash-light acquisition, Store, measurement, demand, positioning, activation/retention, SEO, selective social, community, ad monetization, launch.
@@ -79,29 +84,30 @@ Do not create CPPs simply because Apple allows many; sparse specialist traffic m
 
 **APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community operations; content evidence lifecycle; ad-revenue quality economics; selective social governance; cross-surface integration/handoff rules.
 
-**POST-FREEZE AUTHORITATIVE DELTAS:** 029 iOS/iPadOS 27 App Store discovery-surface/asset-role change.
+**POST-FREEZE AUTHORITATIVE/LIVE-READINESS DELTAS:** 029 iOS/iPadOS 27 App Store discovery-surface/asset-role change; 030 product instrumentation repository audit.
 
 **LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; social audience-fit/account economics; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
 
 ## Next learning / operating sequence
 
 1. **Do not extend general theory by default.** Application Readiness V1 remains frozen.
-2. Shift to live-decision support and first-party evidence collection as actual MintTap/LogMate data becomes available.
-3. Open Decision Records for material choices, populate the minimum native evidence needed, and allocate labor to the current bottleneck.
-4. Research a new topic only if a live decision cannot be represented/routed, an authoritative platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
-5. Continue periodic authoritative-source revalidation for volatile Store/platform/ad/community rules, but report only changes that alter an operating rule.
-6. Next high-value live-readiness task, absent first-party metrics: inspect product repositories for current Store asset/analytics/ad instrumentation readiness and identify only concrete measurement gaps; do not infer missing product behavior.
+2. Define MintTap and LogMate product-specific `first_value_reached` / core-task semantics from verified product workflow; do not invent activation definitions.
+3. Confirm whether production analytics/ad measurement exists outside the inspected repository state. Repository non-observation is not production proof.
+4. If product-event measurement is absent, specify/implement a minimal, privacy-reviewed semantic event contract before broad promotion or fine-grained experiments consume scarce specialist traffic.
+5. Connect event-definition versions to the Live Evidence Registry, then establish activation/retention/ad baselines and open channel-specific Decision Records.
+6. Continue periodic authoritative-source revalidation for volatile Store/platform/ad/community rules, but report only changes that alter an operating rule.
+7. Research a new topic only if a live decision cannot be represented/routed, an authoritative platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
 
 ## Major unresolved live questions
 
 ### MintTap
-Current Store/search/source baseline; canonical activation/retention; analytics schema; actual ad task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; social audience concentration and account economics; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence; iOS 27 discovery-asset/device coverage.
+Current Store/search/source baseline; canonical first-value/activation definition; analytics implementation outside current repository evidence; natural retention cadence; actual ad SDK/task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; social audience concentration and account economics; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence; iOS 27 discovery-asset/device coverage.
 
 ### LogMate
-Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; activation/workflow cadence; ad placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; social audience concentration and professional-credibility value; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence; pre-launch iOS 27 discovery-asset plan.
+Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; canonical first-value/activation definition; analytics implementation outside current repository evidence; workflow/retention cadence; actual ad SDK and placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; social audience concentration and professional-credibility value; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence; pre-launch iOS 27 discovery-asset plan.
 
 ### Company-wide
-Measured labor capacity; maintenance demand by asset/channel; privacy-compliant ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; populated content claim ledger; populated permission ledger; social account maintenance/qualified-response baselines; reusable launch record; proof that reusable assets reduce later labor.
+Measured labor capacity; maintenance demand by asset/channel; privacy-compliant event/ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; populated content claim ledger; populated permission ledger; social account maintenance/qualified-response baselines; reusable launch record; proof that reusable assets reduce later labor.
 
 ## Progress interpretation
 

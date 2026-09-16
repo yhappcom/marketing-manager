@@ -37,14 +37,18 @@ Owner-observed sustained use remains a critical activation warning, not a numeri
 - 059 Route Discovery vs Route Efficiency Experiment Design — **Separate Discovery From Execution**, **Economic Equivalence Before Route Comparison**, **Prepared Input Is a Boundary, Not Free Work**, **Comprehension Beats Stopwatch**.
 - 060 MintTap 1.0.29 Import UI Activation Path Audit — **Route Availability Is Not Route Discoverability**, **Happy Path Before Exception Path**, **Ingestion Is Not Value**, **Teach Both Before Optimizing Either**.
 - 061 Sparse-Niche Activation Observation Protocol — **Participant Evidence Before Percentages**, **Goal Language Before UI Language**, **Boundary Discipline Before Timing**, **Comprehension Is an Outcome**, **Intervention Is Data**.
+- 062 MintTap post-Import-save → first-value handoff — **Save Confirmation Is Not Value Confirmation**, **Background Readiness Is Not User Attainment**, **Completion Signals Must Point Toward Value**, **Measure Through the Handoff**.
 
-## 061 — executable fresh-user evidence protocol
-`research/061_sparse_niche_activation_observation_protocol.md`
-`playbook/MINTTAP_ACTIVATION_OBSERVATION_SHEET_V1.md`
+## 062 — post-Import value handoff verified
+`research/062_minttap_post_import_save_to_first_value_handoff.md`
+`playbook/MINTTAP_ACTIVATION_OBSERVATION_SHEET_V1.md` updated with post-save handoff fields.
 
-Study D and Study E are now operationally separated and have explicit start/stop boundaries, moderator constraints, S0–S3 incident coding, intervention logging, and V3 comprehension evidence. Small specialist rounds are explicitly treated as qualitative discovery: participant-level timing/completion may be recorded to explain incidents, but route percentages, mean-time superiority and population claims must not be manufactured from 5–8 users. Task wording states the real user goal and withholds Manual/Import/UI-route hints.
+Release code verifies that a successful Import saves the batch, calls `markUserDataChanged`, clears the selected-file state, displays the saved-import panel/success snackbar, and remains on `TransactionImportReviewScreen`. It does not automatically navigate to Home or present the personalized result. Meanwhile `UserDataChangeNotifier` clears caches/notifies listeners/prewarms derived data, and mounted Home listens for the matching revision and force-refreshes its summary. Therefore the data can be ready in the background while semantic first value remains unattained by the user.
 
-Study D tests unprompted route discovery from the common zero-data state. Study E removes discovery as a confound and compares Manual versus Import execution using economically equivalent N1 facts. Import Study E begins with the prepared canonical file available; therefore its time cannot support an end-to-end Import-speed claim. Semantic first value plus correct-enough result comprehension remains the stop condition.
+Canonical Import activation path is now:
+`discover → prepare/select → validate/review → save → post-save value handoff → personalized result presentation → comprehension`.
+
+A successful save/snackbar is ingestion evidence only. `first_portfolio_value` must remain attached to the personalized Home result presentation boundary. Study E must continue after save and explicitly record whether the user independently reaches Home/result or mistakes save confirmation for completion.
 
 ## Parallel tracks
 
@@ -57,21 +61,21 @@ Continue reusable niche-launch systems from actual product evidence. Community p
 ### Track C — MintTap activation / retention remediation — highest live-product priority
 Tranche 1 remains: defer notification permission; auto-select a sole portfolio subject to invariant review; expose Import and Manual as peer first-data paths; preserve Demo protected-action intent through sign-in/setup; implement/verify semantic first-value telemetry; relocate the Home inline ad after a complete value block if low risk.
 
-The peer-route proposal has direct release-code evidence: Manual is explicitly taught in the zero-data Transaction History path while Import is nested in Settings despite having localized templates, CSV/XLSX parsing, validation and review. This shifts the first Import intervention toward surface-level discoverability parity before redesigning the Import engine. Exact UI treatment remains subject to Product/Design review and fresh-user validation.
+The peer-route proposal has direct release-code evidence: Manual is explicitly taught in the zero-data Transaction History path while Import is nested in Settings despite having localized templates, CSV/XLSX parsing, validation and review. Discoverability parity is necessary but no longer sufficient: Import now also has a verified post-save value-handoff gap. Exact UI treatment remains subject to Product/Design review and fresh-user validation; an explicit “View portfolio results” action is a low-risk hypothesis, not a prescribed solution.
 
-Tranche 1 now has explicit acceptance architecture, economically equivalent synthetic Manual/Import data, and an executable qualitative observation sheet. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
+Tranche 1 now has explicit acceptance architecture, economically equivalent synthetic Manual/Import data, an executable qualitative observation sheet, and a verified Import post-save handoff boundary. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
 
 ## Immediate next targets
-1. Audit post-Import-save navigation/reload behavior to determine the actual code path from successful batch save to semantic first value; do not assume save automatically presents Home results.
-2. Verify localized Import/review semantics for KRW and at least one non-English path; currency-dependent required fields are a known activation variable.
-3. Engineering handoff/review for 056+057: exact durable first-value marker, atomic compare/set, meaningful-result predicate, deletion epoch and Analytics-consent behavior.
-4. Execute Study D/Study E when fresh target users are available; record incidents, not small-N population percentages.
-5. Audit exact current live Store creative when first-party assets are available.
-6. Run a MintTap high-risk localization ledger pilot using verified specialist terminology only.
-7. Build LogMate Promise-to-Value and pre-launch acceptance maps only from implemented capabilities.
+1. Verify localized Import/review semantics for KRW and at least one non-English path; currency-dependent required fields are a known activation variable.
+2. Engineering handoff/review for 056+057: exact durable first-value marker, atomic compare/set, meaningful-result predicate, deletion epoch and Analytics-consent behavior.
+3. Execute Study D/Study E when fresh target users are available; record incidents, including the newly verified post-save handoff, not small-N population percentages.
+4. Audit exact current live Store creative when first-party assets are available.
+5. Run a MintTap high-risk localization ledger pilot using verified specialist terminology only.
+6. Build LogMate Promise-to-Value and pre-launch acceptance maps only from implemented capabilities.
+7. After activation evidence improves, connect post-save handoff evidence to Store/community claim ceilings; do not claim end-to-end Import ease from parser/save evidence alone.
 
 ## Unresolved questions
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; fresh-user Import discovery performance; Manual-vs-Import qualitative first-value performance; end-to-end Import preparation burden; CSV-vs-XLSX UX equivalence; localized Import comprehension; post-save path to personalized result; first-value implementation and exact result predicate; atomic persistence/eligibility semantics; account-deletion identity epoch; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation; whether peer Manual/Import exposure creates meaningful choice overload.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; fresh-user Import discovery performance; Manual-vs-Import qualitative first-value performance; end-to-end Import preparation burden; CSV-vs-XLSX UX equivalence; localized Import comprehension; empirical post-save navigation behavior; first-value implementation and exact result predicate; atomic persistence/eligibility semantics; account-deletion identity epoch; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation; whether peer Manual/Import exposure creates meaningful choice overload; whether an explicit result CTA, automatic transition, or another pattern best closes the verified Import value-handoff gap without harming review/undo confidence.
 
 LogMate: production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; terminology conventions; launch traffic ceiling.
 

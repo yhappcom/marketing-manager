@@ -26,6 +26,7 @@ Default to little/no direct cash spend. Store, owned/editorial, permission-respe
 - `playbook/INTENT_ROUTE_REGISTRY_TEMPLATE.md`
 - `playbook/STORE_PROOF_REGISTRY_TEMPLATE.md`
 - `playbook/COMMUNITY_INTENT_EVIDENCE_REGISTRY_TEMPLATE.md`
+- `playbook/COMMUNITY_PERMISSION_LEDGER_TEMPLATE.md`
 - `playbook/SOURCE_PACKAGE_REGISTRY_TEMPLATE.md`
 - `playbook/SPECIALIST_LOCALIZATION_TERM_LEDGER_TEMPLATE.md`
 - `playbook/MINTTAP_CODEX_MEASUREMENT_EXTRACTION_V1.md`
@@ -69,11 +70,7 @@ Codex/Firebase→GitHub→Marketing Manager bridge is **PROVEN OPERATIONAL** for
 ### 046 — source-package measurement taxonomy
 `research/046_source_package_measurement_taxonomy.md`
 
-Sparse-niche acquisition measurement uses a cross-platform **Source Package** above Apple/Google native parameters:
-
-`asset → source package → intent route → Store proof → first value → useful return → sustainable ad-bearing use`
-
-Rules: **Package Before Parameter**, **Decision Before Granularity**, **Accumulate Before Splitting**, **Missing Is Not Zero**.
+Sparse-niche acquisition measurement uses a cross-platform Source Package above Apple/Google native parameters. Rules: **Package Before Parameter**, **Decision Before Granularity**, **Accumulate Before Splitting**, **Missing Is Not Zero**.
 
 ### 047 — MintTap activation-barrier cross-functional diagnosis
 `research/047_minttap_activation_barrier_cross_functional_diagnosis.md`
@@ -83,21 +80,20 @@ Highest-priority live product diagnosis. Cross-functional evidence converges on 
 ### 048 — specialist localization semantics
 `research/048_specialist_localization_semantics.md`
 
-Localization for narrow professional apps is now modeled as semantic governance, not translation:
+Localization for narrow professional apps is semantic governance, not translation. Rules: **Meaning Before Wording**, **Locale Is Not Market**, **Proof Travels With the Claim**, **Domain Review Before Scale**, **No Compliance by Translation**.
 
-`verified capability → specialist job → market professional vocabulary → platform surface → proof → validation`
+### 049 — community permission operations
+`research/049_community_permission_operations.md`
 
-New rules:
+Community marketing now has an action-specific permission model rather than a binary community-level allowed/blocked state:
 
-- **Meaning Before Wording** — preserve domain referent, scope, jurisdiction and user decision before literal similarity.
-- **Locale Is Not Market** — language localization and country/professional-context localization are separate decisions.
-- **Proof Travels With the Claim** — localized Store copy cannot outrun localized screenshot/product evidence.
-- **Domain Review Before Scale** — practitioner/domain validation outranks generic linguistic polish for specialist terminology.
-- **No Compliance by Translation** — tax/regulatory/compliance claims are re-established per jurisdiction.
+`community × action × disclosure × destination × account standing × current rule state → permission state`
 
-Semantic classes: S1 stable UI/product concept; S2 practitioner domain term; S3 jurisdiction-sensitive tax/regulatory term; S4 search-language synonym; S5 claim/risk language. Operational artifact: `playbook/SPECIALIST_LOCALIZATION_TERM_LEDGER_TEMPLATE.md`.
+Permission ladder separates native help, product mention, contextual linking, explicit announcement, research/usability recruitment, direct outreach and automation. `NOT_STATED` is not permission; observed competitor precedent is not permission evidence. Research recruitment is treated as its own permissioned commercial-interest action rather than a loophole around self-promotion rules.
 
-Platform implications validated against current Apple/Google documentation: Apple localized metadata can affect search and localized screenshots can be supplied; Google distinguishes language translation from country/region Custom Store Listings, and CSLs are not automatically translated. Therefore same-language markets can legitimately require different Store stories, while translation alone cannot substitute for missing product/jurisdiction support.
+New rules: **Permission Before Distribution**, **Action-Specific Permission**, **Native Value Before Exit**, **Disclosure Before Product Mention**, **Research Is a Permissioned Action**, **Removal Updates the Ledger**, **Trust Before Volume**.
+
+Current Reddit Help (checked 2026-09-16) confirms promotional content is not inherently spam but communities may prohibit it or impose their own limits; repeated/unwanted/unsolicited mass behavior is spam; users should check community-specific rules and contact moderators when uncertain. Reddit also prohibits unauthorized scraping/data collection and unsolicited automated outreach. Operational artifact: `playbook/COMMUNITY_PERMISSION_LEDGER_TEMPLATE.md`.
 
 ## Current MintTap measurement state
 
@@ -124,8 +120,8 @@ Platform implications validated against current Apple/Google documentation: Appl
 
 ### Track B — continuing marketing research/system building
 
-1. Apply the new semantic localization ledger to actual MintTap Korean/English and future LogMate market terminology only when capability/market evidence is available.
-2. Develop community permission operations from real target-community rules rather than generic assumptions.
+1. Populate community permission rows only for concrete MintTap/LogMate communities actually selected; re-check rules before material activity.
+2. Apply semantic localization ledger to actual high-risk terminology only when capability/market evidence exists.
 3. Preserve Intent Route, Store Proof and Source Package governance.
 4. Develop controlled Store/community growth plans that can restart once activation improves.
 5. Continue LogMate pre-launch research without claims ahead of implementation.
@@ -138,26 +134,26 @@ Tranche 2 remains structural onboarding/Home simplification and human validation
 
 ## Acquisition policy while activation is unresolved
 
-Do not stop marketing learning, useful community participation or content research. But do not maximize installs into the current high-friction path. Use scarce niche traffic primarily for demand/intent research, usability recruitment, problem-language validation, community trust and small source-package baselines.
+Do not stop marketing learning, useful community participation or content research. But do not maximize installs into the current high-friction path. Use scarce niche traffic primarily for demand/intent research, usability recruitment, problem-language validation, community trust and small source-package baselines. Any usability recruitment in third-party communities requires its own permission state; calling an activity “research” does not bypass community promotion/survey rules.
 
 ## Immediate next research / operating targets
 
-1. **Community permission operations:** build a maintained rule/permission ledger model for target communities and distinguish research participation, helpful linking, self-promotion and recruitment permissions.
+1. **MintTap concrete community permission pilot:** identify only genuinely relevant target communities, capture current rules/pinned threads, and populate action-specific permission states without assuming promotion/recruitment rights.
 2. **Track C execution:** continue bounded engineering/design review of the six Tranche-1 activation-rescue changes.
-3. **MintTap localization ledger pilot:** populate only high-risk terms (distribution/dividend, ROC, reverse split, cost basis/principal recovery, withholding/settlement) from verified product/tax evidence; do not invent jurisdiction claims.
+3. **MintTap localization ledger pilot:** populate only high-risk terms from verified product/tax evidence.
 4. **MintTap live Store proof audit:** after first-use remediation direction is fixed, audit current listing against Proof Triad and Import discoverability.
-5. **Controlled user validation:** prepare sanitized Import/manual task protocol for target YieldMax users.
-6. **LogMate localization pilot:** only after implemented capability and target authority/market are sufficiently defined.
+5. **Controlled user validation:** prepare sanitized Import/manual task protocol; recruitment only where explicitly/conditionally permitted.
+6. **LogMate community permission pilot:** only for concrete pilot communities selected for workflow/terminology validation.
 
 ## Major unresolved questions
 
 ### MintTap
 
-GA4 property access; historical install denominator; runtime event inventory; auth/onboarding abandonment; demo→real conversion; Import discovery; manual-vs-import time-to-first-value; AdMob↔Firebase linkage; activation/useful-return telemetry; stable `lastActiveAt` coverage; Store/search/source baseline; target-community permissions; live Store Proof quality; whether Korean/English terminology currently conflates distribution/dividend or ROC/tax treatment; whether Option B improves real task performance.
+GA4 property access; historical install denominator; runtime event inventory; auth/onboarding abandonment; demo→real conversion; Import discovery; manual-vs-import time-to-first-value; AdMob↔Firebase linkage; activation/useful-return telemetry; stable `lastActiveAt` coverage; Store/search/source baseline; exact permission states of target YieldMax communities; live Store Proof quality; whether Korean/English terminology conflates distribution/dividend or ROC/tax treatment; whether Option B improves real task performance.
 
 ### LogMate
 
-Production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; professional-community permissions; regulatory authority mapping; terminology conventions by target market; launch traffic ceiling.
+Production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; exact permission states of selected pilot communities; regulatory authority mapping; terminology conventions by target market; launch traffic ceiling.
 
 ### Company-wide
 

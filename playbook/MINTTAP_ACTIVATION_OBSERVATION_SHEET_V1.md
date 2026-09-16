@@ -9,7 +9,7 @@ Build/version:
 Device/OS:
 Locale:
 Default currency:
-Study: D discovery / E Manual / E Import
+Study: D discovery / E Manual / E Import / K1 KRW prepared-file / K2 KRW end-to-end preparation
 Moderator:
 
 ## Study D — unprompted discovery
@@ -60,6 +60,31 @@ Correct / partially correct / materially incorrect, with evidence:
 Stop reason: semantic first value + comprehension / abandonment / blocker
 Elapsed time (descriptive only):
 
+## KRW / non-USD currency-semantic boundary
+Complete for K1 and K2. Do not use K1 to infer preparation ease.
+
+Study boundary:
+- K1: participant receives a schema-valid localized file with synthetic exchange rates already populated.
+- K2: participant receives normalized transaction facts and must use the product's own instructions/template to prepare the import, including required exchange-rate inputs.
+
+Before moderator explanation, record the participant's own interpretation.
+
+Exchange-rate field noticed without prompt? yes/no + evidence:
+Participant's interpretation of exchange-rate direction/unit:
+Participant's interpretation of whether rate is transaction-date-specific:
+Participant's interpretation of unit price (USD) versus reporting/default currency:
+How participant decided which exchange-rate value to enter (K2 only):
+Did product wording alone enable a confident choice? yes/no + evidence:
+Validation/error message encountered:
+Participant's interpretation of that message:
+Review surface: did participant verify rate/currency meaning before save? yes/no + evidence:
+Post-import Home: participant explanation of how USD transaction values became KRW/reporting-currency values:
+Currency-semantic incident severity S0–S3 + evidence:
+Moderator intervention required? yes/no + exact boundary:
+
+K1 claim ceiling: execution/review/save/value-handoff evidence only; never preparation-ease evidence.
+K2 claim ceiling: record the strongest independently completed boundary; do not infer broader locale/currency parity from one sparse session.
+
 ## Incident ledger
 Repeat rows as needed.
 
@@ -77,6 +102,7 @@ Any wording/terminology they interpreted differently from intended?
 Independent completion must not include moderator-assisted completion.
 Do not calculate or publish small-N route percentages or mean-time superiority claims.
 A successful Import save/snackbar is ingestion evidence, not semantic first value. Continue observation through personalized-result presentation and comprehension.
+For K1, pre-populated exchange rates deliberately remove preparation work; K1 cannot support claims that KRW Import is easy to prepare.
 Recurring mechanism across participants:
 Any S3 requiring investigation before acquisition restart:
 Any independently repeated S2:

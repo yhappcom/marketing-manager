@@ -1,0 +1,4 @@
+date,ticker,type,quantity,price,exchangeRate,memo,isDividendReinvestment
+2026-06-05,CONY,buy,10,12.00,1365.00,fixture-K1-KRW,false
+2026-06-12,TSLY,buy,8,9.50,1372.00,fixture-K1-KRW,false
+2026-07-03,CONY,buy,5,11.40,1380.00,fixture-K1-KRW,false

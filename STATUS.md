@@ -32,24 +32,26 @@ Owner-observed sustained use remains a critical activation warning, not a numeri
 - 054 MintTap 1.0.29 Home Ad Value-Block Mapping — **Monetization Boundary Must Follow Comprehension Boundary**.
 - 055 Activation Remediation Acceptance Architecture — **Semantic Friction Before Mechanical Friction**, **Acceptance Before Implementation**, **Invariant Before Convenience**, **Acquisition Restart Is a Gate**.
 - 056 Semantic First-Value Measurement Contract — **Semantic Boundary Before Funnel Metric**.
+- 057 MintTap First-Value Engineering Invariant Audit — **Tutorial State Is Not Measurement State**, **Attainment State Is Not Observation State**, **Durable Identity Before Deduplication**, **Render Boundary Before Route Boundary**, **Historical Unknown Stays Unknown**.
 
-## 056 — semantic first-value contract + controlled fixtures
-`research/056_semantic_first_value_measurement_contract.md`
-`playbook/MINTTAP_FIRST_VALUE_VALIDATION_FIXTURES_V1.md`
+## 057 — first-value engineering invariant audit
+`research/057_minttap_first_value_engineering_invariant_audit.md`
 
-MintTap first value is now specified as a product-domain boundary rather than a convenient UI completion event:
-`eligible real portfolio context + accepted real data + successful derived personal result render`.
+The 056 contract was checked against MintTap 1.0.29 implementation. `app_start` is emitted before auth/onboarding/value and cannot proxy activation. `UserActivityService` demonstrates UID-scoped local suppression plus account-level Firestore recency, but `lastActiveAt` is not first-value evidence. Authenticated Home has a real post-calculation boundary after `HomeSummaryService.loadSummaryOnlyForUser`, while Browse/Demo has an explicit separate path and remains excluded.
 
-Candidate aggregate event: `first_portfolio_value`. It must not fire from sign-in, onboarding completion, transaction submit, file parse/import completion or Home open alone. Demo/sample contexts are excluded. Parameters default to none; if route evidence is decision-critical, only bounded enums such as `manual|import` are eligible. Ticker, holdings, quantities, prices, tax/distribution values, portfolio names, file names, email/UID and other financial/identifying data are excluded.
+`summary.positions.isNotEmpty` is code-backed evidence that the empty first-transaction state has been exited, but is not sufficient by itself: a meaningful derived personal result must also successfully reach rendered Home state.
 
-Deduplication is a business-semantic requirement independent of Analytics delivery. Engineering must explicitly define reinstall, logout/account change, deletion, multi-device and consent-transition eligibility before implementation; Marketing does not invent these semantics. Existing users are not retrospectively backfilled from holdings or `lastActiveAt`.
+The existing `first_transaction_tutorial_completed` SharedPreferences boolean is device-global/unscoped in the audited Home code and must not be reused for account-level first-value deduplication. First-value semantics require durable account-scoped state or equivalent, with multi-device, account-switch, reinstall and logout invariants. Analytics observability remains separate from product attainment; if collection was unavailable at attainment, historical events are not fabricated later.
 
-Controlled validation fixtures M1 and I1 now provide synthetic Manual and Import tasks without exposing participant brokerage records. Small-N observations remain failure-mode discovery, not population estimation.
+Conceptual engineering shape:
+`Home non-demo calculated summary → eligible real-data/result predicate → durable account-scoped compare/set → Analytics emission only on newly attained transition`.
+
+Exact schema, atomic compare/set, account-deletion epoch behavior and exact meaningful-result predicate remain engineering/product decisions.
 
 ## Parallel tracks
 
 ### Track A — measurement
-Resolve GA4 discovery/read access without guessing IDs or modifying production configuration. Continue privacy-filtered aggregate Firestore snapshots until recency coverage stabilizes. Engineering review/implementation of the 056 first-value contract is now a prerequisite for interpreting activation. Verify placement-level aggregate ad evidence and aggregate ad revenue before monetization experiments.
+Resolve GA4 discovery/read access without guessing IDs or modifying production configuration. Continue privacy-filtered aggregate Firestore snapshots until recency coverage stabilizes. Hand off 056+057 first-value contract/invariants for engineering review; implementation remains NOT VERIFIED. Verify placement-level aggregate ad evidence and aggregate ad revenue before monetization experiments.
 
 ### Track B — marketing learning
 Continue reusable niche-launch systems from actual product evidence. Community permission work is action-triggered rather than generic. Continue LogMate pre-launch work without claims ahead of implementation. Advertising research proceeds through actual workflow/value-block evidence rather than generic format comparisons.
@@ -60,15 +62,15 @@ Tranche 1 remains: defer notification permission; auto-select a sole portfolio s
 Tranche 1 has explicit acceptance architecture plus synthetic Manual/Import validation fixtures. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
 
 ## Immediate next targets
-1. Perform an engineering-facing invariant audit for the 056 event: exact trigger location, persistence/deduplication semantics, reinstall/logout/account-switch/deletion/multi-device/consent behavior.
-2. Convert M1/I1 fixture specification into implementation-ready CSV/XLSX artifacts only when the actual Import schema is verified; do not guess column requirements.
-3. Audit remaining 1.0.29 first-session interruptions/defaults only where code evidence materially changes Tranche-1 acceptance conditions.
+1. Verify the actual MintTap Import schema from 1.0.29 code and convert M1/I1 specifications into implementation-ready CSV/XLSX fixtures without guessing columns.
+2. Audit remaining 1.0.29 first-session interruptions/defaults only where code evidence materially changes Tranche-1 acceptance conditions.
+3. Engineering handoff/review for 056+057: exact durable first-value marker, atomic compare/set, meaningful-result predicate, deletion epoch and Analytics-consent behavior.
 4. Audit exact current live Store creative when first-party assets are available.
 5. Run a MintTap high-risk localization ledger pilot using verified specialist terminology only.
 6. Build LogMate Promise-to-Value and pre-launch acceptance maps only from implemented capabilities.
 
 ## Unresolved questions
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery and canonical file schema; manual-vs-import qualitative first-value performance; first-value event persistence/eligibility semantics; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery and canonical file schema; manual-vs-import qualitative first-value performance; first-value implementation and exact result predicate; atomic persistence/eligibility semantics; account-deletion identity epoch; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
 
 LogMate: production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; terminology conventions; launch traffic ceiling.
 

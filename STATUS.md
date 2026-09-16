@@ -45,7 +45,7 @@ First-party owner information supersedes earlier public-crawler uncertainty. Rep
 
 ### 029–041 — release, instrumentation, measurement access
 
-Store discovery changes, release-source recovery, activation/ad lifecycle, 1.0.29 release correction, activation cohort design, zero-cash measurement access architecture and Codex↔Firebase extraction contract remain canonical. The actual Firebase/Codex extraction is a separate execution track and does not block research.
+Store discovery changes, release-source recovery, activation/ad lifecycle, 1.0.29 release correction, activation cohort design, zero-cash measurement access architecture and Codex↔Firebase extraction contract remain canonical.
 
 ### 042 — cross-surface intent routing
 `research/042_cross_surface_intent_routing_for_niche_apps.md`
@@ -80,35 +80,43 @@ Rule: **Proof Before Breadth**. Operational artifact: `playbook/STORE_PROOF_REGI
 ### 044 — community → intent-route evidence mining
 `research/044_community_intent_evidence_mining.md`
 
-Community marketing is now modeled as a **permission-constrained demand-sensing system**, not a link-distribution tactic.
+Community marketing is modeled as a permission-constrained demand-sensing system, not a link-distribution tactic.
 
-Current Reddit guidance confirms promotional content is not inherently spam, but individual communities can prohibit it or impose self-promotion rules. Repeated/unwanted mass posting is prohibited. Reddit also prohibits unauthorized scraping, so demand mining must use permitted browsing/participation, authorized interfaces and aggregate/manual evidence rather than a bulk scraper.
-
-New evidence ladder:
+Evidence ladder:
 
 `C1 isolated expression → C2 independent recurrence → C3 cross-surface corroboration → C4 behavioral validation → C5 durable economic validation`
 
-A single post/question can justify a useful answer or vocabulary note, not a dedicated Store route. Route creation normally requires at least C2 plus a genuinely distinct product/Store story; C3 is preferred.
+Rules: **Evidence Before Route** and **Native Help Before Promotion**. Operational artifact: `playbook/COMMUNITY_INTENT_EVIDENCE_REGISTRY_TEMPLATE.md`.
 
-New rules:
+### 045 — first live measurement snapshot interpretation
+`research/045_first_live_measurement_snapshot_interpretation.md`
 
-**Evidence Before Route**
+The first validated `live_data/minttap/measurement_snapshot_v1.json` is now present. The Codex/Firebase→GitHub→Marketing Manager bridge is therefore **PROVEN OPERATIONAL** for privacy-filtered aggregate first-party evidence.
 
-`community/search expression → independent recurrence → corroborated intent → truthful product proof → route`
+Observed source state:
 
-**Native Help Before Promotion**
+- Firestore: AVAILABLE.
+- GA4 Data API: `BLOCKED_GA_PROPERTY_ID` because the active Google principal could not discover the linked property through Firebase Management (`analyticsDetails` returned HTTP 403).
+- BigQuery: no accessible dataset/export observed; recorded as `NOT_LINKED` in the snapshot.
+- AdMob↔Firebase/Analytics linkage and runtime revenue evidence: NOT VERIFIED.
 
-External participation should solve the user's problem natively, disclose relevant affiliation and link only where community rules/context permit. Optimize qualified conversations, reusable problem evidence and trust before outbound clicks.
+First live account-recency aggregate:
 
-Evidence must be normalized by job, not keyword alone:
+- 129 readable profiles;
+- 7 profiles with `lastActiveAt`;
+- 122 profiles missing `lastActiveAt`;
+- 6 of the recorded subset within 7 days;
+- all 7 recorded profiles within 30 days;
+- no invalid/future timestamp in the aggregate;
+- small cells suppressed under minimum cell size 5.
 
-`audience + trigger/context + desired outcome + specialist constraint`
+Critical interpretation: `lastActiveAt` is now **RUNTIME-OBSERVED / PARTIAL-COVERAGE**, but the current 7-account subset is not a valid complete retention cohort. Missing `lastActiveAt` is not inactive, and observed users are not automatically the eligible denominator.
 
-Independence and durability are explicit. Multiple comments in one viral thread do not equal multiple independent demand observations. Event-driven finance/aviation bursts are separated from evergreen/periodic demand.
+New company rule: **Telemetry Coverage Before Retention**.
 
-Owned communities such as r/MintTapforYieldMax are marked separately so company-seeded discussion is not recycled as independent market demand.
+`eligible population → observed telemetry coverage → stable coverage window → cohort return metric`
 
-Operational artifact: `playbook/COMMUNITY_INTENT_EVIDENCE_REGISTRY_TEMPLATE.md`.
+No channel, Store-route, ad-frequency or retention decision should change from this first recency snapshot alone.
 
 ## Current MintTap measurement state
 
@@ -116,9 +124,14 @@ Operational artifact: `playbook/COMMUNITY_INTENT_EVIDENCE_REGISTRY_TEMPLATE.md`.
 - Firebase Analytics initialization / custom `app_start`: code-verified.
 - Mobile Ads initialization: code-verified.
 - semantic first-value boundary: code-verified; runtime event implementation not yet verified.
-- useful-return telemetry, automatic `ad_impression`, aggregate paid value and retention/harm: not yet baselined.
-- Firestore `lastActiveAt`: coarse account-recency signal only.
-- Codex extraction specification/schema: ready; execution handled separately.
+- useful-return telemetry: not baselined.
+- Home detail-return ad recreation: code-verified.
+- automatic `ad_impression` / aggregate ad revenue: UNKNOWN because GA4 property access remains blocked and AdMob↔Firebase linkage is not verified.
+- Firestore `lastActiveAt`: **runtime-observed with partial coverage**.
+- readable profile population in first snapshot: 129; 7 have recorded recency, 122 missing.
+- account-recency retention baseline: **NOT YET VALID**.
+- Codex extraction bridge: **PROVEN OPERATIONAL**.
+- first live aggregate snapshot: **AVAILABLE / VALIDATED**.
 
 ## Measurement access and privacy rule
 
@@ -128,11 +141,27 @@ Preferred access ordering:
 
 Never commit credentials, UID/email, raw `user_pseudo_id`, per-user investment data, raw device identifiers or stable pseudonymous user rows to the marketing repository. Default exported minimum cell size: 5. Missing data is never silently converted to zero.
 
+For newly introduced telemetry in an existing population:
+
+`missing != inactive`
+
+and
+
+`observed users != eligible cohort`.
+
 ## Two parallel operating tracks
 
 ### Track A — live measurement execution
 
-Handled independently through Codex/Firebase. Marketing Manager consumes a validated aggregate snapshot when available.
+First snapshot completed successfully.
+
+Next measurement priorities:
+
+1. Resolve GA4 property discovery/read permission without guessing the property ID or modifying production configuration.
+2. Continue periodic aggregate Firestore snapshots to observe `lastActiveAt` coverage growth before treating it as retention evidence.
+3. Once GA4 is readable, retrieve actual event inventory, version/platform distribution, `first_open/session_start/user_engagement/app_start`, automatic `ad_impression`, and aggregate ad revenue.
+4. Keep app redeploy unnecessary until existing telemetry is exhausted.
+5. Do not create per-user exports or stable pseudonymous GitHub rows.
 
 ### Track B — continuing marketing research/system building
 
@@ -158,7 +187,7 @@ Handled independently through Codex/Firebase. Marketing Manager consumes a valid
 
 ### MintTap
 
-Runtime event inventory; AdMob↔Firebase linkage; activation/useful-return telemetry; ad revenue/harm; Store/search/source baseline; actual independent community/search intent distribution; target-community promotion permissions; live Store Proof Triad quality; content freshness/claim inventory; Search Console baseline.
+GA4 property access; runtime event inventory; AdMob↔Firebase linkage; activation/useful-return telemetry; ad revenue/harm; stable `lastActiveAt` coverage; valid account-recency cohort definition; Store/search/source baseline; actual independent community/search intent distribution; target-community promotion permissions; live Store Proof Triad quality; content freshness/claim inventory; Search Console baseline.
 
 ### LogMate
 

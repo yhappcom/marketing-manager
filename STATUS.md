@@ -30,15 +30,17 @@ Owner-observed sustained use remains a critical activation warning, not a numeri
 - 052 Sparse-Niche Controlled Activation Validation — **Discovery Before Estimation**, **First Value Not Form Completion**, **Fresh Eyes for Discoverability**, **Fix Blockers Before Scaling Traffic**, **Triangulate Sparse Evidence**.
 - 053 Post-First-Value Ad Monetization Guardrails — **First Value Before Monetization**, **Value Block Integrity**, **Transition Not Interruption**, **Revenue Per Retained User Not Impressions Per Session**.
 - 054 MintTap 1.0.29 Home Ad Value-Block Mapping — **Monetization Boundary Must Follow Comprehension Boundary**.
+- 055 Activation Remediation Acceptance Architecture — **Semantic Friction Before Mechanical Friction**, **Acceptance Before Implementation**, **Invariant Before Convenience**, **Acquisition Restart Is a Gate**.
 
-## 054 — MintTap Home ad mapping
-`research/054_minttap_1_0_29_home_ad_value_block_mapping.md`
+## 055 — cross-functional acceptance architecture
+`research/055_activation_remediation_acceptance_architecture.md`
 
-Release code verifies that signed-in Home uses an inline adaptive `BannerAd`, delayed 350 ms and consent-gated. It is rendered between `SummaryHeaderCard` and `PositionsCard`. This is non-modal but splits the likely comprehension chain `portfolio result → holding-level explanation`, so the placement is classified `TEST_LATER / RELOCATE_CANDIDATE`, not proven harmful.
+The six current MintTap Tranche-1 candidates are no longer maintained as a loose improvement list. They are mapped in `playbook/MINTTAP_TRANCHE1_ACCEPTANCE_MATRIX_V1.md` to failure evidence, V1–V4 semantic activation stages, Promise-to-Value continuity, regression invariants, fresh-user observations, telemetry boundaries and ad-value-block integrity.
 
-Returning from a detail screen scrolls Home to top, increments `_homeAdRefreshToken`, and recreates the keyed Home ad slot. Actual ad-request/impression frequency from this behavior remains UNKNOWN until runtime telemetry is available. Browse/demo mode suppresses this Home ad entirely.
+New reusable decision chain:
+`observed discontinuity → proposed change → V-stage → invariant gate → fresh-user evidence → telemetry boundary → monetization boundary → decision`.
 
-Current low-risk hypothesis: preserve Demo as ad-free; protect the first personal-value session where feasible; move the Home inline banner after a complete interpretation block (candidate: after Positions) before considering any increase in ad pressure. Do not optimize CTR as the primary business metric; use sustainable aggregate revenue per retained/returning specialist user once telemetry exists.
+Key interpretation: fewer taps/screens are not the objective. The objective is lower semantic friction on the shortest truthful route to personal value without hidden data/security or monetization debt. Organic/community traffic is not economically free merely because cash spend is zero; specialist trust, moderator tolerance, attention and slow evidence accumulation are scarce marketing capital.
 
 ## Parallel tracks
 
@@ -46,27 +48,27 @@ Current low-risk hypothesis: preserve Demo as ad-free; protect the first persona
 Resolve GA4 discovery/read access without guessing IDs or modifying production configuration. Continue privacy-filtered aggregate Firestore snapshots until recency coverage stabilizes. Verify semantic first-value telemetry, placement-level aggregate ad evidence, and aggregate ad revenue before monetization experiments.
 
 ### Track B — marketing learning
-Continue reusable niche-launch systems from actual product evidence. Community permission work is action-triggered rather than generic. Continue LogMate pre-launch work without claims ahead of implementation. Advertising research now proceeds through actual workflow/value-block evidence rather than generic format comparisons.
+Continue reusable niche-launch systems from actual product evidence. Community permission work is action-triggered rather than generic. Continue LogMate pre-launch work without claims ahead of implementation. Advertising research proceeds through actual workflow/value-block evidence rather than generic format comparisons.
 
 ### Track C — MintTap activation / retention remediation — highest live-product priority
 Tranche 1 remains: defer notification permission; auto-select a sole portfolio subject to invariant review; expose Import and Manual as peer first-data paths; preserve Demo protected-action intent through sign-in/setup; implement/verify semantic first-value telemetry; relocate the Home inline ad after a complete value block if low risk.
 
-Controlled validation supplies the acceptance framework. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after V1–V4 activation credibility and telemetry readiness.
+Tranche 1 now has explicit acceptance architecture. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
 
 ## Immediate next targets
-1. Build the Tranche-1 cross-functional acceptance matrix tying each proposed change to V1–V4, Promise-to-Value continuity, regression invariants, and ad-value-block integrity.
-2. Define sanitized MintTap Manual/Import fixtures and outcome-oriented task scripts for fresh-user Design Studio validation.
-3. Extend the ad registry beyond Home only when code evidence identifies additional live placements; do not infer formats from widget names.
+1. Define sanitized MintTap Manual/Import fixtures and outcome-oriented fresh-user task scripts aligned to the acceptance matrix.
+2. Convert semantic first value into a privacy-safe event/state contract with deduplication and eligibility semantics for engineering review.
+3. Audit the remaining 1.0.29 first-session interruptions/defaults only where code evidence materially changes Tranche-1 acceptance conditions.
 4. Audit exact current live Store creative when first-party assets are available.
 5. Run a MintTap high-risk localization ledger pilot using verified specialist terminology only.
-6. Build LogMate Promise-to-Value and pre-launch monetization maps only from implemented capabilities.
+6. Build LogMate Promise-to-Value and pre-launch acceptance maps only from implemented capabilities.
 
 ## Unresolved questions
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery; manual-vs-import qualitative first-value performance; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; activation/useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery; manual-vs-import qualitative first-value performance; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; activation/useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
 
 LogMate: production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; terminology conventions; launch traffic ceiling.
 
 Company-wide: measured labor capacity; long-run ad revenue per retained user; empirical stop thresholds; populated permission/claim/term/ad-value-block ledgers; social qualified-response baselines; reusable launch records; evidence that activation and monetization changes improve sustainable downstream value rather than short-run impressions or Store conversion alone.
 
 ## Progress interpretation
-Do not report progress by file count. The highest-value question remains whether a target specialist user can reach personal first value with acceptable effort, understand why to return, and then encounter monetization only at contextually legitimate boundaries. Small-N research discovers failure modes; it does not manufacture percentages. Weak activation is not repaired by increasing ad pressure.
+Do not report progress by file count. The highest-value question remains whether a target specialist user can reach personal first value with acceptable effort, understand why to return, and then encounter monetization only at contextually legitimate boundaries. Small-N research discovers failure modes; it does not manufacture percentages. Weak activation is not repaired by increasing ad pressure, reducing taps without semantic clarity, or scaling traffic before the acquisition gate is earned.

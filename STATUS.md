@@ -33,24 +33,21 @@ Measurement remains partial: first aggregate snapshot contained 129 readable pro
 - 048 Specialist localization semantics: **Meaning Before Wording**, **Locale Is Not Market**, **Proof Travels With the Claim**, **Domain Review Before Scale**, **No Compliance by Translation**.
 - 049 Community permission operations: permission is action-specific and research recruitment requires its own permission state.
 - 050 MintTap concrete community permission pilot: **Fit Does Not Grant Permission**.
+- 051 Store Proof × Activation Handoff: **Activation Before Conversion Optimization**, **Expectation Cost Is Product Cost**, **Mature-State Screens Require Path Evidence**.
 
-## 050 — concrete MintTap community pilot
+## 051 — Store Proof × Activation Handoff
 
-The first real action-specific community ledger is now available at `live_data/minttap/community_permission_pilot_v1.md`; full analysis is `research/050_minttap_concrete_community_permission_pilot.md`.
+`research/051_store_proof_activation_handoff.md`
 
-Findings:
+The Store/product boundary is now modeled as a handoff contract:
 
-- `r/YieldMaxETFs` has the strongest topical fit, but exact current rules for MintTap product mentions, links and participant recruitment were not reliably retrievable in this run. Material actions remain `NOT_VERIFIED`; existing product posts are not permission evidence.
-- `r/dividends` has available moderator-authored rule evidence prohibiting self-promotion including websites, advertisements and surveys. The evidence is old, so it must be checked again immediately before any action.
-- `r/investing` has indexed rule text prohibiting self-promotion/solicitation including apps, tools, blogs, events and surveys; it is also a lower-fit audience for current MintTap activation validation.
+`Store promise → install expectation → first-session action → data/setup burden → first personal result → understood return reason`
 
-Execution rule:
+Every acquisition promise must map to `promise → prerequisite → first action → first-value state → return reason`. Six failure classes are tracked: promise inflation, prerequisite concealment, route discontinuity, avoidable choice friction, mature-state proof mismatch, and return ambiguity.
 
-`adequate audience fit + action-specific permission + required disclosure + sufficiently fresh rule evidence → executable action`
+Apple's current guidance reinforces that screenshots should show the app in use, lead with strong features/benefits and tell a cohesive usage story; up to three screenshots can appear in search depending on orientation. App previews precede screenshots when present. Apple PPO can optimize conversion, but downstream activation remains a separate developer measurement responsibility.
 
-`high fit + unknown permission != usable acquisition channel`
-
-Do not spend another research cycle rediscovering generic Reddit rules. Re-open a community only when a concrete action is imminent, then capture current rules or moderator authorization.
+For MintTap, Manual and Import are now modeled as separate first-data activation routes. Import should become a first-class route if validation confirms that it materially lowers time-to-first-value for existing YieldMax investors. Do not optimize Store conversion in isolation while first-value friction remains unresolved.
 
 ## Parallel tracks
 
@@ -60,7 +57,7 @@ Resolve GA4 discovery/read access without guessing IDs or modifying production c
 
 ### Track B — marketing learning
 
-Continue Store proof, localization, source-package and reusable niche-launch systems from actual product evidence. Community permission work becomes action-triggered rather than generic. Continue LogMate pre-launch work without claims ahead of implementation.
+Continue Store proof, localization, source-package and reusable niche-launch systems from actual product evidence. Community permission work is action-triggered rather than generic. Continue LogMate pre-launch work without claims ahead of implementation.
 
 ### Track C — MintTap activation / retention remediation — highest live-product priority
 
@@ -70,16 +67,16 @@ Tranche 2 is structural onboarding/Home simplification plus human validation. Tr
 
 ## Immediate next targets
 
-1. MintTap Store Proof × activation handoff: audit whether the live Store promise matches the real first-use setup/import effort.
-2. Controlled validation protocol: sanitized Import/manual tasks, first-value success criteria, friction observations and stop rules.
-3. Track C bounded engineering/design review of the six Tranche-1 changes.
+1. Controlled validation protocol: sanitized Import/manual tasks, first-value success criteria, friction observations and stop rules.
+2. Track C bounded engineering/design review of the six Tranche-1 changes.
+3. MintTap live Store creative audit against Promise-to-Value Continuity once exact current listing assets are available.
 4. MintTap high-risk localization ledger pilot using verified specialist terminology only.
-5. Community permission: no generic cycle; re-open only for a concrete imminent action or fresh rule change.
-6. LogMate permission/proof inventory only as implemented capabilities and target communities become concrete.
+5. Community permission: re-open only for a concrete imminent action or fresh rule change.
+6. LogMate Promise-to-Value map before launch creative is finalized.
 
 ## Unresolved questions
 
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery; manual-vs-import time-to-first-value; ad analytics linkage; activation/useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; live Store Proof quality; specialist terminology semantics; real task performance after proposed Home changes.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery; manual-vs-import time-to-first-value; ad analytics linkage; activation/useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed Home changes.
 
 LogMate: production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; terminology conventions; launch traffic ceiling.
 

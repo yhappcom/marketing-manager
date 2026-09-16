@@ -1,6 +1,6 @@
 # Marketing Manager Status
 
-Last updated: 2026-09-16
+Last updated: 2026-09-17
 
 ## Phase
 Foundation, Sparse-Niche Decision Science, and Application Readiness V1 are complete. General theory is frozen by default; new work follows live product evidence, authoritative platform changes, framework failures, or operational gaps.
@@ -31,21 +31,25 @@ Owner-observed sustained use remains a critical activation warning, not a numeri
 - 053 Post-First-Value Ad Monetization Guardrails — **First Value Before Monetization**, **Value Block Integrity**, **Transition Not Interruption**, **Revenue Per Retained User Not Impressions Per Session**.
 - 054 MintTap 1.0.29 Home Ad Value-Block Mapping — **Monetization Boundary Must Follow Comprehension Boundary**.
 - 055 Activation Remediation Acceptance Architecture — **Semantic Friction Before Mechanical Friction**, **Acceptance Before Implementation**, **Invariant Before Convenience**, **Acquisition Restart Is a Gate**.
+- 056 Semantic First-Value Measurement Contract — **Semantic Boundary Before Funnel Metric**.
 
-## 055 — cross-functional acceptance architecture
-`research/055_activation_remediation_acceptance_architecture.md`
+## 056 — semantic first-value contract + controlled fixtures
+`research/056_semantic_first_value_measurement_contract.md`
+`playbook/MINTTAP_FIRST_VALUE_VALIDATION_FIXTURES_V1.md`
 
-The six current MintTap Tranche-1 candidates are no longer maintained as a loose improvement list. They are mapped in `playbook/MINTTAP_TRANCHE1_ACCEPTANCE_MATRIX_V1.md` to failure evidence, V1–V4 semantic activation stages, Promise-to-Value continuity, regression invariants, fresh-user observations, telemetry boundaries and ad-value-block integrity.
+MintTap first value is now specified as a product-domain boundary rather than a convenient UI completion event:
+`eligible real portfolio context + accepted real data + successful derived personal result render`.
 
-New reusable decision chain:
-`observed discontinuity → proposed change → V-stage → invariant gate → fresh-user evidence → telemetry boundary → monetization boundary → decision`.
+Candidate aggregate event: `first_portfolio_value`. It must not fire from sign-in, onboarding completion, transaction submit, file parse/import completion or Home open alone. Demo/sample contexts are excluded. Parameters default to none; if route evidence is decision-critical, only bounded enums such as `manual|import` are eligible. Ticker, holdings, quantities, prices, tax/distribution values, portfolio names, file names, email/UID and other financial/identifying data are excluded.
 
-Key interpretation: fewer taps/screens are not the objective. The objective is lower semantic friction on the shortest truthful route to personal value without hidden data/security or monetization debt. Organic/community traffic is not economically free merely because cash spend is zero; specialist trust, moderator tolerance, attention and slow evidence accumulation are scarce marketing capital.
+Deduplication is a business-semantic requirement independent of Analytics delivery. Engineering must explicitly define reinstall, logout/account change, deletion, multi-device and consent-transition eligibility before implementation; Marketing does not invent these semantics. Existing users are not retrospectively backfilled from holdings or `lastActiveAt`.
+
+Controlled validation fixtures M1 and I1 now provide synthetic Manual and Import tasks without exposing participant brokerage records. Small-N observations remain failure-mode discovery, not population estimation.
 
 ## Parallel tracks
 
 ### Track A — measurement
-Resolve GA4 discovery/read access without guessing IDs or modifying production configuration. Continue privacy-filtered aggregate Firestore snapshots until recency coverage stabilizes. Verify semantic first-value telemetry, placement-level aggregate ad evidence, and aggregate ad revenue before monetization experiments.
+Resolve GA4 discovery/read access without guessing IDs or modifying production configuration. Continue privacy-filtered aggregate Firestore snapshots until recency coverage stabilizes. Engineering review/implementation of the 056 first-value contract is now a prerequisite for interpreting activation. Verify placement-level aggregate ad evidence and aggregate ad revenue before monetization experiments.
 
 ### Track B — marketing learning
 Continue reusable niche-launch systems from actual product evidence. Community permission work is action-triggered rather than generic. Continue LogMate pre-launch work without claims ahead of implementation. Advertising research proceeds through actual workflow/value-block evidence rather than generic format comparisons.
@@ -53,18 +57,18 @@ Continue reusable niche-launch systems from actual product evidence. Community p
 ### Track C — MintTap activation / retention remediation — highest live-product priority
 Tranche 1 remains: defer notification permission; auto-select a sole portfolio subject to invariant review; expose Import and Manual as peer first-data paths; preserve Demo protected-action intent through sign-in/setup; implement/verify semantic first-value telemetry; relocate the Home inline ad after a complete value block if low risk.
 
-Tranche 1 now has explicit acceptance architecture. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
+Tranche 1 has explicit acceptance architecture plus synthetic Manual/Import validation fixtures. Tranche 2 is structural onboarding/Home simplification plus fresh-user retesting. Tranche 3 is controlled acquisition restart only after credible V1–V4 performance and telemetry readiness; release date alone does not open the acquisition gate.
 
 ## Immediate next targets
-1. Define sanitized MintTap Manual/Import fixtures and outcome-oriented fresh-user task scripts aligned to the acceptance matrix.
-2. Convert semantic first value into a privacy-safe event/state contract with deduplication and eligibility semantics for engineering review.
-3. Audit the remaining 1.0.29 first-session interruptions/defaults only where code evidence materially changes Tranche-1 acceptance conditions.
+1. Perform an engineering-facing invariant audit for the 056 event: exact trigger location, persistence/deduplication semantics, reinstall/logout/account-switch/deletion/multi-device/consent behavior.
+2. Convert M1/I1 fixture specification into implementation-ready CSV/XLSX artifacts only when the actual Import schema is verified; do not guess column requirements.
+3. Audit remaining 1.0.29 first-session interruptions/defaults only where code evidence materially changes Tranche-1 acceptance conditions.
 4. Audit exact current live Store creative when first-party assets are available.
 5. Run a MintTap high-risk localization ledger pilot using verified specialist terminology only.
 6. Build LogMate Promise-to-Value and pre-launch acceptance maps only from implemented capabilities.
 
 ## Unresolved questions
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery; manual-vs-import qualitative first-value performance; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; activation/useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; Import discovery and canonical file schema; manual-vs-import qualitative first-value performance; first-value event persistence/eligibility semantics; AdMob↔Analytics linkage; aggregate ad revenue; actual Home ad request/impression frequency after detail returns; useful-return telemetry; stable recency coverage; Store/search/source baseline; current r/YieldMaxETFs action permissions; exact live Store assets; specialist terminology semantics; real task performance after proposed changes; exact invariants for sole-portfolio auto-selection and Demo intent continuation.
 
 LogMate: production persistence; first-value validation; launch geography/segment/regulatory boundaries; import priorities; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; terminology conventions; launch traffic ceiling.
 

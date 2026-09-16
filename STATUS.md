@@ -115,7 +115,39 @@ Preferred minimal future funnel:
 
 with `lastActiveAt` retained independently for account-recency questions.
 
-Repository search did not find the literal activation event on the searchable default surface, but GitHub code search does not establish absence on arbitrary release refs. Exact-ref/runtime verification remains required before engineering a duplicate event.
+### 039 — Measurement access cost architecture
+`research/039_measurement_access_cost_architecture.md`
+
+Cost conclusion: do **not** purchase Windsor.ai Basic/Standard for the current MintTap measurement problem. Native Firebase/GA4 is the zero-cash baseline; BigQuery can often remain within its free tier at specialist-app scale if raw event evidence is needed. A paid connector must prove labor/decision value beyond recurring cash cost, third-party risk and maintenance.
+
+Default cost order:
+
+`native free analytics → zero-cash bridge/export → first-party BigQuery when raw evidence is needed → paid connector only after repeated operational bottleneck`
+
+### 040 — Codex ↔ Firebase measurement bridge
+`research/040_codex_firebase_measurement_bridge.md`
+
+Current ChatGPT connector discovery did not expose a native Firebase/Firestore/BigQuery first-party connector directly to this conversation. The owner confirmed Codex can access Firebase. Preferred architecture is therefore:
+
+`Firebase / Firestore / GA4 / BigQuery → Codex read-only access → local privacy filtering/aggregation → marketing-manager GitHub snapshot → Marketing Manager chat`
+
+This makes GitHub a **non-sensitive evidence handoff layer**, not a raw user-data warehouse.
+
+Security rules:
+
+- never commit Firebase credentials/service-account JSON/tokens;
+- never commit UID/email or user-level investment/logbook records;
+- perform sensitive joins inside the trusted Firebase/Google/Codex environment;
+- export only decision-grade aggregates with explicit unit/window/version/missingness;
+- do not treat hashed user rows as safe merely because identifiers are pseudonymized.
+
+Preferred first snapshot path:
+
+`live_data/minttap/measurement_snapshot_v1.json`
+
+with companion provenance in `live_data/minttap/README.md`.
+
+Direct in-chat native Firebase access remains the preferred future path if an appropriate first-party connector becomes available. Third-party GA4 connectors are fallback convenience layers, not the default infrastructure.
 
 ## Current MintTap measurement state
 
@@ -129,12 +161,18 @@ Repository search did not find the literal activation event on the searchable de
 - AdMob↔Firebase automatic `ad_impression`: runtime/console linkage state **UNKNOWN**.
 - `lastActiveAt`: 1.0.29 coarse authenticated-return/recency signal; separate from GA retention.
 - Actual live activation, useful-return cadence, Home ad impression frequency, paid value and retention/harm effects: **NOT YET BASELINED**.
+- Direct Firebase access from this chat: **NOT CURRENTLY AVAILABLE THROUGH A NATIVE CONNECTOR**.
+- Codex Firebase access: **OWNER-CONFIRMED AVAILABLE**, to be used as preferred bridge if direct chat access remains unavailable.
 
 ## Company ordering rule
 
 `released deployment identity → semantic first value → repeatable useful value → SDK/network-confirmed impression → canonical revenue event → retention/harm guardrails → frequency/channel decision`
 
-Every metric must declare its unit: device/user-instance/account/impression. Do not silently join device-level GA cohorts to account-level Firestore state.
+Every metric must declare its unit: device/user-instance/account/session/impression. Do not silently join device-level GA cohorts to account-level Firestore state.
+
+Access/cost ordering:
+
+`direct first-party in-chat if available → Codex privacy-filtered bridge → manual native export → zero-cost third-party bridge if justified → paid connector only after proven need`
 
 ## Capability state
 
@@ -143,21 +181,22 @@ Every metric must declare its unit: device/user-instance/account/impression. Do 
 ## Next learning / operating sequence
 
 1. **Do not extend general theory by default.**
-2. Inspect exact MintTap 1.0.29 code/runtime evidence for existing semantic activation/useful-return events under any names before proposing engineering changes.
-3. Verify MintTap AdMob↔Firebase/Analytics linkage and actual automatic `ad_impression` parameters before adding custom impression/revenue telemetry.
-4. If absent, hand engineering the minimum two semantic events: one-time `first_portfolio_value_ready_v1` and deduplicated repeatable `portfolio_value_viewed_v1`, with no investment-content parameters.
-5. Keep `lastActiveAt` separate as coarse account recency; never label it GA retention.
-6. Keep detail-return ad recreation unchanged until confirmed impression/revenue evidence can be compared with useful-return and harm guardrails.
-7. Once telemetry aligns in a served build, establish acquisition→activation, activation→useful-return and useful-use→ad-revenue baselines by app version and explicitly declared unit of analysis.
-8. Only then open channel and ad-frequency Decision Records.
-9. For LogMate, validate the FlightRecord first-value candidate when canonical ledger/persistence implementation exists; preserve the same device-vs-account distinction if cross-device sync is introduced.
-10. Revalidate volatile platform rules only when they affect a decision.
+2. Prefer solving Firebase/GA4 analysis inside this Marketing Manager chat. Recheck for a native first-party connector when the platform/tool surface changes.
+3. Until direct Firebase access exists here, use Codex as the privileged read-only Firebase/GA4/BigQuery access layer and generate the privacy-filtered aggregate snapshot defined in 040.
+4. First snapshot should answer: actual 1.0.29 event inventory; `first_open/session_start/user_engagement/app_start`; `ad_impression` presence/revenue fields; app-version/platform mix; Firestore `lastActiveAt` account-recency aggregates.
+5. Inspect exact MintTap 1.0.29 code/runtime evidence for any existing semantic activation/useful-return events under other names before proposing app changes.
+6. If absent, preserve the minimum future engineering handoff: one-time `first_portfolio_value_ready_v1` and deduplicated repeatable `portfolio_value_viewed_v1`, with no investment-content parameters.
+7. Keep detail-return ad recreation unchanged until confirmed impression/revenue evidence can be compared with useful-return and harm guardrails.
+8. Establish acquisition→activation, activation→useful-return and useful-use→ad-revenue baselines only after source semantics are aligned.
+9. Do not purchase a paid analytics connector unless repeated multi-source labor/decision bottlenecks pass the 039 cost gate.
+10. For LogMate, apply the same privileged-source→aggregate-evidence architecture if future product telemetry requires it.
 
 ## Major unresolved live questions
 
 ### MintTap
 
-- whether equivalent semantic activation/useful-return events already exist in exact 1.0.29/runtime under other names;
+- actual event inventory for released 1.0.29;
+- whether equivalent semantic activation/useful-return events already exist under other names;
 - AdMob↔Firebase/Analytics linkage state and live automatic `ad_impression` parameter/revenue coverage;
 - actual activation rate and time-to-first-value;
 - useful portfolio-return cadence by activated cohort;
@@ -172,7 +211,7 @@ Production local-ledger/persistence implementation; validation of FlightRecord f
 
 ### Company-wide
 
-Measured labor capacity; maintenance demand; privacy-compliant event/ingestion path; long-run ad revenue per retained user; empirical stop thresholds; populated claim/permission ledgers; social qualified-response baselines; reusable launch records; proof that reusable assets reduce later labor.
+Native first-party Firebase/GA4 access path for this chat; measured labor capacity; maintenance demand; privacy-compliant event/ingestion path; long-run ad revenue per retained user; empirical stop thresholds; populated claim/permission ledgers; social qualified-response baselines; reusable launch records; proof that reusable assets reduce later labor.
 
 ## Progress interpretation
 

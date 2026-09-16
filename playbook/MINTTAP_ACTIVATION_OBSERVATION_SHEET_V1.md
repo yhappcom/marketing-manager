@@ -42,6 +42,15 @@ Confidence before commit/save (participant words, not inferred):
 Help requested:
 Moderator intervention:
 Data-entry/import completion observed:
+
+### Import post-save handoff (complete for E Import)
+Save success observed at:
+Surface immediately after save:
+Participant's next action without prompt:
+Did participant interpret save confirmation as task completion? yes/no + evidence:
+Personalized Home result reached without prompt? yes/no
+Post-save navigation incident severity S0–S3 + evidence:
+
 Personalized result independently found? yes/no
 Semantic first value displayed? yes/no
 
@@ -67,6 +76,7 @@ Any wording/terminology they interpreted differently from intended?
 ## Analyst closeout
 Independent completion must not include moderator-assisted completion.
 Do not calculate or publish small-N route percentages or mean-time superiority claims.
+A successful Import save/snackbar is ingestion evidence, not semantic first value. Continue observation through personalized-result presentation and comprehension.
 Recurring mechanism across participants:
 Any S3 requiring investigation before acquisition restart:
 Any independently repeated S2:

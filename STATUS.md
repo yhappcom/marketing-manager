@@ -39,42 +39,30 @@ Stage 2 Gate: **PASS**. Further methodology is added only when a live decision e
 
 ## Application Readiness V1 — COMPLETE
 
-### Evidence provenance & baseline measurement
-Native metric definitions are preserved. Apple and Google Store funnels remain separate at the native layer. Numeric zero is distinct from UNKNOWN, SUPPRESSED, NOT_INSTRUMENTED, NOT_APPLICABLE, and INVALID. Attribution stops where measurement stops. Baselines respect product/store/analytics change boundaries and natural workflow cycles.
+Evidence provenance, Live Evidence Registry, product checklists, niche community operations, content evidence lifecycle, ad-revenue quality economics, selective social governance and cross-surface integration/handoff rules are complete at V1 and frozen pending live validation.
 
-### Live Evidence Registry and product checklists
-`LIVE_EVIDENCE_REGISTRY_TEMPLATE.md` provides the append-only audit layer. `PRODUCT_BASELINE_CHECKLISTS.md` instantiates it for MintTap and LogMate without invented values; LogMate pre-launch Store states may remain UNKNOWN.
-
-### Community, content and social
-`research/025_niche_community_evidence_operations.md` governs permission, qualitative evidence and goodwill. `research/026_content_evidence_lifecycle.md` governs claim-level provenance/freshness. `research/028_selective_social_distribution_specialist_audiences.md` makes recurring social presence role- and evidence-gated rather than mandatory.
-
-### Ad-revenue quality economics
-`research/027_ad_revenue_quality_economics.md` replaces impression maximization with quality-adjusted inventory economics. Protect FIRST_VALUE/ONBOARDING and precision TASK_CRITICAL states from interruptive inventory by default; classify workflow state before format; treat suspicious CTR as an implementation-review signal; optimize retained useful use before increasing interruption/frequency.
-
-### Integration gate — PASS
-`curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md` tested realistic MintTap/LogMate decisions spanning Store, community, content, social, ads, launch and cross-app labor allocation. All were routable without new general methodology.
-
-One concrete handoff gap was fixed: every material distribution asset must now identify both its upstream provenance and downstream measurement/decision destination using the minimum tuple:
+Minimum material-asset handoff tuple:
 
 `source evidence/claim IDs → asset/change ID → surface + permission/eligibility state → native measurement ID/definition → linked Decision Record`
 
 Unavailable elements remain UNKNOWN/NOT_INSTRUMENTED; attribution is not reconstructed after the fact.
 
-Apple Store surface semantics were revalidated 2026-09-16: Product Page Optimization (PPO) and Custom Product Pages (CPP) are separate operating objects. PPO is a randomized default-product-page experiment surface (up to three treatments for supported assets); CPP is a separately routed/localized page surface (up to 70 pages) with unique URLs/keywords and page-level analytics. PPO is not available for CPP. A CPP-specific conversion observation is not automatically causal lift versus default because traffic selection can differ.
+Apple Store surface semantics remain separated: PPO is the randomized default-product-page experiment surface; CPP is separately routed/localized and observational unless another valid causal design exists. Do not infer CPP causal lift from raw conversion differences.
 
-### Authoritative platform delta — iOS/iPadOS 27 Store discovery surfaces
-`research/029_ios27_app_store_discovery_surface_change.md` records an allowed post-freeze delta. Apple's WWDC26 discovery guidance makes Store creative a multi-surface problem: discovery/search-result recognition, product-page persuasion, and routed-message continuity should be treated as distinct creative jobs rather than assuming one screenshot sequence serves all jobs. CPP remains routing/observational evidence; PPO remains the native randomized default-page experiment surface. September 9, 2026 App Store Connect release notes also add screenshot/preview specifications for new device classes, creating a Store-asset maintenance/expiry trigger.
+## Post-freeze authoritative/live-readiness deltas
 
-New operating tuple for material Store creative:
+### 029 — iOS/iPadOS 27 Store discovery surfaces
+`research/029_ios27_app_store_discovery_surface_change.md` treats Store creative as a multi-surface job: discovery/search recognition, product-page persuasion, and routed-message continuity. Store assets now carry device/display coverage and expiry triggers.
 
-`target intent → discovery surface → asset role → default/CPP routing → downstream destination → native measurement → evidence class → device/display coverage → expiry trigger`
+### 030 — Product instrumentation repository audit
+`research/030_product_instrumentation_readiness_audit.md` found no `firebase_analytics` or `google_mobile_ads` dependency/API evidence in the inspected default-branch MintTap/LogMate repositories. This remains **NOT OBSERVED IN CURRENT REPOSITORY**, not proof of production absence.
 
-Do not create CPPs simply because Apple allows many; sparse specialist traffic makes fragmentation costly.
+### 031 — Product first-value semantics readiness
+`research/031_product_first_value_semantics_readiness.md` tested whether activation can be defined from verified product sources rather than guessed.
 
-### Live-readiness repository audit — product instrumentation
-`research/030_product_instrumentation_readiness_audit.md` inspects the current default-branch product repositories rather than extending theory. MintTap/yieldmax_tracker currently declares `firebase_core` but not `firebase_analytics` or `google_mobile_ads`; LogMate declares Firebase Auth/Core/Cloud Functions but likewise not `firebase_analytics` or `google_mobile_ads`. Repository searches did not find those analytics/ad SDK APIs. This is **NOT OBSERVED IN CURRENT REPOSITORY**, not proof of production absence.
-
-Operational consequence: Store-native metrics may answer Store questions, but current repository evidence does not establish the first-party event path needed to connect qualified acquisition to meaningful first value, repeated core value, safe ad opportunities, and durable ad revenue. Do not infer activation/retention from Store installs or spend scarce niche traffic merely to create unmeasurable volume.
+- **MintTap:** current `yieldmax_tracker` default branch is a Flutter counter-template shell and is not adequate evidence for the actual portfolio/dividend/ROC workflow. `first_value_reached` remains **UNKNOWN — BLOCKED BY PRODUCT-SOURCE MISMATCH** until the actual production/current branch or canonical product specification is located.
+- **LogMate:** README/MASTER provide a canonical semantic boundary. Manual-first, import-optional and local-first are confirmed. Current Home flight/time/activity/totals are explicitly mock/presentation shell; canonical ledger/persistence/calculation are not yet implemented. Candidate first value is therefore the earliest durable commit of a valid personal FlightRecord to the canonical local ledger with normal-path retrieval/view, not app open/auth/Home/Customize/import. This is **SEMANTIC CANDIDATE DEFINED / INSTRUMENTATION NOT READY**, not yet a live metric.
+- Reusable rule: first value is the earliest durable, user-recognizable completion of the core job that works on the simplest legitimate path and can be verified without collecting sensitive domain content.
 
 ## Capability state
 
@@ -82,33 +70,34 @@ Operational consequence: Store-native metrics may answer Store questions, but cu
 
 **STAGE 2 COMPLETE:** sparse inference; VOI/reversibility; monitoring/stopping; transfer/decay; multi-app labor allocation; decision routing; integration gate.
 
-**APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; metric-definition registry; baseline-change ledger; Live Evidence Registry; MintTap/LogMate baseline checklists; conservative campaign/source semantics; niche community operations; content evidence lifecycle; ad-revenue quality economics; selective social governance; cross-surface integration/handoff rules.
+**APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; baseline-change ledger; Live Evidence Registry; product baseline checklists; niche community/content/social/ad operating systems; cross-surface handoffs.
 
-**POST-FREEZE AUTHORITATIVE/LIVE-READINESS DELTAS:** 029 iOS/iPadOS 27 App Store discovery-surface/asset-role change; 030 product instrumentation repository audit.
+**POST-FREEZE DELTAS:** 029 Store discovery/asset-role change; 030 instrumentation audit; 031 first-value semantics readiness.
 
-**LIVE VALIDATION REQUIRED:** actual MintTap/LogMate Store/search/channel/product/ad evidence; activation and natural retention cadence; actual community rules/permissions; actual content inventory/claim ledger; social audience-fit/account economics; launch cohort quality; product-specific workflow cycles/harm thresholds; actual labor capacity and maintenance demand.
+**LIVE VALIDATION REQUIRED:** actual Store/search/channel/product/ad evidence; activation and natural retention cadence; community permissions; content claim inventory; social account economics; launch cohort quality; workflow cycles/harm thresholds; labor capacity and maintenance demand.
 
 ## Next learning / operating sequence
 
 1. **Do not extend general theory by default.** Application Readiness V1 remains frozen.
-2. Define MintTap and LogMate product-specific `first_value_reached` / core-task semantics from verified product workflow; do not invent activation definitions.
-3. Confirm whether production analytics/ad measurement exists outside the inspected repository state. Repository non-observation is not production proof.
-4. If product-event measurement is absent, specify/implement a minimal, privacy-reviewed semantic event contract before broad promotion or fine-grained experiments consume scarce specialist traffic.
-5. Connect event-definition versions to the Live Evidence Registry, then establish activation/retention/ad baselines and open channel-specific Decision Records.
-6. Continue periodic authoritative-source revalidation for volatile Store/platform/ad/community rules, but report only changes that alter an operating rule.
-7. Research a new topic only if a live decision cannot be represented/routed, an authoritative platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
+2. Locate the actual MintTap production/current product source before defining its activation event; do not infer from the current counter-template default branch.
+3. For LogMate, inspect the canonical local-ledger/persistence implementation when it exists and validate the `durable FlightRecord commit + normal retrieval` first-value candidate against code.
+4. Confirm whether production analytics/ad measurement exists outside the inspected repository state.
+5. If product-event measurement is absent, define a minimal privacy-reviewed semantic event contract around verified state transitions, not every tap. Do not send sensitive portfolio/logbook contents for marketing attribution.
+6. Connect event-definition versions to the Live Evidence Registry, then establish activation/retention/ad baselines and open channel-specific Decision Records.
+7. Continue authoritative-source revalidation for volatile Store/platform/ad/community rules, reporting only changes that alter an operating rule.
+8. Research a new topic only if a live decision cannot be represented/routed, a platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
 
 ## Major unresolved live questions
 
 ### MintTap
-Current Store/search/source baseline; canonical first-value/activation definition; analytics implementation outside current repository evidence; natural retention cadence; actual ad SDK/task states/frequency/latency and retention effects; YieldMax-community rule snapshots/permissions; content inventory and claim freshness; social audience concentration and account economics; Search Console baseline; Store experiment resolution time; U.S./Korean and iOS/Android transfer evidence; iOS 27 discovery-asset/device coverage.
+Actual production/current source of truth; Store/search/source baseline; canonical first-value/activation definition; analytics implementation outside current repository evidence; natural retention cadence; actual ad SDK/task states/frequency/latency and retention effects; YieldMax-community permissions; content claim freshness; Search Console baseline; Store experiment resolution; cross-country/platform transfer evidence; iOS 27 asset coverage.
 
 ### LogMate
-Launch geography/segment/regulatory boundaries; actual demand/competitor/import priorities; canonical first-value/activation definition; analytics implementation outside current repository evidence; workflow/retention cadence; actual ad SDK and placement policy; pilot observations/interviews; professional-community rule snapshots/permissions; regulatory content inventory/authority mapping; social audience concentration and professional-credibility value; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence; pre-launch iOS 27 discovery-asset plan.
+Production local-ledger/persistence implementation; validation of the FlightRecord first-value candidate; launch geography/segment/regulatory boundaries; demand/competitor/import priorities; analytics implementation outside current repository evidence; workflow/retention cadence; ad SDK/placement policy; pilot observations; professional-community permissions; regulatory content authority mapping; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.
 
 ### Company-wide
-Measured labor capacity; maintenance demand by asset/channel; privacy-compliant event/ingestion path; long-run ad revenue per retained user; empirical MPME/stop thresholds; populated content claim ledger; populated permission ledger; social account maintenance/qualified-response baselines; reusable launch record; proof that reusable assets reduce later labor.
+Measured labor capacity; maintenance demand; privacy-compliant event/ingestion path; long-run ad revenue per retained user; empirical stop thresholds; populated claim/permission ledgers; social qualified-response baselines; reusable launch record; proof that reusable assets reduce later labor.
 
 ## Progress interpretation
 
-Do not report progress by file count. The current objective is a trustworthy, reusable operating system for real niche-app growth. Missing live evidence remains explicitly unknown. Further learning now follows real evidence, authoritative platform deltas, and concrete execution failures rather than accumulating adjacent theory.
+Do not report progress by file count. The objective is a trustworthy, reusable operating system for real niche-app growth. Missing live evidence remains explicitly unknown. Further learning follows real evidence, authoritative platform deltas and concrete execution failures rather than accumulating adjacent theory.

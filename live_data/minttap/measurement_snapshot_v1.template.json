@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "source_window": {
+    "complete_day_start": "YYYY-MM-DD",
+    "complete_day_end": "YYYY-MM-DD",
+    "timezone_note": "GA4 property reporting timezone; partial current day excluded",
+    "partial_day_included": false
+  },
+  "release_scope": {
+    "target_release": "1.0.29",
+    "repository_ref": "1.0.29",
+    "platforms": [],
+    "notes": []
+  },
+  "source_status": {
+    "ga4_data_api": {"status": "UNKNOWN", "detail": ""},
+    "firestore": {"status": "UNKNOWN", "detail": ""},
+    "bigquery": {"status": "UNKNOWN", "detail": ""}
+  },
+  "ga4": {
+    "event_inventory": [],
+    "daily_usage": [],
+    "focal_events": [],
+    "ad_monetization": [],
+    "version_platform": [],
+    "acquisition_optional": []
+  },
+  "firestore": {
+    "account_recency": {
+      "status": "UNKNOWN",
+      "as_of": "YYYY-MM-DDTHH:MM:SSZ",
+      "profiles_total_readable": null,
+      "profiles_with_last_active_at": null,
+      "profiles_missing_last_active_at": null,
+      "active_within_24h": null,
+      "active_within_7d": null,
+      "active_within_30d": null,
+      "inactive_31_to_90d": null,
+      "inactive_over_90d": null,
+      "future_or_invalid_timestamp_count": null,
+      "notes": []
+    }
+  },
+  "quality": {
+    "minimum_cell_size": 5,
+    "suppressed_segment_count": 0,
+    "missingness_notes": [],
+    "validation_passed": false,
+    "query_or_method_version": "minttap-codex-measurement-v1"
+  }
+}

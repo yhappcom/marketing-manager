@@ -6,8 +6,6 @@ Last updated: 2026-09-16
 
 **Stage 1 — FOUNDATION COMPLETE. Stage 2 — Sparse-Niche Decision Science COMPLETE. Application Readiness V1 — COMPLETE / FROZEN FOR LIVE VALIDATION.**
 
-Stage 1 research 001–019 is synthesized in `playbook/MARKETING_PLAYBOOK_V1.md`. Stage 2 research 020–024 is integrated in `curriculum/STAGE2_GATE_REVIEW.md`. Application Readiness is gate-reviewed in `curriculum/APPLICATION_READINESS_INTEGRATION_GATE.md`.
-
 General theory remains frozen by default. New work follows live product evidence, authoritative platform changes, or concrete framework failures.
 
 ## Canonical applied system
@@ -31,15 +29,27 @@ Default to little/no direct cash spend. Store, owned/editorial, and permission-r
 
 ## Application Readiness state
 
-Stage 2 Gate: **PASS**. Sparse inference, VOI/reversibility, stopping, evidence transfer/decay and constrained multi-app allocation are operationalized.
+Stage 2 Gate: **PASS**.
 
-Application Readiness V1: **COMPLETE / FROZEN**. Evidence provenance, Live Evidence Registry, product checklists, niche community operations, content evidence lifecycle, ad-revenue quality economics, selective social governance and cross-surface handoffs are complete at V1.
+Application Readiness V1: **COMPLETE / FROZEN**.
 
 Minimum material-asset handoff tuple:
 
 `source evidence/claim IDs → asset/change ID → surface + permission/eligibility state → native measurement ID/definition → linked Decision Record`
 
 Unavailable elements remain `UNKNOWN/NOT_INSTRUMENTED`. Attribution is not reconstructed after the fact.
+
+## Canonical MintTap release state
+
+**MintTap 1.0.29 is RELEASED.**
+
+This is current first-party operational information supplied by the product owner and supersedes prior public-crawler-based uncertainty about whether 1.0.29 had entered production/release.
+
+Repository branch `1.0.29`, previously audited at head `736bbc99a41c14130d82aeaa17ac81f0fc835a65`, is the current release-version implementation reference for marketing/measurement analysis unless newer first-party release information supersedes it.
+
+Platform-specific exact build numbers, phased-rollout percentages, territory availability and exact binary↔commit provenance remain separate facts when a decision specifically requires them.
+
+Do not downgrade 1.0.29 release state because a public Store/search snapshot lags.
 
 ## Post-freeze authoritative / live-readiness deltas
 
@@ -58,79 +68,74 @@ Default-branch inspection initially did not observe analytics/ad SDKs. This was 
 
 LogMate candidate first value is durable commit of a valid personal FlightRecord to the canonical local ledger with normal-path retrieval/view. State remains **SEMANTIC CANDIDATE DEFINED / INSTRUMENTATION NOT READY**.
 
-Reusable rule: first value is the earliest durable, user-recognizable completion of the core job that works on the simplest legitimate path and can be verified without collecting sensitive domain content.
-
 ### 032 — MintTap release-branch source recovery
 `research/032_minttap_release_branch_source_recovery.md`
 
-Version branches through `1.0.29` were found in `yhappcom/yieldmax_tracker`. Branch `1.0.29` contains the full MintTap implementation, declares `1.0.29+29`, Firebase Analytics and Google Mobile Ads, emits `app_start`, initializes Mobile Ads, contains ad privacy/config modules, first-transaction tutorial and normal-flow Home inline ad.
-
-Audit rule: record `repository → exact ref/tag/branch/commit → declared app version → evidence date`; never equate default branch with current/production product without evidence.
+Branch `1.0.29` contains the full MintTap implementation, declares `1.0.29+29`, Firebase Analytics and Google Mobile Ads, emits `app_start`, initializes Mobile Ads, contains ad privacy/config modules, first-transaction tutorial and normal-flow Home inline ad.
 
 ### 033 — MintTap release evidence and ad observability
 `research/033_minttap_release_evidence_and_ad_observability.md`
 
-Exact-ref audit on branch `1.0.29`, head `736bbc99a41c14130d82aeaa17ac81f0fc835a65`, verified implementation but did not verify Store availability. `UserActivityService.lastActiveAt` is a coarse authenticated-return signal only. Inspected Home ad code loaded consent-gated banners but did not contain verified impression/paid-value handlers.
-
-Reusable readiness stack:
-
-`deployment identity → semantic product event → monetization event → joinable cohort evidence`
+Exact-ref audit on `1.0.29` verified implementation details. `UserActivityService.lastActiveAt` is a coarse authenticated-return/recency signal only; it is not activation, Analytics sessions or exact retention. Inspected Home ad code loaded consent-gated banners but did not contain verified app-side impression/paid-value handlers.
 
 ### 034 — MintTap activation and Home ad-refresh boundary
 `research/034_minttap_activation_and_ad_refresh_boundary.md`
 
 MintTap first value is **CODE-VERIFIED EVENT BOUNDARY / NOT YET INSTRUMENTED**. Candidate `first_portfolio_value_ready_v1` belongs at the successful normal authenticated Home calculated-state boundary when `summary.positions.isNotEmpty`, not on save-button tap or raw transaction persistence.
 
-Detail-return ad recreation is code-verified on 1.0.29:
+Current release-version Home ad mechanism:
 
 `detail return → _homeAdRefreshToken increment → ValueKey change → new HomeInlineAdSlot state → consent gate → BannerAd.load()`
 
 This proves a fresh request opportunity, not an impression or paid event.
 
-Reusable state separations:
-
-`core input persisted → product output calculated → product output exposed → first-value event recorded`
-
-`placement rendered → ad requested → impression confirmed → paid value observed`
-
-### 035 — MintTap served-version identity and monetization telemetry contract
+### 035 — Served-version identity and monetization telemetry contract
 `research/035_minttap_served_version_and_monetization_telemetry_contract.md`
 
-- Public App Store evidence verifies **MintTap 1.0.28** is currently served in multiple queried storefronts. Exact iOS build number remains unknown from public Store evidence.
-- Repository `1.0.29+29` remains a newer implementation ref, not a proven served iOS cohort.
-- Exact Google Play package/version evidence remains unresolved; Android served availability/version is **UNKNOWN**, not absent.
+This research captured the public Store evidence available at that time. Its former conclusion that 1.0.29 production availability was unresolved is now **SUPERSEDED BY 037**.
+
+The telemetry conclusions remain active:
+
 - MintTap 1.0.29 pins `google_mobile_ads` 6.0.0.
-- Current official Flutter banner documentation supports SDK-confirmed `BannerAdListener.onAdImpression`; paid-event support exists in the plugin lineage/current API.
-- Firebase states that a linked AdMob app automatically emits Analytics `ad_impression` with ad-revenue information. Preferred minimum contract: verify AdMob↔Firebase/Analytics linking and use the automatic event as the canonical impression/revenue path rather than blindly adding duplicate custom revenue events.
-- If automatic revenue evidence is unavailable/insufficient, use a privacy-reviewed paid-event path while preserving value micros, currency and precision and preventing double count.
+- Current official Flutter banner APIs support SDK-confirmed impression callbacks.
+- Firebase states that linked AdMob apps can automatically emit Analytics `ad_impression` with revenue information.
+- Prefer a single canonical impression/revenue path; do not blindly duplicate automatic events with custom revenue-bearing events.
 - CTR is a policy/UX guardrail, not the monetization objective.
-
-Company ordering rule:
-
-`served deployment identity → semantic product value → SDK/network-confirmed impression → canonical revenue event → retention/harm guardrails → frequency decision`
 
 ### 036 — MintTap 1.0.28 → 1.0.29 transfer audit
 `research/036_minttap_1_0_28_to_1_0_29_transfer_audit.md`
 
-GitHub compare shows 1.0.29 is four commits ahead of 1.0.28. The files establishing transaction persistence, Home summary calculation, Home first-value semantics and Home inline-ad lifecycle were not changed between the refs.
+The code-equivalence findings remain useful as historical compatibility evidence: Home and Home inline-ad core files were unchanged between the two refs, while `UserActivityService` was a 1.0.29 addition.
 
-Direct blob checks strengthen this:
+Because 1.0.29 is now confirmed released, 036 is no longer the primary bridge for current live interpretation.
 
-- `lib/screens/home_screen.dart` is byte-identical on 1.0.28 and 1.0.29 (`c8ae8bfc710f227921057a68f924cafaf53b7a9c`).
-- `lib/widgets/home_inline_ad_slot_mobile.dart` is byte-identical on both refs (`383959d4c2e43e89d399dbde93aa4a56ecf70689`).
-- 1.0.28 `main.dart` already enables Firebase Analytics, logs `app_start`, and initializes Mobile Ads after the first frame.
+### 037 — MintTap 1.0.29 release-state correction
+`research/037_minttap_1_0_29_release_state_correction.md`
 
-Therefore the first-value **code-semantic boundary** and Home-side detail-return→fresh-ad-request mechanism transfer from audited 1.0.29 to repository 1.0.28. The event itself is still not instrumented, and request still does not equal impression/revenue.
+First-party operational correction establishes **MintTap 1.0.29 = RELEASED** and supersedes the older production-availability uncertainty.
 
-Important non-transfer: `UserActivityService`/`lastActiveAt` was added after the 1.0.28 base. Do **not** use that signal as a current public iOS 1.0.28 return/retention guardrail.
+Current live-readiness chain:
 
-Deployment state is now more precise:
+`released 1.0.29 identity → verify live analytics/ad telemetry → instrument semantic first value → establish activation/return/ad-revenue baselines → evaluate frequency/channel decisions`
 
-- public App Store marketing version: 1.0.28 verified in multiple storefronts;
-- repository 1.0.28 code mechanism: version-aligned and directly compared;
-- exact public binary ↔ Git commit/build identity: still UNKNOWN.
+The release-identity question is no longer the primary blocker.
 
-Reusable transfer rule: compare exact refs, identify mechanism files, prefer identical blob SHA/no-change diff, transfer only unchanged mechanisms, and verify Store build provenance separately.
+## Current MintTap measurement state
+
+- Release version: **1.0.29 RELEASED**.
+- Release implementation reference: branch `1.0.29`, audited head `736bbc99a41c14130d82aeaa17ac81f0fc835a65`, unless later release commits are identified.
+- Firebase Analytics initialization / `app_start`: code-verified.
+- Mobile Ads initialization: code-verified.
+- `first_portfolio_value_ready_v1`: semantic/code boundary verified, **not yet verified as instrumented**.
+- Home detail-return ad recreation: code-verified release-version mechanism.
+- App-side Home banner impression/paid callback: not observed in audited file.
+- AdMob↔Firebase automatic `ad_impression`: runtime/console linkage state **UNKNOWN**.
+- `lastActiveAt`: part of 1.0.29 implementation; usable only as a separately defined coarse authenticated-return/recency signal.
+- Actual live impression frequency, paid value, activation rate, natural return cadence and retention/harm effects: **NOT YET BASELINED**.
+
+## Company ordering rule
+
+`served/released deployment identity → semantic product value → SDK/network-confirmed impression → canonical revenue event → retention/harm guardrails → frequency decision`
 
 ## Capability state
 
@@ -140,32 +145,28 @@ Reusable transfer rule: compare exact refs, identify mechanism files, prefer ide
 
 **APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; baseline-change ledger; Live Evidence Registry; product baseline checklists; niche community/content/social/ad operating systems; cross-surface handoffs.
 
-**POST-FREEZE LIVE EVIDENCE:** 029 Store discovery; 030 default-branch audit; 031 first-value semantics; 032 MintTap release-branch recovery; 033 deployment/ad-observability; 034 activation/ad-refresh boundary; 035 served-version/monetization contract; 036 version-transfer audit.
-
 ## Next learning / operating sequence
 
 1. **Do not extend general theory by default.** Application Readiness V1 remains frozen.
-2. Seek first-party App Store Connect/release evidence for the exact build behind public marketing version 1.0.28 if accessible. Public marketing version + repository branch name is strong version alignment but not exact binary provenance.
-3. Verify MintTap AdMob↔Firebase/Analytics linkage from console/export evidence. Confirm actual automatic `ad_impression` parameters in DebugView/Realtime/BigQuery before adding custom impression/revenue events.
-4. Preserve `first_portfolio_value_ready_v1` as the activation specification; instrument it only in an aligned future served build with no investment-content parameters.
-5. Treat the 1.0.28 Home-side detail-return ad recreation as a verified repository mechanism. Keep frequency unchanged until confirmed impression/revenue evidence and retention/harm guardrails exist.
-6. Do **not** use `lastActiveAt` as a live public-iOS-1.0.28 guardrail; it is a 1.0.29 delta.
-7. Keep Android Store availability/version UNKNOWN until exact-package public or first-party evidence resolves it.
-8. For LogMate, inspect canonical local-ledger/persistence implementation when it exists and validate the durable FlightRecord first-value candidate against code.
-9. Once deployment identity + activation + canonical impression/revenue telemetry align, establish live baselines and open channel/ad Decision Records.
+2. Treat MintTap 1.0.29 as the current released version.
+3. Verify whether the released binary corresponds to the previously audited 1.0.29 head or contains later release commits only when exact implementation provenance affects a decision.
+4. Verify MintTap AdMob↔Firebase/Analytics linkage from console/export/runtime evidence and inspect actual automatic `ad_impression` parameters before adding any custom impression/revenue event.
+5. Preserve `first_portfolio_value_ready_v1` as the activation specification; determine whether it is currently implemented. If not, hand it to engineering for a future release with no investment-content parameters.
+6. Use `lastActiveAt` only as a coarse authenticated-return/recency signal and keep its semantics separate from Analytics sessions/retention.
+7. Keep current detail-return ad recreation as the baseline until confirmed impression/revenue evidence and retention/harm guardrails exist.
+8. Establish first live baselines for activation, return cadence, Home ad impressions, paid value and workflow harm once telemetry is aligned.
+9. For LogMate, inspect canonical local-ledger/persistence implementation when it exists and validate the durable FlightRecord first-value candidate against code.
 10. Continue authoritative-source revalidation only when volatile Store/platform/ad/community changes affect an operating decision.
 
 ## Major unresolved live questions
 
 ### MintTap
 
-- exact iOS build number/commit identity behind public 1.0.28;
-- whether/when 1.0.29 enters Store submission/review/rollout;
-- exact Google Play availability/current served version;
+- exact released binary/build ↔ audited Git commit identity if needed;
 - AdMob↔Firebase/Analytics linkage state;
 - live automatic `ad_impression` parameter/revenue coverage;
-- implementation of `first_portfolio_value_ready_v1` in a served build;
-- Store/search/source baseline and natural retention cadence;
+- current implementation state of `first_portfolio_value_ready_v1`;
+- Store/search/source baseline and natural return/retention cadence;
 - actual Home inline-ad impression frequency and paid value under detail-return recreation;
 - retention/harm effects, community permissions, content freshness, Search Console baseline and Store experiment resolution.
 

@@ -55,14 +55,29 @@ Apple Store surface semantics remain separated: PPO is the randomized default-pr
 `research/029_ios27_app_store_discovery_surface_change.md` treats Store creative as a multi-surface job: discovery/search recognition, product-page persuasion, and routed-message continuity. Store assets now carry device/display coverage and expiry triggers.
 
 ### 030 — Product instrumentation repository audit
-`research/030_product_instrumentation_readiness_audit.md` found no `firebase_analytics` or `google_mobile_ads` dependency/API evidence in the inspected default-branch MintTap/LogMate repositories. This remains **NOT OBSERVED IN CURRENT REPOSITORY**, not proof of production absence.
+`research/030_product_instrumentation_readiness_audit.md` inspected default-branch repository state and did not observe `firebase_analytics` or `google_mobile_ads` there. This was intentionally recorded as **NOT OBSERVED IN CURRENT REPOSITORY**, not proof of production absence. Research 032 later resolved that the MintTap default branch was not representative of the versioned release implementation.
 
 ### 031 — Product first-value semantics readiness
 `research/031_product_first_value_semantics_readiness.md` tested whether activation can be defined from verified product sources rather than guessed.
 
-- **MintTap:** current `yieldmax_tracker` default branch is a Flutter counter-template shell and is not adequate evidence for the actual portfolio/dividend/ROC workflow. `first_value_reached` remains **UNKNOWN — BLOCKED BY PRODUCT-SOURCE MISMATCH** until the actual production/current branch or canonical product specification is located.
-- **LogMate:** README/MASTER provide a canonical semantic boundary. Manual-first, import-optional and local-first are confirmed. Current Home flight/time/activity/totals are explicitly mock/presentation shell; canonical ledger/persistence/calculation are not yet implemented. Candidate first value is therefore the earliest durable commit of a valid personal FlightRecord to the canonical local ledger with normal-path retrieval/view, not app open/auth/Home/Customize/import. This is **SEMANTIC CANDIDATE DEFINED / INSTRUMENTATION NOT READY**, not yet a live metric.
+- **MintTap at that audit point:** default-branch source mismatch blocked a valid activation definition. This blocker is superseded by 032's release-branch recovery; the historical finding remains preserved rather than rewritten.
+- **LogMate:** README/MASTER provide a canonical semantic boundary. Manual-first, import-optional and local-first are confirmed. Current Home flight/time/activity/totals are explicitly mock/presentation shell; canonical ledger/persistence/calculation are not yet implemented. Candidate first value is the earliest durable commit of a valid personal FlightRecord to the canonical local ledger with normal-path retrieval/view. This remains **SEMANTIC CANDIDATE DEFINED / INSTRUMENTATION NOT READY**.
 - Reusable rule: first value is the earliest durable, user-recognizable completion of the core job that works on the simplest legitimate path and can be verified without collecting sensitive domain content.
+
+### 032 — MintTap release-branch source recovery
+`research/032_minttap_release_branch_source_recovery.md` found version branches through `1.0.29` in `yhappcom/yieldmax_tracker` and audited `1.0.29` rather than assuming the default branch represented the product.
+
+Verified on `1.0.29`:
+
+- `README.md` describes the full MintTap YieldMax portfolio/dividend/performance application and names `lib/` + `functions/` as runtime source of truth.
+- `pubspec.yaml` declares version `1.0.29+29`, `firebase_analytics` and `google_mobile_ads`.
+- `lib/main.dart` enables Firebase Analytics, emits `app_start`, and initializes Mobile Ads after first frame on non-web platforms.
+- `lib/ads/` contains privacy/config/initialization modules.
+- Home uses a first-transaction tutorial and an inline ad slot in normal non-browse flow.
+
+MintTap first-value state is therefore upgraded to **SEMANTIC CANDIDATE DEFINED / LIVE BASELINE NOT YET VERIFIED**. Candidate: first valid transaction is durably persisted and the normal authenticated Home path subsequently exposes a non-empty calculated portfolio state. `app_start` is not activation.
+
+New audit rule: always record `repository → exact ref/tag/branch/commit → declared app version → evidence date`; never equate default branch with current/production product without evidence.
 
 ## Capability state
 
@@ -72,17 +87,17 @@ Apple Store surface semantics remain separated: PPO is the randomized default-pr
 
 **APPLICATION READINESS V1 COMPLETE/FROZEN:** evidence provenance; native metric preservation; missingness semantics; baseline-change ledger; Live Evidence Registry; product baseline checklists; niche community/content/social/ad operating systems; cross-surface handoffs.
 
-**POST-FREEZE DELTAS:** 029 Store discovery/asset-role change; 030 instrumentation audit; 031 first-value semantics readiness.
+**POST-FREEZE DELTAS:** 029 Store discovery/asset-role change; 030 default-branch instrumentation audit; 031 first-value semantics readiness; 032 MintTap release-branch source recovery and activation candidate.
 
 **LIVE VALIDATION REQUIRED:** actual Store/search/channel/product/ad evidence; activation and natural retention cadence; community permissions; content claim inventory; social account economics; launch cohort quality; workflow cycles/harm thresholds; labor capacity and maintenance demand.
 
 ## Next learning / operating sequence
 
 1. **Do not extend general theory by default.** Application Readiness V1 remains frozen.
-2. Locate the actual MintTap production/current product source before defining its activation event; do not infer from the current counter-template default branch.
-3. For LogMate, inspect the canonical local-ledger/persistence implementation when it exists and validate the `durable FlightRecord commit + normal retrieval` first-value candidate against code.
-4. Confirm whether production analytics/ad measurement exists outside the inspected repository state.
-5. If product-event measurement is absent, define a minimal privacy-reviewed semantic event contract around verified state transitions, not every tap. Do not send sensitive portfolio/logbook contents for marketing attribution.
+2. For MintTap, verify whether `1.0.29` is the actual current production release rather than merely the newest visible version branch.
+3. Inventory Firebase Analytics events on the actual MintTap release/current ref and inspect the transaction-commit plus Home calculated-state boundaries. Reuse an existing semantic event if adequate; otherwise define the smallest privacy-reviewed activation contract.
+4. Inspect MintTap `HomeInlineAdSlot` implementation and callbacks to map request/impression/paid-event/failure/refresh observability and its location relative to the core task. Do not optimize impressions before activation/retention harm is measurable.
+5. For LogMate, inspect the canonical local-ledger/persistence implementation when it exists and validate the `durable FlightRecord commit + normal retrieval` first-value candidate against code.
 6. Connect event-definition versions to the Live Evidence Registry, then establish activation/retention/ad baselines and open channel-specific Decision Records.
 7. Continue authoritative-source revalidation for volatile Store/platform/ad/community rules, reporting only changes that alter an operating rule.
 8. Research a new topic only if a live decision cannot be represented/routed, a platform/policy change invalidates a rule, first-party evidence exposes a missing mechanism, or a future app introduces a materially new context.
@@ -90,7 +105,7 @@ Apple Store surface semantics remain separated: PPO is the randomized default-pr
 ## Major unresolved live questions
 
 ### MintTap
-Actual production/current source of truth; Store/search/source baseline; canonical first-value/activation definition; analytics implementation outside current repository evidence; natural retention cadence; actual ad SDK/task states/frequency/latency and retention effects; YieldMax-community permissions; content claim freshness; Search Console baseline; Store experiment resolution; cross-country/platform transfer evidence; iOS 27 asset coverage.
+Whether `1.0.29` is the actual current production release; complete analytics-event inventory; validation/implementation of `first_portfolio_value_ready_v1`; Store/search/source baseline; natural retention cadence; actual ad request/impression/paid-event/failure/refresh telemetry and retention effects; YieldMax-community permissions; content claim freshness; Search Console baseline; Store experiment resolution; cross-country/platform transfer evidence; iOS 27 asset coverage.
 
 ### LogMate
 Production local-ledger/persistence implementation; validation of the FlightRecord first-value candidate; launch geography/segment/regulatory boundaries; demand/competitor/import priorities; analytics implementation outside current repository evidence; workflow/retention cadence; ad SDK/placement policy; pilot observations; professional-community permissions; regulatory content authority mapping; launch traffic ceiling; jurisdiction/platform/workflow transfer evidence.

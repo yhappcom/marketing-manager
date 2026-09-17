@@ -24,22 +24,17 @@ Canonical growth chain:
 - 075 Store Review Service-Recovery and Signal Gate — **Repair the Experience, Not the Rating**.
 - 076 Apple Search-Intent Routing Without Randomization — **Routing Can Precede Randomization; Routing Does Not Prove Lift**.
 - 077 Google Play Search-Intent Routing: Parity, Differences, and Sparse-Niche Rules — **Search Bundle Is a Semantic Contract**.
+- 078 Apple In-App Events as a Zero-Cost Reactivation Surface — **Event Surface Requires Event Truth**.
 
-## 065–067, 076–077 — cross-platform Store routing and sparse-experiment discipline
-`research/065_zero_cost_store_message_routing.md`
-`research/066_sparse_store_experiment_evidence_budget.md`
-`research/067_store_experiment_stopping_and_interpretation_rules.md`
-`research/076_apple_search_intent_routing_without_randomization.md`
-`research/077_google_play_search_intent_routing_parity_and_constraints.md`
-
+## 065–067, 076–078 — Store routing, sparse experiments, and event discovery
 Intent-specific Store pages are routing infrastructure, not automatic ASO wins. Sparse traffic is both acquisition inventory and learning sample. Randomization requires an evidence budget and precommitted stopping/interpretation rules. MintTap and LogMate remain premature for Store randomization.
 
-Apple CPP and Google Play CSL now support a shared zero-cost architecture: observed specialist search intent can be routed to an intent-matched, already-earned Store promise before randomized testing. Apple currently supports up to 70 CPPs; Google Play supports up to 50 CSLs. Capacity is not strategy. Cross-page conversion differences remain cohort observations and do not establish causal lift.
+Apple CPP and Google Play CSL support deterministic specialist-intent routing before randomization when search intent and the underlying promise are earned. Apple In-App Events add a different zero-cost surface: a truthful, time-bounded in-app experience can become discoverable and can support reactivation, but generic promotion, routine activity, bug fixes, and manufactured campaign dates are not event inventory.
 
-Google Play search-keyword CSLs add a distinct semantic constraint: Play can expose spelling corrections and translations as keyword variation bundles. Treat each selected variation as part of the same specialist-job contract; lexical grouping does not prove financial/aviation semantic equivalence. CSLs are not automatically translated, reinforcing the existing localization-semantic gates.
+Canonical distinction:
+`CPP/CSL = stable intent routing | IAE = truthful time-bounded discovery/reactivation | PPO = causal creative experiment when evidence budget exists`.
 
 ## 068 — LogMate pre-launch promise-to-value gate
-`research/068_logmate_prelaunch_promise_to_value_acceptance_map.md`
 Public promises follow the seven-rung claim-evidence ladder. First launch promise is chosen only after a specialist job reaches target-user first-value evidence.
 
 ## 069–073 — sustainable ad-inventory gates
@@ -53,19 +48,20 @@ Organic/community acquisition recruits product use, never ad interaction. Review
 2. Engineering review for durable first-value/useful-return semantics and protected foreground intent before app-open testing.
 3. Execute fresh-user activation studies and K1/K2 when target users are available; record incidents rather than small-N population percentages.
 4. Obtain exact live Apple Store creative, latest approved localized keywords, CPP inventory, US App Tags and search/source baseline. Build observed-demand intent map before routing/randomization.
-5. Obtain Google Play default localized listing, current CSL inventory, Play Search keyword candidates/variation bundles, Search vs Explore vs Ads/referrals baseline and any CSL analytics. Build the same intent map without assuming Apple/Google keyword mechanics are identical.
+5. Obtain Google Play default localized listing, current CSL inventory, Play Search keyword candidates/variation bundles, Search vs Explore vs Ads/referrals baseline and any CSL analytics.
 6. Re-check LogMate after next production-domain milestone and build manual-first pilot first-value protocol when canonical persistence exists.
 7. Build MintTap Home placement ledger from actual B/E/I evidence, controls/crossing geometry, accessibility, request/match/impression/revenue, useful-return and rapid-exit signals. Do not study more ad formats first.
 8. Build source-family acquisition ledger only when aggregate source→first-value/useful-return semantics exist. Do not scale Reddit/blog/social/community from install count alone.
 9. When Store review data is available, classify issue families and remediation recurrence rather than optimizing star average.
-10. Re-check Apple iOS 27/iPadOS 27 announced rich-media Store surfaces only when App Store Connect exposes production availability.
+10. Inventory possible Apple IAE candidates only after a real MintTap/LogMate major feature or time-bounded in-app experience exists. Do not manufacture ETF-calendar or recurring monthly events for Store exposure.
+11. Re-check Apple iOS 27/iPadOS 27 announced rich-media Store surfaces only when App Store Connect exposes production availability.
 
 ## Unresolved questions
-MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; fresh-user Import discovery; Manual-vs-Import first-value performance; end-to-end Import preparation burden; exact live KRW exchange-rate semantics; empirical post-save navigation; first-value implementation/result predicate; aggregate ad revenue; Home B/E/I evidence; useful-return telemetry; Apple Store/source baseline, localized keywords, CPP inventory/analytics and US App Tags; Google Play Search/Explore/referral baseline, search-keyword candidates/variation bundles, current CSL inventory/analytics; community permissions; sufficient qualified traffic; source-family quality; Store review issue-family/recurrence data.
+MintTap: GA4 access; historical install denominator; auth/onboarding abandonment; demo-to-real conversion; fresh-user Import discovery; Manual-vs-Import first-value performance; end-to-end Import preparation burden; exact live KRW exchange-rate semantics; empirical post-save navigation; first-value implementation/result predicate; aggregate ad revenue; Home B/E/I evidence; useful-return telemetry; Apple Store/source baseline, localized keywords, CPP inventory/analytics and US App Tags; Google Play Search/Explore/referral baseline, search-keyword candidates/variation bundles, current CSL inventory/analytics; community permissions; sufficient qualified traffic; source-family quality; Store review issue-family/recurrence data; first genuine IAE-eligible product moment and event-level downstream evidence.
 
-LogMate: canonical FlightRecord persistence; functional manual-entry path; calculation/aggregation engine; first-value validation; launch geography/segment/regulatory boundaries; production import; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; durable Customize configuration; backup/restore; Sync/conflict behavior; offline reliability; native/PWA semantic parity; first evidence-qualified Apple CPP or Google CSL search-intent family after launch readiness.
+LogMate: canonical FlightRecord persistence; functional manual-entry path; calculation/aggregation engine; first-value validation; launch geography/segment/regulatory boundaries; production import; analytics; retention cadence; ad model; selected community permissions; regulatory mapping; durable Customize configuration; backup/restore; Sync/conflict behavior; offline reliability; native/PWA semantic parity; first evidence-qualified Apple CPP or Google CSL search-intent family after launch readiness; first genuine IAE-eligible product milestone.
 
-Company-wide: measured labor capacity; long-run ad revenue per retained user; empirical stop thresholds; populated permission/claim/ad/source/review ledgers; social qualified-response baselines; reusable launch records; minimum traffic before Store randomization; minimum evidence for deterministic Store intent routing; cross-platform semantic handling of search keyword/variation bundles; evidence that ad inventory adds revenue without degrading useful return.
+Company-wide: measured labor capacity; long-run ad revenue per retained user; empirical stop thresholds; populated permission/claim/ad/source/review ledgers; social qualified-response baselines; reusable launch records; minimum traffic before Store randomization; minimum evidence for deterministic Store intent routing; cross-platform semantic handling of search keyword/variation bundles; evidence that ad inventory adds revenue without degrading useful return; evidence threshold for repeating an App Store event pattern under sparse analytics.
 
 ## Progress interpretation
-Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. Store discovery is now explicitly cross-platform: deterministic Apple CPP / Google CSL search-intent routing may precede randomization when intent and promise are earned, but routed cohort differences are not causal lift evidence. On Google Play, keyword variation bundles are semantic contracts, not merely ASO coverage. Weak activation is not repaired by increasing ad pressure, translating strings without workload parity, scaling traffic before acquisition is earned, proliferating Store pages because capacity exists, or marketing roadmap/UI shell as finished workflow.
+Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. Store discovery now has three distinct mechanisms: deterministic intent routing (Apple CPP / Google CSL), truthful time-bounded discovery/reactivation (Apple IAE), and randomized experimentation only when evidence budget permits. None repairs weak activation. A market-calendar date, marketing deadline, routine activity, or UI shell is not an event merely because it could generate Store exposure.

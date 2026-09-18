@@ -1,6 +1,6 @@
 # Marketing Manager Status
 
-Last updated: 2026-09-18
+Last updated: 2026-09-19
 
 ## Phase
 Foundation, Sparse-Niche Decision Science, and Application Readiness V1 are complete. General theory is frozen by default; new work follows live product evidence, authoritative platform changes, framework failures, or operational gaps.
@@ -34,11 +34,14 @@ Canonical growth chain:
 - 101 Sparse-Niche Store Experimentation & Evidence Budget — do not spend scarce specialist traffic on experiments that cannot change a decision. J0–J5.
 - 102 Retention Metric Semantics & Useful-Return Contract — platform retention is evidence under a platform-specific definition, not proof of specialist useful return. K0–K5.
 - 103 Impression Revenue Precision & Utility-Normalized Monetization — preserve revenue precision, then normalize monetization by useful production value; never optimize from a blended revenue number whose evidence quality is unknown. U0–U5.
+- 104 Event-Shaped Store Distribution & Finance-Channel Asymmetry — a product moment earns event-shaped Store distribution only when the moment is real, bounded, production-valid and platform-eligible. V0–V5. MintTap Google Play Promotional content is excluded from planning under current restricted-finance guidance.
 
 ## Current operating model
 Store: `search intent → Q-class → Apple CPP / Google CSL → qualified acquisition → first value/useful return`. 094 separately governs Apple App Tags; 095 covers human-curated earned distribution; 096 covers relevant portfolio discovery. Publisher reputation never proves specialist claims.
 
 Store experimentation uses 101 J0–J5: `highest-value uncertainty → one interpretable hypothesis → feasible qualified traffic → platform result → first-value/useful-return validation → decision`. Draws and insufficient data are valid outcomes.
+
+Event-shaped Store distribution uses 104 V0–V5: `real product moment → current platform/category eligibility → V-class → Store surface → safe destination → first value → useful return`. Never force Apple/Google campaign symmetry. MintTap market events, routine distribution refreshes, ticker changes, UI tweaks and generic awareness are not product events. Under current Google guidance, do not plan MintTap Google Play Promotional content around investing/stocks/funds/financial-utility themes.
 
 Retention uses 102 K0–K5. Apple/Google retention, MAU, first-open and retained-installer measures remain platform-specific diagnostics. Do not blend them into a company retention KPI unless transformed to the same explicit product event and denominator. K3 requires a cadence-appropriate specialist useful-return event; generic D7 is not the product objective.
 
@@ -48,7 +51,7 @@ Zero-cost distribution: `permission → genuine novelty/contribution → stable 
 
 Prelaunch uses 099 H0–H5. Apple pre-order and Google Play pre-registration are parallel but non-equivalent mechanisms. H3 is the minimum deliberate prelaunch threshold.
 
-Store trust uses 092 T0–T5; localization 091 L0–L5; organic/search 082 N0–N5; distribution 083 D0–D5; owned communities 084 O0–O5; connected speakers 085 C0–C5; reviews 086 R0–R5; intent continuity 100 I0–I5; Store experimentation 101 J0–J5; retention semantics 102 K0–K5.
+Store trust uses 092 T0–T5; localization 091 L0–L5; organic/search 082 N0–N5; distribution 083 D0–D5; owned communities 084 O0–O5; connected speakers 085 C0–C5; reviews 086 R0–R5; intent continuity 100 I0–I5; Store experimentation 101 J0–J5; retention semantics 102 K0–K5; event-shaped Store distribution 104 V0–V5.
 
 Advertising remains governed by 069–073 plus 087 F0–F5, 088 A0–A5, 089 B0–B5, 090 E0–E5 and 103 U0–U5. Larger formats, higher CTR/eCPM/fill or short-term ARPU cannot convert an invalid placement or degraded specialist workflow into sustainable inventory. Monetization is judged by cumulative ad revenue from retained useful users, with 102 defining useful return and 103 requiring impression-value precision semantics to survive ingestion. U3 is the minimum threshold for deliberate monetization optimization: legitimate placement + paid-event precision + stable K3 useful-return denominator.
 
@@ -61,7 +64,7 @@ Advertising remains governed by 069–073 plus 087 F0–F5, 088 A0–A5, 089 B0�
 6. Reddit saturation audit: inventory MintTap posts/comments by community, job/topic, destination, date, disclosure, removal/mod feedback and prior similar contribution; classify S0–S5.
 7. Inventory live Google Play Developer Profile and exact public Apple/Google developer identity; classify cross-app routes X0–X5.
 8. Inventory MintTap US Apple App Tags and classify G0–G5.
-9. Inventory MintTap next 6–12 month roadmap for genuine Apple editorial moments P0–P5.
+9. Inventory MintTap next 6–12 month roadmap for genuine Apple editorial moments P0–P5 and genuine Apple IAE product moments V0–V5; do not infer event-worthiness from external market timing.
 10. Re-attempt first-party MintTap source access and audit exchange-rate field/help/template/error/review wording.
 11. Audit MintTap production SDK/data-flow against T0–T5; material T0 mismatch is an acquisition/release blocker.
 12. Obtain live MintTap Apple/Google search terms and CPP/CSL mappings; cluster by user job and classify Q0–Q5.
@@ -72,14 +75,14 @@ Advertising remains governed by 069–073 plus 087 F0–F5, 088 A0–A5, 089 B0�
 17. Audit MintTap Home banner B0–B5 and establish E3/U3 baseline before larger/collapsible-format tests; denominator must be useful-return cycles/users, not manufactured opens.
 18. Audit MintTap blog under 082/083 and r/MintTapforYieldMax under 084/098.
 19. Audit MintTap review-prompt trigger and Store review inventory under 086.
-20. Inventory Apple IAE only for genuine product moments; do not plan MintTap Google Promotional content while current finance restrictions apply.
+20. Verify current first-party Store eligibility before every event-shaped campaign. Apple IAE requires V3; MintTap Google Play Promotional content remains excluded while Google's finance restriction covers investing/stocks/funds/financial utility.
 
 ## Unresolved questions
-**MintTap:** exact first-value and useful-return events; natural cadence by core job; current analytics schema; Apple/Google platform-retention comparability boundaries; live Store-link/C-class inventory; Universal/App Link verification; route-level first-value/useful-return linkage; qualified Store traffic for J3; Reddit S-class; owned-community value; US App Tags/G-class; next P3 editorial moment; search-term/CPP/CSL families; locale/L-class; SDK/data-flow/privacy parity; Home banner B/E/U evidence; current GMA SDK and ILAR capture; PRECISE/ESTIMATED/PUBLISHER_PROVIDED/UNKNOWN mix; currency normalization; KRW exchange-rate semantics; review recurrence.
+**MintTap:** exact first-value and useful-return events; natural cadence by core job; current analytics schema; Apple/Google platform-retention comparability boundaries; live Store-link/C-class inventory; Universal/App Link verification; route-level first-value/useful-return linkage; qualified Store traffic for J3; Reddit S-class; owned-community value; US App Tags/G-class; next P3 editorial moment; next genuine V3 Apple IAE product moment; historical IAE performance; search-term/CPP/CSL families; locale/L-class; SDK/data-flow/privacy parity; Home banner B/E/U evidence; current GMA SDK and ILAR capture; PRECISE/ESTIMATED/PUBLISHER_PROVIDED/UNKNOWN mix; currency normalization; KRW exchange-rate semantics; review recurrence.
 
-**LogMate:** observed pilot job cadence; K3 useful-return definition; prelaunch H-class; native/PWA final scope; canonical FlightRecord persistence; manual entry; aggregation; offline/backup reliability; first-value validation; launch geography/professional boundaries; production import; analytics/retention; native/PWA semantic parity; pilot-community permission/S3 entry points; launch locales/L3; T3 privacy/support/accessibility parity; I3 need; when Store traffic justifies J3; legitimate ad-bearing boundaries before any U3 monetization work.
+**LogMate:** observed pilot job cadence; K3 useful-return definition; prelaunch H-class; native/PWA final scope; canonical FlightRecord persistence; manual entry; aggregation; offline/backup reliability; first-value validation; launch geography/professional boundaries; production import; analytics/retention; native/PWA semantic parity; pilot-community permission/S3 entry points; launch locales/L3; T3 privacy/support/accessibility parity; I3 need; when Store traffic justifies J3; future V3 event-shaped Store moments; legitimate ad-bearing boundaries before any U3 monetization work.
 
-**Company-wide:** canonical useful-return event schema and denominator ownership; rule for comparing platform-native retention without semantic drift; campaign/UTM naming ownership; deep-link route registry; aggregate method below privacy thresholds; labor-cost denominator; developer identity/profile configuration; X3 adjacency; long-run ad revenue per useful-return user/cycle; ILAR precision/currency normalization standard; empirical stop thresholds; governance ledgers; Store experiment evidence-budget ownership; community stopping rules; trust-surface release ownership.
+**Company-wide:** canonical useful-return event schema and denominator ownership; rule for comparing platform-native retention without semantic drift; campaign/UTM naming ownership; deep-link route registry; aggregate method below privacy thresholds; labor-cost denominator; developer identity/profile configuration; X3 adjacency; long-run ad revenue per useful-return user/cycle; ILAR precision/currency normalization standard; empirical stop thresholds; governance ledgers; Store experiment evidence-budget ownership; event-shaped Store eligibility revalidation ownership; community stopping rules; trust-surface release ownership.
 
 ## Progress interpretation
-Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. A platform retention percentage, technically successful link/open, statistically positive Store treatment, or higher eCPM is not a growth outcome unless qualified intent survives into cadence-appropriate useful production use and repeated value. Revenue evidence must also retain its precision semantics; an uninterpretable blended revenue increase is not decision-grade monetization evidence.
+Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. A platform retention percentage, technically successful link/open, statistically positive Store treatment, Store-event impression, or higher eCPM is not a growth outcome unless qualified intent survives into cadence-appropriate useful production use and repeated value. Revenue evidence must also retain its precision semantics; an uninterpretable blended revenue increase is not decision-grade monetization evidence.

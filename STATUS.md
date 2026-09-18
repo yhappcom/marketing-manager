@@ -31,45 +31,49 @@ Canonical growth chain:
 - 098 Reddit Repetition & Promotion Saturation Control — a permitted link is not a reusable posting license; optimize for contribution density, not exposure frequency. S0–S5.
 - 099 Prelaunch Commitment as a Readiness Contract — do not collect launch commitments before the product, promise, and launch path are credible enough to honor them. H0–H5.
 - 100 Intent Continuity from Distribution to In-App Destination — preserve the user's declared job across every handoff; never make a qualified user rediscover why they came. I0–I5. Deep-link opens are diagnostic, not activation.
+- 101 Sparse-Niche Store Experimentation & Evidence Budget — do not spend scarce specialist traffic on experiments that cannot change a decision. J0–J5.
 
 ## Current operating model
 Store: `search intent → Q-class → Apple CPP / Google CSL → qualified acquisition → first value/useful return`. 094 separately governs Apple App Tags; 095 covers human-curated earned distribution; 096 covers relevant portfolio discovery. Publisher reputation never proves specialist claims.
 
-Intent continuity now extends the chain: `specialist problem → permitted content/community route → matched Store promise → install/open → exact safe in-app destination → first value → useful return`. I3 is the minimum deliberate job-specific deep-routing threshold. Deep linking is a friction reducer, not a demand generator, and must never bypass consent/setup or silently broaden a tax/regulatory/professional promise.
+Store experimentation now uses 101 J0–J5: `highest-value uncertainty → one interpretable hypothesis → feasible qualified traffic → platform result → first-value/useful-return validation → decision`. A/B testing is an evidence-budget decision, not a requirement. Draws and insufficient data are valid outcomes; never choose a winner by point estimate alone.
+
+Intent continuity extends the chain: `specialist problem → permitted content/community route → matched Store promise → install/open → exact safe in-app destination → first value → useful return`. I3 is the minimum deliberate job-specific deep-routing threshold. Deep linking is a friction reducer, not a demand generator, and must never bypass consent/setup or silently broaden a tax/regulatory/professional promise.
 
 Zero-cost distribution: `permission → genuine novelty/contribution → stable route ID where appropriate → valid Store promise → attributed visit/acquisition → first value → useful return → repeated evidence → channel decision`. Apple campaign tokens and Google Play UTM dimensions identify routes; they do not prove causality. Privacy suppression/thresholding is a measurement boundary, not zero response. Labor is an economic cost even when media spend is zero. Reddit ratios are not posting entitlements.
 
 Prelaunch uses 099 H0–H5: `qualified prelaunch demand → truthful production-near promise → registration/pre-order → successful release/install → first specialist value → useful return`. Apple pre-order and Google Play pre-registration are parallel but non-equivalent mechanisms. H3 is the minimum deliberate prelaunch threshold.
 
-Store trust uses 092 T0–T5; localization uses 091 L0–L5; organic/search uses 082 N0–N5; distribution 083 D0–D5; owned communities 084 O0–O5; connected speakers 085 C0–C5; reviews 086 R0–R5; intent continuity 100 I0–I5.
+Store trust uses 092 T0–T5; localization uses 091 L0–L5; organic/search uses 082 N0–N5; distribution 083 D0–D5; owned communities 084 O0–O5; connected speakers 085 C0–C5; reviews 086 R0–R5; intent continuity 100 I0–I5; Store experimentation 101 J0–J5.
 
 Advertising remains governed by 069–073 plus 087 F0–F5, 088 A0–A5, 089 B0–B5 and 090 E0–E5. Larger formats, higher CTR/eCPM/fill or short-term ARPU cannot convert an invalid placement or degraded specialist workflow into sustainable inventory. Monetization is judged by cumulative ad revenue from retained useful users.
 
 ## Immediate next targets
 1. Inventory every live MintTap outbound Store link on minttap.app, blog, Reddit and social; establish 097 C2 baseline before increasing posting frequency. Extend the same inventory with destination/fallback/prerequisite fields for 100 I-class where app routing exists.
 2. Audit whether minttap.app ↔ iOS/Android currently has verified Universal Link/App Link associations. Do not implement deep links merely for marketing; first identify stable production jobs that can meet I3.
-3. Reddit saturation audit: inventory MintTap posts/comments by community, job/topic, destination, date, disclosure, removal/mod feedback and prior similar contribution; classify S0–S5.
-4. Inventory live Google Play Developer Profile and exact public Apple/Google developer identity; classify cross-app routes X0–X5.
-5. Inventory MintTap US Apple App Tags and classify G0–G5.
-6. Inventory MintTap next 6–12 month roadmap for genuine Apple editorial moments P0–P5.
-7. Re-attempt first-party MintTap source access and audit exchange-rate field/help/template/error/review wording.
-8. Audit MintTap production SDK/data-flow against T0–T5; material T0 mismatch is an acquisition/release blocker.
-9. Obtain live MintTap Apple/Google search terms and CPP/CSL mappings; cluster by user job and classify Q0–Q5. For any CPP considered for a deep link, require I3 independently of Q3.
-10. Engineering review for durable first-value/useful-return semantics and protected foreground-intent registry before App Open testing.
-11. Execute fresh-user activation studies when target users are available; record incidents rather than small-N population percentages.
-12. Audit every intentionally published MintTap localization under L0–L5.
-13. LogMate prelaunch readiness: classify H0–H5 after the next production milestone. Require functional canonical persistence/manual entry/core totals-search, credible offline/backup scope, production-valid first value, launch geography/professional boundary, T3 trust parity, truthful Store evidence and a credible release window before H3.
-14. Audit MintTap Home banner B0–B5 and establish E3 baseline before larger/collapsible-format tests.
-15. Audit MintTap blog under 082/083 and r/MintTapforYieldMax under 084/098; attach route IDs only where links are already appropriate.
-16. Audit MintTap review-prompt trigger and Store review inventory under 086.
-17. Inventory Apple IAE only for genuine product moments; do not plan MintTap Google Promotional content while current finance restrictions apply.
+3. Build a MintTap Store experiment backlog ranked by decision value and traffic feasibility. Classify proposed Apple PPO/Google Play tests J0–J5 before consuming live specialist traffic; prefer one material hypothesis over multiple cosmetic variants.
+4. Reddit saturation audit: inventory MintTap posts/comments by community, job/topic, destination, date, disclosure, removal/mod feedback and prior similar contribution; classify S0–S5.
+5. Inventory live Google Play Developer Profile and exact public Apple/Google developer identity; classify cross-app routes X0–X5.
+6. Inventory MintTap US Apple App Tags and classify G0–G5.
+7. Inventory MintTap next 6–12 month roadmap for genuine Apple editorial moments P0–P5.
+8. Re-attempt first-party MintTap source access and audit exchange-rate field/help/template/error/review wording.
+9. Audit MintTap production SDK/data-flow against T0–T5; material T0 mismatch is an acquisition/release blocker.
+10. Obtain live MintTap Apple/Google search terms and CPP/CSL mappings; cluster by user job and classify Q0–Q5. For any CPP considered for a deep link, require I3 independently of Q3.
+11. Engineering review for durable first-value/useful-return semantics and protected foreground-intent registry before App Open testing.
+12. Execute fresh-user activation studies when target users are available; record incidents rather than small-N population percentages.
+13. Audit every intentionally published MintTap localization under L0–L5.
+14. LogMate prelaunch readiness: classify H0–H5 after the next production milestone. Require functional canonical persistence/manual entry/core totals-search, credible offline/backup scope, production-valid first value, launch geography/professional boundary, T3 trust parity, truthful Store evidence and a credible release window before H3. Preserve scarce pilot testers for workflow uncertainty before cosmetic Store experiments.
+15. Audit MintTap Home banner B0–B5 and establish E3 baseline before larger/collapsible-format tests.
+16. Audit MintTap blog under 082/083 and r/MintTapforYieldMax under 084/098; attach route IDs only where links are already appropriate.
+17. Audit MintTap review-prompt trigger and Store review inventory under 086.
+18. Inventory Apple IAE only for genuine product moments; do not plan MintTap Google Promotional content while current finance restrictions apply.
 
 ## Unresolved questions
-**MintTap:** live Store-link/C-class inventory; current Universal Link/App Link verification and route ownership; stable job-specific destinations capable of I3; Apple campaign/Google UTM consistency; route-level first-value/useful-return linkage; Reddit post history and S-class; r/MintTapforYieldMax independent discussion value; US App Tags/G-class; next P3 editorial moment; search-term/CPP/CSL families; locale/L-class; production SDK/data-flow and privacy parity; Home banner B/E evidence; first-value/useful-return telemetry; KRW exchange-rate semantics; review recurrence.
+**MintTap:** live Store-link/C-class inventory; current Universal Link/App Link verification and route ownership; stable job-specific destinations capable of I3; Apple campaign/Google UTM consistency; route-level first-value/useful-return linkage; qualified Store traffic available for J3 experiments; highest-value Store hypothesis/MDE; Reddit post history and S-class; r/MintTapforYieldMax independent discussion value; US App Tags/G-class; next P3 editorial moment; search-term/CPP/CSL families; locale/L-class; production SDK/data-flow and privacy parity; Home banner B/E evidence; first-value/useful-return telemetry; KRW exchange-rate semantics; review recurrence.
 
-**LogMate:** prelaunch H-class; whether native/PWA final scope justifies Store pre-registration; canonical FlightRecord persistence; functional manual entry; aggregation engine; offline/backup reliability; first-value validation; launch geography/professional boundaries; production import; analytics/retention; native/PWA semantic parity; pilot-community permission/S3 entry points; launch locales/L3; T3 privacy/support/accessibility parity; whether any launch route genuinely needs I3 deep linking after core workflow stability.
+**LogMate:** prelaunch H-class; whether native/PWA final scope justifies Store pre-registration; canonical FlightRecord persistence; functional manual entry; aggregation engine; offline/backup reliability; first-value validation; launch geography/professional boundaries; production import; analytics/retention; native/PWA semantic parity; pilot-community permission/S3 entry points; launch locales/L3; T3 privacy/support/accessibility parity; whether any launch route genuinely needs I3 deep linking after core workflow stability; when Store traffic becomes sufficient to justify J3 rather than direct pilot workflow research.
 
-**Company-wide:** canonical campaign/UTM naming ownership; deep-link route registry and release ownership; aggregate method below privacy thresholds; labor-cost denominator; developer identity/profile configuration; X3 adjacency for future apps; long-run ad revenue per retained useful user; empirical stop thresholds; populated governance ledgers; minimum evidence for new CPP/CSL/locales; community stopping rules; release ownership for trust-surface reconciliation; exact Apple analytics dimensions available for pre-order cohorts and their downstream joinability.
+**Company-wide:** canonical campaign/UTM naming ownership; deep-link route registry and release ownership; aggregate method below privacy thresholds; labor-cost denominator; developer identity/profile configuration; X3 adjacency for future apps; long-run ad revenue per retained useful user; empirical stop thresholds; populated governance ledgers; minimum evidence for new CPP/CSL/locales; Store experiment evidence-budget ownership and cross-platform replication rules; community stopping rules; release ownership for trust-surface reconciliation; exact Apple analytics dimensions available for pre-order cohorts and their downstream joinability.
 
 ## Progress interpretation
-Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. A technically successful link/open is not a growth outcome: qualified intent must survive the handoff into a safe production destination and then into useful work.
+Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. A technically successful link/open or statistically positive Store treatment is not a growth outcome: qualified intent must survive the handoff into safe production use and repeated value.

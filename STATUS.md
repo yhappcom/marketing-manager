@@ -8,81 +8,58 @@ Foundation, Sparse-Niche Decision Science, and Application Readiness V1 are comp
 Canonical growth chain:
 `relevant demand → credible promise → qualified acquisition → meaningful activation → repeated core value → sustainable ad-bearing use`
 
-## Canonical post-freeze work
-042–079 remain canonical. Latest additions:
-- 080 Zero-Cost Channel Attribution Contract — permission precedes attribution; attribution precedes scaling.
-- 081 Store Peer Benchmarks — diagnostic, not target.
-- 082 People-First Niche Content & Search-Integrity Gate — earn the query before routing the reader.
-- 083 Canonical Content → Community-Native Distribution — one evidence asset, multiple native expressions.
-- 084 Owned Community Governance Before Growth — govern the community before harvesting the audience.
-- 085 Employee, Founder & Affiliate Disclosure Contract — relationship truth travels with the endorsement.
-- 086 Review Prompt & Service-Recovery Contract — earn the review moment; never manufacture sentiment.
-- 087 App-Open / Foreground Intent Protection — monetize waiting, not intent. F0–F5.
-- 088 Rewarded Ads Without Artificial Scarcity — reward surplus, never ransom normal utility. A0–A5.
-- 089 Banner Ads as Reserved Layout, Not Interaction Tax — reserve space for ads; never make normal interaction pay for that space. B0–B5.
-- 090 Impression Revenue → Retained-Utility Economics — measure money at the impression; judge monetization at retained utility. E0–E5.
-- 091 Localization as Semantic Parity — localize the specialist promise only where the product can keep it. L0–L5.
-- 092 Store Trust-Surface Parity — trust claims are product claims; keep public trust surfaces synchronized with the shipped app. T0–T5.
-- 093 Search Intent → Store Page Routing — route a query to a page only when the page can keep the query's promise. Q0–Q5.
-- 094 Apple App Tags Discovery Integrity — govern the inferred discovery taxonomy, not only written copy. G0–G5.
-- 095 Apple Editorial Featuring as Earned Distribution — nominate a real product moment, not a marketing wish. P0–P5.
-- 096 Developer Identity as Cross-App Zero-Cost Distribution — developer identity is a trust/discovery bridge, not a generic umbrella brand. X0–X5. MintTap ↔ LogMate direct promotion remains X1 by default.
-- 097 Zero-Cost Channel Link Attribution & Sparse-Niche Measurement — instrument the route before scaling the route. C0–C5.
-- 098 Reddit Repetition & Promotion Saturation Control — a permitted link is not a reusable posting license; optimize for contribution density, not exposure frequency. S0–S5.
-- 099 Prelaunch Commitment as a Readiness Contract — do not collect launch commitments before the product, promise, and launch path are credible enough to honor them. H0–H5.
-- 100 Intent Continuity from Distribution to In-App Destination — preserve the user's declared job across every handoff; never make a qualified user rediscover why they came. I0–I5. Deep-link opens are diagnostic, not activation.
-- 101 Sparse-Niche Store Experimentation & Evidence Budget — do not spend scarce specialist traffic on experiments that cannot change a decision. J0–J5.
-- 102 Retention Metric Semantics & Useful-Return Contract — platform retention is evidence under a platform-specific definition, not proof of specialist useful return. K0–K5.
-- 103 Impression Revenue Precision & Utility-Normalized Monetization — preserve revenue precision, then normalize monetization by useful production value; never optimize from a blended revenue number whose evidence quality is unknown. U0–U5.
-- 104 Event-Shaped Store Distribution & Finance-Channel Asymmetry — a product moment earns event-shaped Store distribution only when the moment is real, bounded, production-valid and platform-eligible. V0–V5. MintTap Google Play Promotional content is excluded from planning under current restricted-finance guidance.
+## Canonical knowledge state
+Research 042–079 remains canonical. Post-freeze additions 080–105 extend the operating system without replacing earlier work.
+
+- 080 attribution contract; 081 peer benchmarks; 082 people-first niche content/search integrity; 083 canonical content → community-native distribution; 084 owned-community governance; 085 relationship disclosure; 086 review/service-recovery contract.
+- 087 foreground-intent protection F0–F5; 088 rewarded ads A0–A5; 089 banner layout B0–B5; 090 retained-utility ad economics E0–E5.
+- 091 localization parity L0–L5; 092 Store trust parity T0–T5; 093 search-intent routing Q0–Q5; 094 Apple App Tags G0–G5; 095 Apple editorial featuring P0–P5; 096 developer identity/cross-app relevance X0–X5.
+- 097 zero-cost route attribution C0–C5; 098 Reddit saturation S0–S5; 099 prelaunch readiness H0–H5; 100 intent continuity I0–I5; 101 sparse-niche Store experimentation J0–J5; 102 useful-return retention K0–K5.
+- 103 impression-revenue evidence quality U0–U5; 104 event-shaped Store distribution V0–V5; **105 Store Assets as Syndicated Marketing Inventory W0–W5**.
+
+## Latest validated addition — 105
+Canonical principle: **A Store asset is not necessarily confined to the Store page. Govern every eligible asset as reusable distribution inventory.**
+
+Google Play currently states that feature graphics, screenshots, short descriptions and videos may be used on Google Play and other Google promotional channels. Play Console also exposes an `External marketing` control that can restrict promotion across Google-owned properties. Therefore a Store upload is also a potential distribution decision.
+
+Apple provides controlled official/localized App Store badges, short links, QR codes and marketing tools, with explicit badge, product-imagery and trademark rules. Do not recreate platform badges or treat platform identity assets as generic social artwork.
+
+W0–W5 governs this layer. W3 is the minimum intentional reuse threshold: production-faithful evidence, no sensitive/real-user data, correct platform branding, locale parity, known eligible surfaces, accessibility metadata where supported, and a stale/retirement trigger.
+
+MintTap screenshots involving ROC, distributions, reverse splits, tax adjustment, portfolio values or exchange rates must use synthetic/demo data and must not imply investment advice, guaranteed returns, tax determinations or unshipped behavior. LogMate marketing records must never expose real crew identities, operationally sensitive records or company-confidential roster data.
+
+Required asset registry:
+`asset_id → app → platform → locale → user_job → production_version → source_screen → claim/evidence → synthetic-data status → sensitive-data check → platform reuse eligibility → external-marketing setting → accessibility/alt-text status → owner → stale trigger → retirement date → W-class`
 
 ## Current operating model
-Store: `search intent → Q-class → Apple CPP / Google CSL → qualified acquisition → first value/useful return`. 094 separately governs Apple App Tags; 095 covers human-curated earned distribution; 096 covers relevant portfolio discovery. Publisher reputation never proves specialist claims.
+Store: `search intent → Q-class → matched Apple CPP / Google CSL → qualified acquisition → safe I-class destination → first value → cadence-appropriate useful return`.
 
-Store experimentation uses 101 J0–J5: `highest-value uncertainty → one interpretable hypothesis → feasible qualified traffic → platform result → first-value/useful-return validation → decision`. Draws and insufficient data are valid outcomes.
+Zero-cost distribution: `permission → genuine contribution → stable route attribution where appropriate → truthful Store promise → acquisition → first value → useful return → repeated evidence → channel decision`. Privacy suppression is not zero response; labor remains an economic cost.
 
-Event-shaped Store distribution uses 104 V0–V5: `real product moment → current platform/category eligibility → V-class → Store surface → safe destination → first value → useful return`. Never force Apple/Google campaign symmetry. MintTap market events, routine distribution refreshes, ticker changes, UI tweaks and generic awareness are not product events. Under current Google guidance, do not plan MintTap Google Play Promotional content around investing/stocks/funds/financial-utility themes.
+Retention uses K0–K5. Platform reopen/install persistence metrics remain diagnostics, not the company retention objective. K3 requires a job-specific useful-return event at its natural cadence.
 
-Retention uses 102 K0–K5. Apple/Google retention, MAU, first-open and retained-installer measures remain platform-specific diagnostics. Do not blend them into a company retention KPI unless transformed to the same explicit product event and denominator. K3 requires a cadence-appropriate specialist useful-return event; generic D7 is not the product objective.
+Advertising remains governed by 069–073 plus F/A/B/E/U gates. U3 is the minimum deliberate monetization threshold: legitimate placement + impression-revenue precision semantics + stable K3 denominator. Higher eCPM, CTR, fill or short-term ARPU never validates degraded specialist utility.
 
-Intent continuity: `specialist problem → permitted content/community route → matched Store promise → install/open → exact safe in-app destination → first value → useful return`. I3 is the minimum deliberate job-specific deep-routing threshold.
-
-Zero-cost distribution: `permission → genuine novelty/contribution → stable route ID where appropriate → valid Store promise → attributed visit/acquisition → first value → useful return → repeated evidence → channel decision`. Platform attribution identifies routes, not causality; privacy suppression is not zero response; labor remains an economic cost.
-
-Prelaunch uses 099 H0–H5. Apple pre-order and Google Play pre-registration are parallel but non-equivalent mechanisms. H3 is the minimum deliberate prelaunch threshold.
-
-Store trust uses 092 T0–T5; localization 091 L0–L5; organic/search 082 N0–N5; distribution 083 D0–D5; owned communities 084 O0–O5; connected speakers 085 C0–C5; reviews 086 R0–R5; intent continuity 100 I0–I5; Store experimentation 101 J0–J5; retention semantics 102 K0–K5; event-shaped Store distribution 104 V0–V5.
-
-Advertising remains governed by 069–073 plus 087 F0–F5, 088 A0–A5, 089 B0–B5, 090 E0–E5 and 103 U0–U5. Larger formats, higher CTR/eCPM/fill or short-term ARPU cannot convert an invalid placement or degraded specialist workflow into sustainable inventory. Monetization is judged by cumulative ad revenue from retained useful users, with 102 defining useful return and 103 requiring impression-value precision semantics to survive ingestion. U3 is the minimum threshold for deliberate monetization optimization: legitimate placement + paid-event precision + stable K3 useful-return denominator.
+Store experiments use J0–J5 and scarce specialist traffic only when the result can change a decision. Event-shaped distribution uses V0–V5 and must be platform/category eligible. MintTap Google Play Promotional content remains excluded while Google's restricted-finance guidance covers investing/stocks/funds/financial utility.
 
 ## Immediate next targets
-1. Audit MintTap analytics/event schema: identify first-value events, cadence-appropriate useful-return events, eligibility denominators and platform proxies; classify K0–K5 before optimizing retention or ad frequency.
-2. Audit MintTap GMA implementation for impression-level paid events: SDK version, ad units/formats/placement IDs, `value_micros`, currency and precision type. Classify U0–U5; do not optimize eCPM/frequency before U3.
-3. Inventory every live MintTap outbound Store link on minttap.app, blog, Reddit and social; establish 097 C2 baseline before increasing posting frequency. Extend with destination/fallback/prerequisite fields for 100 I-class.
-4. Audit whether minttap.app ↔ iOS/Android currently has verified Universal Link/App Link associations; require stable I3 jobs before implementation.
-5. Build a MintTap Store experiment backlog ranked by decision value and traffic feasibility; classify J0–J5 and require K3 useful-return validation before J4.
-6. Reddit saturation audit: inventory MintTap posts/comments by community, job/topic, destination, date, disclosure, removal/mod feedback and prior similar contribution; classify S0–S5.
-7. Inventory live Google Play Developer Profile and exact public Apple/Google developer identity; classify cross-app routes X0–X5.
-8. Inventory MintTap US Apple App Tags and classify G0–G5.
-9. Inventory MintTap next 6–12 month roadmap for genuine Apple editorial moments P0–P5 and genuine Apple IAE product moments V0–V5; do not infer event-worthiness from external market timing.
-10. Re-attempt first-party MintTap source access and audit exchange-rate field/help/template/error/review wording.
-11. Audit MintTap production SDK/data-flow against T0–T5; material T0 mismatch is an acquisition/release blocker.
-12. Obtain live MintTap Apple/Google search terms and CPP/CSL mappings; cluster by user job and classify Q0–Q5.
-13. Engineering review for durable first-value/useful-return semantics and protected foreground-intent registry before App Open testing.
-14. Execute fresh-user activation studies when target users are available; record incidents rather than small-N population percentages.
-15. Audit every intentionally published MintTap localization under L0–L5.
-16. LogMate prelaunch readiness: classify H0–H5 after the next production milestone. Preserve scarce pilot testers for workflow uncertainty; do not set generic D7 targets before observed pilot job cadence and K3 semantics exist.
-17. Audit MintTap Home banner B0–B5 and establish E3/U3 baseline before larger/collapsible-format tests; denominator must be useful-return cycles/users, not manufactured opens.
-18. Audit MintTap blog under 082/083 and r/MintTapforYieldMax under 084/098.
-19. Audit MintTap review-prompt trigger and Store review inventory under 086.
-20. Verify current first-party Store eligibility before every event-shaped campaign. Apple IAE requires V3; MintTap Google Play Promotional content remains excluded while Google's finance restriction covers investing/stocks/funds/financial utility.
+1. Audit MintTap analytics/event schema and define first-value, useful-return, eligibility denominator and natural cadence; classify K0–K5.
+2. Audit MintTap GMA impression-level paid events (`value_micros`, currency, precision type), ad units/formats/placements; classify U0–U5.
+3. **Audit MintTap Google Play `External marketing` state and build the first W0–W5 asset registry from live Store assets.** Verify synthetic-data safety, production-version parity, locale, alt text, syndication eligibility and stale triggers before creating more social derivatives.
+4. Inventory live MintTap outbound Store links and establish C2 baseline; extend with I-class destination/fallback/prerequisite fields.
+5. Verify minttap.app Universal Link / Android App Link associations and stable I3 destinations.
+6. Rank MintTap Store experiment backlog by decision value × traffic feasibility × downstream measurability; require J3 before live traffic use.
+7. Complete Reddit saturation/community audit under S0–S5 and O0–O5.
+8. Inventory live Apple/Google developer identity, Apple App Tags, next P3 editorial moment and next genuine V3 Apple IAE moment.
+9. Re-attempt first-party MintTap product/source audits for trust parity, exchange-rate semantics, review prompts, localization and Home-banner B/E/U evidence.
+10. For LogMate, preserve scarce pilot evidence for manual-entry, persistence, totals/search, offline/backup and first-value uncertainty; classify H/K/T/I/W gates only from production-valid behavior.
 
 ## Unresolved questions
-**MintTap:** exact first-value and useful-return events; natural cadence by core job; current analytics schema; Apple/Google platform-retention comparability boundaries; live Store-link/C-class inventory; Universal/App Link verification; route-level first-value/useful-return linkage; qualified Store traffic for J3; Reddit S-class; owned-community value; US App Tags/G-class; next P3 editorial moment; next genuine V3 Apple IAE product moment; historical IAE performance; search-term/CPP/CSL families; locale/L-class; SDK/data-flow/privacy parity; Home banner B/E/U evidence; current GMA SDK and ILAR capture; PRECISE/ESTIMATED/PUBLISHER_PROVIDED/UNKNOWN mix; currency normalization; KRW exchange-rate semantics; review recurrence.
+**MintTap:** exact first-value/useful-return events and cadence; analytics schema; GMA ILAR precision/currency mix; live Store-link attribution; Universal/App Link verification; qualified J3 traffic; Reddit saturation; Apple App Tags; next P3/V3 moments; localization/trust parity; review recurrence; Google Play `External marketing` state; which live Store assets may be syndicated; whether all screenshots use safe synthetic data; asset expiry ownership.
 
-**LogMate:** observed pilot job cadence; K3 useful-return definition; prelaunch H-class; native/PWA final scope; canonical FlightRecord persistence; manual entry; aggregation; offline/backup reliability; first-value validation; launch geography/professional boundaries; production import; analytics/retention; native/PWA semantic parity; pilot-community permission/S3 entry points; launch locales/L3; T3 privacy/support/accessibility parity; I3 need; when Store traffic justifies J3; future V3 event-shaped Store moments; legitimate ad-bearing boundaries before any U3 monetization work.
+**LogMate:** observed pilot job cadence; K3 useful return; H-class prelaunch readiness; native/PWA final scope; production persistence/manual entry/aggregation/offline/backup/import; launch geography and professional boundaries; community permission; T3/I3 requirements; legitimate ad boundaries; W3-safe synthetic flight/crew marketing dataset.
 
-**Company-wide:** canonical useful-return event schema and denominator ownership; rule for comparing platform-native retention without semantic drift; campaign/UTM naming ownership; deep-link route registry; aggregate method below privacy thresholds; labor-cost denominator; developer identity/profile configuration; X3 adjacency; long-run ad revenue per useful-return user/cycle; ILAR precision/currency normalization standard; empirical stop thresholds; governance ledgers; Store experiment evidence-budget ownership; event-shaped Store eligibility revalidation ownership; community stopping rules; trust-surface release ownership.
+**Company-wide:** canonical useful-return schema ownership; route/UTM naming; deep-link registry; privacy-threshold interpretation; labor-cost denominator; cross-app X3 adjacency; long-run revenue per useful-return user/cycle; governance ledgers; Store experiment evidence-budget ownership; event eligibility revalidation; **cross-platform asset registry ownership, syndication-surface inventory, and stale-asset retirement SLA**.
 
 ## Progress interpretation
-Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. A platform retention percentage, technically successful link/open, statistically positive Store treatment, Store-event impression, or higher eCPM is not a growth outcome unless qualified intent survives into cadence-appropriate useful production use and repeated value. Revenue evidence must also retain its precision semantics; an uninterpretable blended revenue increase is not decision-grade monetization evidence.
+Do not report progress by file count. The highest-value question remains whether a target specialist can reach personal first value with acceptable effort, understand why to return, and encounter monetization only at legitimate boundaries. Store assets are now treated as distributed product evidence: a beautiful screenshot that can drift, leak real data, or make an unshipped claim is not a marketing asset.

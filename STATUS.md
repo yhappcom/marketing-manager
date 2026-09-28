@@ -6,7 +6,7 @@ Last updated: 2026-09-29
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 294 — Release-Response Operating Contract** (validated; canonical file write pending connector permission).
+Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 295 — Pre-launch Claim Registry Contract** (validated; independent canonical file write pending connector permission).
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
@@ -21,8 +21,13 @@ A meaningful specialist-app repair is not complete when code ships. Synchronize 
 
 GU0–GU9: evidence anchor → repair verification → release-note specificity → affected-review closure → support synchronization → Store-claim synchronization → owned-reference synchronization → community re-entry gate → repair measurement → close/reopen.
 
+## Latest validated addition — 295
+Treat every material acquisition statement as an evidence-bearing promise, not merely copy. Maintain a pre-launch claim registry linking each atomic claim to product evidence, authority/provenance where relevant, scope/qualifiers, owner, verified version/date, live destination, dependent surfaces, and invalidation triggers. Apple product-page guidance centers screenshots and descriptions on actual app experience/features; Google Play explicitly requires Store listing information and graphics to accurately reflect delivered functionality and warns that promise/product discrepancies can cause rejection.
+
+GW0–GW9: atomize → classify → anchor → scope → owner → verify → propagate → invalidate → sweep → close. Status values: VERIFIED / QUALIFIED / HOLD / RETIRE / UNKNOWN. Screenshot overlays and custom-page copy count as claims. Roadmap functionality cannot be presented as current capability. A product release triggers only dependent-claim revalidation, not indiscriminate channel rewriting.
+
 ## Immediate next targets
-1. Build a reusable launch/update change-propagation matrix so each product change synchronizes only the surfaces that became stale, preventing both stale promises and unnecessary promotional activity.
+1. Build the first MintTap production claim-registry audit from actual Store, owned-web, support, and product evidence; prioritize ROC/provenance, total-return methodology, split/reinvestment reconstruction, Tax Adjustment, and tax-language implications.
 2. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.
 3. Continue the MintTap community evidence ledger around independently recurring problems; current first-pass clusters are ROC state/provenance, broker/substitute-payment mismatch, ticker/date ROC reconstruction, and total-return methodology.
 4. Convert recurring high-value YieldMax questions into durable owned reference assets where evidence supports them; use community posts/comments as native answers first, not link funnels.

@@ -6,7 +6,7 @@ Last updated: 2026-09-29
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 299 — Durable Owned-Reference Architecture** (validated; independent canonical file write pending connector permission).
+Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 300 — Community-to-Owned Reference Promotion Boundary** (canonical independent file committed).
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
@@ -33,16 +33,24 @@ HA0–HA9: recurring specialist problem → evidence bundle → canonical answer
 
 MintTap priority references: estimated vs final ROC/provenance, ticker/date reconstruction, split/reinvestment reconstruction, total-return methodology, and carefully bounded Tax Adjustment mechanics. LogMate priority references: import/migration continuity, duplicate reconciliation, Previous Total, export integrity, and offline/PWA/device boundaries.
 
+## Latest validated addition — 300
+Owned references are support infrastructure for community participation, not syndication inventory. Reddit's current spam policy prohibits repeated or unsolicited mass engagement and warns against repetitive posting for exposure/financial gain. Promotional content is not inherently spam, but community-specific rules and moderator judgment control; a numeric self-promotion ratio is not a sitewide safe harbor.
+
+HB0–HB9: real community problem → complete native answer → current rule check → material-affiliation disclosure → link-necessity test → repetition control → no forced funnel → value ledger → evidence-based re-entry trigger → KEEP/NATIVE-ONLY/LINK-PERMITTED/REPAIR/RETIRE.
+
+For MintTap, recurring YieldMax problems—not ticker variants—are the unit of contribution. Link an owned reference only when it adds maintained evidence, methodology, data, or depth beyond the native answer. For LogMate, professional workflow credibility around import/migration, duplicate reconciliation, Previous Total, export integrity, and offline/PWA boundaries outranks referral volume.
+
 ## Immediate next targets
-1. Audit MintTap's actual owned-reference inventory and map each page to a recurring specialist problem, Claim Registry entry, evidence owner, canonical URL, invalidation trigger, and measurable downstream value; merge/retire duplicate or thin references before creating new content.
-2. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.
-3. Continue the MintTap community evidence ledger around independently recurring problems; current first-pass clusters are ROC state/provenance, broker/substitute-payment mismatch, ticker/date ROC reconstruction, and total-return methodology.
-4. Convert recurring high-value YieldMax questions into durable owned reference assets where evidence supports them; use community posts/comments as native answers first, not link funnels.
-5. Audit MintTap production monetization before increasing ad pressure: protected workflows, consent/request state, ad-unit/surface map, request→load→impression→paid-event funnel, source/latency errors, precision/reconciliation, traffic quality, caps/cooldowns and app-ads.txt/readiness.
-6. Audit MintTap Apple/Google Store intent routing and experiments only where traffic can distinguish a business-material effect; stop cosmetic micro-tests that remain censored/inconclusive.
-7. For LogMate, build a pre-launch pilot-community permission/evidence map around migration/import, duplicate handling, Previous Total continuity, device/PWA workflow and export integrity; do not seed repetitive product links.
-8. Keep LogMate Store and ad monetization launch work subordinate to professional workflow integrity and first/repeated specialist value.
-9. Reuse the same decision/evidence/trust ledgers for future niche apps rather than creating channel-specific activity calendars.
+1. Apply HB0–HB9 to MintTap's external community map: capture current subreddit/community rules, disclosure expectations, link tolerance, and repetition risk before any reference distribution.
+2. Audit MintTap's actual owned-reference inventory and map each page to a recurring specialist problem, Claim Registry entry, evidence owner, canonical URL, invalidation trigger, and measurable downstream value; merge/retire duplicate or thin references before creating new content.
+3. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.
+4. Continue the MintTap community evidence ledger around independently recurring problems; current first-pass clusters are ROC state/provenance, broker/substitute-payment mismatch, ticker/date ROC reconstruction, and total-return methodology.
+5. Convert recurring high-value YieldMax questions into durable owned reference assets where evidence supports them; use community posts/comments as native answers first, not link funnels.
+6. Audit MintTap production monetization before increasing ad pressure: protected workflows, consent/request state, ad-unit/surface map, request→load→impression→paid-event funnel, source/latency errors, precision/reconciliation, traffic quality, caps/cooldowns and app-ads.txt/readiness.
+7. Audit MintTap Apple/Google Store intent routing and experiments only where traffic can distinguish a business-material effect; stop cosmetic micro-tests that remain censored/inconclusive.
+8. For LogMate, build a pre-launch pilot-community permission/evidence map around migration/import, duplicate handling, Previous Total continuity, device/PWA workflow and export integrity; do not seed repetitive product links.
+9. Keep LogMate Store and ad monetization launch work subordinate to professional workflow integrity and first/repeated specialist value.
+10. Reuse the same/ decision/evidence/trust ledgers for future niche apps rather than creating channel-specific activity calendars.
 
 ## Unresolved questions
 **MintTap:** actual production ad inventory/funnel and consent state; app-ads.txt/readiness; mediation/floor/source configuration; Policy Center/traffic-quality history; Store experiment traffic sufficiency; Apple CPP/Google CSL inventory; acquisition/referrer evidence; current rules and promotion tolerance in relevant external YieldMax/income-investor communities; authoritative provenance/boundaries for the recurring ROC and return-methodology questions now identified; ratings/reviews and first/repeated specialist-value evidence.

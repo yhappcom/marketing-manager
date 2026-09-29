@@ -6,7 +6,7 @@ Last updated: 2026-09-29
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 295 — Pre-launch Claim Registry Contract** (validated; independent canonical file write pending connector permission).
+Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 299 — Durable Owned-Reference Architecture** (validated; independent canonical file write pending connector permission).
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
@@ -26,8 +26,15 @@ Treat every material acquisition statement as an evidence-bearing promise, not m
 
 GW0–GW9: atomize → classify → anchor → scope → owner → verify → propagate → invalidate → sweep → close. Status values: VERIFIED / QUALIFIED / HOLD / RETIRE / UNKNOWN. Screenshot overlays and custom-page copy count as claims. Roadmap functionality cannot be presented as current capability. A product release triggers only dependent-claim revalidation, not indiscriminate channel rewriting.
 
+## Latest validated addition — 299
+Durable zero-cost content should be a maintained owned-reference system around recurring specialist problems, not a publishing calendar. Community discussion supplies problem evidence and language; the owned reference becomes the canonical, updateable answer. Prefer one substantive canonical page over channel/ticker clones unless intent, workflow, evidence, or qualification materially differs. Structured data describes qualifying content; it is not a ranking guarantee. QAPage markup is narrowly for one-question pages and must not be applied mechanically to generic FAQ/blog content.
+
+HA0–HA9: recurring specialist problem → evidence bundle → canonical answer → scope/provenance/uncertainty → crawlable destination → qualifying metadata/schema → native-first community use → claim-registry/invalidation linkage → update-in-place → KEEP/REPAIR/SPLIT/MERGE/RETIRE.
+
+MintTap priority references: estimated vs final ROC/provenance, ticker/date reconstruction, split/reinvestment reconstruction, total-return methodology, and carefully bounded Tax Adjustment mechanics. LogMate priority references: import/migration continuity, duplicate reconciliation, Previous Total, export integrity, and offline/PWA/device boundaries.
+
 ## Immediate next targets
-1. Build the first MintTap production claim-registry audit from actual Store, owned-web, support, and product evidence; prioritize ROC/provenance, total-return methodology, split/reinvestment reconstruction, Tax Adjustment, and tax-language implications.
+1. Audit MintTap's actual owned-reference inventory and map each page to a recurring specialist problem, Claim Registry entry, evidence owner, canonical URL, invalidation trigger, and measurable downstream value; merge/retire duplicate or thin references before creating new content.
 2. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.
 3. Continue the MintTap community evidence ledger around independently recurring problems; current first-pass clusters are ROC state/provenance, broker/substitute-payment mismatch, ticker/date ROC reconstruction, and total-return methodology.
 4. Convert recurring high-value YieldMax questions into durable owned reference assets where evidence supports them; use community posts/comments as native answers first, not link funnels.

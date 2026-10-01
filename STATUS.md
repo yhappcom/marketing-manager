@@ -1,12 +1,12 @@
 # Marketing Manager Status
 
-Last updated: 2026-09-29
+Last updated: 2026-10-01
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 300 — Community-to-Owned Reference Promotion Boundary** (canonical independent file committed).
+Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 359 — Community Visibility Censoring and Trust-State Diagnostics**. Research 301–359 are post-freeze operational extensions; independent files present in the repository remain canonical even where older status sections below preserve milestone detail.
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
@@ -40,8 +40,15 @@ HB0–HB9: real community problem → complete native answer → current rule ch
 
 For MintTap, recurring YieldMax problems—not ticker variants—are the unit of contribution. Link an owned reference only when it adds maintained evidence, methodology, data, or depth beyond the native answer. For LogMate, professional workflow credibility around import/migration, duplicate reconciliation, Previous Total, export integrity, and offline/PWA boundaries outranks referral volume.
 
+## Latest validated addition — 359
+Reddit community outcomes are censored when visibility eligibility is unknown. CQS, Reputation Filter, Crowd Control, AutoModerator, and community-specific trust can prevent otherwise rule-compliant contributions from receiving normal distribution. Therefore zero engagement is not automatically evidence of zero demand.
+
+HV0–HV9: problem fit → current rules → account-wide trust indicators → community-specific trust indicators → filtering possibility → observable distribution → native engagement quality → link/promotion effect → repeated eligible evidence → LEARN / ESTABLISH-TRUST / REPAIR / HOLD-CENSORED / STOP.
+
+Do not game trust systems or repost repeatedly after filtering. Native contributions must remain useful without a product link. A numeric self-promotion ratio is not a sitewide entitlement; community rules and moderator judgment control.
+
 ## Immediate next targets
-1. Apply HB0–HB9 to MintTap's external community map: capture current subreddit/community rules, disclosure expectations, link tolerance, and repetition risk before any reference distribution.
+1. Build MintTap's actual external-community ledger: current rules, disclosure/link constraints, account/community trust indicators, visible/removed/filtered/unknown state, recurring problem, native-answer completeness, and only then downstream referral evidence.
 2. Audit MintTap's actual owned-reference inventory and map each page to a recurring specialist problem, Claim Registry entry, evidence owner, canonical URL, invalidation trigger, and measurable downstream value; merge/retire duplicate or thin references before creating new content.
 3. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.
 4. Continue the MintTap community evidence ledger around independently recurring problems; current first-pass clusters are ROC state/provenance, broker/substitute-payment mismatch, ticker/date ROC reconstruction, and total-return methodology.

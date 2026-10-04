@@ -1,12 +1,12 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-02
+Last updated: 2026-10-04
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 365 — Regulated-Category Discovery Eligibility Before Channel Tactics**. Research 301–365 are post-freeze operational extensions; independent files present in the repository remain canonical even where older status sections below preserve milestone detail.
+Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 418 — Financial-Feature Classification Before Google Play Growth Tactics**. Research 301–365 are post-freeze operational extensions; independent files present in the repository remain canonical even where older status sections below preserve milestone detail.
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
@@ -55,7 +55,7 @@ IB0–IB9: product/category classification → jurisdiction/policy scope → ord
 For MintTap, treat investing-themed Google Play Promotional content as HOLD-CLASSIFICATION / likely ROUTE-ELSEWHERE until actual Play Console eligibility/category treatment is verified. Do not euphemize truthful finance claims to evade a surface restriction. Evaluate LogMate independently; MintTap's finance restriction does not transfer to aviation.
 
 ## Immediate next targets
-1. Verify MintTap's actual Google Play category/Financial features declaration and Premium growth-tool/Promotional-content eligibility; record ordinary Store distribution and optional discovery-surface eligibility separately in the channel matrix.
+1. Audit MintTap's live Google Play Financial features declaration against shipped functionality and Store claims; then record country-specific obligations, ordinary Store distribution, and optional Promotional-content eligibility separately. Do not infer the declaration from Store category or alter truthful classification to unlock growth surfaces.
 2. Build MintTap's actual external-community ledger: current rules, disclosure/link constraints, account/community trust indicators, visible/removed/filtered/unknown state, recurring problem, native-answer completeness, and only then downstream referral evidence.
 3. Audit MintTap's actual owned-reference inventory and map each page to a recurring specialist problem, Claim Registry entry, evidence owner, canonical URL, invalidation trigger, and measurable downstream value; merge/retire duplicate or thin references before creating new content.
 4. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.

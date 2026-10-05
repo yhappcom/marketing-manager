@@ -4,24 +4,27 @@
 D2 production monetization remains **ACTIVE / PRESSURE HOLD**.
 
 ## Verified repository evidence
-The currently accessible canonical GitHub repository named `yhappcom/yieldmax_tracker` has `main` at commit `d88f5855dbe5be91c979b58f3670487e3691f479` (2026-02-11, “Merge develop into main (bootstrap complete)”). Its current tree is a bootstrap Flutter/Firebase project and does not contain the later MintTap advertising surfaces previously described in Marketing Manager run output.
+The default `main` branch of `yhappcom/yieldmax_tracker` is a February 2026 bootstrap line and must not be used by itself as the authority for the shipped 1.0.29 implementation.
 
-The accessible commit history on `main` also ends in February 2026. Therefore this repository cannot presently serve as authoritative evidence for the current shipped MintTap ad inventory, Home ad placement, consent runtime, paid-event instrumentation, mediation, or release binary.
+The repository has an explicit `1.0.29` branch. GitHub resolves that branch to commit `736bbc99a41c14130d82aeaa17ac81f0fc835a65` (2026-09-08, “Add user activity tracking”). This is the reproducible release-version implementation reference already used by Marketing Manager evidence.
 
-## Correction / evidence boundary
-A prior run reported a MintTap `1.0.29` source commit and specific `HomeInlineAdSlot` behavior. That source is **not reproducible from the currently accessible `yhappcom/yieldmax_tracker/main`** and must not be treated as canonical production evidence until the authoritative current source or shipped binary is identified and re-verified.
+## Corrected evidence boundary
+The earlier downgrade in this file was caused by treating the default branch as the only production-source authority. That was incorrect.
 
-This does not prove that the reported ad behavior is absent from the live app. It changes the evidence state from “production-source verified” to **UNVERIFIED CURRENT-SOURCE CLAIM**.
+Restore the source state to **RELEASE-VERSION IMPLEMENTATION VERIFIED** for claims directly reproducible from the `1.0.29` branch. Do not promote that status to live-runtime verification: source presence does not establish current consent state, requests, impressions, paid events, revenue quality, mediation behavior, enforcement/account health, or retention effects.
 
 ## Operational consequence
-Do not revise the protected-workflow contract or increase ad pressure from the unreproducible source claim. The next valid D2 evidence target is the authoritative current shipped source/binary plus:
-- complete ad surface/unit map;
-- UMP/consent and request eligibility state;
-- live app-ads.txt authorization;
+Do not increase ad pressure from source evidence alone. D2 remains **RELEASE-VERSION IMPLEMENTATION VERIFIED / LIVE MONETIZATION QUALITY UNVERIFIED / PRESSURE HOLD**.
+
+Next production evidence targets:
+- live UMP/consent and request eligibility state;
+- live app-ads.txt authorization/readiness;
+- ad surface/unit map reconciled to runtime;
 - request → load → impression → paid-event chain;
+- source/adapter/latency errors;
 - ILAR precision/source and estimated → finalized reconciliation;
 - mediation/floor/refresh configuration;
 - accidental-click geometry and Confirmed Click/Policy Center/serving-limit history;
 - caps/cooldowns and first/repeated-value guardrails.
 
-Public App Store advertising/privacy declarations remain evidence that advertising/tracking is declared, but not evidence of the runtime implementation above.
+Public Store advertising/privacy declarations are supporting declaration evidence, not runtime proof.

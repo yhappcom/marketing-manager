@@ -1,12 +1,12 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-04
+Last updated: 2026-10-06
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions 080–294 extend the operating system. Research 249–284 deepen ad monetization, measurement, Store-to-core-value instrumentation, sparse-niche experiment stopping, and zero-cost learning allocation. Latest validated work extends through **Research 418 — Financial-Feature Classification Before Google Play Growth Tactics**. Research 301–365 are post-freeze operational extensions; independent files present in the repository remain canonical even where older status sections below preserve milestone detail.
+Research 042–079 remains canonical. Post-freeze additions extend the operating system. Independent research files actually present on `main` are canonical; sequence gaps are not inferred. The highest-numbered independent research file currently present is **Research 436 — App Tags Turn Metadata Into a Derived Discovery Surface**. General theory remains frozen unless a qualifying evidence or operational gap is found.
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
@@ -55,17 +55,16 @@ IB0–IB9: product/category classification → jurisdiction/policy scope → ord
 For MintTap, treat investing-themed Google Play Promotional content as HOLD-CLASSIFICATION / likely ROUTE-ELSEWHERE until actual Play Console eligibility/category treatment is verified. Do not euphemize truthful finance claims to evade a surface restriction. Evaluate LogMate independently; MintTap's finance restriction does not transfer to aviation.
 
 ## Immediate next targets
-1. Audit MintTap's live Google Play Financial features declaration against shipped functionality and Store claims; then record country-specific obligations, ordinary Store distribution, and optional Promotional-content eligibility separately. Do not infer the declaration from Store category or alter truthful classification to unlock growth surfaces.
-2. Build MintTap's actual external-community ledger: current rules, disclosure/link constraints, account/community trust indicators, visible/removed/filtered/unknown state, recurring problem, native-answer completeness, and only then downstream referral evidence.
-3. Audit MintTap's actual owned-reference inventory and map each page to a recurring specialist problem, Claim Registry entry, evidence owner, canonical URL, invalidation trigger, and measurable downstream value; merge/retire duplicate or thin references before creating new content.
-4. Validate the authority/provenance layer for MintTap's highest-value community problems: estimated vs final ROC, issuer notices vs broker reporting, and total-return methodology.
-5. Continue the MintTap community evidence ledger around independently recurring problems; current first-pass clusters are ROC state/provenance, broker/substitute-payment mismatch, ticker/date ROC reconstruction, and total-return methodology.
-6. Convert recurring high-value YieldMax questions into durable owned reference assets where evidence supports them; use community posts/comments as native answers first, not link funnels.
-7. Audit MintTap production monetization before increasing ad pressure: protected workflows, consent/request state, ad-unit/surface map, request→load→impression→paid-event funnel, source/latency errors, precision/reconciliation, traffic quality, caps/cooldowns and app-ads.txt/readiness.
-8. Audit MintTap Apple/Google Store intent routing and experiments only where traffic can distinguish a business-material effect; stop cosmetic micro-tests that remain censored/inconclusive.
-9. For LogMate, build a pre-launch pilot-community permission/evidence map around migration/import, duplicate handling, Previous Total continuity, device/PWA workflow and export integrity; do not seed repetitive product links.
-10. Keep LogMate Store and ad monetization launch work subordinate to professional workflow integrity and first/repeated specialist value.
-11. Reuse the same/decision/evidence/trust ledgers for future niche apps rather than creating channel-specific activity calendars.
+1. **D1 — MintTap Play financial classification:** reconcile the live Google Play Financial features declaration with shipped functionality and Store claims. Keep ordinary Store distribution separate from optional Promotional-content/growth-surface eligibility. **State: HOLD — live Play Console declaration not observed.**
+2. **D2 — MintTap production monetization integrity:** preserve protected workflows; reconcile live consent/request eligibility, app-ads.txt verification/readiness, ad-unit/surface map, request→load→impression→paid-event, source/adapter/latency errors, ILAR precision/source, estimated→finalized revenue, mediation/floor/refresh, accidental-click geometry, Policy Center/Confirmed Click/serving-limit history, caps/cooldowns, and first/repeated-value guardrails. **State: RELEASE-VERSION IMPLEMENTATION VERIFIED / LIVE MONETIZATION QUALITY UNVERIFIED / PRESSURE HOLD.**
+3. **D3 — MintTap external-community permission/evidence:** maintain action-level rule/permission/routing evidence and complete native answers before links. **State: PARTIAL — recurring-problem evidence exists; promotion/link permission is not generally verified.**
+4. **D4 — MintTap owned references + ROC/issuer/broker/return provenance:** preserve estimate, issuer year-end/final, broker/account-specific, and unknown source states; do not overclaim finality. **State: ISSUER DOCUMENT HIERARCHY OBSERVED / FIELD-LEVEL PRODUCT PROVENANCE PARTIAL.**
+5. **D5 — MintTap Store semantic routing:** inspect actual US Apple App Tags, CPP inventory, Google CSL/search intent, and sparse-experiment traffic sufficiency before routing experiments. **State: PUBLIC DEFAULT APP STORE PAGE OBSERVED / CONSOLE ROUTING EVIDENCE REQUIRED.**
+6. **D6 — MintTap acquisition/referrer, ratings/reviews, first/repeated specialist value:** obtain production evidence without treating Store conversion or ratings as retention.
+7. **D7 — MintTap owned-subreddit identity/governance and off-platform representation:** keep owned-community identity distinct from independent-community participation and preserve disclosure/governance boundaries.
+8. **D8 — LogMate pre-launch pilot-community evidence:** prioritize import/migration, duplicate handling, Previous Total, device/PWA/offline workflow, and export integrity.
+9. **D9 — LogMate launch measurement/Store truth/accessibility/value:** verify Store claims and first/repeated specialist value before scaling distribution.
+10. **D10 — LogMate monetization:** **NOT ADMITTED until ads are actually planned.** If admitted later, reuse protected-workflow, consent, revenue-validity, mediation-health, and repeated-value contracts rather than manufacturing launch inventory.
 
 ## Unresolved questions
 **MintTap:** Google Play Financial features declaration/category and Premium growth-tool/Promotional-content eligibility; actual production ad inventory/funnel and consent state; app-ads.txt/readiness; mediation/floor/source configuration; Policy Center/traffic-quality history; Store experiment traffic sufficiency; Apple CPP/Google CSL inventory; acquisition/referrer evidence; current rules and promotion tolerance in relevant external YieldMax/income-investor communities; authoritative provenance/boundaries for the recurring ROC and return-methodology questions now identified; ratings/reviews and first/repeated specialist-value evidence.

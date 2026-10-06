@@ -62,8 +62,8 @@ For MintTap, treat investing-themed Google Play Promotional content as HOLD-CLAS
 5. **D5 — MintTap Store semantic routing:** inspect actual US Apple App Tags, CPP inventory, Google CSL/search intent, and sparse-experiment traffic sufficiency before routing experiments. **State: PUBLIC DEFAULT APP STORE PAGE OBSERVED / CONSOLE ROUTING EVIDENCE REQUIRED.**
 6. **D6 — MintTap acquisition/referrer, ratings/reviews, first/repeated specialist value:** obtain production evidence without treating Store conversion or ratings as retention.
 7. **D7 — MintTap owned-subreddit identity/governance and off-platform representation:** keep owned-community identity distinct from independent-community participation and preserve disclosure/governance boundaries.
-8. **D8 — LogMate pre-launch pilot-community evidence:** prioritize import/migration, duplicate handling, Previous Total, device/PWA/offline workflow, and export integrity.
-9. **D9 — LogMate launch measurement/Store truth/accessibility/value:** verify Store claims and first/repeated specialist value before scaling distribution.
+8. **D8 — LogMate pre-launch pilot-community evidence:** prioritize import/migration, duplicate handling, Previous Total, device/PWA/offline workflow, and export integrity. **State: PREVIOUS-TOTAL USER-FACING PATH IMPLEMENTED / GENERAL IMPORT+RECONCILIATION NOT IMPLEMENTED / PRODUCTION EXPORT+RE-IMPORT NOT IMPLEMENTED / OFFLINE-PWA PRODUCT ACCEPTANCE NOT PASS.**
+9. **D9 — LogMate launch measurement/Store truth/accessibility/value:** verify Store claims and first/repeated specialist value before scaling distribution. **State: FIRST-USE PRODUCT PREVIEW CONFIRMED IN PRINCIPLE BUT DEFERRED until Home, Flight entry, Import, Search/logbook review, and Export/share are sufficiently complete to show truthfully; placeholder tutorial slides and synthetic feature mockups are explicitly excluded.**
 10. **D10 — LogMate monetization:** **NOT ADMITTED until ads are actually planned.** If admitted later, reuse protected-workflow, consent, revenue-validity, mediation-health, and repeated-value contracts rather than manufacturing launch inventory.
 
 ## Unresolved questions

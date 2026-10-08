@@ -1,12 +1,22 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-06
+Last updated: 2026-10-09
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
 Research 042–079 remains canonical. Post-freeze additions extend the operating system. Independent research files actually present on `main` are canonical; sequence gaps are not inferred. The highest-numbered independent research file currently present is **Research 436 — App Tags Turn Metadata Into a Derived Discovery Surface**. General theory remains frozen unless a qualifying evidence or operational gap is found.
+
+## Production evidence checkpoint — 2026-10-09
+
+**Canonical inventory reconciliation (actual `main` tree, not inferred sequence):** 373 numbered independent `research/*.md` files; 366 distinct numeric prefixes; highest present prefix 436. Prefix collisions are **249 (5 distinct paths), 250 (3), 251 (2)**. A numeric prefix is not a unique research ID: use the **full repository path** to identify, cite, or update a study. Do not infer absent numbers or manufacture research to fill gaps. Inventory source: `main` Git tree at `2699f584e6d7def3d0b89cbb43cdfbcdb355a500` (inspected 2026-10-09).
+
+**D1 — HOLD / operator evidence needed.** Google Play Financial features declaration includes `Stock trading and portfolio management`; that combined label does not imply MintTap executes stock trades. Reconcile the live submitted Play Console selection with shipped portfolio-tracking workflows and public claims; neither source nor public Store text establishes the submitted declaration. Ordinary Play distribution and finance-restricted optional Promotional content are separate eligibility decisions. Primary sources checked 2026-10-09: https://support.google.com/googleplay/android-developer/answer/13849271 and https://support.google.com/googleplay/android-developer/answer/12929944. **Next evidence:** Play Console App content → Financial features submitted selection/status plus current Android Store copy and shipped functionality matrix; no claim of PASS without this.
+
+**D2 — RELEASE SOURCE GAP / LIVE IMPACT UNKNOWN / PRESSURE HOLD.** MintTap `yhappcom/yieldmax_tracker` ref `1.0.29` at `736bbc99a41c14130d82aeaa17ac81f0fc835a65`: `lib/ads/ad_privacy_manager_mobile.dart` calls UMP consent-info update, but on iOS skips `ConsentForm.loadAndShowConsentFormIfRequired()` whenever local `privacy.gdpr_tracking_denied` is true. The UMP Flutter guidance requires the required-form check after the refreshed state and discourages an app-owned consent cache as authority (checked 2026-10-09): https://developers.google.com/admob/flutter/privacy . This is a reproducible **code-path discrepancy**, not observed noncompliance or proof that ads were served improperly. The shared consent manager is used by Home and fixed-bottom banners; `lib/widgets/home_inline_ad_slot_mobile.dart` and `lib/widgets/fixed_bottom_banner_ad_slot_mobile.dart` each schedule only one load per widget lifetime, with no internal retry after ineligibility or load failure. **Next evidence:** test first consent, denial/relaunch, expiry, privacy-option change, UMP error and request-eligibility transitions on iOS/Android; capture only aggregate/sanitized outcomes. Obtain live AdMob app-ads.txt/readiness, Policy Center, request→paid chain and finalized-revenue evidence separately. Preserve Home no-ad protection and do not expand inventory.
+
+**Evidence boundaries:** The latest checked `live_data/minttap/measurement_snapshot_v1.json` is dated 2026-09-16; GA4 discovery was blocked (HTTP 403), no linked BigQuery export was observed, and unavailable/suppressed revenue is **UNKNOWN**, not zero. No production decision is closed by this checkpoint. General theory remains frozen.
 
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.

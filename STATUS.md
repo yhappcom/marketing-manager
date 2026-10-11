@@ -35,6 +35,13 @@ This is a decision-queue reconciliation of **independent evidence files actually
 
 **Closed subgates, not closed decisions:** public app-ads.txt publication/identity check (D2); public Play listing claim observation (D1); release-source six-surface mapping and runbook mismatch (D2); historical thread-routing observation and an external missingness example (D3). **No overall D1–D4 production decision closed.** Research remains frozen. Keep ad expansion and unpermissioned community promotion on HOLD.
 
+## Production evidence checkpoint — 2026-10-12 (subgate only)
+
+- **D3 CURRENT RULES VERIFIED / PROMOTIONAL PERMISSION UNKNOWN / NATIVE-ONLY HOLD.** Direct r/YieldMaxETFs About page (https://www.reddit.com/r/YieldMaxETFs/about/, checked 2026-10-12) currently identifies Rule 5 as megathread routing, Rule 6 as misleading-return comparison prohibition, Rule 7 as bot prohibition, and Rule 8 as spam/promotional-content restriction with moderator-contact instruction. Historical Rule 10 is no longer the current megathread number. A general weekly posting allowance is not product-link permission. The independent D3 audit still requires an update; no outreach or promotion occurred.
+- **D3 CHANGE WATCH (2026-10-08 Reddit official changelog):** https://support.reddithelp.com/hc/en-us/articles/54353370049684-Changelog-October-8-2026 . A 12-hour similar-content posting pause is an *experiment*, not universal policy. RSS ends 2026-11-13; public API access transition deadlines apply only if an actual dependency is identified. Marketing Manager ingestion dependency UNKNOWN; do not invent a migration task.
+- **Cross-cutting release-source gate:** GitHub compare `yhappcom/yieldmax_tracker/main...1.0.29` returns 188 commits ahead for release tag, zero behind (checked 2026-10-12). Marketing's D1/D2/D4 product-claim checks must remain pinned to the verified release ref, not the product repository's stale default `main`. This comparison does not prove deployment failure.
+- **D1 and D2:** live Play Console declaration, AdMob account/message/consent/revenue evidence remain UNKNOWN. No D1–D4 overall decision closed; maintain advertising-pressure and unauthorized promotion HOLD.
+
 ## Latest validated addition — 285
 Community marketing is a permissioned trust surface, not free distribution. Reddit's current guidance says promotional content is not inherently spam, but communities may prohibit promotion or use their own conventions, and moderators decide what is unwanted. Repetitive/cross-community promotion, link farming, unsolicited bulk messages, and business-link-heavy participation remain material spam risks.
 

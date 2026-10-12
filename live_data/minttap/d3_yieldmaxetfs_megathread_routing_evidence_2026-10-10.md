@@ -25,3 +25,6 @@ Obtain a dated, direct copy of the current subreddit rules or moderator clarific
 
 ## Cross-domain
 Marketing owns community permission and message routing; MintTap product/source truth and issuer/broker evidence control factual claims. No app or community mutation.
+
+## Current rulebook supersession — 2026-10-12
+The community About page was checked on 2026-10-12 (https://www.reddit.com/r/YieldMaxETFs/about/). The current rule numbers reported there are: Rule 5 megathread routing, Rule 6 misleading/incomplete return comparisons, Rule 7 bots, and Rule 8 spam/promotional content with moderator-contact direction. Historical Rule 10 is retained as historical evidence, not current numbering. This supersedes the 2026-10-10 access limitation above only for the rulebook observation. Explicit permission for MintTap links, promotional posts, moderator-approved exceptions, account eligibility, and visibility remains UNKNOWN. Decision: CURRENT RULEBOOK OBSERVED / PROMOTIONAL PERMISSION UNKNOWN / NATIVE-ONLY HOLD. Next: moderator approval or rule-specific permission evidence before any app/link mention; complete a useful native answer first. No posting or outreach occurred.

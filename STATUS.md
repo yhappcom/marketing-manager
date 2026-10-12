@@ -1,12 +1,22 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-09
+Last updated: 2026-10-12
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions extend the operating system. Independent research files actually present on `main` are canonical; sequence gaps are not inferred. The highest-numbered independent research file currently present is **Research 436 — App Tags Turn Metadata Into a Derived Discovery Surface**. General theory remains frozen unless a qualifying evidence or operational gap is found.
+Research 042–079 remains canonical. Post-freeze additions extend the operating system. Independent research files actually present on `main` are canonical; sequence gaps are not inferred. The highest-numbered independent research file currently present is **Research 437 — LogMate Native/PWA Split and Manual-Sync Ad Monetization Admission Contract**. General theory remains frozen unless a qualifying evidence or operational gap is found.
+
+## LogMate monetization research checkpoint — 2026-10-12
+
+**Research + read-only product evidence saved, no LogMate repository writes:** `research/437_logmate_native_pwa_manual_sync_ad_monetization.md` and `live_data/logmate/ad_monetization_readonly_evidence_2026-10-12.md`. Inspected `yhappcom/logmate/main` at `827a7deed162bf525313c6b4b9d244e56828a1c1`, including authoritative `MASTER.md` and sync/PWA specs, and current Google/Apple ads documentation. This is LogMate-specific application of research 017/068/186/290/389/390/403/416, not a restart of general theory.
+
+**Owner intent / confirmed product direction:** native phone + tablet/EFB PWA are both first-class targets, actual device share unmeasured; Sync is explicit user-initiated, with a planned immediately dismissible ad only on the Manual Sync progress occasion. Dismissing/failing/finishing the ad must not affect genuine Sync or its status. Current production Sync and ad SDK/placement are **NOT VERIFIED / OPEN**.
+
+**Ad admission decision:** native iOS/Android small in-container Native Ad or anchored adaptive banner is a **research candidate** only, subject to instant-X, attribution/accidental-click, provider policy, UX and product gates. Standard full-screen interstitial is **HOLD** because ordinary network close behavior does not prove immediate dismiss; App Open and forced Rewarded are **REJECT** for LogMate V1. **PWA WEB ADS HOLD / default ad-free** because Flutter AdMob is native-only and authenticated standalone PWA web publisher eligibility/placement is not validated. Home, onboarding, flight/edit, logbook/totals, import, conflict handling, baseline, export and recovery remain protected ad-free. No additional ad units, advertising pressure, monetization SDK or product code authorized.
+
+**Next deep work:** Engineering source/runtime Sync state and ad-close callback proof → Design Studio safe immediate-X and status-priority UI contract → Web Manager PWA publisher/installed EFB eligibility + offline fail-open → real consent, geo/device mix, Manual Sync cadence, supply/eCPM/finalized revenue, net costs and retained professional value. Until gates close: **PRODUCTION ADS HOLD**, no revenue forecast.
 
 ## Production evidence checkpoint — 2026-10-09
 

@@ -6,7 +6,17 @@ Last updated: 2026-10-12
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
 
 ## Canonical knowledge state
-Research 042–079 remains canonical. Post-freeze additions extend the operating system. Independent research files actually present on `main` are canonical; sequence gaps are not inferred. The highest-numbered independent research file currently present is **Research 437 — LogMate Native/PWA Split and Manual-Sync Ad Monetization Admission Contract**. General theory remains frozen unless a qualifying evidence or operational gap is found.
+Research 042–079 remains canonical. Post-freeze additions extend the operating system. Independent research files actually present on `main` are canonical; sequence gaps are not inferred. The highest-numbered independent research file currently present is **Research 438 — LogMate One-Pass Advertising Architecture: Native Manual Sync, PWA Exclusion, Policy and Unit Economics**. General theory remains frozen unless a qualifying evidence or operational gap is found.
+
+## LogMate one-pass ad monetization handoff — 2026-10-12
+
+**Deep follow-up completed and saved**, applying prior marketing research to exact current LogMate product/Design/Web evidence and official AdMob/AdSense/Apple policies:
+- `research/438_logmate_one_pass_ad_architecture_and_launch_gates.md` — integrated format/platform admission, genuine Manual Sync lifecycle invariants, ad-only unit economics, privacy/publisher prerequisites, PWA security constraints and launch STOP criteria.
+- `projects/logmate/ads/ONE_PASS_IMPLEMENTATION_SPEC_V1.md` — self-contained future Codex handoff: pinned source file map, proposed adapters, exact async control flow, platform manifests/dependencies, privacy and test-ad IDs, 24 acceptance scenarios, release gates, owner-ready copy-paste implementation brief.
+
+**Implementation recommendation (NOT live authorization):** AdMob Android/iOS **anchored adaptive banner** in a separably and immediately dismissible *Manual Sync status* advertising subregion only; small native template second candidate when required by real UX/policy. No full-screen interstitial, app-open, forced rewarded, automatic Sync, protected-transaction ads, or PWA ad JS. Web/PWA defaults to **no-op/ad-free**, because mobile plugin lacks Web support, installed PWA AdSense eligibility/placement is seriously constrained, and its locally authoritative records make third-party origin-script admission security-sensitive. Native tablets reuse adapter if eligible. Safety, true Sync results and user consent always outrank impressions.
+
+**Product blockers remain OPEN:** actual production Manual Sync coordinator/UI is not verified in read-only `yhappcom/logmate/main@827a7deed162bf525313c6b4b9d244e56828a1c1`; no direct AdMob dependency/App IDs observed; account-side ad/publisher verification, actual Flutter toolchain, effective consent/ATT disclosures, physical-device/installed-PWA testing, native usage and Sync cadence, realized revenue/retention remain UNKNOWN. `FEATURE_ADS_ENABLED=false` recommended by default. No change in LogMate HEAD. **Marketing spec GO / Code implementation separately authorized / Production ad serving HOLD.**
 
 ## LogMate monetization research checkpoint — 2026-10-12
 

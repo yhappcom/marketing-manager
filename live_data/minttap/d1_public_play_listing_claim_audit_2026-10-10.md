@@ -22,3 +22,13 @@ Source: https://play.google.com/store/apps/details?id=app.yh.yieldmax_tracker_v0
 4. Separate verdict for ordinary distribution and optional Promotional content. Do not treat 50+ public installs, category or policy silence as compliance proof.
 
 No Console access, policy approval, growth-surface eligibility or new research is claimed by this audit.
+
+## Release 1.0.29 transaction and portfolio source cross-check (2026-10-14)
+
+Read-only inspected product ref `yhappcom/yieldmax_tracker@1.0.29`:
+- `lib/edit_transaction/edit_transaction_repository.dart:115-139,142-158`: portfolio creation and manual buy/sell transaction changes write to `users/{uid}/portfolios` and `users/{uid}/transactions` in Firestore.
+- `lib/transaction_import/transaction_import_firestore_payload.dart:5-36` and `lib/screens/transaction_import_review_screen.dart:948-1064`: reviewed CSV/XLSX-derived buy/sell rows are written as user transaction records, with import-batch/source metadata; the inspected save path is not a brokerage order API.
+- `lib/auth/auth_service.dart:35-69` uses Firebase Auth providers; this is account sign-in, not brokerage authentication.
+- `lib/calculation/engine/split_processor.dart` contains split accounting logic; `lib/screens/yearly_roc_screen.dart:92-108,322-330` exposes a year-level `ICI FINAL` selection with partial coverage caveat already in STATUS.
+
+**Subgate verdict:** `RELEASE-SOURCE RECORDKEEPING FLOWS VERIFIED / TRADE EXECUTION NOT OBSERVED IN INSPECTED FLOWS`. Do not generalize absence to the entire shipped binary or infer actual Play Console Financial features selections. The Google Play combined category `Stock trading and portfolio management` must be evaluated against portfolio management, not interpreted as proof of trade execution. Next: check all relevant network/API integrations, the 42-currency and cloud-sync Store claims, and the actual submitted Console declaration before D1 closure. Ordinary Store distribution and optional Promotional content remain separate decisions.

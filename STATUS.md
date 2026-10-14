@@ -1,6 +1,6 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-13
+Last updated: 2026-10-15
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
@@ -21,6 +21,17 @@ Research 042–079 remains canonical. Post-freeze additions extend the operating
 - **D10 / AD CONCEPT PLANNED; CONDITIONAL ENGINEERING SPEC READY; PRODUCTION ADS HOLD:** Research 437/438 and `projects/logmate/ads/ONE_PASS_IMPLEMENTATION_SPEC_V1.md` establish a candidate native Manual-Sync-only architecture, not an installed SDK, working production Sync, publisher approval, or permission to serve ads. PWA defaults ad-free. Next: product-authoritative Sync implementation, device/consent/publisher gates and retained-user economics.
 
 **Next evidence priority:** D1 actual submitted Financial features selection; D2 AdMob live integrity; D3 specific promotional permission; D4 issuer correction/source-to-import records. Preserve specialist fit, truthful claims, protected workflows, missing≠zero, native-first community value, and finalized≠estimated revenue. No new production decision is closed.
+
+## 2026-10-15 production evidence synchronization checkpoint
+
+- Research inventory remains based on the last verified recursive tree: 375 independent numbered paths, 368 unique prefixes, highest 438, duplicate prefixes 249/250/251. No absent numbers inferred; no new general research.
+- D1 HOLD: live Play Console Financial features selections/review status unavailable; distinguish truthful ordinary Store classification from optional finance-restricted Promotional content.
+- D2 PRESSURE HOLD: live AdMob consent, request-to-paid-event chain, source/latency, policy history and finalized revenue unavailable; no ad-pressure expansion.
+- D3 NATIVE-ONLY HOLD: current rulebook evidence does not grant promotional or product-link permission.
+- D4 OPEN: released ROC CSV importer permits unverified source metadata to be marked final, silently drops same ticker/ex-date conflicts before duplicate diagnostics, lacks calendar and numeric consistency bounds, and uses payable-date year while annual UI groups by ex-date. These are release-code findings, not observed live data corruption. Next: issuer revision + redacted actual import batch, dedup and before/after record reconciliation.
+- D8 pilot HOLD: page-management source implementation is not import/export/migration or full device/PWA offline acceptance.
+
+**Next production evidence:** actual D1 submitted Console selection; D2 account-side integrity exports; D4 issuer-to-import-to-UI reconciliation. No overall decision closed.
 
 ## LogMate one-pass ad monetization handoff — 2026-10-12
 

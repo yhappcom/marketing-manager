@@ -1,6 +1,6 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-15
+Last updated: 2026-10-19
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.
@@ -32,6 +32,18 @@ Research 042–079 remains canonical. Post-freeze additions extend the operating
 - D8 pilot HOLD: page-management source implementation is not import/export/migration or full device/PWA offline acceptance.
 
 **Next production evidence:** actual D1 submitted Console selection; D2 account-side integrity exports; D4 issuer-to-import-to-UI reconciliation. No overall decision closed.
+
+## 2026-10-19 independent-evidence synchronization (production decisions only)
+
+This checkpoint reconciles evidence **already committed on main**; it does not add research, imply access to private operator consoles, or close overall production decisions. Full repository paths, not research-number sequences, identify evidence.
+
+- **D1 / HOLD:** `live_data/minttap/d1_public_play_listing_claim_audit_2026-10-10.md` contains a 2026-10-14 read-only release `1.0.29` check: inspected buy/sell and import flows persist portfolio/transaction records, with no brokerage order execution observed in those inspected paths. This does **not** establish a whole-binary absence of trading or the live Financial features submission. Next: redacted Play Console declaration/status, then version-matched claim matrix. Ordinary distribution and optional finance-restricted Promotional content remain distinct.
+- **D2 / PRESSURE HOLD:** `live_data/minttap/d2_ad_surface_app_id_source_reconciliation_2026-10-10.md` remains the release-source map for six banner surfaces and the privacy-runbook App ID discrepancy. Actual AdMob account targeting, UMP state, per-surface paid events, source/latency, policy history and finalized revenue remain unavailable. Do not expand inventory or infer traffic validity.
+- **D3 / NATIVE-ONLY HOLD:** `live_data/minttap/d3_current_thread_roc_missingness_2026-10-10.md` now includes the committed 2026-10-17 issuer-event reconciliation for MSST/NVIT/TEST (2026-10-14 payment): issuer event-row ROC values 99.83%, 95.05%, 93.48% are **estimates**, not tax finality. The October 12 community aggregate has an unmatched duplicate zero MSST row and displays missing per-ticker ROC as an aggregate 0.00%; this establishes an external presentation discrepancy, not a MintTap defect. Moderator/product-link permission remains unknown. Next: permission ledger and complete native issuer-qualified answer before any promotion.
+- **D4 / ROC IMPORT WRITE HOLD:** `live_data/minttap/roc_authority_provenance_audit_2026-10-06.md` contains the committed 2026-10-16 issuer ROC Center clarification: interim 19a estimates, issuer year-end ICI/tax materials, investor-specific broker 1099-DIV and missing states are distinct. The 2025 Tax Documents index shows two ICI entries, but duplicate titles alone do **not** establish distinct revisions; resolve URLs, formats, hashes and dates before revision claims. Prior release-source partial-finality/import and ex-date/payable-date concerns remain **code-path risks**, not verified production tax errors. Next: issuer document identity and dated rows, redacted import batch, 0/partial/full finality and year-boundary tests.
+- **Other decisions:** D5–D9 evidence-gated; D10 LogMate production ads HOLD. No overall production decision closed. No missing research sequence numbers inferred.
+
+**Highest-priority next evidence:** live D1 submitted declaration; if inaccessible, D2 sanitized AdMob integrity exports; then D3 permission and D4 issuer-to-import reconciliation. General theory frozen.
 
 ## LogMate one-pass ad monetization handoff — 2026-10-12
 

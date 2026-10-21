@@ -1,6 +1,11 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-21
+Last updated: 2026-10-22
+
+## 2026-10-22 committed D2 banner evidence sync
+
+- **D2 / PRESSURE HOLD:** `live_data/minttap/d2_banner_failure_ux_gate_2026-10-21.md` was corrected in commit `e7999e8a802f16d66933dea495ec5e6402fd18aa`: fixed-bottom load failure occupies 52 logical pixels of inner error content plus 10 of top padding (62 total); Home failure collapses. No same-widget automatic retry. Release-source evidence only; runtime and account-side gates UNKNOWN. **Next:** Android/iOS test-ad consent and failure-recovery acceptance; do not expand inventory.
+- **Other decisions:** D1 HOLD (submitted Financial features selection unknown), D3 NATIVE-ONLY HOLD, D4 ROC IMPORT WRITE HOLD, D5 OPEN; other prior states unchanged. No overall production decision closed. Research frozen.
 
 ## 2026-10-21 committed evidence reconciliation — decision queue
 

@@ -1,6 +1,19 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-19
+Last updated: 2026-10-21
+
+## 2026-10-21 committed evidence reconciliation — decision queue
+
+This checkpoint reconciles independent files **actually present on main** (verified against the current recursive Git tree); it does not create missing research numbers, imply access to operator consoles, or close overall production decisions. Research remains frozen. The prior 375 independent numbered research paths / 368 unique prefixes / highest 438 remain the current tree inventory, not a sequence-completion target.
+
+- **D1 / HOLD — selector claim scope verified, actual declaration UNKNOWN.** `live_data/minttap/d1_release_currency_claim_selector_validation_2026-10-21.md` checks release `yhappcom/yieldmax_tracker@1.0.29`: 43 selectable currency codes including USD, i.e. 42 non-USD codes. Public Play copy says "42 currencies"; this does not establish rate coverage for every code or the actual Financial features declaration. **Next:** redacted submitted Play Console selections/status and runtime FX coverage; evaluate ordinary distribution separately from optional finance-restricted Promotional content.
+- **D2 / PRESSURE HOLD — test acceptance matrix COMMITTED, runtime PASS UNKNOWN.** `live_data/minttap/d2_ump_banner_state_transition_acceptance_2026-10-21.md` consolidates eight test-ad-only cases: first consent, iOS stored denial/relaunch, expiry, deny→allow, allow→deny, UMP errors, Settings privacy-options return, and Home/tab/widget lifecycle. This is a release-code risk/acceptance specification, not test execution, policy breach or revenue evidence. **Next:** execute on both platforms using test ads, preserve SDK consent authority, and obtain sanitized AdMob request→paid, source/latency, account policy and finalized revenue evidence; no inventory expansion.
+- **D3 / NATIVE-ONLY HOLD.** Current subreddit rule observation does not authorize promotion. Require action-specific permission and complete native issuer-qualified answers before links.
+- **D4 / ROC IMPORT WRITE HOLD — issuer date fixture COMMITTED, pipeline result UNKNOWN.** `live_data/minttap/d4_ici_year_boundary_fixture_2026-10-19.md` records 15 issuer ICI rows with 2025-12-31 ex-date / 2026-01-02 payable-date, including GPTY/YMAG/YMAX/ULTY values. This does not establish import correctness, tax year or document revision parity. **Next:** issuer source identity plus release-pinned importer/duplicate/annual ex-date-vs-payable-date fixtures and sanitized import-batch reconciliation.
+- **D5 / STORE LANGUAGE METADATA RECONCILIATION OPEN.** `live_data/minttap/d5_ios_language_metadata_release_discrepancy_2026-10-21.md` records Apple public Languages: English versus 11 locale options and iOS Info.plist localizations in release `1.0.29`. Neither actual IPA packaging nor translation completeness is established. **Next:** inspect shipped archive and App Store Connect build/localization metadata before changing claims. D1/D2 outrank D5.
+- **D6–D10:** prior evidence-gated states unchanged, including LogMate production advertising HOLD. No overall decision closed.
+
+**Operator access boundary:** Play Console Financial features submitted values, AdMob Privacy & messaging/Policy Center/serving state, and finalized revenue are not available in repository evidence; UNKNOWN is not zero or PASS.
 
 ## Phase
 Foundation and Sparse-Niche Decision Science are complete. General theory is frozen by default. Current work applies the operating system to MintTap, LogMate, and reusable niche-app growth, with new research only for authoritative platform changes, evidence gaps, framework failures, or operational gaps.

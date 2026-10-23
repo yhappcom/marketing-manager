@@ -30,3 +30,17 @@
 - https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/lib/calculation/engine/calculation_engine.dart
 - https://support.google.com/googleplay/android-developer/answer/13849271
 - https://support.google.com/googleplay/android-developer/answer/12929944
+
+## 2026-10-23 provider-payload completeness and numeric-validity gate — source-faithful isolated probe
+
+**D1 HOLD / CLAIM-COVERAGE AND DATA-QUALITY SUBGATE OPEN; LIVE IMPACT UNKNOWN.** This is an additional production acceptance finding, not a new research number or evidence of a real provider incident.
+
+**Pinned release:** `yhappcom/yieldmax_tracker@1.0.29`, `functions/index.js` blob `46dd263e7c85d85599ed9d8301de3738beab6810`, lines 1302–1327. After checking `success === truthy`, `base === 'EUR'` and a truthy `rates.USD`, the function loops over **whatever rate keys the provider returned**, divides each by the USD quote, and writes `exchange_rates/{UTC-date}` with `{merge:true}`. It does **not** check coverage against the 43 selectable currencies (USD + 42 non-USD), validate that each quote is finite and positive, or enforce a minimum rate-count threshold before this write. Existing calculation-side positivity/freshness handling does not establish provider-data completeness.
+
+**Isolated probe (6/6 PASS):** A source-faithful copy of those expressions with a captured mock write accepted synthetic `EUR/USD/KRW` only, and even `USD` alone; negative USD produced a negative EUR normalized rate; a truthy nonnumeric USD string yielded non-finite normalized values. Missing USD and wrong base were rejected. These are **adversarial synthetic payloads**, not observed provider responses. The probe was not the deployed function, did not use Firestore SDK/Emulator, and does not prove any actual database contains invalid values. Local handoff: `d1_fx_provider_shape_probe_2026-10-23.js` and `d1_fx_provider_shape_probe_2026-10-23_results.json` (not committed).
+
+**Operational consequence:** A provider `success` response is insufficient to substantiate the public currency-coverage claim. The `{merge:true}` write also requires a controlled Firestore Emulator test for same-day re-fetches with a missing currency key; do not infer actual stale-key persistence from the isolated mock. This is an acceptance gap, not proof of a visible FX defect or inaccurate published rates.
+
+**Next evidence:** (1) operator-submitted Play Financial features declaration/status remains top priority; (2) provider contract and sanitized production per-code rate availability/freshness across all selectable codes, including missing/non-finite/negative responses; (3) Emulator test for partial second fetch and nested-map merge; (4) app device/UI acceptance for absent/stale FX, USD identity, and `partial` presentation; (5) version-matched Store claim denominator. Ordinary Store distribution remains distinct from optional Promotional content.
+
+**Primary source references (checked 2026-10-23):** `https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/functions/index.js`; `https://firebase.google.com/docs/firestore/manage-data/add-data`; `https://support.google.com/googleplay/android-developer/answer/13849271`. No product repository or live data was changed.

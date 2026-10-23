@@ -47,3 +47,33 @@
 **Decision consequence:** A shared unqualified label such as “2025/2026 final ROC year” is not yet source-justified across import preflight, stored metadata, and annual UI. The divergence may be intentional if payable-year metadata and ex-year portfolio display serve different purposes; **do not call it a tax-year bug** without product contract and broker/issuer authority. Keep D4 `ROC IMPORT WRITE HOLD` and require (1) explicit semantics for ex-year, payable-year, issuer tax document year and investor/broker tax year, (2) a controlled fixture with issuer-confirmed final ROC where available, (3) Firestore Emulator and widget acceptance across 2025/2026 boundaries, and (4) UI/Store/owned-reference claim qualification before release. This adds a concrete date-basis acceptance subgate; it does not supersede the existing XLSX parity, blank-state, duplicate, source-downgrade, idempotency or partial-batch gates.
 
 **Probe files (local handoff, not GitHub evidence):** `d4_cross_year_date_basis_probe_2026-10-23.js`, `d4_cross_year_date_basis_probe_2026-10-23_results.json`. Source hierarchy: issuer PDF (gross and dates), release code (year expressions), synthetic/offline date-basis probe (reproduction); no live account or investor tax records.
+
+## 2026-10-24 issuer Box 1a / Box 3 classification — source fixture upgraded, runtime still HOLD
+
+**New primary-source evidence / correction of fixture scope, not proof of a live import.** The issuer-hosted **2025 ICI Primary Tax Data** PDF itself has separately labeled Form 1099 **Box 1a Total** and **Box 3* Nondividend Distributions** columns. The earlier 15-row fixture intentionally captured only gross distribution, and therefore did **not** establish that no issuer Box 3 data were available. The cross-year rows can now be classified at the issuer-document level. Source: https://yieldmaxetfs.com/wp-content/uploads/TaxDocuments/All%20Funds%20Tax%20Documents/2025%20ICI%20Primary%20Layout%20%E2%80%93%20YieldMax.pdf (rechecked 2026-10-24; PDF pages 2, 4, 6–11). IRS identifies Form 1099-DIV Box 3 as nondividend distributions: https://www.irs.gov/instructions/i1099div . This is **issuer ICI source classification**, not an investor's final broker 1099-DIV or a conclusion about the investor's tax year.
+
+All rows below are **2025-12-31 ex/record** and **2026-01-02 payable**. Dollar amounts are **per share, six decimal places**. The `—` symbol transcribes a PDF dash, **not** an inferred numerical zero. The first gross-distribution amount is a separate field, never the Box 3 amount.
+
+| Ticker | CUSIP | Gross/share | Issuer Box 1a/share | Issuer Box 3/share | PDF page |
+| --- | --- | ---: | ---: | ---: | ---: |
+| GPTY | 88636R735 | 0.256500 | 0.256500 | — | 2 |
+| LFGY | 88636R727 | 0.248100 | 0.087666 | 0.160434 | 4 |
+| FEAT | 88636R669 | 0.341500 | 0.271580 | 0.069920 | 4 |
+| FIVY | 88636R651 | 0.250700 | 0.202645 | 0.048055 | 4 |
+| YMAG | 88636J642 | 0.099200 | 0.055184 | 0.044016 | 6 |
+| QDTY | 88636R578 | 0.149400 | 0.107241 | 0.042159 | 7 |
+| RDTY | 88636R552 | 0.204900 | 0.054362 | 0.150538 | 8 |
+| CHPY | 88636R693 | 0.440100 | 0.332388 | 0.107712 | 9 |
+| SDTY | 88636R560 | 0.124000 | 0.073790 | 0.050210 | 10 |
+| BIGY | 88636R750 | 0.533100 | 0.533100 | — | 10 |
+| RNTY | 88636R776 | 0.495100 | 0.495100 | — | 10 |
+| SOXY | 88636R818 | 0.595300 | 0.595300 | — | 10 |
+| ULTY | 88636X708 | 0.486600 | 0.157521 | 0.329079 | 11 |
+| SLTY | 88636R677 | 0.394700 | 0.011811 | 0.382889 | 11 |
+| YMAX | 88636J659 | 0.106000 | 0.106000 | — | 11 |
+
+**Deterministic consistency check:** For 10 rows with an explicit numeric Box 3 amount, `gross - Box 1a == Box 3` exactly at six-decimal precision. For the other five rows, `gross == Box 1a`, while Box 3 is a **source dash** and remains distinct from a source-confirmed zero. 15/15 arithmetic consistency, 10 numeric / 5 dash states. This is a **column extraction cross-check**, not an independent XLSX parity check or a runtime importer test.
+
+**Decision delta:** The previously OPEN question “can an issuer-confirmed Box 3 cross-year fixture be obtained?” is **partially CLOSED at PDF source-row level**. The earlier “gross-only” boundary applied to the previously extracted fixture, not to the entire issuer PDF. The 15 rows can now support controlled *non-production* ROC/Box 3 date-basis and missing-state acceptance. **D4 ROC IMPORT WRITE HOLD remains.** Still required: exact PDF↔XLSX parity and byte/revision identity, product-approved ex/payable/issuer/broker tax-year semantics, release importer field mapping and provenance, 0/partial/full finality and dash-versus-zero UI tests, Firestore Emulator duplicate/replay/downgrade/multi-batch recovery, sanitized live-batch reconciliation. Do not auto-import, backfill, publish tax advice, or treat the five dashes as confirmed zero.
+
+**Access limitation:** issuer XLSX could not be retrieved in this run; no XLSX parity or document-byte digest was claimed. No product repository or production data was modified.

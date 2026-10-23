@@ -60,3 +60,27 @@ Primary sources checked 2026-10-23:
 - https://firebase.google.com/docs/firestore/manage-data/add-data (set merge semantics)
 - https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/functions/index.js
 - https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/lib/calculation/engine/calculation_engine_support.dart
+
+## 2026-10-23 canonical FX adapter and calculation freshness mapping — downstream source subgate
+
+**D1 HOLD / SOURCE MAPPING SUBGATE CLOSED AS VERIFIED; LIVE IMPACT UNKNOWN.** This reconciles the previous quote-time provenance finding with the **actual release-pinned canonical adapter and calculation resolver**. It is not another general FX study, not a Play Financial features declaration resolution, and not evidence of a deployed incident.
+
+**Pinned product source, inspected 2026-10-23:**
+- `yhappcom/yieldmax_tracker@1.0.29`, `functions/index.js` blob `46dd263e7c85d85599ed9d8301de3738beab6810`, lines 1302–1327: upstream quote `date`/`timestamp` ignored; UTC *execution date* is Firestore `exchange_rates/{documentId}`; `base: USD`, normalized `rates`, server `updatedAt` written with merge.
+- `lib/calculation/adapters/firestore/firestore_canonical_adapter.dart` blob `d8562f0fc07a4db74624acf846d450f1e3158fc7`, lines 840–891 and 1315–1328: fetches `exchange_rates` documents by document ID; passes `doc.id` as `dateYmd` to `parseExchangeRateMap`; maps only `rates` and `base` into `CanonicalFxDailyRate`. No quote-observation date or server `updatedAt` enters the canonical FX DTO.
+- `lib/calculation/models/canonical_input.dart` blob `eb9ea895bd3f556e5f119fe5abab4be34416f021`, lines 167–179: `CanonicalFxDailyRate` has only `dateYmd`, `base`, `rates`.
+- `lib/calculation/engine/calculation_engine_support.dart` blob `51317c00ee77ecea84ccac6e2fe7671b42cf71b6`, lines 365–452: current-rate resolver sorts by canonical `dateYmd` and rejects only `ageDays > maxAgeDays` (Home/Stock Detail pass seven days). It checks base USD and positive selected-currency value, but **does not reject future-dated document IDs** (negative age). Historical at-or-before resolver chooses a positive rate at/before target date **without a maximum-age bound**. A date-sorted stale document may therefore be accepted as a historical conversion for a much later target, depending on actual data availability. These are distinct current and historical semantics.
+- `lib/calculation/engine/calculation_engine.dart` blob `f9d493b11002bb17b16607140104472f05250d56`, lines 858–874 and 1307–1321: Home/Stock Detail current FX uses the above seven-day resolver; `fxUpdatedDateYmd` derives from the selected canonical document ID, not the provider's quote time.
+
+**Reproducible isolated acceptance probe:** independent Node.js transcription of the cited mapping/resolver expressions, **7/7 assertions PASS**: document ID becomes `dateYmd`; stale provider observation is indistinguishable from fresh if rates and execution-day ID are identical; a synthetically future-dated document is admitted by the current-age check; a genuinely old document ID is rejected; absent currency remains unavailable; historical lookup has no max-age limit; empty FX input yields null even for USD. This is a source-expression/logic test only; **Dart/Flutter, Firestore Emulator, device, upstream API, and live backend were not executed**. Local handoff: `d1_fx_adapter_date_provenance_probe_2026-10-23.js` and `_results.json` (not committed). The writer normally creates an execution-day ID, so the synthetic future-ID scenario is a defensive input case, not a claim about ordinary writer output.
+
+**Decision delta:** The prior conditional statement “if the canonical adapter uses the document date” is now **confirmed at release-source level**. Thus the code-level chain `provider observation fields discarded → ingestion-day document ID → canonical dateYmd → freshness/display FX date` is established. This is a **real provenance/claim-validity gap in inspected code**, not a proven live wrong rate, an actual 7-day violation, or a verified user-facing display defect. No blanket claim of bad FX or tax calculations is authorized.
+
+**Acceptance next:** (1) obtain the submitted Play Console Financial features selections/status (top D1 production decision) and separate optional Promotional content eligibility; (2) if available, sanitized provider response with observation date/time and full code coverage, plus production write/read trace; (3) emulator/device scenarios for quote-age vs ingestion-age, future/missing dates, same-day partial-map merge, USD/no FX, missing currency, and historical rate age; (4) separately D2 operator AdMob event/revenue/policy evidence. Until actual evidence, D1 HOLD; do not expand Store currency/freshness claims. No product, live Firestore or Store change.
+
+**Primary source paths:**
+- https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/functions/index.js
+- https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/lib/calculation/adapters/firestore/firestore_canonical_adapter.dart
+- https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/lib/calculation/models/canonical_input.dart
+- https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/lib/calculation/engine/calculation_engine_support.dart
+- https://github.com/yhappcom/yieldmax_tracker/blob/1.0.29/lib/calculation/engine/calculation_engine.dart

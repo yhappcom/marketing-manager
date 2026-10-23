@@ -2,7 +2,10 @@
 
 Last updated: 2026-10-24
 
+## 2026-10-24 D4 issuer Box 3 → release importer validation — missing-state acceptance subgate
 
+- **D4 / ROC IMPORT WRITE HOLD — RELEASE VALIDATOR BEHAVIOR SOURCE-VERIFIED; RUNTIME/BROKER UNKNOWN.** The existing independent `live_data/minttap/d4_ici_year_boundary_fixture_2026-10-19.md` was updated on `main` after executing the exact `yieldmax_tracker@1.0.29` `validateAndNormalize`/number/date functions in an isolated V8 runtime against its 15 issuer PDF Box 3 rows: **10 numeric Box 3 rows accepted, 5 source-dash rows rejected** when missingness was preserved. Replacing a dash with an invented numeric zero passes validation and would write `rocPercentageFinal=0` / `finalStatus=final` if later applied; this is a **preventable source-to-finality misclassification risk**, not a documented live import. Synthetic negative ROC, Box 3 greater than gross, inconsistent/out-of-range ROC percent, and impossible calendar date also pass the release validator. **Next:** prohibit dash→zero coercion, require numeric/date/percentage consistency and explicit missing coverage; execute controlled CSV/Firestore Emulator and Yearly ROC widget acceptance for 0/partial/full finality, provenance, ex/payable/issuer/broker year semantics, replay and batch recovery; obtain issuer XLSX parity/document revision and sanitized live import evidence. No product write, tax-year inference or overall decision closure.
+- **Higher priority gates:** D1 submitted Google Play Financial features declaration/status remains **UNKNOWN / HOLD**; D2 AdMob operator consent/request→paid/serving/finalized revenue remains **UNKNOWN / PRESSURE HOLD**. Browser operator context unavailable; no fabricated console or revenue evidence. D3 **NATIVE-ONLY HOLD**, D5 **OPEN**, LogMate production ads **HOLD** unchanged. Independent research count is based only on paths on main (375 observed, no missing-number inference); no new general theory.
 
 ## 2026-10-24 D4 issuer 1099 Box 3 cross-year fixture — source classification subgate
 

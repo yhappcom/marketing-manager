@@ -29,3 +29,18 @@
 
 ## Next production target
 Obtain action-specific current community rules and moderator reply, verify account representation, and run version-matched feature checks (manual entry vs file import vs app-account sync vs brokerage link). Preserve D3 NATIVE-ONLY HOLD. Higher-priority D1 submitted Financial features declaration and D2 operator ad-integrity exports remain UNKNOWN.
+
+## 2026-10-23 release-source acceptance — file import is not broker connectivity
+
+The 2026-05-14 Reddit answer is time-bound; the Apple US 1.0.27 note (2026-07-04) advertises CSV/Excel import, while current 1.0.29 copy advertises optional app-account sync. Version-pinned `yhappcom/yieldmax_tracker@1.0.29` source now establishes a **file-import code path**, not a tested end-to-end runtime result:
+
+- `lib/screens/transaction_import_review_screen.dart` (blob `3d0d3a1dcab5e6e9deca31e83387a93bd71d8f08`, lines 103–122, 414–475, 637–681, 875–1065): account UID required; file selected locally via `file_selector.openFile`; only `.csv` and `.xlsx` accepted, up to 5 MiB and 5,000 data rows; preview/validation excludes detected duplicates and sell-quantity issues before Firestore writes under `users/{uid}/transactions` with an `import_batches` manifest.
+- `lib/transaction_import/transaction_xlsx_import_parser.dart` (blob `277aab91997028aae02dde1cb63def0666123ec3`): reads the **first available worksheet**. Neither `.xls` nor every broker-specific statement format is established as supported.
+- `test/transaction_import/transaction_csv_import_parser_test.dart` (blob `6052b3cf6f002e61dbc2f2bb7e7e7f674a1e35d5`): source test fixtures expect supported buy/sell rows, classify dividend/deposit rows as unsupported, and require an explicit exchange-rate column for non-USD users; these tests were inspected, **not executed in this audit**.
+- The import screen sets `sourceBroker = 'minttap_template'` unconditionally (lines 948–996), and `lib/transaction_import/transaction_import_firestore_payload.dart` (blob `fbc12bbca19b00025417357c6631e47910c3d657`) copies that field into transaction records. This is a **static import-origin marker**, not authenticated broker identity or evidence of broker API connectivity. The inspected import path uses file selection, parsing, and Firestore writes, not brokerage-account authorization.
+
+**Claim Registry consequence:** `CSV/Excel transaction import` = **QUALIFIED / SOURCE-VERIFIED PATH** (CSV and XLSX, supported trade rows; runtime acceptance UNKNOWN). `Broker account direct link / automatic brokerage sync` = **UNKNOWN / NOT VERIFIED**, not inferred from `sourceBroker` or optional app-account sync. `Broker-verified provenance` = **HOLD**. No evidence the historical May reply was false when posted; no public correction or CTA without identity and action-specific permission. D3 **NATIVE-ONLY HOLD** and D7 **IDENTITY OPEN** remain.
+
+**Next:** release-build device import acceptance (CSV/XLSX, supported vs unsupported rows, duplicate/sell handling, first-sheet/size/row constraints, app-account sync distinction) and separate authenticated broker-connection inventory; current community rule/mod approval before any outward mention.
+
+Public claim source checked 2026-10-23: https://apps.apple.com/us/app/minttap/id6766008739 .

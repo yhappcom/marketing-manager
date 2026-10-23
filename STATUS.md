@@ -1,7 +1,13 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-23
+Last updated: 2026-10-24
 
+
+
+## 2026-10-24 D4 issuer 1099 Box 3 cross-year fixture — source classification subgate
+
+- **D4 / ROC IMPORT WRITE HOLD — ISSUER BOX 3 SOURCE FIXTURE PARTIALLY CLOSED; RUNTIME/BROKER/REVISION UNKNOWN.** The existing independent `live_data/minttap/d4_ici_year_boundary_fixture_2026-10-19.md` on `main` now distinguishes the issuer's actual **2025 ICI Form 1099 Box 1a vs Box 3*** columns for the same 15 ex-date **2025-12-31** / payable **2026-01-02** rows. Ten have an explicit numeric Box 3 nondividend-distribution amount; five have a source dash, **not a verified zero**. All 15 satisfy six-decimal source-row arithmetic (`gross = Box 1a + explicit Box 3` for the ten numeric cases; `gross = Box 1a` for the five dash cases). The prior “gross-only” designation was a limitation of the **extracted fixture**, not proof that the PDF lacked Box 3. Issuer primary PDF: https://yieldmaxetfs.com/wp-content/uploads/TaxDocuments/All%20Funds%20Tax%20Documents/2025%20ICI%20Primary%20Layout%20%E2%80%93%20YieldMax.pdf ; IRS Box 3 definition: https://www.irs.gov/instructions/i1099div (checked 2026-10-24). **Next:** PDF↔XLSX exact row/byte/revision parity (XLSX not retrieved), product-owned ex/payable/issuer/broker tax-year semantics, non-production importer + Firestore Emulator and UI tests for Box 3 numeric/dash/zero, finality/provenance, replay and multi-batch recovery, then sanitized operator batch. No investor tax-year inference, live import or production decision closure.
+- **Higher-priority operator gates unchanged:** D1 submitted Play Financial features selection/status **UNKNOWN / HOLD**; D2 AdMob consent/request→paid, Policy Center/Confirmed Click/serving-limit and finalized-revenue **UNKNOWN / PRESSURE HOLD**. Browser access requires originating browser context; Gmail requires noninteractive authentication unavailable in this run. D3 NATIVE-ONLY HOLD, D5 OPEN and LogMate production ads HOLD unchanged. No general research, product write, promotion or ad expansion.
 
 ## 2026-10-23 D1 FX canonical date provenance — downstream mapping source subgate
 

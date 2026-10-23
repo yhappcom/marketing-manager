@@ -2,6 +2,18 @@
 
 Last updated: 2026-10-22
 
+## 2026-10-23 independent-evidence reconciliation (main tree verified)
+
+Verified `main@df00ecd7006cefcc147eb80fe20ad440b1fdd080` recursive tree (`truncated=false`): 375 independent numbered research paths; no missing numeric sequences inferred. This is a production-decision queue update, not a new research item. General theory remains frozen.
+
+- **D1 / HOLD:** `live_data/minttap/d1_fx_daily_refresh_dependency_2026-10-22.md` exists on main but was omitted from the latest STATUS checkpoint. Release `1.0.29` source couples daily FX collection ahead of daily ETF/dividend/notification work; `Promise.allSettled` preserves independence of intraday/close jobs. Missing/expired FX is not verified coverage. Live failure and Play Console Financial features submitted selection/status remain UNKNOWN. **Next:** redacted submitted declaration plus version-matched claim/FX runtime evidence; ordinary distribution and optional Promotional content remain separate decisions.
+- **D2 / PRESSURE HOLD:** existing consent/banner failure evidence is source-only; test-device consent/request/load/impression/paid-event and account-side serving/revenue integrity remain UNKNOWN. No inventory expansion.
+- **D3 / NATIVE-ONLY HOLD:** rule observation is not promotion permission; complete native issuer-qualified answers before links.
+- **D4 / ROC IMPORT WRITE HOLD:** `live_data/minttap/d4_final_source_hash_provenance_boundary_2026-10-23.md` is committed on main and absent from the latest STATUS checkpoint. `finalSourceHash` is a normalized-row fingerprint, **not** a digest or revision proof of issuer document bytes. Same-hash replay, source downgrade, batch recovery and year-boundary concerns remain release-code/isolated-test risks, not confirmed live corruption. **Next:** verified issuer document identity and revision provenance, separate row/document hashes, and Firestore Emulator acceptance before writes.
+- **D5 / OPEN; D6–D10:** unchanged evidence gates, including LogMate production advertising HOLD. No overall production decision closed.
+
+**Access boundary:** submitted Play Console declarations, AdMob account/consent/paid-event/finalized revenue, and actual ROC production import records remain unavailable; UNKNOWN is neither PASS nor zero. No product repository writes.
+
 ## 2026-10-22 committed D2 banner evidence sync
 
 - **D2 / PRESSURE HOLD:** `live_data/minttap/d2_banner_failure_ux_gate_2026-10-21.md` was corrected in commit `e7999e8a802f16d66933dea495ec5e6402fd18aa`: fixed-bottom load failure occupies 52 logical pixels of inner error content plus 10 of top padding (62 total); Home failure collapses. No same-widget automatic retry. Release-source evidence only; runtime and account-side gates UNKNOWN. **Next:** Android/iOS test-ad consent and failure-recovery acceptance; do not expand inventory.

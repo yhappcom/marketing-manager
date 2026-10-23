@@ -30,3 +30,20 @@ The entry-point write branch and Admin initialization were separately inspected 
 
 ## Cross-domain boundary
 Marketing decision: truthful ROC finality/provenance and safe operational data handling. Product engineering owns CLI and Firestore guards; Web Manager and Design Studio are not material to the isolated CLI parsing gate. No ad or community action follows from this finding.
+
+## 2026-10-24 release rename/dedup conflict-visibility acceptance — source-only
+
+**New source-verified risk; D4 WRITE HOLD unchanged.** Re-read `yhappcom/yieldmax_tracker@1.0.29` `functions/scripts/import_final_roc_csv.js` (release blob `688dbc4b8f4824c784ced73bd3d8ceb74a7decb0`). Executed the **exact extracted** `sanitizeRenameMap`, `resolveMappedTicker`, and `applyTickerRenames` functions in an isolated JavaScript runtime; reproduced the release preflight `duplicates` expression. **Six explicit assertions passed (6/6)**; no Firebase SDK, CSV import, emulator or production access was used.
+
+| Isolated case | Release result | Preflight `duplicates` |
+| --- | --- | ---: |
+| Same ticker+ex-date, conflicting 0.3 vs 0.4 ROC values | First row 0.3 retained; second silently dropped | 0 |
+| Same conflicting rows reversed | First row 0.4 retained instead | 0 |
+| `OLD → NEW` rename, OLD 0.3 before NEW 0.4, same ex-date | Mapped OLD 0.3 retained | 0 |
+| Same rename collision, NEW 0.4 before OLD 0.3 | NEW 0.4 retained | 0 |
+| Exact duplicate rows | One retained | 0 |
+| Same ticker, different ex-dates | Both retained | 0 |
+
+**Mechanism:** `applyTickerRenames` constructs a Map keyed by `mappedTicker|exDate` and keeps the **first** encountered row. `dedupedCount` reports the number discarded, but neither compares conflicting amounts/provenance nor emits the discarded rows. The later `main` calculation of `duplicates` occurs **after deduplication**, so it is zero for these cases and, under the function's normal invariant, cannot detect original duplicate/conflict inputs. Input order can therefore determine which contradictory issuer row survives preflight and would be eligible for a later write. This is **not evidence** of a conflicting row in the 15-row issuer fixture or any live import.
+
+**Production gate:** Product engineering must distinguish identical replay from conflicting same-key rows, preserve pre/post-rename keys and both competing source rows, fail closed or require explicit source/revision precedence for conflicts, and report collisions in preflight before any write. Acceptance fixtures must reverse input order and include ticker-renaming convergence, different source revisions, identical duplicates, and distinct dates; the retained result for a conflict must not depend on arbitrary CSV ordering. Run on a confirmed `demo-*` Firestore Emulator target only after CLI write guards are repaired. Source-file/document digest and importer row hash remain distinct; do not infer issuer document authenticity from `finalSourceHash`.

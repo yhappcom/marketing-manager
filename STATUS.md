@@ -1,6 +1,11 @@
 # Marketing Manager Status
 
-Last updated: 2026-10-22
+Last updated: 2026-10-23
+
+## 2026-10-23 D3/D7 off-platform claim and permission evidence (main committed)
+
+- **D3 / NATIVE-ONLY HOLD; D7 / IDENTITY OPEN:** `live_data/minttap/d3_offplatform_claim_permission_inventory_2026-10-23.md` is committed on main. Search-indexed 2026-05-13 r/YieldMaxETFs MintTap-named post included a Store-search CTA without a hyperlink; 2026-05-14 reply described manual-only records `for now` in response to broker connectivity. Apple US 1.0.27 release notes dated 2026-07-04 subsequently advertise CSV/Excel import; current Store copy advertises optional app-account sync. **Temporal boundary:** the May answer is not proved false when written, and app-account sync is not brokerage connectivity. No verified Reddit author/developer identity, current thread state, mod approval, runtime broker integration, or conversion data. No inferred permission or violation. **Next:** action-specific moderator permission/identity ledger and version-matched manual/file-import/account-sync/broker-link feature acceptance before any public correction or product CTA.
+- **D1 / HOLD, D2 / PRESSURE HOLD, D4 / ROC IMPORT WRITE HOLD, D5 / OPEN, D8–D10:** unchanged; submitted Play Financial features, AdMob operator integrity and ROC production import evidence remain unavailable. Gmail noninteractive authentication and connected-browser context blocked operator evidence in this run. No new general research or production decision closure.
 
 ## 2026-10-23 independent-evidence reconciliation (main tree verified)
 

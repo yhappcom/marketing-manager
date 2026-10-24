@@ -3,7 +3,7 @@
 
 ## Current production-decision queue — 2026-10-25 01:33 KST
 
-**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. Last full recursive tree audit (2026-10-24 20:33 KST): **20 independent `live_data/**/*.md` evidence files** (18 MintTap, 2 LogMate; excluding MintTap README), **20/20 directly referenced in STATUS**. GitHub compare `bdc40539…edfabc1c` confirms only `STATUS.md` and the existing D8 Markdown changed after that audit; this run updates the same D8 file and STATUS, adding **zero** independent research files. Thus the 20/20 inventory is **continuity-verified, not a newly performed recursive tree audit**. JSON support files are not missing research; no numbered-sequence inference.
+**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. Last full recursive tree audit (2026-10-24 20:33 KST): **20 independent `live_data/**/*.md` evidence files** (18 MintTap, 2 LogMate; excluding MintTap README), **20/20 directly referenced in STATUS**. GitHub commit history since that audit shows updates only to existing D8 and D1 research Markdown files and `STATUS.md`; no independent evidence file was added. Thus the 20/20 inventory is **continuity-verified from changes, not a newly performed recursive tree audit**. JSON support files are not missing research; no numbered-sequence inference.
 
 | Priority | Decision / state | Evidence obtained / unresolved blocker | Next production evidence |
 | --- | --- | --- | --- |

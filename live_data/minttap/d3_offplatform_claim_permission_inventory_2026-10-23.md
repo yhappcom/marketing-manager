@@ -44,3 +44,19 @@ The 2026-05-14 Reddit answer is time-bound; the Apple US 1.0.27 note (2026-07-04
 **Next:** release-build device import acceptance (CSV/XLSX, supported vs unsupported rows, duplicate/sell handling, first-sheet/size/row constraints, app-account sync distinction) and separate authenticated broker-connection inventory; current community rule/mod approval before any outward mention.
 
 Public claim source checked 2026-10-23: https://apps.apple.com/us/app/minttap/id6766008739 .
+
+
+## 2026-10-24 r/stocks moderator-enforcement evidence — app research is not automatically native contribution
+
+**SOURCE / channel-specific enforcement observation (not a verified current complete rulebook).** A Reddit-indexed r/stocks removed thread dated **2026-09-04** contains a moderator removal message invoking **r/stocks Rule 2 (no spam or self promotion)** and expressly identifying **market research for app development** alongside promotion of sites, apps, tools, referrals, subreddits and Discord as disallowed. Source: https://www.reddit.com/r/stocks/comments/1w6z3h0/removed/ . A second indexed removal from **2026-03** objects to startup-tool screenshots and an apparent advertising effort, while saying ordinary data could be shared without naming the tool: https://www.reddit.com/r/stocks/comments/1rmebu2/removed/ . Search-result text was directly returned on 2026-10-24; direct Reddit thread and current `about/rules` fetches were blocked, so authorship/moderator flair, subsequent edits, and full October 2026 rule wording are **not independently confirmed**. This is primary *moderation-action text surfaced through a search index*, not a direct live rulebook inspection. Reddit's first-party business guidance also says subreddit rules differ and moderators can be contacted by Mod Mail for permission: https://www.business.reddit.com/learning-hub/search-results . That general guidance is not an exception or approval.
+
+**Decision delta / permission ledger:**
+
+| Product × community × action | Evidence class | Permission decision | Missing evidence / boundary |
+| --- | --- | --- | --- |
+| MintTap × r/stocks × P5 app showcase or named-tool promotion | Dated moderator Rule 2 removal text, 2026-09-04 | **NO-GO / enforcement-observed prohibition** | Direct current rulebook or explicit moderator exception; none obtained |
+| MintTap × r/stocks × P6 app-development survey, pilot recruitment or market-research solicitation | Same removal text explicitly includes market research for app development | **NO-GO / enforcement-observed prohibition** | Direct current rulebook or explicit moderator exception; none obtained |
+| MintTap × r/stocks × P1 nonpromotional native answer with no product, research solicitation or funnel | No action-specific evidence of permission or prohibition from the retrieved removal | **NOT STATED / do not generalize permission** | Current rules, thread relevance and account standing before any action |
+| MintTap × r/YieldMaxETFs × P1–P6 | Separate community; 2026-10-12 rulebook checkpoint and earlier 2025 moderator routing remain in existing ledger | **UNCHANGED: NATIVE-ONLY HOLD; P3–P6 unapproved** | Current action-specific moderator permission and verified identity |
+
+**Operational distinction:** A useful answer without a product link is a *necessary quality condition*, not blanket permission to solicit app feedback or recruit study participants. The r/stocks enforcement does not establish r/YieldMaxETFs rules, and no app research should be disguised as neutral market discussion. No community post, comment, modmail, DM, recruitment, app/account write or new general theory was executed. D3 and D7 HOLDs remain. **Next target:** obtain a directly dated current rule/permission snapshot for the *specific* proposed community and action, rather than further broad subreddit mining.

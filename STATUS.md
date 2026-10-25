@@ -3,7 +3,7 @@
 
 ## Current production-decision queue — 2026-10-26 04:30 KST
 
-**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. **Fresh full nontruncated recursive tree audit (2026-10-25 KST): 20 independent `live_data/**/*.md` evidence files** (18 MintTap, 2 LogMate; excluding MintTap README), **20/20 directly referenced in STATUS**. This is a fresh tree/reference audit, not a sequence-number inference. JSON support files are not missing research.
+**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. **Fresh full nontruncated recursive tree audit (2026-10-26 04:30 KST): 20 independent `live_data/**/*.md` evidence files** (18 MintTap, 2 LogMate; excluding MintTap README), **20/20 directly referenced in STATUS**. This is a fresh tree/reference audit, not a sequence-number inference. JSON support files are not missing research.
 
 | Priority | Decision / state | Evidence obtained / unresolved blocker | Next production evidence |
 | --- | --- | --- | --- |

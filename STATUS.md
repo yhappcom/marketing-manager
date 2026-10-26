@@ -1,9 +1,9 @@
 # Marketing Manager Status
 
 
-## Current production-decision queue — 2026-10-27 04:29 KST
+## Current production-decision queue — 2026-10-27 07:28 KST
 
-**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. **Fresh full recursive main tree/reference audit (2026-10-27 04:29 KST): 448 entries, 20 independent `live_data/**/*.md` evidence files** (18 MintTap, 2 LogMate; excluding MintTap README), **20/20 directly referenced in STATUS, zero unreferenced independent files**. Main was `5d5efa675a0912eafd861c1cd125fddcabdbcc31` before this STATUS update. Count actual paths, never missing sequence numbers; JSON support files are not missing research.
+**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. **Fresh full recursive main tree/reference audit (2026-10-27 04:29 KST): 448 entries, 20 independent `live_data/**/*.md` evidence files** (18 MintTap, 2 LogMate; excluding MintTap README), **20/20 directly referenced in STATUS, zero unreferenced independent files**. The 04:29 full-tree audit was at `5d5efa675a0912eafd861c1cd125fddcabdbcc31`; 07:28 compare confirmed no tree changes through `1e13210b2eab45d0a4142096411d5cee7f35be97` before the W-001 STATUS-only update. Count actual paths, never missing sequence numbers; JSON support files are not missing research.
 
 | Priority | Decision / state | Evidence obtained / unresolved blocker | Next production evidence |
 | --- | --- | --- | --- |

@@ -3,7 +3,7 @@
 
 ## Current production-decision queue — 2026-10-28 23:33 KST
 
-**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. Last **full recursive main-tree inventory** (2026-10-28 20:30 KST): 448 entries, nontruncated. This cycle independently fetched **20/20 exact independent `live_data/{minttap,logmate}/**/*.md` paths referenced by STATUS** (README excluded); no missing referenced path or inferred sequence number. **No fresh full recursive enumeration** is claimed. Existing D8 study updated in place for C443 original Skia source-stream/1116-locator evidence and Web W-012 exact transaction review; no new independent research document. All 20/20 STATUS-referenced independent live-data Markdown paths fetched on this cycle; no fresh recursive enumeration. STATUS remains a production-decision queue, not a research-number scoreboard.
+**Canonical source:** latest `main`, `AGENTS.md`, product authorities and independent evidence. Last **full recursive main-tree inventory** (2026-10-28 20:30 KST): 448 entries, nontruncated. This cycle independently fetched **20/20 exact independent `live_data/{minttap,logmate}/**/*.md` paths referenced by STATUS** (README excluded); no missing referenced path or inferred sequence number. **No fresh full recursive enumeration** is claimed. Existing D8 study updated in place for C443 original Skia source-stream/1116-locator evidence and Web W-012 exact transaction review; no new independent research document. STATUS remains a production-decision queue, not a research-number scoreboard.
 
 | Priority | Decision / state | Evidence obtained / unresolved blocker | Next production evidence |
 | --- | --- | --- | --- |

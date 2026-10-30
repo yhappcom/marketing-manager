@@ -1,6 +1,6 @@
 # Marketing Manager — production-decision queue
 
-**Checkpoint:** 2026-10-30 23:29 KST · canonical `yhappcom/marketing-manager` `main` · no new release, ad-inventory, external-community or deletion approval.
+**Checkpoint:** 2026-10-31 00:31 KST · canonical `yhappcom/marketing-manager` `main` · no new release, ad-inventory, external-community or deletion approval.
 
 > This file is the **current decision queue**, not a research-number scoreboard or chronological diary. The complete preceding 423141-character STATUS was archived byte-for-byte at [`history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md](history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md) (source blob `c49ffaf3791f97a0c39ea31868f09ed55b16b010`; archive commit `785795b152a0dc21b3fe9eac080a815e03a5666b`). Historical evidence remains accessible there and in Git history. Do not copy historical entries back into this queue.
 

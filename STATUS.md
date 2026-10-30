@@ -1,8 +1,18 @@
 # Marketing Manager — production-decision queue
 
-**Checkpoint:** 2026-10-30 11:31 KST · canonical `yhappcom/marketing-manager` `main` · no launch, ad-inventory or external-community approval newly granted.
+**Checkpoint:** 2026-10-30 12:36 KST · canonical `yhappcom/marketing-manager` `main` · no launch, ad-inventory or external-community approval newly granted.
 
 > This file is the **current decision queue**, not a research-number scoreboard or chronological diary. The complete preceding 423141-character STATUS was archived byte-for-byte at [`history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md](history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md) (source blob `c49ffaf3791f97a0c39ea31868f09ed55b16b010`; archive commit `785795b152a0dc21b3fe9eac080a815e03a5666b`). Historical evidence remains accessible there and in Git history. Do not copy historical entries back into this queue.
+
+## 2026-10-30 12:36 KST — decision delta (no new general theory)
+
+| Decision | Newly validated evidence / decision state | Remaining blocker / next admissible proof |
+| --- | --- | --- |
+| **D8 LogMate roster admission** | **NARROW SUBGATE CLOSED:** Design Studio **C480** corrected June Skia tail locator from p1/TR41 to **p2/TR41** and resolved three C479 window-only unknowns (June p2/TR41; August p2/TR42–43) as **not numeric Flight candidates**: typed TD7 nonnumeric Activity-shaped, TD20 no printed H:MM BLH, before Sum; 3 original-derived structural baselines, 13/13 **synthetic** adversaries. June code's duty meaning remains unknown. **PRODUCT CLAIM HOLD unchanged.** | No authenticated report year/subject/Publication, active same-UID ledger, eight August joins, W-016/017 or product Dart/Sembast parser. Next: complete typed three-month Activity/PDC cross-family negative controls, then authenticated owner/flight linkage; no roster-import completeness or crew claim. |
+| **D9 LogMate PWA first install** | **NEW SOURCE-CONDITIONAL risk, NOT observed browser failure:** LogMate `tool/pwa_precache.dart` first activation calls `clients.claim()`, while `clientBuilds` assignment occurs only on intercepted root navigation; adopted uncontrolled page's later same-origin GET can reach a pre-network-fallback **503** when client ID has no build. Bootstrap `controllerchange` messages do not bind it. Different from CW03/CW04 old/new-worker race. **PWA RELEASE HOLD unchanged.** | **FC01–FC05 NOT RUN:** exact compiled worker + clean browser, claim/controllerchange, same-client GET/status/clientBuilds, then controlled-navigation countercheck. Follow with CW03/CW04, 37-store independent Files readback, Safari/Home Screen/MDM and owner lifecycle. |
+| **D1/D2 MintTap** | Financial declaration / AdMob production states **unchanged and UNKNOWN**. Browser tab read failed with exact `UNKNOWN: RuntimeException: Browser access requires the originating browser context`. Google Financial features and optional Promotional-content rules rechecked 2026-10-30; no material policy change established. | Redacted submitted Financial features and version-matched AAB; operator AdMob consent→request→load→impression→paid and finalized reconciliation. Do not infer approval or zero from inaccessible account data. |
+
+**Repository custody:** Re-read `AGENTS.md`, `STATUS.md`, company/Stage1/roadmap, relevant D1/D2/D4/D8 studies, and recent Marketing/Design/Web/Product commits. All **20 STATUS-listed independent `live_data` Markdown paths fetched on `main` (20/20)**; no missing sequence inferred. Latest Marketing commits only modify existing files; this is a listed-path audit, not a new full recursive tree census. C480 and FC01 findings added to the **existing D8 study**, not a new independent study. No product, Play Console, AdMob, deployment or community write; no new launch or ad approval.
 
 ## Priority decisions — evidence, blocker, next admissible proof
 

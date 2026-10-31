@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-01 02:33 KST — D8 C500 date-cell/anchor contradiction; full independent-study census
+
+| Decision | Newly verified evidence / decision state | Remaining blocker / next evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — SOURCE COUNT CONFLICT / PRODUCT CLAIM HOLD** | [Design Studio C500](https://github.com/yhappcom/design-studio/commit/d6d367ea189537349633238ed94f297a23f1a0cf) explicitly challenges C499's **30 printed Date anchors**: C423 native 14-column PDF body occupancy reports **31 Date-column cells**; C491 independently reports **13 numeric own-Date + 18 nonnumeric own-Date = 31**. C497's **31 structural groups** and C499's observed leading two undated numeric rows do not yet reconcile these definitions. **Retract any definitive assertion that the source has exactly 30 printed Date cells or exactly one undated group** until byte-coordinate reconciliation. Do not auto-inherit dates, import rows, or advertise parser support. | Read-only original-PDF x=81 Date-object/y-band/lexeme mapping against 31 cell observations, alleged 30 anchors, 49 bands/48 Activity bands, auxiliary row and 31 structural starts. Then C426 source-native original + 13 mutated whole-PDF execution, identity/year/Publication checks and W-016/017 Dart/Sembast acceptance. C500 reports C426 runnable harness path unverified. |
+| **D1/D2 MintTap** | No newly accessible operator-side submitted Financial features/served AAB or AdMob paid-event/finalized settlement proof. **HOLD unchanged.** | D1 version-matched Play Console submission and shipped feature matrix; D2 production request→impression→paid-event→finalized chain. |
+
+**Repository census (fresh, exact main tree):** Git tree returned 450 entries, not truncated; **20 independent `live_data/**/*.md` studies**, excluding `live_data/minttap/README.md`. All 20 exist and are referenced in STATUS; missing independent studies **0**, nonexistent STATUS `live_data` references **0**. Three `research/528–530` paths appearing in STATUS refer to **external Web Manager research**, not local Marketing Manager studies; do not misclassify as missing local files. No research-sequence inference. AGENTS, STATUS, company constraints, Stage 1, D1 and D8 research, recent Marketing/LogMate/Design commits read. No new research, product code, Console, ad or community mutation. No release approval.
+
+
 ## 2026-11-01 00:35 KST — D8 C499 original-byte date-anchor correction; D9 artifact custody boundary
 
 | Decision | Newly verified evidence / decision state | Remaining blocker / next evidence |

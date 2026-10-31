@@ -4,6 +4,15 @@
 
 > This file is the **current decision queue**, not a research-number scoreboard or chronological diary. The complete preceding 423141-character STATUS was archived byte-for-byte at [`history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md](history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md) (source blob `c49ffaf3791f97a0c39ea31868f09ed55b16b010`; archive commit `785795b152a0dc21b3fe9eac080a815e03a5666b`). Historical evidence remains accessible there and in Git history. Do not copy historical entries back into this queue.
 
+## 2026-10-31 21:31 KST — D8 C498 abstract mutation fixture (bounded)
+
+| Decision | Newly validated evidence / state | Remaining production blocker / next evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex** | [Design Studio C498](https://github.com/yhappcom/design-studio/commit/bf1de657544f91296514f59cfb830036912f8ce0) reports an independent **abstract 31-group topology replay**: original C497 topology accepted; **13/13 same-numeric-class C/I/C/O relocations rejected** (7 C/I, 6 C/O). Exact group/band ordinal and research-rule rejection reasons are pinned. Nonflight group-20 trailing C/O and group-29 preceding C/I+C/O remain **positive exceptions**, not general flight grammar. **This closes the abstract fixture subgate only; PRODUCT CLAIM HOLD unchanged.** | Execute the **actual C426 whole-PDF baseline and 13 mutated PDFs** with 31-group census and fail-closed results; then original source year/Publication/UID, company August joins and W-016/017 Dart/Sembast acceptance. No original/variant PDF execution, authenticated source or production import claim established by C498. |
+| **D1/D2 MintTap** | No new actual Console Financial features submission/served AAB or AdMob operator/event/finalized-settlement evidence. **HOLD unchanged.** | Operator declaration + artifact provenance first; consent/request→paid-event→finalized chain next. |
+
+**Custody:** Re-read current AGENTS, STATUS, roadmap, company/Stage1, relevant D8 study and recent Marketing/LogMate/Design/Web commits. Existing 20-study tree census from previous validated checkpoint retained; **not represented as a fresh full-tree audit**. One intentionally guessed D1 filename returned 404 and was **not** treated as a STATUS-listed missing path. No new independent research or sequence inference; this STATUS-only decision-evidence delta does not authorize release, ads or community action.
+
 ## 2026-10-31 17:34 KST — D9 historical Chrome IndexedDB reopen evidence (bounded)
 
 | Decision | Newly verified evidence / state | Remaining production blocker / next evidence |

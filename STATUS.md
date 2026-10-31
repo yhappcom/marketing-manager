@@ -4,6 +4,14 @@
 
 > This file is the **current decision queue**, not a research-number scoreboard or chronological diary. The complete preceding 423141-character STATUS was archived byte-for-byte at [`history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md](history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md) (source blob `c49ffaf3791f97a0c39ea31868f09ed55b16b010`; archive commit `785795b152a0dc21b3fe9eac080a815e03a5666b`). Historical evidence remains accessible there and in Git history. Do not copy historical entries back into this queue.
 
+## 2026-10-31 17:34 KST — D9 historical Chrome IndexedDB reopen evidence (bounded)
+
+| Decision | Newly verified evidence / state | Remaining production blocker / next evidence |
+| --- | --- | --- |
+| **D9 LogMate PWA / data custody** | **PWA RELEASE HOLD unchanged.** [Web Manager 530 §42](https://github.com/yhappcom/web-manager/commit/3a4f921644f5) independently identifies a **successful executed historical Chrome Sembast Web/IndexedDB reopen test**: [DATA-001 run 41025879668](https://github.com/yhappcom/logmate/actions/runs/41025879668), pinned source `93c1e9dd0c74bb62a1985298ac051847b336471b` (2026-10-30 UTC). Test covers flight/previous-total creation, reopen, flight deletion, reopen and restoration with ledger/revision/sync-replica continuity. This is browser repository persistence evidence, **not** account erasure, offline installation or current-main acceptance. | Re-execute on current product HEAD; seed and terminal-wipe **all 37 A-owned stores**, reopen and verify B startup, stale-writer denial and interrupted deletion; independent Files backup readback/restore; then Safari/iPad installed/offline/managed-EFB cases. No inference of data leak or release readiness from the historical PASS. |
+
+**Repository custody:** Latest Marketing `main` AGENTS, STATUS, roadmap, company constraints, Stage1 and D1/D2 studies reviewed; recent Marketing, LogMate, Design Studio and Web Manager commits inspected. Complete nontruncated Git tree confirms **20 independent live_data Markdown studies**, all referenced in STATUS (README excluded), with no missing research paths or inferred sequence numbers. MintTap D1 submitted Financial features/AAB and D2 AdMob operator chain still unavailable; D1/D2 HOLD, D8 PRODUCT CLAIM HOLD. No new study, product or operator mutation; this entry records only the newly bounded executed historical D9 evidence, not a new production approval.
+
 ## 2026-10-31 16:30 KST — D8 source topology subgate (C497)
 
 | Decision | Newly validated evidence / state | Blocking production evidence / next action |

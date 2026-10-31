@@ -4,6 +4,15 @@
 
 > This file is the **current decision queue**, not a research-number scoreboard or chronological diary. The complete preceding 423141-character STATUS was archived byte-for-byte at [`history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md](history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md) (source blob `c49ffaf3791f97a0c39ea31868f09ed55b16b010`; archive commit `785795b152a0dc21b3fe9eac080a815e03a5666b`). Historical evidence remains accessible there and in Git history. Do not copy historical entries back into this queue.
 
+## 2026-10-31 16:30 KST — D8 source topology subgate (C497)
+
+| Decision | Newly validated evidence / state | Blocking production evidence / next action |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex** | **PRODUCT CLAIM HOLD unchanged.** [Design Studio C497](https://github.com/yhappcom/design-studio/commit/e831563a288e3671a95da92b70c6d1bebb9c1feb) reports recovery of the original private PDC's complete privacy-safe **31 printed-date group ordering** (15 numeric-bearing, 16 nonnumeric-only), correcting C496's incomplete 15-group fixture. Census: 26 numeric and 22 nonnumeric rows; numeric I15/O14 and nonnumeric I1/O2. This closes the **fixture topology gap only**, not source authentication or product-parser acceptance. | Execute source-scoped C426 full-document baseline plus 13 within-class cell-relocation mutants and verify fail-closed outcomes. No executed C426 PDF/variant harness or Dart/Sembast result; original report year/Publication/UID and August joins remain unverified. |
+| **D1/D2 MintTap** | **HOLD unchanged.** No actual submitted Play Financial features selection, served AAB provenance or operator AdMob event/settlement evidence obtained. | Operator Console declaration and release artifact first; then consent→paid-event→finalized revenue evidence. |
+
+**Custody:** Re-read AGENTS, STATUS, company/Stage1 and relevant MintTap D2 source research; reviewed recent Marketing, LogMate and Design Studio commits. Nontruncated `main` Git tree: 450 entries; **20 independent live_data Markdown studies**, all referenced by STATUS, with no missing study paths (MintTap README excluded). Existing decision queue only; no new research file, no product/Console/ad/community writes or release approval.
+
 ## 2026-10-31 00:31 KST — decision delta (C492 group-position counterexamples; PWA history restoration)
 
 | Decision | Newly validated evidence / state | Blocking production evidence / next action |

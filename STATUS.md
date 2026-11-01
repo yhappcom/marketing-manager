@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-01 14:36 KST — D8 C503 original-byte group topology; execution still HOLD
+
+| Decision | New admissible evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C503 source-backed profile](https://github.com/yhappcom/design-studio/commit/03a1412af6526e86fb90ccf3545bc6f0237f9697) and [research log](https://github.com/yhappcom/design-studio/commit/6ff0c32d96ca7ef94b1d44919a0c2280f0ca9827) report native private-PDF geometry: **31 own-Date anchors / 48 Activity rows / 17 undated Activity rows / 31 geometry groups**, **10 multi-Activity groups**, maximum **5 Activity rows per group**, zero leading orphan groups; first group begins with a dated numeric Activity followed by an undated numeric Activity. Also 26 numeric and 22 nonnumeric Activity rows; C/I and C/O raw cell occupancy 16 each. This advances C502's count correction to an explicit original-byte topology, **not** operational date inheritance or verified flight records. Marketing reviewed committed source evidence, not private PDF bytes. | Compare all 31 groups against C497 ordered manifest; execute C426 original full-document **DETACHED_HOLD** and all 13 C498 native mutants **FAIL_DOCUMENT**. Authenticate Publication/year/UID, company joins and product Dart/Sembast before any import or marketing claim. No FlightRecord creation/overwrite or undated-date inheritance. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator Play declaration/version-matched AAB, AdMob paid-event→finalized settlement or PWA device/Files acceptance evidence. Existing HOLDs unchanged. | D1 submitted Financial features + shipped feature matrix; D2 operator consent and event-to-settlement trace; D9 owner deletion and independent Files restore. |
+
+**Repository custody:** Read latest AGENTS/STATUS, company/Stage1 and existing D1/D2 research, recent commits. Complete nontruncated `main` tree at `bc29f58`: **450 entries and 20 independent live_data Markdown studies** (README excluded); all 20 referenced in STATUS, no nonexistent local study refs, no inferred sequence gaps. No new study, product, Console, AdMob or community mutation; no release/ad approval.
+
+
 ## 2026-11-01 13:31 KST — D8 C502 original-byte Date census correction
 
 | Decision | Newly verified evidence / state | Remaining production gate |

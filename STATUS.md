@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-01 10:31 KST — D8 C501 profile-contract quarantine (no parser acceptance)
+
+| Decision | New verified evidence / state | Blocker / next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C501 profile commit](https://github.com/yhappcom/design-studio/commit/0a54a3f414f9bb6f7df1785852192cb583092774) explicitly adds `c501DateCensusConflictGate` to the existing PDC ParserProfile. Its historical `sampleFingerprint.dateAnchorCount=31` is now **quarantined as a C426/C423 expectation**, not independently reconciled with C499's 30 printed anchors; C497's 31 structural groups cannot settle that conflict. [C501 research log](https://github.com/yhappcom/design-studio/commit/c1f766db7b027803b3316a40f79a75c45cbc4565) confirms this was static cross-contract reconciliation, **not new PDF coordinate decoding or executable validation**. Existing fail-closed date/record policy remains. | Original PDF x81 Date object/y baseline/duplicate paint/Activity ownership mapping, then source-native C426 baseline + 13 PDF mutants and product Dart/Sembast acceptance. No date inheritance, year/Publication/UID certification, FlightRecord import, or parser support claim. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator Play declaration/served AAB, AdMob event/settlement, or PWA owner/Files acceptance evidence. **Existing HOLDs unchanged.** | D1 operator submission + version provenance; D2 production event and settlement chain; D9 37-store owner deletion and independent Files restore. |
+
+**Custody:** Read current main AGENTS, STATUS, company constraints, Stage 1, existing D8 study and latest Marketing/Product/Design/Web commits. Marketing main remains `00f065a` before this write. Existing STATUS records prior full-tree census of 20 independent studies; **no fresh full-tree census performed**. No new study, no sequence inference, no product/Console/ad/community mutation, and no release approval.
+
+
 ## 2026-11-01 02:33 KST — D8 C500 date-cell/anchor contradiction; full independent-study census
 
 | Decision | Newly verified evidence / decision state | Remaining blocker / next evidence |

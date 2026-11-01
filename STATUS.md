@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-01 15:34 KST — D8 C504 exact ordered topology reconciliation; source-native execution still HOLD
+
+| Decision | Newly admissible evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C504 source profile](https://github.com/yhappcom/design-studio/commit/d4485da199765d4d39359072bbbd12066cdda75e) and [research log](https://github.com/yhappcom/design-studio/commit/db9881399394da0e00e77b01d1c1b9f1bab9d3d6) report independent original-private-PDF native-text replay: **31/31 C497 ordered group signatures match exactly, zero mismatches and zero leading orphan Activity rows**; 31 own-Date cells, 48 Activity rows, 495 text blocks. This closes the **single-original structural order comparison** previously queued after C503, not the production import gate. Marketing inspected committed source changes, **not the private PDF itself**. C499's 30-anchor assertion remains retracted. | Run C426 original full-document **DETACHED_HOLD** and 13 C498 source-native mutated PDFs **FAIL_DOCUMENT**, retaining nonflight/undated exceptions. Then authenticate Publication/year/UID/company joins and execute Dart/Sembast acceptance. No inherited date, FlightRecord creation/overwrite or CrewConnex support claim. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator-submitted Play Financial features/served-build provenance, AdMob event-to-finalized reconciliation, or PWA deletion/Files/device acceptance in accessible evidence. Existing HOLDs unchanged. | D1 actual Console submission + version-matched AAB; D2 consent/request→paid event→finalized revenue; D9 37-store owner deletion, independent Files restore and iPad offline checks. |
+
+**Custody:** Re-read current AGENTS/STATUS, company constraints and Stage1; inspected current Marketing and Design Studio recent commits and C504 diff. Prior full-tree **20-study** census remains a historical verified checkpoint, **not rerun this cycle**; no inferred sequence gaps. No new independent study, product, Console, ad or community mutation, and no release/ad approval.
+
 ## 2026-11-01 14:36 KST — D8 C503 original-byte group topology; execution still HOLD
 
 | Decision | New admissible evidence / state | Next production evidence |

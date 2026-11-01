@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-01 13:31 KST — D8 C502 original-byte Date census correction
+
+| Decision | Newly verified evidence / state | Remaining production gate |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C502 original-byte research](https://github.com/yhappcom/design-studio/commit/f2d292cc53bce0f603794c16e46c2bdb536dd4ce) independently decoded the private August PDC in transient memory: **31** native body Date text cells at x=81, **48** Activity text cells at x=210, **17** Activity rows without their own Date. The top Activity has a Date; the second does not. This **contradicts and supersedes C499's 30-anchor/two-leading-undated assertion** and corroborates C426's 31-cell census at native-text-object level. [C502 queue correction](https://github.com/yhappcom/design-studio/commit/f11abb2a6b446fada79ef5c6aa322d61229f5eda) records the correction. Marketing independently reviewed the committed diff, **not private PDF bytes**. | Rebuild C497 group mapping using 31 verified cells; execute original-byte C426 full-document baseline and 13 C498 mutants; separately authenticate source year/Publication/UID, company join and Dart/Sembast acceptance. No missing-Date inheritance, automatic import, crew or launch claim. |
+| **D1/D2 MintTap — HOLD** | No new submitted Play Financial features/AAB evidence or AdMob operator paid-event→finalized evidence available in this review. | Actual submitted Play declaration with served-build provenance; operator consent/ad event chain and finalized settlement. |
+
+**Custody:** Latest Marketing `main` AGENTS/STATUS, roadmap, company/Stage1 and existing D8 study reviewed; latest Marketing/LogMate/Design Studio/Web Manager commit lists inspected. Prior 20-file complete-tree census is historical, **not re-executed here**. No new independent study, no inferred sequence numbers, no product/Console/community mutation. This update corrects a material evidence contradiction in the existing production queue; no overall decision closed.
+
+
 ## 2026-11-01 10:31 KST — D8 C501 profile-contract quarantine (no parser acceptance)
 
 | Decision | New verified evidence / state | Blocker / next production evidence |

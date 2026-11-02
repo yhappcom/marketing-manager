@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-02 13:36 KST — D8 C507 original-byte-derived positional predicate evidence; product HOLD unchanged
+
+| Decision | Newly admissible evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C507 committed research](https://github.com/yhappcom/design-studio/commit/4327a09379da) reports a transient, private-original-byte-derived native-text replay: 495 text objects, 31 Date groups, 26 numeric/22 nonnumeric Activity rows, 16 C/I and 16 C/O. Independent group-local positional predicate accepts the unchanged 31-group baseline **only with both nonflight positive exceptions** (group 20 trailing C/O; group 29 preceding C/I+C/O). **13/13 newly selected** original-text-object C/I or C/O coordinate relocations were rejected while retaining byte length and 495 text objects. These are **not** the exact C498 13 cases and were **not** validated as standards-valid whole PDFs or run through C426 `inspectPdcPdfStrict`; no product Dart/Sembast or FlightRecord evidence. This advances predicate feasibility, not import support. | Execute source-scoped guard through C426 full-document strict runner on unchanged original and **exact C498** 13 standards-valid native PDF mutations, retaining nonflight exceptions; baseline `DETACHED_HOLD`, mutants `FAIL_DOCUMENT`, zero writes. Then UID/year/Publication, company joins and Dart/Sembast. |
+| **MintTap D1/D2; LogMate D9** | No new submitted Play declaration/version-matched AAB, operational ad-to-finalized reconciliation, or PWA device/Files acceptance from this source check. HOLD unchanged. | D1 Console declaration and shipped artifact; D2 consent→paid-event→finalized chain; D9 independent Files restore and iPad offline/device validation. |
+
+**Custody:** Marketing `main` 27ef8da; AGENTS, STATUS, recent commits and D1 research read. Full Git tree 450 entries, not truncated, 20 independent `live_data` Markdown studies present and referenced; no inferred sequence numbers. Design Studio C507 commit inspected; private PDF not handled in Marketing. No new study or product mutation.
+
+
 ## 2026-11-02 11:33 KST — D8 C506 C426 fixture representativeness blocker (source-static)
 
 | Decision | New admissible evidence / decision state | Next production evidence |

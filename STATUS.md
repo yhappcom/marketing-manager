@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-02 11:33 KST — D8 C506 C426 fixture representativeness blocker (source-static)
+
+| Decision | New admissible evidence / decision state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C506 source audit](https://github.com/yhappcom/design-studio/commit/47009787c5e2b190a2d8f772652eef8f83d29be1) identifies a **test-design blocker**: C426 `syntheticFixture()` distributes 26 numeric/22 nonnumeric Activity rows and C/I/C/O by generated order and aggregate counts, **not the source's 31 Date-group topology**. Its synthetic PASS is not a valid positive control for the original-specific positional guard; introducing that guard without replacing the fixture could yield a misleading baseline failure. This is a committed source-static audit, **not** executed original PDF, mutation, Dart or Sembast acceptance. Existing original 31/31 topology subgate remains closed; overall product claim HOLD unchanged. | Construct a source-scoped ordered 31-group positive fixture from C497/C504, preserve group-20 trailing nonflight C/O and group-29 preceding nonflight C/I+C/O as explicit positive exceptions. Execute original C426 native PDF baseline and 13 C498 standards-valid native PDF relocations with 495 glyphs, 49 bands, 31 Date anchors and valid clock grammar preserved. Require baseline `DETACHED_HOLD`, each mutated document `FAIL_DOCUMENT` for positional violation, zero FlightRecord writes, then separately certify UID/year/Publication, company joins and product Dart/Sembast. No inherited Date or CrewConnex import support claim. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator Play Financial features/served AAB, ad event→finalized settlement, or PWA deletion/Files/device acceptance evidence in this repository review. Prior HOLDs remain. | D1 submitted declaration plus version-matched artifact; D2 production consent→paid event→finalized chain; D9 owner deletion, independent Files restore and iPad offline acceptance. |
+
+**Custody:** Re-read Marketing main AGENTS, STATUS, company constraints, Stage 1 and recent commits; inspected C506 committed diff. Prior 20-study census is historical and **not rerun**; no inferred missing sequence numbers. No new independent research or product/Console/ad/community mutation. This is a STATUS-only production blocker clarification, not release approval.
+
 ## 2026-11-01 15:34 KST — D8 C504 exact ordered topology reconciliation; source-native execution still HOLD
 
 | Decision | Newly admissible evidence / state | Next production evidence |

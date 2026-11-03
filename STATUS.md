@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 07:35 KST — D8 C518 strict fixture reconstruction census (STATIC; HOLD)
+
+| Decision | Newly validated evidence / state | Next production target |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C518 committed audit](https://github.com/yhappcom/design-studio/commit/fb1d5bdb0af96db5181502b0830daf0e550b8b03) derives an exact privacy-safe fixture construction census from the pinned C513 guard: **31 Date groups, 48 Activity bands (26 numeric F / 22 nonnumeric N), 13 numeric / 18 nonnumeric group starts, C/I 15 F + 1 N, C/O 14 F + 2 N**; one auxiliary physical band remains separate, giving 49 physical bands. The shape is consistent with the earlier C491 occupancy census and provides an implementable replacement for the old nonrepresentative synthetic fixture. Both `runPdcEnvelopeTests()` and `runPdcInputBoundaryTests()` require the same corrected strict-positive fixture. Merely changing Date cells in the old fixture is insufficient; class/clock/position oracles and regenerated PDF length/xref must agree. **Code-derived static census, not executed Node, private PDF, renderer or Dart/Sembast validation.** No product claim upgrade. | Build a single synthetic 31-group/49-band/495-object strict-positive fixture without private identifiers; run physical negative, lexical non-strict, strict-positive and content-mutation suites separately; execute authorized original and all 21 native-byte variants through C426 strict with independent render and zero-write proof. Keep identity/company/year/Publication and device gates separate. |
+| **MintTap D1/D2; LogMate D9** | No new operator-submitted Play Financial features choice + version-matched served AAB, production ad paid-event→finalized reconciliation, or physical owner-delete/Files/iPad acceptance was established by C518. Existing HOLDs unchanged; ordinary Store distribution and optional promotional eligibility remain separate. | D1 actual submitted declaration + served-build/Store claim matrix; D2 consent/request/load/impression/paid-event/settlement trace; D9 seeded 37-store wipe and physical recovery/offline tests. |
+
+**Custody:** Read latest Marketing AGENTS, STATUS, roadmap, company constraints, Stage 1, D1/D2/D8 independent research and recent Marketing/Design/Product commits; inspected C518 committed diff. Prior 20-study census is historical; **fresh full-tree existence census not performed in this run** and no missing study numbers inferred. No new study, private PDF, product, Console, ad, community or release mutation; no release/ad expansion approval.
+
+
 ## 2026-11-04 06:35 KST — D8 C517 input-boundary strict positive oracle dependency (STATIC; HOLD)
 
 | Decision | New evidence and state | Next evidence target |

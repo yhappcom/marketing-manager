@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-03 09:29 KST — D8 C509 exact C498 source-native coordinate replay; strict product gate OPEN
+
+| Decision | New admissible evidence / decision state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C509 source-native replay](https://github.com/yhappcom/design-studio/commit/540a2ad79ed99e6fabcfe26df2bee2cee070028f) and [structured profile](https://github.com/yhappcom/design-studio/commit/0f4e07f769c1fd82c916a76a421c4694e950157f) report a fresh authorized **private original-PDF-byte** replay of the **exact C498 13** C/I (7) and C/O (6) same-group numeric-band coordinate relocations. Original 31-group positional baseline has zero errors; **13/13** mutants were independently rejected with matching group/field reasons, preserving 39,612-byte length, 495 native text objects, xref offsets and stream lengths. Group-20 and group-29 nonflight exceptions remain positive controls. This advances beyond C508's abstract replay and is distinct from C507's different 13. **Evidence ceiling:** xref/stream consistency is not standards-compliant rendering; **C426 `inspectPdcPdfStrict()` was not run**, its source-scoped group-local guard remains unimplemented, and no Dart/Sembast or real zero-write test occurred. No year/Publication/UID or company-source authentication, no field-grade uplift, no vendor-wide grammar, and no create/overwrite authorization. | Implement source-scoped group-position guard in C426 strict full-envelope path; run unchanged original to `DETACHED_HOLD` and the exact 13 physical/paint-validated PDFs to `FAIL_DOCUMENT` with independent PDF parser/render, no ledger writes and separate same-UID/year/Publication/company reconciliation. C194 historical sync debt remains open. |
+| **D1/D2 MintTap; D9 LogMate** | No newly supplied operator-side submitted Play Financial features selection/served AAB, production ad paid-event/finalized settlement, or seeded current-head owner-delete/Files/iPad acceptance in this review. Existing HOLDs unchanged. | D1 operator declaration + served-build provenance; D2 consent/request/impression/paid-event/finalized reconciliation; D9 seeded 37-store wipe and independent restore/device acceptance. |
+
+**Custody:** Read current Marketing `main` AGENTS, STATUS, company constraints, Stage 1 and recent Marketing/Design commits; inspected C509 committed research/profile/queue diffs. Fresh nontruncated `main` tree has **450 entries and 20 independent `live_data/**/*.md` studies**, all present and referenced in STATUS; unreferenced studies **0**, nonexistent local study references **0**. README excluded; no sequence-number inference. This STATUS-only cross-domain evidence update creates no new research, product, Console, ad or community mutation; no release/ad approval.
+
+
 ## 2026-11-03 00:33 KST — D9 current-main deletion-store parity revalidated; PWA RELEASE HOLD
 
 | Decision | Newly admissible evidence / decision state | Next production evidence |

@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 02:38 KST — D8 C514 fixture/strict positive-control contradiction (source-static; HOLD)
+
+| Decision | Newly validated evidence / state | Next production target |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD; strict fixture blocker** | [Design Studio C514 committed source audit](https://github.com/yhappcom/design-studio/commit/4e3bb59dd7aeb4c7c8bb4ddbb4627316911018b8) identifies a **static test-fixture incompatibility** after C513: `syntheticFixture()` gives the first two Activity bands separate own-Date cells, whereas C513's pinned source topology begins with one `FI-FO` group. The existing synthetic baseline therefore cannot satisfy the exact 31-group source-scoped guard. Both `runSyntheticTests()` and the `runPdcEnvelopeTests()` wrapped-PDF baseline/positive cases inherit this mismatch; their expected `OBSERVED_FAMILY_DETACHED_HOLD` is not presently a valid strict positive control. **No test execution failure was observed or claimed**; this is source-static contradiction. C513 guard must not be weakened to accommodate a nonrepresentative fixture. One-export shape is not a vendor-wide parser contract. | Separate lexical/physical unit fixtures from strict source-topology acceptance; construct a privacy-safe 31-group/49-band/495-text-object synthetic positive fixture from a shape manifest (not private row values), then execute strict baseline, positive controls and coordinate mutants. Independently run unchanged authorized original and all 21 C512 native-byte mutants through the same C426 strict entry point with independent PDF rendering; separately prove file-backed Dart/Sembast zero writes, owner/year/Publication/UID/company joins. |
+| **MintTap D1/D2; LogMate D9** | No new operator-side Play declaration plus served AAB, production ad event-to-finalized settlement, or seeded owner-delete/Files/managed-iPad acceptance established by this source-static audit. Existing HOLDs unchanged. | D1 submitted Financial features declaration and shipped/Store claim matrix; D2 consent→request→impression→paid-event→finalized evidence; D9 37-store deletion and independent Files/device acceptance. |
+
+**Custody:** Re-read latest Marketing main AGENTS, STATUS, roadmap, company constraints, Stage 1 and recent Marketing/Design/Product commits; inspected the new C514 research log. Previous full nontruncated 450-entry / 20-study census is **historical**, not freshly repeated here; no inferred sequence gaps. No new research file, product, Console, ad or community mutation. No release/ad expansion approval.
+
 ## 2026-11-04 00:33 KST — D8 C513 source-scoped strict guard integrated; execution still HOLD
 
 | Decision | New validated evidence / state | Next production target |

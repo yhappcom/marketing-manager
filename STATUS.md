@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 05:29 KST — D8 C515/C516 strict-test oracle separation; production HOLD unchanged
+
+| Decision | Newly validated evidence / state | Next production target |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD; test-layer isolation partially implemented** | [C515 committed code](https://github.com/yhappcom/design-studio/commit/9d34a54e109b29e27c3f3448a623360cb79738a3) scopes `runSyntheticTests()` lexical probes to `requirePinnedTopology:false` while preserving the default strict 31-group guard in `inspectPdcPdfStrict()`. [C516 committed static audit](https://github.com/yhappcom/design-studio/commit/3f1aac2adf5ea53db70ee2a41e6ad6018258da79) confirms `runPdcEnvelopeTests()` still passes the non-pinned `syntheticFixture()` into strict positive-control cases. Its physical `PHYSICAL_*` negative probes remain meaningful because physical validation precedes topology, but strict baseline/HOLD positive assertions remain contaminated. **Source-static diagnosis only; no Node runtime PASS/FAIL claimed.** | Partition A physical envelope negatives with exact reason assertions; B lexical probes explicitly non-strict; C privacy-safe 31-group/49-band/495-object strict positive fixture; D authorized unchanged source plus all 21 native-byte mutants through one strict C426 entry point. Require original `DETACHED_HOLD`, mutants `FAIL_DOCUMENT`, independent renderer, and separate Dart/Sembast zero-write/identity gates. |
+| **D1/D2 MintTap; D9 LogMate** | No operator Play Financial features declaration/served AAB, production ad paid-event/finalized ledger, or device deletion/Files/managed-iPad acceptance obtained from C515/C516. HOLD unchanged; ordinary Store distribution remains separate from optional promotional eligibility. | D1 submitted declaration + version-matched shipped build and claims; D2 consent→request→impression→paid event→finalized chain; D9 independent seeded-device acceptance. |
+
+**Custody:** Read Marketing main AGENTS, STATUS, company constraints, Stage 1, roadmap, D1/D2/D8 independent studies, recent Marketing/Design commits and C516 committed diff. Fresh complete Git tree on Marketing `d6f0cd52`: **450 entries**, `truncated=false`; **20 independent live_data studies** physically present and all 20 referenced by STATUS (no sequence-number inference). Previous C515 write attempt failed and was **not** represented as synchronized; this entry reconciles C515 and C516 together. No new research file, private PDF handling, product/Console/ad/community mutation or release/ad expansion approval.
+
 ## 2026-11-04 02:38 KST — D8 C514 fixture/strict positive-control contradiction (source-static; HOLD)
 
 | Decision | Newly validated evidence / state | Next production target |

@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 06:35 KST — D8 C517 input-boundary strict positive oracle dependency (STATIC; HOLD)
+
+| Decision | New evidence and state | Next evidence target |
+| --- | --- | --- |
+| **D8 LogMate — PRODUCT CLAIM HOLD** | [C517 committed static caller audit](https://github.com/yhappcom/design-studio/commit/75f91c0b938f01f3f68ffb849e800deeb47e1e8d) finds that `runPdcInputBoundaryTests()`, in addition to C516's `runPdcEnvelopeTests()`, uses `wrapPdcSyntheticTextMock(syntheticFixture())` as a strict positive expecting `OBSERVED_FAMILY_DETACHED_HOLD`. This synthetic fixture does not satisfy C513's pinned 31-Date-group topology. Envelope strict baseline and two content-positive expectations also need valid controls. Physical/input negatives require independent exact-reason assertions, lexical probes must be labeled non-strict, and a one-character route is not positive under current three-uppercase-letter grammar. **Static audit only; no runtime PASS/FAIL.** | Repair both envelope and input-boundary strict positives with a privacy-safe pinned 31-group/49-band/495-object fixture. Execute separately labeled physical, lexical, strict synthetic, authorized original and 21 native-byte mutants via C426 strict; require original DETACHED_HOLD, mutants FAIL_DOCUMENT, independent PDF rendering, and separate Dart/Sembast zero-write and identity/company/year/Publication gates. |
+| **MintTap D1/D2; LogMate D9** | No new operator submitted Financial features selection/served AAB, ad paid-event/finalized reconciliation or physical deletion/Files/iPad acceptance from C517. HOLD unchanged. | D1 Console declaration plus served-build claim matrix; D2 production consent→paid-event→finalized chain; D9 seeded 37-store wipe and device/Files acceptance. |
+
+**Custody:** Re-read Marketing AGENTS, STATUS, company constraints, Stage 1 and relevant D1/D2/D8 research; inspected Marketing/Design commits and C517 diff. Fresh nontruncated main tree: 450 entries; 20 independent live_data studies, all referenced; no inferred numbering. C517 reports DNS-blocked local runtime retrieval, not executed Node/PDF tests. No new research, product, Console, ad, community or release mutation; no release/ad expansion approval.
+
+
 ## 2026-11-04 05:29 KST — D8 C515/C516 strict-test oracle separation; production HOLD unchanged
 
 | Decision | Newly validated evidence / state | Next production target |

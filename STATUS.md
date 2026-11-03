@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 08:37 KST — D8 C519 privacy-safe strict fixture constructor saved (STATIC; HOLD)
+
+| Decision | Newly validated evidence / state | Next production target |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C519 code commit](https://github.com/yhappcom/design-studio/commit/eb11f595ad53f81f9173e66eba6124a764784920) adds a separate research-only `strictTopologySyntheticFixture()` constructor with 31 ordered Date groups, 48 Activity rows (F26/N22) and one auxiliary physical band; [C519 research log](https://github.com/yhappcom/design-studio/commit/839cdedbd720fc4d6a06c794302464f9e53a1aed) records static group/class/clock census and explicit limitations. Unlike C518's construction specification, the generator code now exists, but it is **not yet wired** into `runPdcEnvelopeTests()` or `runPdcInputBoundaryTests()`. Existing mutation coordinates depend on old row ordering, so a baseline-only swap would invalidate test oracles. The new constructor has **not been executed** against the strict parser; 495/473 glyph, PDF length/xref, original PDF/21 mutants, independent rendering and Dart/Sembast zero-write are unverified. No product claim uplift. | Execute and debug constructor through unchanged strict wrapper; rebase both suites' positive and content-mutation controls together, keeping physical negatives and lexical probes independent. Then execute authorized original and 21 native-byte mutants through C426 strict with independent render, zero-write and separate identity/company/year/Publication gates. |
+| **MintTap D1/D2; LogMate D9** | No new actual submitted Play Financial features declaration and version-matched served AAB, production ad event→finalized revenue chain, or physical delete/Files/managed-iPad acceptance in C519. Existing HOLDs remain; ordinary Store distribution and optional promotional eligibility remain distinct. | D1 operator declaration + served-build/Store claim matrix; D2 consent→request→load→impression→paid event→finalized reconciliation; D9 seeded 37-store wipe and physical recovery/offline evidence. |
+
+**Custody:** Re-read Marketing `AGENTS.md`, `STATUS.md`, company constraints, Stage 1, D1/D2/D8 independent studies and recent Marketing/Design commits; inspected both C519 commits. Fresh nontruncated `main` Git tree: **450 entries**, **20 independent `live_data/**/*.md` studies** physically present and all referenced in STATUS; no nonexistent independent-study references or inferred missing sequence numbers (the separately referenced `live_data/minttap/README.md` is an index, not an independent study). No new study or product/Console/ad/community mutation; no release/ad expansion approval.
+
 ## 2026-11-04 07:35 KST — D8 C518 strict fixture reconstruction census (STATIC; HOLD)
 
 | Decision | Newly validated evidence / state | Next production target |

@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-03 18:29 KST — D8 C511 exhaustive abstract position coverage; production HOLD unchanged
+
+| Decision | New validated evidence / decision state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C511 profile](https://github.com/yhappcom/design-studio/commit/4d2f4a0bb47c557ce56c9690fd3116530901e2d7) and [research log](https://github.com/yhappcom/design-studio/commit/bf5fd0b63e733fffc55d67d21072dc1bff5fb1ec) enumerate the **complete 21** same-numeric-class single-cell C/I or C/O relocations in the stored **one-export C497 31-group abstract topology**: 11 C/I and 10 C/O across seven multi-numeric groups. Unmodified baseline has zero position errors; all **21/21** synthetic variants rejected with expected group/field, zero unexpected accepts. The previous C498 13 are a subset; **eight additional abstract cases** concern four-numeric groups 13 and 18 (four each). Nonflight group-20 trailing C/O and group-29 preceding C/I+C/O positive exceptions remain. **This is abstract synthetic replay, not eight new PDF-byte mutations, whole-PDF C426 strict execution, render or Dart/Sembast acceptance.** The earlier C509 13 original-byte coordinate cases remain distinct. C426 strict path still lacks source-scoped group-local guard; no UID/year/Publication or company linkage certification. **No readiness uplift; existing-record-only DETACHED_HOLD and no create/overwrite.** | Integrate positional guard into source-scoped C426 strict physical/paint admission; test authorized unchanged original and exact C498 13 plus eight new coordinates as standards-valid independently rendered PDFs, retaining nonflight controls; require original `DETACHED_HOLD`, mutations `FAIL_DOCUMENT`, zero owner-ledger writes. Then separate identity/company/year/Publication and Dart/Sembast checks. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator submitted Play Financial features choices and served AAB, ad consent→request→impression→paid-event→finalized revenue trace, or seeded 37-store owner deletion / Files / physical iPad acceptance in the inspected repository evidence. Existing HOLDs unchanged. | D1 actual Console declaration and version-matched feature/Store claim matrix; D2 production source-tagged event and settlement chain; D9 seeded deletion and independent restore/offline device checks. |
+
+**Custody:** Read latest Marketing main AGENTS, STATUS, company constraints, Stage 1, relevant D1/D2/D8 studies and recent Marketing/Design/Product/Web commits. C511 primary committed profile and log independently inspected. Existing 20-study complete-tree census was **not re-executed**; no research-number inference. No new study, product, Console, ad or community mutation; no release/ad expansion approval.
+
+
 ## 2026-11-03 11:33 KST — D8 C510 strict-runner export correction; execution gate still OPEN
 
 | Decision | Validated correction / state | Next production evidence |

@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-03 19:37 KST — D8 C512 source-native 21-case expansion; strict production gate remains HOLD
+
+| Decision | Newly verified evidence / state | Next production target |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C512 profile](https://github.com/yhappcom/design-studio/commit/43d138b31ffcffcdd3fa5cf8d9524eab3f8cf3e1) and [research log](https://github.com/yhappcom/design-studio/commit/feb25cb314f6f21c990a8a453d10b497d5a19709) now document **all 21 C498+C511 same-numeric-class C/I/C/O coordinate relocations replayed against authorized original private PDC PDF bytes**: previous 13 plus **eight newly native-tested** in groups 13 and 18. Original: 39,612 bytes, 495 BT objects, 31 Date groups, zero independent positional errors. All **21/21** mutations preserve byte length, text-object count, xref offsets and stream length; independent source-native group/field positional oracle rejects all 21 with expected error; nonflight exceptions remain valid. This supersedes C511's *abstract-only* classification for the additional eight, **not** its production gate. No independent standards PDF render/paint, C426 `inspectPdcPdfStrict` execution/integration, Dart/Sembast zero-write, authenticated owner/year/Publication/company reconciliation or multi-export generalization. Existing-record-only `DETACHED_HOLD`, no create/overwrite; no field/readiness upgrade. | Stop expanding this exhausted one-export same-class mutation family. Integrate source-scoped positional guard into C426 strict physical/paint path; independently render original and exact 21 variants; require original `DETACHED_HOLD`, mutants `FAIL_DOCUMENT`, zero owner-ledger writes, then identity/company/year/Publication and device acceptance separately. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator Play Financial features declaration/served-build, production ad paid-event/finalized reconciliation, or physical owner deletion/Files/iPad acceptance in inspected sources. Existing HOLDs unchanged. | D1 actual Console submission + served AAB/Store claim matrix; D2 operator-side source-tagged consent→request→impression→paid-event→settlement chain; D9 exact-build owner deletion and physical recovery/offline matrix. |
+
+**Custody:** Read Marketing `main` AGENTS, STATUS, roadmap, company constraints, Stage 1, relevant D1/D2/D8 studies and recent Marketing/Design/Product/Web commits. Independently inspected both C512 committed changes; no private PDF content copied. STATUS's 20 independent study paths were compared against the prior documented census but **fresh complete Git-tree existence census was not executed**; do not claim a new 20/20 validation or infer sequence numbers. No new research file, product, Console, ad, community or release mutation.
+
+
 ## 2026-11-03 18:29 KST — D8 C511 exhaustive abstract position coverage; production HOLD unchanged
 
 | Decision | New validated evidence / decision state | Next production evidence |

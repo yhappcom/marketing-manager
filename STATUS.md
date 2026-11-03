@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-03 11:33 KST — D8 C510 strict-runner export correction; execution gate still OPEN
+
+| Decision | Validated correction / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C510 source-static correction](https://github.com/yhappcom/design-studio/commit/4ff70fd91ce883ebe7c1ac209dc4c65912785d64) verifies that C426 **does export** `inspectPdcPdfStrict` (line 424) and `runPdcOriginalReadOnlyAdversarial` (line 563); temporal ownership, authority separation and nonnumeric clock helpers are also exported. Any earlier assertion that these strict/original functions are not exported is **incorrect**. The default CLI invokes synthetic/envelope checks, **not** the authorized original-byte runner. External ES-module importability is a callable interface, **not** an executed original-PDF PASS. C509's 13/13 original-byte coordinate rejections remain independent predicate/xref evidence; source-scoped group-local guard is not integrated into strict full-envelope path. No new PDF render/strict execution or Dart/Sembast zero-write evidence. Existing-record-only `DETACHED_HOLD`; no create/overwrite, UID/year/Publication or field authority. C194 index sync debt remains open. | Wire source-scoped positional guard into C426 strict runner; run unchanged authorized original and exact C498 13 standards-valid/rendered native PDF mutants through whole-document oracle (baseline `DETACHED_HOLD`, mutants `FAIL_DOCUMENT`), verify no ledger writes, then separately authenticate owner/year/Publication/company joins and Dart/Sembast. |
+| **D1/D2 MintTap; D9 LogMate** | No new operator-side submitted Financial features declaration/version-matched served AAB, production consent→paid-event→finalized settlement, or seeded 37-store owner deletion/Files/iPad acceptance obtained from this review. Existing HOLDs unchanged. | D1 submitted Play selection + served build and truthful Store matrix; D2 source-tagged request/impression/paid-event/settlement chain; D9 current-head seeded deletion, restore and physical offline device matrix. |
+
+**Custody:** Read Marketing `main` AGENTS, STATUS, company constraints, Stage 1, D1/D2/D8 studies and recent Marketing/Design commits. Fresh nontruncated `main` Git tree has **450 entries**, **20 independent `live_data/**/*.md` studies** (README excluded), all present and referenced; unreferenced **0**, nonexistent local study references **0**. No inferred research sequence, new research artifact, product/Console/ad/community mutation or release approval.
+
+
 ## 2026-11-03 09:29 KST — D8 C509 exact C498 source-native coordinate replay; strict product gate OPEN
 
 | Decision | New admissible evidence / decision state | Next production evidence |

@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 13:29 KST — D8 C524 envelope fail-fast mutation anchors (STATIC; HOLD)
+
+| Decision | New verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [C524 code commit](https://github.com/yhappcom/design-studio/commit/0c38c5b0c4add10a1ca8c95af0bf5791a9aaebae) changes C426 `runPdcEnvelopeTests()` helper `editContent()` to throw on missing first mutation anchor, no-op replacement, or missing second anchor in a two-field mutation. This extends C523's route mutation integrity guard to clock/Block and joint-change cases, preventing silent unchanged-input negative tests. [C524 research record](https://github.com/yhappcom/design-studio/commit/aec480a121649a21d9165860f2c1d1656a3b8aba) explicitly identifies remaining unchecked `pdcVisualAndDictionaryMutations()` and C438 inline-paint paths. **Source-static correction only: no Node PASS or original PDF acceptance.** | Execute C426 synthetic strict/input-boundary/envelope tests with mutation-applied and exact-reason assertions; inspect remaining unchecked mutations; replay authorized original plus 21 native-byte variants on identical strict path with independent rendering and Dart/Sembast zero-write, owner/company/year/Publication/UID proof. |
+| **MintTap D1/D2; LogMate D9 — HOLD unchanged** | No new submitted Play Console Financial features choices matched to served binary/Store claims, operator ad request→paid-event→finalized settlement, or physical deletion/Files/EFB evidence in C524 changes. Ordinary Store distribution and optional Promotional-content eligibility remain separate. | D1 redacted actual declaration plus served version/feature matrix; D2 production consent, per-surface attribution, policy/serving and finalized revenue; D9 exact-build device restore/offline acceptance. |
+
+**Custody:** Read current Marketing `AGENTS.md`, `STATUS.md`, roadmap, company constraints, Stage 1, relevant independent D1/D2/D8 files, recent Marketing and Design Studio commits and C524 diffs. Fresh complete `main` Git-tree census at tree `197f879f`: 450 entries; all 20 independent `live_data` Markdown studies present and referenced by STATUS (README excluded); 0 unreferenced; no inferred research-number gaps. No new study, private PDF, product, Console, ad, community, release or monetization change; no launch/ad expansion approval.
+
+
 ## 2026-11-04 12:33 KST — D8 C523 envelope mutation-integrity correction (STATIC; HOLD)
 
 | Decision | New verified evidence / state | Next production evidence |

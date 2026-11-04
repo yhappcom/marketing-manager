@@ -1,5 +1,16 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 12:33 KST — D8 C523 envelope mutation-integrity correction (STATIC; HOLD)
+
+| Decision | New verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [C523 committed correction](https://github.com/yhappcom/design-studio/commit/9e31d6105fdf503b515a8c728a062fdd33fad456) re-anchors two nonflight route-shape mutations in `runPdcEnvelopeTests()` from obsolete y=629 to the strict fixture's first nonnumeric Activity at y=611. Previously `String.replace` could silently leave the PDF unchanged, and the negative tests did not assert mutation application. The new `changed && status === FAIL_DOCUMENT` condition applies to all three route-shape cases. [C523 research log](https://github.com/yhappcom/design-studio/commit/f126bc94e62e0a3cddf3b96abd4a68777d100acb) confirms this is a source-static test-oracle repair, **not executed Node PASS**. Strict baseline/envelope reasons, original plus 21 native-byte variants, independent PDF rendering, Dart/Sembast zero-write and owner/company/year/Publication gates remain unverified. | Run C426 strict synthetic, input-boundary and envelope suites, asserting each mutation actually changed bytes and exact rejection reasons; then original and 21 variants through the same strict path, independent render and zero-write/identity acceptance. |
+| **MintTap D1/D2; LogMate D9** | No new operator-side submitted Play Financial features selection + version-matched served AAB, production request→paid-event→finalized revenue trace, or physical deletion/Files/EFB acceptance was established by C523. HOLD unchanged. Ordinary Store distribution remains separate from optional promotional eligibility. | D1 actual submitted Console declaration + served build/Store claims; D2 consent and per-surface monetization-to-finalized chain; D9 physical restore/offline evidence. |
+
+**Custody:** Read Marketing main AGENTS, STATUS, roadmap, company constraints, Stage 1, coordination, relevant independent D1/D2/D8 studies and recent Marketing/Design commits; inspected C523 code diff and research log. Prior 20-study complete-tree census is historical, **not freshly repeated**; no inferred research-number gaps. No new independent study or product/Console/ad/community mutation. No launch/ad expansion approval.
+
+
+
 ## 2026-11-04 11:34 KST — D8 C522 strict classifier and envelope baseline source corrections (STATIC; HOLD)
 
 | Decision | New verified evidence / state | Next production evidence |

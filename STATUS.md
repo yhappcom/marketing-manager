@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 14:33 KST — D8 C525 visual/dictionary mutation guards (STATIC; HOLD)
+
+| Decision | Verified change / decision state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — PRODUCT CLAIM HOLD** | [C525 source change](https://github.com/yhappcom/design-studio/commit/d619a43e4d1fc10f6ed16f2b8d4b8917f2c5fea5) adds missing-anchor and no-op guards for eight visual/dictionary adversarial PDF mutations in C426, including stream edits, plus a whole-PDF inequality check before each negative assertion. [C525 research log](https://github.com/yhappcom/design-studio/commit/95b2aaff187c0dfe220df670d79c6f60b18e1005) explicitly records local Node v22.16.0 but raw.githubusercontent.com DNS failure (curl 6); **no Node suite PASS, authorized original/21 variant replay, independent renderer or Dart/Sembast zero-write proof**. C438 inline-paint checks and strict baseline/expected-reason runtime ordering remain unverified. This closes a *source-level negative-test mutation-integrity gap only*, not parser readiness. | Run C426 strict synthetic, input-boundary, envelope and visual negative controls with exact reasons and mutation checks; then authorized original + 21 native-byte variants, independent render, owner/company/year/Publication/UID and zero-write gates. |
+| **MintTap D1/D2 — HOLD unchanged** | No new operator submitted Financial features declaration paired with served AAB/Store claims, nor production consent→request→load→impression→paid-event→finalized settlement. Existing D1 recommended combined portfolio-management classification and optional Promotional-content NO-GO are distinct from ordinary Store distribution. | D1 redacted submitted Console choices/status and exact served version/build feature matrix; D2 sanitized AdMob app/message, per-surface event and finalized revenue records. |
+
+**Custody:** Read current Marketing AGENTS, STATUS, D1/D2 independent research, company constraints and recent Marketing/Design commits; inspected C525 code and log diffs. Fresh complete Marketing main Git-tree census: 450 entries, truncated=false; 20 independent live_data Markdown studies present, 0 not referenced by STATUS (none); README index excluded. No inferred sequence gaps. No new research file, private corpus, product/Console/ad/community mutation or launch/ad expansion approval.
+
 ## 2026-11-04 13:29 KST — D8 C524 envelope fail-fast mutation anchors (STATIC; HOLD)
 
 | Decision | New verified evidence / state | Next production evidence |

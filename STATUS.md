@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-05 03:29 KST — D8 C530 original-source census and C531 extraction sensitivity; HOLD retained
+
+| Decision | Newly verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — REAL-ORIGINAL STRUCTURE OBSERVED / PRODUCT CLAIM HOLD** | [C530 original-source readback](https://github.com/yhappcom/design-studio/commit/ceafb29f2f937884202e0d081befbea434210d02) obtained unchanged private PDC PDF read-only (39,612 bytes; 1 page, 18 objects, 495 text operators, 31 Date objects, 48 Activity cells, 26 numeric Activity entries). [C531 independent negative control](https://github.com/yhappcom/design-studio/commit/475d6412ba149eeebb4c5c04915b05057a855d98) showed rigid BT/Td/Tj/ET regex captured **476/495** text objects and **30/31** Date objects; missing operators involve font/color state or escaped-parenthesis syntax. This establishes **real-source extraction sensitivity**, not a C426 strict-parser failure: C426's census reports 495/495 and 31 Date objects. C529 isolated synthetic V8 **103/103 PASS** remains bounded. Do not infer inherited dates or universal CrewConnex count invariants. | Run unchanged original plus 21 C512 byte mutants through C426 strict admission, verify lexical coverage/fail-closed and independent rendered visibility, authenticate year/Publication/UID/company pairing, and demonstrate owner-scoped evidence-only Dart/Sembast zero-write. No migration/release claims. |
+| **MintTap D1 / D2 — HOLD unchanged** | No new operator-submitted Play Console Financial features selection matched to served AAB/Store claims; no consent→request→load→impression→paid-event→finalized revenue evidence. Ordinary listing and optional Promotional-content eligibility remain separate. | D1 live submitted selections/status and version-matched feature/claim matrix; D2 app/message targeting, protected-surface events, Policy Center history, finalized settlement. |
+
+**Custody:** Read latest Marketing `AGENTS.md`, `STATUS.md`, company constraints, Stage 1, independent D1/D2/D8 studies, and recent Marketing/Design commits. Fresh complete `main` recursive tree: **450 entries, truncated=false; 20 independent `live_data/**/*.md` studies present and referenced; 0 missing or unreferenced** (README index excluded). No inferred sequence gaps, new research file, product/Console/ad/community mutation or launch/ad expansion approval.
+
 ## 2026-11-04 23:33 KST — D8 C529 isolated V8 execution evidence; product HOLD retained
 
 | Decision | Verified evidence / state | Next production evidence |

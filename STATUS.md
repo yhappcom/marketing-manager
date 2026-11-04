@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 10:37 KST — D8 C521 input-boundary strict baseline corrected (STATIC; HOLD)
+
+| Decision | Newly verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [C521 committed code](https://github.com/yhappcom/design-studio/commit/53297d0e74efec0febc46dfb7eb1001bf997b669) replaces the strict-positive `good` baseline in `runPdcInputBoundaryTests()` with `strictTopologySyntheticFixture()`, wrapped in the same synthetic PDF envelope. [C521 audit](https://github.com/yhappcom/design-studio/commit/887e03f7df76ac7e4ffa08c3261d61115952f7c2) confirms invalid-base64/size/truncation/non-PDF/null negatives remain unchanged, while `runPdcEnvelopeTests()` still uses the obsolete lexical fixture and old mutation coordinates. This **closes the identified input-boundary fixture source-edit dependency only**, not a runtime PASS. C520 strict suite remains unexecuted: Design Studio reported local GitHub DNS resolution failure. No authorized original/21-mutant strict run, independent renderer, Dart/Sembast zero-write, company/UID/year/Publication evidence, or general import claim. | Obtain runnable C426 module; run strict synthetic + input-boundary baseline and exact-reason negatives; re-anchor envelope baseline and mutation coordinates together; then run original plus 21 native-byte variants through strict admission and independent PDF rendering, with separate owner-ledger zero-write and identity gates. |
+| **D1/D2 MintTap; D9 LogMate** | No new actual Play Console Financial features submission/served-build reconciliation, operator ad event-to-finalized revenue trace, or physical device deletion/Files/EFB evidence in inspected changes. Existing HOLD unchanged. Ordinary Store distribution remains distinct from optional finance-restricted Promotional content. | D1 submitted Console declaration + version-matched binary/Store claim matrix; D2 consent→request→load→impression→paid-event→finalized reconciliation; D9 seeded physical wipe/recovery/offline acceptance. |
+
+**Custody:** Read Marketing AGENTS, STATUS, roadmap, company constraints, Stage 1, relevant D1/D2/D8 independent studies and recent Marketing/Design/Product/Web commits; inspected both C521 source commits. Fresh complete Marketing `main` Git tree: **450 entries, truncated=false; 20 independent `live_data/**/*.md` studies physically present and all referenced in STATUS** (README index excluded), no missing-study inference. No new research file, private PDF, product, Console, ad or community mutation; no release/ad expansion approval.
+
+
 ## 2026-11-04 09:34 KST — D8 C520 isolated strict synthetic regression suite saved (STATIC; HOLD)
 
 | Decision | Newly validated evidence / state | Next production target |

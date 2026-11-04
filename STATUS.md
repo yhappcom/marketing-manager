@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 09:34 KST — D8 C520 isolated strict synthetic regression suite saved (STATIC; HOLD)
+
+| Decision | Newly validated evidence / state | Next production target |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [Design Studio C520 code](https://github.com/yhappcom/design-studio/commit/4be276e98f906b3b9b07973919aa71337a8d6f2d) adds exported `runPdcStrictTopologySyntheticTests()`: one 31-group strict-positive baseline and four negative controls (missing own-Date, malformed numeric Activity, malformed Block, physical page count). [Follow-up correction](https://github.com/yhappcom/design-studio/commit/d313213da63c71ef69fae98f36f18c0c24c8956f) adjusts the runner; [C520 research record](https://github.com/yhappcom/design-studio/commit/92164a002f89d172de053616746f0f5df329bc94) independently enumerates 473 body BT cells + 1 auxiliary + 14 header + 7 metadata = **495 text objects**, a code-construction count **not** a parser/render PASS. The isolated runner is **not yet executed** and is not wired to the legacy envelope/input-boundary suites. Source acquisition DNS failure blocked the Design Studio Node execution. No original/21-mutant strict replay, independent rendering, Dart/Sembast zero-write or UID/year/Publication/company proof; no product claim uplift. | Execute C520 strict suite with exact status/reason assertions, correct fixture if needed, then jointly rebase legacy envelope and input-boundary positives/mutation coordinates; execute authorized original and 21 variants through strict parser plus independent renderer and zero-write proof. |
+| **MintTap D1/D2; LogMate D9** | No new operator-submitted Financial features declaration and served AAB, source-tagged production ad-to-finalized revenue chain, or physical owner-delete/Files/EFB acceptance in inspected changes. HOLD unchanged; ordinary Store distribution and optional Promotional content remain distinct. | D1 actual Play Console submission and served-build/Store claim reconciliation; D2 consent/request/load/impression/paid-event/finalized revenue and protected-task evidence; D9 physical wipe/recovery/offline acceptance. |
+
+**Custody:** Read latest Marketing AGENTS, STATUS, company constraints, Stage 1, relevant D1/D2/D8 independent research and recent Marketing/Design commits; inspected C520 code, correction and research diffs. Extracted STATUS's 20 independent study paths (README is index), but **did not perform a fresh full-tree existence census**; previous 20/20 is historical, not newly verified. No inferred missing research numbers. No new research file, product, Console, ad or community mutation; no release/ad expansion approval.
+
+
 ## 2026-11-04 08:37 KST — D8 C519 privacy-safe strict fixture constructor saved (STATIC; HOLD)
 
 | Decision | Newly validated evidence / state | Next production target |

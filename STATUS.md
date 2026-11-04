@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 17:29 KST — D8 C528 fail-open acceptance classification; HOLD retained
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — PRODUCT CLAIM HOLD** | [C528 independent audit](https://github.com/yhappcom/design-studio/commit/92220afaea7f670d797d71bee02f196bf64b4c52) identifies **two explicitly failing acceptance controls** in `runPdcEnvelopeTests()`: an opaque black overlay before the footer (`knownVisualFailOpen`) and a one-character numeric route (`knownRouteShapeFailOpen`). These are potential admission/visibility defects, **not** merely mutation-test harness no-ops. Do not suppress, invert, or relabel either expected failure as PASS. The one-character route does not justify inventing a universal airport-code grammar; validate against the supported source profile. Synthetic 31-Date/48-Activity topology uses generic routes and sequential August dates, so it cannot prove actual publication/date/UID or multi-month document admission. No executable Node PASS, authorized original + 21 mutant replay, independent render, or Dart/Sembast zero-write proof. | Obtain executable approved C426 and authorized unchanged original; execute all synthetic suites and report lexical/physical outcomes separately from both known fail-open controls; replay original + 21 variants, independently render and validate visibility, source identity and UID-scoped zero-write lifecycle. |
+| **MintTap D1/D2 — HOLD unchanged** | No newly accessible submitted Financial features selection with version-matched served AAB and claims; no production consent/request/load/impression/paid-event/finalized chain. Ordinary Store distribution remains distinct from optional Promotional-content eligibility. | D1 actual submitted Console selections/status and shipped-build matrix; D2 app/message targets, protected-surface event chain, Policy Center history and finalized settlement. |
+
+**Custody:** Read Marketing AGENTS, STATUS, roadmap, company constraints, Stage 1, independent D1/D2/D8 studies, recent Marketing/Design commits and C528 audit. Fresh `main` recursive Git tree: 450 entries, truncated=false; 20 independent `live_data` Markdown studies present and referenced, 0 unreferenced. No sequence-number inference. No new study, private-source, product/Console/ad/community mutation, or launch/ad expansion approval.
+
 ## 2026-11-04 16:31 KST — D8 C527 original-derived mutation guards; execution HOLD
 
 | Decision | Verified evidence / state | Next production evidence |

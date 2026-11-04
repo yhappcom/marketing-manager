@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 23:33 KST — D8 C529 isolated V8 execution evidence; product HOLD retained
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — SYNTHETIC V8 EXECUTED PASS / PRODUCT CLAIM HOLD** | [Design Studio C529 executed record](https://github.com/yhappcom/design-studio/commit/1a46c55ef2ae0b12a5f25876aaf0e07c0fbe8478) reports exact fetched C426 JavaScript source (blob `2f2469a18958ba74581e5877b0ff3a2f61d5d313`) evaluated in isolated V8 with ESM exports stripped: synthetic 54/54, envelope 35/35, input boundary 9/9, strict topology 5/5; **103/103 PASS, no throws**. Previously flagged opaque-overlay and one-character numeric-route synthetic controls were both rejected by the strict oracle in this execution; prior hypothetical fail-open was **not reproduced on this fixture**. This supersedes C528's *unexecuted* status, **not** its demand for independent acceptance evidence. The fixture and oracle share implementation; this is not Node runtime certification, actual private PDF acceptance, independent rendering, C512 21-mutant replay, authenticated year/Publication/UID, company pairing, or Dart/Sembast no-write evidence. | Independently replay authorized unchanged original and all 21 byte mutants through strict admission; inspect independent rendered visibility; certify source/year/Publication/UID and evidence-only zero-write/owner lifecycle. Keep recruitment claims limited to discovery. |
+| **MintTap D1/D2 — HOLD unchanged** | No operator-submitted Financial features declaration matched to served AAB and Store claims, or production consent→request→load→impression→paid event→finalized revenue chain obtained. Ordinary Store listing remains distinct from optional finance-restricted Promotional content. | D1 submitted Console choices/status and served build/feature/claim matrix; D2 App ID/message targeting, protected-workflow and event/settlement evidence. |
+
+**Custody:** Read latest Marketing `AGENTS.md`, `STATUS.md`, company constraints, Stage 1, independent D1/D2/D8 studies and recent Marketing/Design commits. Fresh nontruncated `main` recursive Git tree: **450 entries; 20 independent `live_data/**/*.md` studies all present and referenced; 0 missing, 0 unreferenced** (MintTap README is index). No inferred sequence gaps. No new study or product/Console/ad/community mutation; no launch or ad expansion approval.
+
+
 ## 2026-11-04 17:29 KST — D8 C528 fail-open acceptance classification; HOLD retained
 
 | Decision | Verified evidence / state | Next production evidence |

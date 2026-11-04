@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 15:33 KST — D8 C526 cross-suite no-op integrity; execution HOLD
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — PRODUCT CLAIM HOLD** | [C526 source patch](https://github.com/yhappcom/design-studio/commit/2ea57df06073959275a0822fc262a6a00a32e8a4) adds explicit `C526_LEXICAL_MUTATION_NOOP` rejection for unchanged nonbaseline lexical mutations, `C526_STROKE_MUTATION_NOOP` for missing thick-stroke mutation anchor, and explicit `C526_ROUTE_MUTATION_NOOP` reason for unchanged route mutations. [C526 research record](https://github.com/yhappcom/design-studio/commit/6ffd98051839969bda535fe93f8dcdb3c6fd669d) separates simplified 49-band lexical controls (`requirePinnedTopology:false`) from 31-Date-group strict PDF admission. **Source-level test integrity improved; no Node PASS, private original/21 variant strict replay, independent render, authenticated source binding or Dart/Sembast zero-write proof.** Design Studio reports local Node v22.16.0 but GitHub hostname DNS failure in its execution environment; connector access does not prove runnable local checkout. | Run complete C426 lexical, input-boundary, envelope and strict suites with mutation-applied and exact-reason assertions; replay authorized unchanged original plus 21 C512 byte mutants on same strict path, independent PDF render, owner/company/year/Publication/UID and zero-write gates. |
+| **MintTap D1/D2 — HOLD unchanged** | Read current independent D1 public Play claim audit and D2 release-source ad-surface/App ID reconciliation. No new submitted Play Console Financial features declaration paired to served binary/Store claim matrix; no production consent→request→load→impression→paid-event→finalized evidence or operator account reconciliation. Ordinary Store distribution remains separate from optional Promotional-content eligibility. | D1 redacted submitted choices/status plus exact served AAB version feature matrix; D2 platform App IDs/message targeting and sanitized per-surface event/settlement records. |
+
+**Custody:** Re-read latest Marketing `AGENTS.md`, `STATUS.md`, company constraints, Stage 1, D1/D2/D8 independent studies and recent Marketing/Design commits. Fresh complete `main` Git tree: 450 entries, truncated=false; 20 independent live_data studies physically present and referenced, 0 missing or unreferenced; README excluded; no inferred sequence gaps. No new research file or product/Console/ad/community mutation; no release/ad expansion approval.
+
+
 ## 2026-11-04 14:33 KST — D8 C525 visual/dictionary mutation guards (STATIC; HOLD)
 
 | Decision | Verified change / decision state | Next production evidence |

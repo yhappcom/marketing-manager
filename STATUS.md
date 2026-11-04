@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-05 04:30 KST — D8 C532 original strict execution; detached-only gate confirmed, HOLD retained
+
+| Decision | New validated evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — REAL-ORIGINAL STRICT EXECUTED / PRODUCT CLAIM HOLD** | [Design Studio C532](https://github.com/yhappcom/design-studio/commit/95a02fcf0d54ee9771614df22b86bc897cbc9e01) executed the exact C426 JavaScript inspector on unchanged private August PDC original (read-only; blob `8e7fec30f98458c770053bd7739e60869a87e33b`) in an isolated JS evaluator. Result `OBSERVED_FAMILY_DETACHED_HOLD`: 495 glyphs, 49 bands, 26 numeric / 22 nonflight / 1 auxiliary; **26 detached candidates, zero Flight creation or Block overwrite**. Original-derived adversarial checks **35/35 + 7/7 + 13/13 = 55/55 PASS**, separate from earlier synthetic 103/103. Of 26 numeric rows, **13 lack own Date**; among those, 10 lack Pairing, and two follow nonflight rows with own Date. Printed date anchors/Pairing and nonflight clocks are **not** authenticated operational date or crew continuity. These tests share the C426 oracle; they do not establish independent renderer or product acceptance. | Independently replay C512's separate 21 byte mutants, render original and variants, authenticate year/Publication/subject→UID and company cross-export links, then owner-scoped Dart/Sembast zero-write/backup acceptance. No automatic import, migration, release or pilot performance claim. |
+| **MintTap D1 / D2 — HOLD unchanged** | No accessible operator-submitted Financial features choices matched to served AAB/Store claims; no operator consent→request→load→impression→paid→finalized settlement chain. Ordinary listing remains separate from optional Promotional-content eligibility. | D1 redacted submitted Console declaration + served artifact provenance and live claims; D2 Android/iOS per-surface test-ad trace, protected-workflow guardrails, AdMob policy/serving and settlement records. |
+
+**Custody:** Read latest `AGENTS.md`, `STATUS.md`, roadmap, company constraints, Stage 1, Design Studio alignment, D1/D2/D8 independent studies and recent Marketing/Design commits. Latest pre-write Marketing `main` is `e96248e2`. Reconciled C532 against existing D8 research (which already includes C491); no new study or invented sequence numbers. Previous complete-tree 20/20 check remains historical; this run checked referenced D1/D2/D8 files, **not** a fresh 20-file/tree audit. No product, Console, ad-account, community or deployment changes; no approval.
+
+
 ## 2026-11-05 03:29 KST — D8 C530 original-source census and C531 extraction sensitivity; HOLD retained
 
 | Decision | Newly verified evidence / state | Next production evidence |

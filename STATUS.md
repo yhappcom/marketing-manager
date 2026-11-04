@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-05 06:37 KST — D8 C533 synthetic positional regression reconciled; production HOLD unchanged
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — SYNTHETIC POSITIONAL STRICT EXECUTED / PRODUCT CLAIM HOLD** | [Design Studio C533 research](https://github.com/yhappcom/design-studio/commit/70993ce231445b361b671d66800a620373f9531d) and [execution record](https://github.com/yhappcom/design-studio/commit/62ab6e60f8821dd8c67089089cd781c39c11cb42) confirm that the pinned C426 source already includes the C513 31-group `DATE_GROUP_POSITION_OR_TOPOLOGY` fail-closed guard. The older C509 statement that this integration was absent is stale **for source presence and synthetic execution**. One 31-group synthetic baseline returned `OBSERVED_FAMILY_DETACHED_HOLD`; **21/21 synthetic same-group numeric C/I/C/O relocation mutants** returned `FAIL_DOCUMENT` with group-specific reasons; existing strict topology controls **5/5 PASS**. These are generated/repacked synthetic PDFs, **not** C512's 21 private-original byte mutants, independent PDF render, authenticated source year/Publication/UID, company reconciliation, or owner-ledger Dart/Sembast zero-write. C194 historical index sync debt remains OPEN. No pilot import/migration claim. | Replay unchanged private original and **separate C512 21 original-byte mutants** through the identical strict path with independent rendered visibility; obtain authenticated year/Publication/UID and company matching; then owner-scoped evidence-only zero-write/rollback acceptance. |
+| **MintTap D1/D2 — HOLD unchanged** | Existing independent D1 public listing/release-source study and D2 six-placement/App ID source study provide no operator-submitted Financial features selection with served AAB provenance or consent→request→impression→paid→finalized chain. Ordinary Play distribution and optional investment-related Promotional content remain separate. | D1 redacted actual submitted Console selection/status, served build and Store claim matrix; D2 platform App IDs/messages, protected-task test-ad traces, policy/serving history and finalized settlement. |
+
+**Custody:** Re-read Marketing main AGENTS, STATUS, roadmap, company constraints, Stage 1 and independent D1/D2/D8 studies; inspected latest Marketing/Design commits and C533 diffs. Previously reported 20/20 study census remains historical; **no fresh complete-tree verification in this run**, and no sequence gaps inferred. No new research file, product/Console/ad/community mutation, release or ad-expansion approval.
+
 ## 2026-11-05 04:30 KST — D8 C532 original strict execution; detached-only gate confirmed, HOLD retained
 
 | Decision | New validated evidence / state | Next production evidence |

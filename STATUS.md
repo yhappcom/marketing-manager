@@ -1,5 +1,14 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 16:31 KST — D8 C527 original-derived mutation guards; execution HOLD
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — PRODUCT CLAIM HOLD** | Design Studio [C527 code patch](https://github.com/yhappcom/design-studio/commit/90cedbfecc36134cd8d489feb18ec684ed2d296d) and [corrective patch](https://github.com/yhappcom/design-studio/commit/1b888f450ae1fb3e3eb23f2317ec12d12e58c9b5) make original-derived stream/object and strict page-count mutation no-ops explicit, and compare actual replacement values in authority-separation and nonnumeric-clock tests rather than counting a regex hit. [C527 record](https://github.com/yhappcom/design-studio/commit/2403ce3bc6ba6eff9fd7feff04045325ecc441f1) reports **static integrity only**: no executable Node suite PASS, authorized original/21 byte-mutant replay, independent PDF render, authenticated source binding or Dart/Sembast zero-write evidence. Explicit failures may expose invalid historic test assumptions; they are not parser readiness evidence. | Obtain runnable C426 and authorized unchanged source; execute lexical, strict topology, envelope, input-boundary and original-derived suites with exact mutation/reason assertions, then original + 21 mutants, independent renderer, company/year/Publication/UID and zero-write checks. |
+| **MintTap D1/D2 — HOLD unchanged** | No new live submitted Play Console Financial features selection paired to served AAB/Store claims; no operator consent→request→load→impression→paid-event→finalized revenue chain. D1 ordinary Store distribution remains distinct from optional Promotional-content restriction; D2 protected workflows remain ahead of inventory expansion. | D1 redacted submitted choices/status plus served build/feature matrix; D2 AdMob app/message targeting, per-surface events, policy history and finalized settlement. |
+
+**Custody:** Re-read Marketing AGENTS, STATUS, company constraints, Stage 1 and D1/D2 studies; inspected recent Marketing and Design commits and C527 diffs. Fresh complete Marketing main tree: 450 entries, truncated=false; 20 independent live_data Markdown studies present and referenced; 0 unreferenced; no inferred sequence gaps. No new research file, product/Console/ad/community mutation or launch/ad expansion approval.
+
 ## 2026-11-04 15:33 KST — D8 C526 cross-suite no-op integrity; execution HOLD
 
 | Decision | Verified evidence / state | Next production evidence |

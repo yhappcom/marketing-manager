@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-04 11:34 KST — D8 C522 strict classifier and envelope baseline source corrections (STATIC; HOLD)
+
+| Decision | New verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **D8 LogMate CrewConnex — PRODUCT CLAIM HOLD** | [C522 numeric classifier fix](https://github.com/yhappcom/design-studio/commit/e2b91a2a2e45d169bc859d41a0947a2446b36ed9) changes the pinned topology Activity regex from a double-escaped digit class (which cannot classify numeric Activity `100` as F) to the proper JavaScript digit class. [C522 envelope baseline fix](https://github.com/yhappcom/design-studio/commit/5a3d07cf0827c87851dfd1b095be31dbf9739431) replaces the obsolete lexical strict-positive fixture in `runPdcEnvelopeTests()` with the 31-group `strictTopologySyntheticFixture()`; input-boundary baseline was already changed at C521. [C522 research record](https://github.com/yhappcom/design-studio/commit/9dce8344ffffbc3dea7dac5a130f5f047545dd6e) independently confirms the 31-group / 48-Activity census and notes these are **source-level fixes only**, not Node/strict PASS. Envelope mutation coordinates/reasons have not been runtime revalidated against the new baseline. No authorized original/21 native-byte C426 strict run, independent renderer, Dart/Sembast zero-write, authenticated company/UID/year/Publication join or general import readiness. Existing-record-only DETACHED_HOLD; no create/overwrite. | Execute C426 strict synthetic, input-boundary and envelope suites with exact expected statuses/reasons; re-anchor any coordinate-sensitive envelope negatives; then run unchanged original and all 21 variants with independent PDF rendering and separate owner-ledger zero-write/identity checks. |
+| **MintTap D1/D2; LogMate D9** | No new operator Play Financial features submitted choices and version-matched served binary, production consent/request/load/impression/paid-event→finalized trace, or physical device wipe/Files/EFB acceptance in inspected C522 changes. HOLD unchanged. Ordinary Store listing and optional finance-restricted Promotional content remain distinct. | D1 redacted submitted Console declaration plus shipped binary and Store claim matrix; D2 ad-source/settlement and protected-task evidence; D9 exact-build device recovery/offline evidence. |
+
+**Custody:** Re-read Marketing AGENTS, STATUS, company constraints, Stage 1, D1/D2/D8 studies, Marketing and Design Studio recent commits and the three C522 diffs. Prior 20-study census was last freshly verified at C521; **no fresh complete-tree existence census in this run**, and no inferred research-number gaps. No new research, product, Console, ad, or community mutation; no launch/ad expansion approval.
+
+
 ## 2026-11-04 10:37 KST — D8 C521 input-boundary strict baseline corrected (STATIC; HOLD)
 
 | Decision | Newly verified evidence / state | Next production evidence |

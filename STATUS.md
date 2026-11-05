@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-06 07:36 KST — D8 C540 correction supersedes C539 crew-shape count; HOLD unchanged
+
+| Decision | Validated correction / decision state | Next evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C540 correction](https://github.com/yhappcom/design-studio/commit/811b636f3cc6bc2d970dfdf02708095ac043013b) re-enumerated the literal `crew_leaf_shape` field of C194's 62-row locator manifest: **26 SINGLELEAF_1, 31 MULTILEAF_6, 5 MULTILEAF_7**. **RETRACT** the C539 **32 six-leaf / 4 seven-leaf** split recorded in the preceding STATUS entry; C534's 31/5 was correct. Five seven-leaf locators: July TR29; August TR4/TR6/TR31/TR39. The sole both-Date-and-Pairing-absent multileaf is August TR14 (six-leaf); the other 26 both-absent are single-leaf. Joint occupancy remains 27 both absent, 5 Date-only, 30 both present. Counts describe **physical manifest leaves, not verified crew persons**. Any fixture copied from C539 must use corrected topology. This is metadata recomputation, not an executed parser or source authentication. | Independently decode/render June/July/August Skia originals, validate row/continuation ownership and authenticated year/Publication/UID/company joins, execute corrected fail-closed fixtures, then owner-scoped Dart/Sembast zero-write/rollback. C194 index debt OPEN. |
+| **MintTap D1/D2 / HOLD** | Relevant independent D1 public Play declaration/claim audit and D2 release-tag ad-placement/App-ID audit re-read. Neither provides live submitted Financial features status matched to served build/claims, nor operator-side consent→paid-event→finalized reconciliation. Ordinary Store distribution remains distinct from optional Promotional content. | D1 redacted live Console selection/status and served-build claim matrix; D2 platform message targeting, protected-task traces, Policy Center/serving history and finalized settlement. |
+
+**Custody:** Read current Marketing AGENTS/STATUS, company constraints, Stage 1, independent D1/D2/D8 studies, recent Marketing/Design commits, and C540 correction/log. No independent full-tree census this run; prior 20/20 verification is historical, not re-certified. No new research, private data copied, product/Console/ad/community mutation, or launch/ad expansion approval.
+
+
 ## 2026-11-06 05:37 KST — D8 C539 lineage audit reconciled; HOLD unchanged
 
 | Decision | New evidence and decision state | Next evidence |

@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-05 12:34 KST — D8 C534 continuation-chain manifest reconciled; product HOLD unchanged
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — MULTI-MONTH LOCATOR MANIFEST RECHECKED / PRODUCT CLAIM HOLD** | [Design Studio C534](https://github.com/yhappcom/design-studio/commit/3e4e7c3ddac31278ec3f816d0313dc7dfdf70e35) reaggregates **62 selected privacy-safe C194 locator-manifest rows** across June (18), July (22) and August Skia (22). Date absent: 7/10/10 = **27**; Pairing absent: 9/12/11 = **32**; **all 27 Date-absent also lack Pairing**; 26 single-leaf crew shapes and four continuation chains depth >=2. These are selected manifest candidates, **not 62 certified company joins** (43 curated versus 19 uncurated August), nor decoded/rendered PDF evidence. The C426 source-pinned 200KB, single-page research oracle does not admit June 541788B, July 556535B or separate August print 552417B by size; the August 39612B PDC original is a distinct profile. No cross-family generalization, inherited operational date/crew, FlightRecord creation, or migration claim. C194 historical index debt remains OPEN. | Independently decode/render large monthly Skia PDFs and compare page/continuation/Sum boundaries; authenticate year, Publication, UID and privacy-safe company XLSX joins; execute depth-0/1/2/3 adversarial fixtures, separate C512 21 original-byte mutants, and owner-scoped Dart/Sembast zero-write/rollback acceptance. |
+| **MintTap D1 / D2 — HOLD unchanged** | No newly available actual submitted Financial features choices paired to served AAB/Store claims, or operator-side consent→request→load→impression→paid→finalized chain. D1's truthful combined portfolio-management recommendation remains distinct from optional finance-restricted Promotional-content NO-GO and ordinary Store distribution. | D1 redacted actual Console declaration/status and version-matched served feature/claim matrix; D2 platform App IDs/message targets, per-surface test-ad and protected-workflow traces, Policy Center history and finalized settlement. |
+
+**Custody:** Read latest Marketing AGENTS, STATUS, company constraints, Stage 1, independent D1/D2/D8 studies, recent Marketing and Design Studio commits and C534 primary research. Fresh recursive Marketing main tree **40658132**, truncated=false: **20 independent live_data Markdown studies present and referenced by STATUS**, zero missing references in this census; README index excluded. No inferred sequence gaps, new study, private-data copy, product/Console/ad/community mutation, launch or ad-expansion approval.
+
+
 ## 2026-11-05 06:37 KST — D8 C533 synthetic positional regression reconciled; production HOLD unchanged
 
 | Decision | Verified evidence / state | Next production evidence |

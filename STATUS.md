@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-06 05:37 KST — D8 C539 lineage audit reconciled; HOLD unchanged
+
+| Decision | New evidence and decision state | Next evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C539](https://github.com/yhappcom/design-studio/commit/345dfc29be2054364554f7cb17d3ffbad9d745cf) independently re-tabulated the existing 62 real-PDF-derived locator candidates: **27 Date+Pairing both absent; 5 Date present/Pairing absent; 30 both present; 0 Pairing-only**. Crew shapes: 26 single-leaf, 32 six-leaf, 4 seven-leaf. All 26 single-leaf rows are both-absent; the remaining both-absent row is six-leaf. Four single-leaf anchors have TR gaps 2–3. **All 62 operational years unverified**; 43 curated-value-only joins are not authenticated source/company/UID joins, and 19 August candidates lack curated-preview membership. This closes a **manifest-level risk census only**, not parser acceptance. No nearest-neighbor Date/Pairing/crew inheritance; preserve typed locators and unresolved lineage. Rejection fixtures proposed, **not executed**. | Independent June/July/August Skia decode/render, typed row ownership, conditional authenticated company join/year/Publication/UID, fail-closed negative fixtures, detached review, and owner-scoped Dart/Sembast zero-write/rollback. C194 historical index debt OPEN. |
+| **MintTap D1/D2 / HOLD** | No new operator-side Financial features submission or served AAB/Store claim matrix, nor AdMob consent→paid→finalized evidence. Recent yieldmax_tracker main bootstrap merge is **not evidence of shipped MintTap 1.0.29**; prior release-tag-scoped source findings remain distinct. | D1 submitted declaration/status and served-version matrix; D2 platform App IDs/message targeting, protected-task traces, Policy Center history and finalized reconciliation. |
+
+**Custody:** Read latest Marketing AGENTS/STATUS, company constraints, Stage 1, D1/D2/community research and recent Marketing/Design/product commits. Fresh nontruncated main tree: **450 entries; all 20 independent live_data Markdown files present and STATUS-referenced; zero missing/unreferenced** (README excluded). No sequence inference, new theory, private corpus persistence, product/account/community mutation, launch or ad expansion approval.
+
+
 ## 2026-11-05 20:33 KST — D8 C538 tagged topology reconciled; production HOLD unchanged
 
 | Decision | Newly verified evidence / state | Next production evidence |

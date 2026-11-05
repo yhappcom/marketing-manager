@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-05 20:33 KST — D8 C538 tagged topology reconciled; production HOLD unchanged
+
+| Decision | Newly verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 — Skia IDTree optionality verified / PRODUCT CLAIM HOLD** | [Design Studio C538](https://github.com/yhappcom/design-studio/commit/5781170e67f99995b527d9f453660800c1f03aa9) and [research log](https://github.com/yhappcom/design-studio/commit/d33a7e0556e670268fdf8d9ca189c987cadd3c39) independently inspect read-only original June/July/August Print Skia PDFs: all declare Marked true, StructTreeRoot, ParentTree and ko-KR Lang; **June lacks optional IDTree while July/August have it**; June has 3 Type0/CIDFontType2 declarations versus 4 in July/August. Hence a reusable parser must not require IDTree or a fixed font count; a malformed *present* IDTree requires fail-closed/review pending standards-decoder behavior. Proposed ParentTree/StructParents/MCID/CMap and original-derived variants are **not executed tests**. This is PDF structural evidence only: no Flate/ToUnicode decode, independent render, rows, company XLSX match, year/Publication/UID authentication or Dart/Sembast zero-write acceptance. | Independent three-month standards-compliant Flate/ToUnicode decode and visual rendering with typed row/section/Sum ownership, conditional authenticated company join, then source-profile-specific negative fixtures and owner-scoped zero-write/rollback evidence. Separate small August PDC and C512 mutants remain separate. |
+| **MintTap D1/D2 — HOLD unchanged** | Existing public Store/release-source evidence does not provide the submitted Play Console Financial features selection matched to served AAB/Store claims, nor operator-side consent→request→load→impression→paid→finalized reconciliation. Ordinary distribution and optional Promotional-content eligibility remain distinct. | D1 redacted submitted declaration/status plus served-version claim matrix; D2 account-side platform App IDs, message targeting, protected-task traces, Policy Center/serving history and finalized revenue. |
+
+**Custody:** Re-read latest Marketing AGENTS/STATUS, company constraints, Stage 1, independent D1/D2/D8 studies and recent Marketing/Design commits. Fresh nontruncated recursive Marketing main tree at `3a8be333`: **20 independent live_data Markdown studies present and referenced in STATUS; zero missing references**, README excluded. No inferred sequence numbers, new general theory, private corpus copying, product/Console/ad/community mutation, launch or ad-expansion approval.
+
+
 ## 2026-11-05 16:35 KST — D8 C536/C537 original Skia physical integrity reconciled; HOLD unchanged
 
 | Decision | Newly verified evidence / state | Next production evidence |

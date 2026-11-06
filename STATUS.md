@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-06 21:33 KST — D8 C542 company workbook binary retrieval unblocked; semantic acceptance HOLD
+
+| Decision | New verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C542](https://github.com/yhappcom/design-studio/commit/c0f573db464e1e8bf24c6e195509dbb77f9b123b) reports read-only original-byte access to **nine** company `flightHistory_2018.xlsx`–`flightHistory_2026.xlsx` files, with ZIP EOCD/central-directory inspection: **9/9** contain ten directory entries, `xl/workbook.xml`, one `xl/worksheets/sheet1.xml` and `xl/sharedStrings.xml`. This resolves the **company-workbook binary retrieval blocker only**; no XML decompression, cell/row semantics, company-to-roster joins, authenticated year/Publication/UID, PDF render, or owner-ledger acceptance. Do not promote to migration/import claim. Prior C541 original-PDF locations and C540 corrected crew topology 26/31/5 remain in force. | Independently decompress and decode 2026 workbook OOXML and three monthly Skia PDFs in authorized private custody; validate date/flight/route and BLH candidate joins, continuation/section/Sum boundaries and source identity; then fail-closed fixtures and Dart/Sembast zero-write/rollback. C194 index debt OPEN. |
+| **MintTap D1/D2 / HOLD** | Existing D1/D2 release-source studies still lack live submitted Play Financial features status with served-build/Store-claim matching and AdMob consent→request→load→impression→paid→finalized production evidence. Ordinary Store distribution remains separate from optional finance Promotional content. | D1 operator declaration and served-version matrix; D2 per-platform App ID/message targeting, protected-workflow traces, policy/serving history, and finalized reconciliation. |
+
+**Custody:** Read latest Marketing AGENTS, STATUS, company constraints, Stage 1, D1/D2/D8 independent studies and recent Marketing/Design/product commits. This run did not complete a fresh full-tree independent-study census; previous 20/20 remains historical. No new general research, sensitive workbook cells copied, product/Console/ad/community mutation, or launch/ad-expansion approval.
+
+
 ## 2026-11-06 20:34 KST — D8 C541 source-location blocker resolved; PRODUCT CLAIM HOLD unchanged
 
 | Decision | Newly verified evidence / state | Next production evidence |

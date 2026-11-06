@@ -1,5 +1,18 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-07 04:33 KST — D8 C546 original PDC group geometry independently corroborated; PRODUCT CLAIM HOLD
+
+| Decision | New validated evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C546](https://github.com/yhappcom/design-studio/commit/a058fda3fcf764a82350959916ac428556dc3bc9) independently parsed the **unchanged original** 39,612-byte August PDC PDF in transient memory: 495 text operators, 48 Activity bands, 31 own-Date cells / date-delimited groups and 26 numeric Activity rows. Both boundary Activity rows have own Date; all **31/31** original ordered group shapes match C426's pinned strict-topology expectations. This strengthens the original-source basis for C502's 31-Date correction and C533's synthetic topology, **not** date inheritance, source identity, record association, or parser readiness. [C546 research log](https://github.com/yhappcom/design-studio/commit/5ced96207d571b4fa4da89dc3bfdabaeca023e1c) confirms no complete C426 strict-path invocation, 21 original-derived mutant executions, independent PDF render, four-digit year/Publication/UID authentication, company join, or Dart/Sembast dual-revision CAS/rollback. C194 index debt OPEN. | Run actual unchanged-original C426 strict path plus 21 original-derived mutants, independent render, authenticated same-export year/Publication/UID and coverage-complete company comparison; owner-scoped evidence-only zero-write/rollback acceptance. Do not promote topology geometry to operational claims. |
+| **MintTap D1 / HOLD** | Existing release-source portfolio/trade-record evidence does not substitute for submitted Play Console Financial features choices matched to served artifact and Store claims; ordinary distribution is separate from optional Promotional content. | Redacted live submitted declaration/status, served-version functionality and Store-claim matrix. |
+| **MintTap D2 / HOLD** | Existing release-source six-banner/five-shared-unit and runbook App-ID mismatch evidence does not substitute for operator-side consent, request→impression→paid, policy history or finalized revenue. | Platform-specific privacy messages, protected-task traces, event/ILAR reconciliation and finalized settlement. |
+
+**Custody:** Re-read current Marketing AGENTS/STATUS, company constraints, Stage 1, independent D1/D2/community/D8 research, recent Marketing/Design commits and C546 primary diffs. This is a targeted production evidence reconciliation, **not** a new complete-tree independent-study census; the prior 20/20 census remains historical. No private roster bytes persisted, new general study, product/Console/community mutation, import claim or launch/ad-expansion approval.
+
+---
+
+
 ## 2026-11-07 00:35 KST — D8 C545 corrects semantic-decode chronology and August coverage gate; PRODUCT CLAIM HOLD
 
 | Decision | Verified evidence / decision state | Next production evidence |

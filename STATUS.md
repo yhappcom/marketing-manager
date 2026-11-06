@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-06 22:33 KST — D8 C543 scoped source-code contract gap; acceptance still HOLD
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C543](https://github.com/yhappcom/design-studio/commit/a9fc944a47ea391c8fb38b6003c9f62d156a860b) inspected current LogMate `SourceEvidence`, `SourceEvidenceHistory`, `CrewParticipant`, and Sembast repository source. Existing field evidence is tied to an identified ledger record, not an authenticated detached crew-snapshot/publication identity; in-memory history append is not persistent dual-head CAS; notice comparison is not authorization to suppress crew-list or BLH disagreement; participant names cannot be invented from unknown roster codes. Existing Sembast atomic mutation hooks do **not** establish a CrewConnex evidence store or rollback PASS. C543 proposes a detached observation, explicit owner/source/unique-match review, record-and-evidence revision CAS and zero-write fail-closed matrix, **not an approved or implemented contract**. No new source decoding or parser tests. | Authorized source-owner review of proposed detached-evidence/CAS boundary; independent Skia PDF and 2026 OOXML semantic decode and authenticated joins; then execute adversarial zero-write/rollback fixtures. Preserve C542 structural-only scope and C194 index debt. |
+| **MintTap D1/D2 / HOLD** | Existing release-source evidence still cannot substitute for submitted Play Financial features choices, served build/Store claims, account-side AdMob consent, event chain or finalized settlement. | D1 operator Console/build/claims matrix; D2 platform-specific privacy messaging, protected-workflow traces, paid-event and settlement reconciliation. |
+
+**Custody:** Read Marketing AGENTS/STATUS, roadmap, company constraints, Stage 1, D1/D2/D8/community studies and recent Marketing/Design commits. This is a targeted C543 cross-domain evidence update, **not** a fresh independent-study tree census or a new general-theory artifact. No private source bytes copied, product/account/community writes, or launch/ad expansion approval.
+
+
 ## 2026-11-06 21:33 KST — D8 C542 company workbook binary retrieval unblocked; semantic acceptance HOLD
 
 | Decision | New verified evidence / state | Next production evidence |

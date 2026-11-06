@@ -1,5 +1,18 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-07 00:35 KST — D8 C545 corrects semantic-decode chronology and August coverage gate; PRODUCT CLAIM HOLD
+
+| Decision | Verified evidence / decision state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C545](https://github.com/yhappcom/design-studio/commit/6e79c726c117d3950082c2c704fab9bc39694d3f) reconciles prior **C194 (2026-10-18)** evidence: original three-month Skia PDF Flate/ToUnicode and 2026 company XLSX ZIP/XML/shared strings **had already been independently decoded in C194**, with 43/43 curated Preview rows mapped to unique physical locators and all 22 August numeric rows compared to company data. Thus C544's *own run* lacking decompression/CRC/XML is **not** evidence that semantic decoding has never occurred. C545 did not re-execute that original decode or prove CRC. Recomputed privacy-safe manifest: June/July/August 18/22/22 candidates; 26 single-leaf rows have physical anchor ordinals, not authenticated inherited dates or crew. **Critical coverage blocker:** company 2026 workbook observed August data ends **Aug 02**; ten August non-Preview rows with own Date are **Aug 03–31**, nine others have no own Date. The 19 uncurated August rows therefore cannot be labeled unmatched flights using incomplete company coverage; exploratory partial-key cardinalities and BLH/bt coincidence do not authorize record association or Block alias. No approved parser, import, migration or participant claim. C194 index debt OPEN. | Authenticate same-export four-digit year, publication/revision and Firebase subject UID; obtain source coverage after Aug 02 or explicit coverage-aware HOLD; independently review source-native admission and owner-approved evidence-only dual-revision CAS/rollback/zero-write fixtures. Do not repeat generic first-decode work already evidenced by C194. |
+| **MintTap D1 / HOLD** | No new submitted Console Financial features choices paired to served build and truthful Store claims. Ordinary distribution distinct from optional finance Promotional-content eligibility. | Redacted submitted declaration/status, served artifact and Store claim matrix. |
+| **MintTap D2 / HOLD** | No new operator consent/request/load/impression/paid/finalized reconciliation or serving-policy history. | Platform-specific account traces, protected workflows, Policy Center history and finalized settlement. |
+
+**Custody:** Re-read latest Marketing AGENTS/STATUS, company constraints, Stage 1, independent MintTap D1/D2/community and LogMate D8 research, recent Marketing and Design commits, and C545 primary diff. This is a targeted correction of a materially misleading next-evidence target, **not** a fresh complete-tree 20-study census. No raw private roster content, new general research, Console/product/community mutation, or launch/ad-expansion approval.
+
+---
+
+
 ## 2026-11-06 23:30 KST — D8 C544 original OOXML archive admission advanced; semantic acceptance HOLD
 
 | Decision | Verified evidence / state | Next production evidence |

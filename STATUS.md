@@ -1,3 +1,15 @@
+## 2026-11-07 06:35 KST — D8 C547 anchor-lineage arithmetic verified; PRODUCT CLAIM HOLD
+
+| Decision | Verified evidence / decision state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C547](https://github.com/yhappcom/design-studio/commit/3a3bd5dc9bfb4a462752b985fe3bcaba50f20454) independently recomputed existing C194 privacy-safe 62-row locator manifest (June 18, July 22, August 22). All 62/62 Activity-to-From/To/BLH/ACReg TD offsets were +3/+7/+13/+15. All 26 SINGLELEAF_1 candidates have same-month, same-page multileaf anchors, and 26/26 recorded chain depths equal primary-TR distances: 22 at distance 1, two at distance 2, two at distance 3. Therefore naive previous-row crew propagation would not even match documented physical anchor topology for 4/26 cases. **Physical anchors do not establish crew/date inheritance, UID, source year/revision, or flight-record matching.** C547 reanalyzed saved metadata only; no new PDF decode, Dart tests or authenticated joins. No product claim or parser promotion. | Preserve anchorTR/chainDepth/source/page/MCID and fail-closed HOLD; obtain authenticated year/Publication/UID and coverage-complete company comparator; run original-derived adversarial fixtures and owner-reviewed evidence-only dual-revision CAS, zero-write/rollback tests. C194 index debt OPEN. |
+| **MintTap D1 / HOLD** | No new live submitted Financial features declaration matched to distributed build and Store claims. Ordinary distribution remains distinct from optional Promotional content. | Redacted Console declaration/status, served artifact and exact Store claim matrix. |
+| **MintTap D2 / HOLD** | No operator-side consent/request/load/impression/paid-event/finalized revenue chain or policy/serving history. | Platform-specific protected-workflow and monetization traces, Policy Center history and finalized reconciliation. |
+
+**Custody:** Re-read current AGENTS/STATUS, relevant independent D1/community studies, company constraints, recent Marketing and Design commits, and C547 primary diff. Fresh nontruncated Marketing main tree: 20 independent live_data Markdown studies; 0 missing STATUS filename references (README excluded). No private roster values copied, new general theory, product/account/community mutation, or launch/ad-expansion approval.
+
+---
+
 # Marketing Manager — production-decision queue
 
 ## 2026-11-07 04:33 KST — D8 C546 original PDC group geometry independently corroborated; PRODUCT CLAIM HOLD

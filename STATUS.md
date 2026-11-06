@@ -1,5 +1,15 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-06 20:34 KST — D8 C541 source-location blocker resolved; PRODUCT CLAIM HOLD unchanged
+
+| Decision | Newly verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C541](https://github.com/yhappcom/design-studio/commit/3f97e565b9143a48b5ef08bed867d5910610f9f4) resolved the previously blocked GitHub directory lookup for the private CrewConnex source-materials folder. It identified exact original Git blob identities for three **separate large Skia monthly PDFs** (June 541788 B, July 556535 B, August Print 552417 B), the **distinct** August PDC-generator PDF (39612 B), and a three-month import-preview XLSX (29102 B). This is a **source acquisition/location unblock**, not binary decode, independent render, authenticated operational year/Publication/UID, company workbook join, parser acceptance or flight import. Git blob SHA-1 is not a PDF SHA-256 or source authenticity certificate. C540 corrected manifest topology **26/31/5** remains authoritative. No source files or sensitive roster content copied into Marketing. | Design Studio/LogMate authorized binary read of exact three Skia originals and company workbook; independently render/decode and resolve row/continuation ownership and 19 uncurated August candidates; authenticate year/Publication/UID and joins; execute fail-closed fixtures and owner-scoped zero-write/rollback. C194 index debt OPEN. |
+| **MintTap D1/D2 / HOLD unchanged** | Re-read existing independent release-source D1 and D2 studies. Neither provides operator-submitted Financial features choices paired to served build/Store claims or consent→request→load→impression→paid→finalized evidence. The D1 truthful combined portfolio-management recommendation and separate optional Promotional-content NO-GO remain. | D1 redacted actual Console submission/status and served artifact/claims; D2 account-side App IDs, message targeting, protected-task traces, policy/serving history, and finalized reconciliation. |
+
+**Custody:** Re-read Marketing AGENTS/STATUS, company constraints, Stage 1, independent D1/D2/D8 and community evidence, recent Marketing and Design commits. STATUS-referenced study paths reviewed; **no fresh full-tree census** performed, so historical 20/20 is not recertified. No new general research, product/Console/ad/community mutation, private bytes copied, or launch/ad expansion approval.
+
+
 ## 2026-11-06 07:36 KST — D8 C540 correction supersedes C539 crew-shape count; HOLD unchanged
 
 | Decision | Validated correction / decision state | Next evidence |

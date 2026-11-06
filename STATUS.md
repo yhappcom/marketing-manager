@@ -1,5 +1,16 @@
 # Marketing Manager — production-decision queue
 
+## 2026-11-06 23:30 KST — D8 C544 original OOXML archive admission advanced; semantic acceptance HOLD
+
+| Decision | Verified evidence / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C544](https://github.com/yhappcom/design-studio/commit/a6c051f4228912781a3c0a2f5a1b8bdfa6480321) read all nine original company `flightHistory_2018.xlsx`–`flightHistory_2026.xlsx` archives and tested local/central ZIP filename agreement, header/payload bounds, non-overlap, path traversal and encryption flags. **9/9 archives, 90/90 entries passed limited structural admission**, all method-8 DEFLATE, none flagged encrypted. 2026 source 19,812 bytes; **143,852** declared expanded bytes and **114,404** declared worksheet bytes are **not verified decompressed sizes**. This materially extends C542's central-directory-only check but does **not** establish CRC, XML/cell semantics, 2026 company joins, Skia PDF extraction, or parser acceptance. C544's bounded ZIP/OOXML pre-mapping rejection matrix is a **research proposal**, not approved product behavior. C194 index debt remains OPEN. | Authorized independent DEFLATE+CRC and XML cell decoding, three Skia PDF semantic extraction and source-authenticated company joins; owner review of ZIP admission contract; adversarial fail-closed Dart/Sembast zero-write and rollback fixtures. |
+| **MintTap D1 / HOLD** | No new account-side submitted Play Financial features declaration matched to served AAB and Store claims. Truthful portfolio-management classification remains distinct from optional Promotional-content eligibility and ordinary distribution. | Operator redacted submitted declaration/status, served-build functionality and Store-claim matrix. |
+| **MintTap D2 / HOLD** | No new account-side consent→request→load→impression→paid-event→finalized reconciliation, protected-workflow traces or serving-policy history. | Per-platform App ID/message targeting, event chain, policy history and finalized revenue evidence. |
+
+**Custody:** Re-read Marketing AGENTS/STATUS, company constraints, Stage 1 and recent Marketing/Design commits, plus C544 primary commit. This is a targeted cross-domain production queue reconciliation, **not a new complete-tree independent-study census**; the prior 20/20 result is historical. No private workbook rows copied, new theory study, product/Console/community mutation, import claim or launch/ad-expansion approval.
+
+
 ## 2026-11-06 22:33 KST — D8 C543 scoped source-code contract gap; acceptance still HOLD
 
 | Decision | Verified evidence / state | Next production evidence |

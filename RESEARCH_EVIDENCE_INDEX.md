@@ -56,3 +56,7 @@ This index is a navigation and correction layer, **not a replacement for origina
 3. Add or alter a study only for material new authority/policy, production contradiction, a live unanswerable decision or reusable operational gap. Preserve exact original evidence, corrected assertions and their dates.
 4. Keep `MARKETING_KNOWLEDGE_BASE.md` cross-product and bounded; keep `PRODUCTION_DECISION_REGISTER.md` current and action-oriented; keep `STATUS.md` brief and only record newly changed gates. Historic updates stay in archived STATUS without rewriting.
 5. Operator Console, AdMob, GA4, broker, pilot roster and device test results are **not supplied** by this consolidation. No claims, deployments, outreach, ads or imports are authorized by index completeness.
+
+## 2026-11-08 current-main Git-tree census (scope-closed)
+
+At `main` commit `c1898f1aa04521fe4c501ca31dd264cc48b9f64e`, GitHub's recursive Git-tree endpoint returned `truncated=false`. Filtering actual blob paths matching `live_data/**/*.md` and excluding `live_data/minttap/README.md` yielded **20 independent research files: 18 MintTap and 2 LogMate**. Every one of these 20 exact paths occurs in this index; **0 unindexed independent `live_data` Markdown blobs**. This closes the previous **tree-enumeration evidence gap for that commit only**; it is not a fresh 20-file content re-read, does not inventory other folders or future commits, and confers no production approval. Evidence: https://api.github.com/repos/yhappcom/marketing-manager/git/trees/c1898f1aa04521fe4c501ca31dd264cc48b9f64e?recursive=1 .

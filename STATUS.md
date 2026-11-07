@@ -1,3 +1,15 @@
+## 2026-11-07 10:29 KST — D8 original strict-path execution chronology corrected; PRODUCT CLAIM HOLD
+
+| Decision | Verified change / state | Next production evidence |
+| --- | --- | --- |
+| **LogMate D8 / PRODUCT CLAIM HOLD** | [Design Studio C532 execution reconciliation](https://github.com/yhappcom/design-studio/commit/3430e5b0008d5a2d7fbaf9ed88122b05c933717b), corroborated by its [research log](https://github.com/yhappcom/design-studio/commit/1653a5486be34817d35034025c0ddfb68f489bb5), corrects the stale C546-era assertion that unchanged-original strict admission had never run. **C532 already invoked `inspectPdcPdfStrict` on the unchanged 39,612-byte August PDC original**, returning `OBSERVED_FAMILY_DETACHED_HOLD` with 26 numeric and 22 nonflight Activity rows; 55/55 original-dependent adversarial checks (35+7+13) were run in an isolated JavaScript evaluator. **C533's 21/21 date-group relocations were synthetic**, not the separate **C512 exact 21 original-derived mutated PDFs**. C546's 31/31 original geometry audit did not itself rerun the strict function. This is a correction of prior evidence chronology, **not new runtime execution or acceptance**. No authenticated source identity, full company comparator, production Dart, independent render, or persistence approval; C194 historical index debt OPEN. | Run the exact C512 21 original-derived PDF cases through the same C426 strict path with independent rendering; authenticate four-digit year/Publication/subject UID, obtain company Aug03–31 coverage, then verify active same-UID Flight versus source-only BLH/crew evidence separation and file-backed dual-revision CAS, zero-write/rollback and delete/backup isolation. Do not repeat C532's completed baseline as a first execution. |
+| **MintTap D1 / HOLD** | No newly accessible operator-submitted Play Financial features declaration paired to served build and exact Store claims. Ordinary Store distribution remains distinct from optional Promotional content. | Redacted live Console choices/status, served artifact and exact claim matrix. |
+| **MintTap D2 / HOLD** | No newly accessible operator-side consent/request/load/impression/paid/finalized chain, Policy Center history or protected-workflow trace. | Per-platform app/message mapping, event and ILAR reconciliation, policy history and finalized settlement. |
+
+**Custody:** Latest Marketing AGENTS/STATUS, company constraints, Stage 1, independent D1/D2/community/D8 studies and recent Marketing/Design commits read. This is a targeted correction; **no fresh complete Git-tree census** or newly executed C512/PDF/Dart tests. Historical 20/20 independent-study audit is not recertified. No new general study, product/Console/community mutation, sensitive roster data transfer or launch/ad-expansion approval.
+
+---
+
 ## 2026-11-07 07:35 KST — D8 C548 page-edge admission census; PRODUCT CLAIM HOLD
 
 | Decision | New verified evidence / state | Next production evidence |

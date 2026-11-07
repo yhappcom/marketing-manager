@@ -23,3 +23,15 @@ Capture a sanitized AdMob App settings → Verify app/app-ads.txt status, All ap
 
 ## Cross-domain ownership
 Marketing owns the monetization decision gate and ledger; product owns shipped SDK/consent/ad-surface behavior; Web Manager owns live domain/robots/root-file delivery. This audit checks only observable cross-domain boundary conditions. No design change or general-theory research is warranted.
+
+
+## 2026-11-07 primary-source verification lifecycle clarification — separate operator subgates
+
+**SOURCE / Google official AdMob documentation (rechecked 2026-11-07):**
+- [Verify your app with app-ads.txt](https://support.google.com/admob/answer/14538460): for newly added AdMob apps from **January 2025**, app-ads.txt verification is required; after publishing and AdMob's file crawl, an operator must use **App settings → Verify app → Check for updates** to request/confirm app verification, and **app readiness review begins after app verification**. File publication and a successful crawler check do **not** by themselves prove readiness approval or full serving.
+- [Set up app-ads.txt](https://support.google.com/admob/answer/9363762): store listing must link the developer website; the operator checks the AdMob app-ads.txt status separately from external HTTP checks. A store website update can take up to 24 hours to be detected.
+- [Resolve app-ads.txt issues](https://support.google.com/admob/answer/9776740): app-ads.txt status **may not appear** in the account's status page if the app has generated **no ad request in the past seven days** **or** the app has not been verified. Thus **absence of a row is ambiguous**, not proof of a broken seller file, zero ad requests, rejected app, or invalid traffic.
+
+**New scoped decision consequence:** The 2026-10-09 public file/robots/publisher-ID PASS remains valid only at its original observation date. Separate account evidence into **(A) app-ads.txt file found/verified**, **(B) explicit app verification initiated/completed**, **(C) readiness review state**, and **(D) serving eligibility/history**, each with operator timestamp, app/platform and visible status. If the status row is missing, record `NOT_DISPLAYED / CAUSE_UNKNOWN`; request **redacted last-request activity** and operator app verification state before diagnosing. The January 2025 new-app rule does **not** establish when MintTap was added to AdMob or which operator action was completed. No current MintTap account, ad-request count, review state or serving status was observed. **D2 PRESSURE HOLD remains unchanged.**
+
+**HANDOFF:** AdMob account owner captures (A)–(D) with redacted account/app identifiers and timestamps; Product owns test-ad request logs; Web Manager owns live public file/robots changes. Marketing records the gate and does not initiate monetization expansion.

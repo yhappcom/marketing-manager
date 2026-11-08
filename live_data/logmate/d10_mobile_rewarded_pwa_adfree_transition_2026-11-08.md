@@ -397,3 +397,87 @@ Branch terminals: `CANCELLED`, `NO_FILL`, `INVALID_SIGNATURE` (quarantine), `SSV
 ### M5. Disposition / authority
 
 **Material finding:** direct AdMob inventory-policy incorporation removes a provenance doubt; ad pods/60s high-engagement contradict a fixed single-video assumption; T0–T5 supplies a low-risk progressive test ladder; Apple ad-targeting transparency is distinct from report mechanism. No new vendor-specific approval, working Flutter runtime, SDK, verified server, EFB physical test, policy ticket, publisher account status, direct sponsor contract, or LogMate product file modification is asserted. Product/Engineering owns implementation; Design Studio owns real UX; Web Manager owns EFB platform tests; Marketing owns policy, behavior and economics.
+
+
+---
+
+## N. 2026-11-08 P0/P1 product-source reconciliation — what a rewarded "save" actually buys, and who owes a missing reward
+
+**Material advance:** Rather than another generic ad-policy review, this cycle re-read **current LogMate product authority** for actual record lifecycle/Import/Sync semantics. It identified a concrete missing business-domain contract: **a "save" is not a unique, immutable, billable event**. A second, independently sourced requirement is that AdMob makes the **publisher responsible for delivering the promised reward even if its SSV pipeline is unavailable**; a technically correct verified-first architecture must include fair human/operator compensation and auditable recoverability. These are bounded product/marketing research findings, NOT product or implementation approval.
+
+### N1. New source mapping (read-only 2026-11-08) [SOURCE]
+
+| Verified product source | Direct contract that changes advertising accounting |
+| --- | --- |
+| [LogMate MASTER](https://github.com/yhappcom/logmate/blob/main/MASTER.md) (read on current `main`, content blob `5a6fd944abf24a95efed3b4a31db214d2e24a662`) | `FlightRecord` and `SimulatorRecord` are distinct canonical types. `PreviousTotalBaseline` is a separate cumulative baseline, not Flight rows. Import can occur first, later, repeatedly. Edit/Delete/Restore are normal record lifecycle operations. User-selected page size / page rows are presentation and logbook organization, **not advertised save credits**. Current Record/Import/Sync foundations are partial; no verified rewarded-billing implementation. |
+| [LogMate Flight Import Contract](https://github.com/yhappcom/logmate/blob/main/docs/specs/import-contract.md) (`main` content blob `ac5b87213dda6f342be7f5b1904f0af56fa7b271`) | Optional external Import and re-Import into the **same ledger**; matching, field resolution, user-confirmed `Keep canonical`, `Replace` and `Import as new` have distinct semantics. The Excel round-trip with exact exported Record ID is an existing-record candidate; ambiguous matches demand review. **Historical migration may contain many Flight records**, not one user action per flight. |
+| [LogMate Local-First Manual Delta Sync Contract](https://github.com/yhappcom/logmate/blob/main/docs/specs/local-first-manual-delta-sync-contract.md) (`main` content blob `97faecf317df1346f4b1b58c8d37c891f805e436`) | Stable `LedgerRecordRef`, immutable original Operation ID, separate Replica IDs. A repeated operation with same ID/digest is replay, not new user CREATE. Two different offline `CREATE` operations with same validated Owner+Operational Date+complete airline Flight Identifier may collapse to one logical Flight after cross-device reconciliation. Material sector/identity disagreement remains `REVIEW_REQUIRED`, not a deterministic merge. `DELETE`, `RESTORE`, manual edit, remote apply, backup replay and Import are not interchangeable. `100 changes` in this contract is only a **possible file-transfer guidance threshold, not a save quota**. |
+| [LogMate Offline Acceptance](https://github.com/yhappcom/logmate/blob/main/docs/specs/offline-acceptance.md) (`main` content blob `4d063c71241a3d51fb467f982e25e2f721b5a6b9`) | Offline local save/edit/delete/restore and reliable replay/recovery are acceptance requirements; PWA device/MDM acceptance remains a separate release gate. Advertising quota cannot be silently substituted for this product's existing offline authority. |
+
+**Authority:** The above are **read source contracts**; they do not prove every described path is deployed/running. A user-chat monetization direction is still not yet reconciled into the LogMate MASTER. No product repo edit.
+
+### N2. Three plausible definitions of "save" yield different, incompatible results [SYNTHESIS / OWNER POLICY OPEN]
+
+| Meter definition | Migration and normal use consequence | Decision |
+| --- | --- | --- |
+| **A. Count every Save button press** | Repeated edit, retry after timeout, correction, restore could consume multiple credits for same Flight; inaccurate even before Sync | **REJECT as an accounting definition** |
+| **B. Count the current active Flight rows** | Deleting a Flight reopens capacity; restore/old backup changes count; duplicate merge changes "spend" retroactively; visual Page Total or page size conflates with advertising entitlement | **REJECT as authoritative spend ledger** |
+| **C. Count each accepted distinct logical NEW Flight identity (with source-specific exclusions/reconciliation)** | Defensible per-record consumption but needs explicit Import vs manual classification, alias/merge compensation, offline grace and replay protection | **Preferred research candidate; NOT APPROVED** |
+| **D. Allow unrestricted basic Flight saves; rewarded ads provide only other optional benefits** | Highest product/policy resilience, weaker incentive economics | **Fallback if C fails policy/customer tests** |
+
+**Critical import fork within C (do not choose silently):**
+- **C1 charge ALL newly imported historical Flights:** A user importing years of legitimate history may consume allowance immediately, undermining migration/onboarding; billable status becomes dependent on source/review behavior. **HIGH acquisition/retention risk**, no quantified historical cohort.
+- **C2 exempt initial/previous historical Import and any re-Import update, meter only user-created new Flights:** protects professional migration but permits deliberate CSV/Excel import-as-new to bypass the limit, and confounds "new" manual creation vs duplicate imported records. **Fraud/arbitrage accepted or mitigated by a separately approved, nonintrusive policy**; not automatically safe.
+- **C3 meter only records with operational dates after an activation/cutoff:** dates can be backfilled, corrected, historical and may be untrusted from external import; a date is **not** a proof of entitlement or creation causality. Would need explicit source/provenance and corrections, increasing parser complexity.
+
+**Do not market the credit** as "one record saved" until owner decides these fork cases. For ads, label `Additional new Flight entries` only if the execution actually meters *new Flight creates* and clearly discloses import/exceptions; otherwise write a narrower truthful reward disclosure.
+
+**Additional type boundaries:** `PreviousTotalBaseline` changes should **not** be inferred as Flight creations; Simulator entries are separate record kind and require an explicit billing decision; row/page reflow, auto-backup, Export, Sync Delta Replay, remote apply and a record's subsequent Edit are **not** new Flight creation. Charging for Import batch undo, duplicate review, or restoring user's own data is a separate, owner-approved proposition and currently NOT justified.
+
+### N3. Proposed immutable **consumption** event projection (separate from provider GRANT ledger; NOT a deployed schema)
+
+- Grant stream: `VERIFIED_PROVIDER_GRANT(uid, provider, providerTxnId, offerVersion, grantedN)` and independently `PUBLISHER_COMPENSATION_GRANT(uid, adjustmentId, reason, approvedBy, N)`. Each has a unique immutable identifier and audit lineage; **compensation is never mislabeled as a Google-signed reward**.
+- Local consumption stream: `NEW_FLIGHT_CONSUMPTION(uid, originalCreateOpId, stableRecordRef, sourceCategory, amount=1, chargePolicyVersion)`. Duplicate Save/retry/old backup/remote apply using the **same** operation identity never creates a second bill. Source category cannot be silently overwritten during Import/review.
+- Reconciliation stream: `LOGICAL_IDENTITY_ALIAS(uid, originalIdA, originalIdB, acceptedCanonicalId, proofOrReviewRef)` permits a documented **offsetting consumption adjustment** when two already-charged independent CREATEs become one *confirmed* logical Flight. Do **not** refund while key/sector identity is still `REVIEW_REQUIRED`.
+- State model: `confirmed_available = initial_approved_allowance + UNIQUE_VERIFIED_GRANTS + UNIQUE_APPROVED_COMPENSATION - BILLABLE_DISTINCT_NEW_FLIGHTS + EXPLICIT_IDENTITY_RECONCILIATION_ADJUSTMENTS`. This is a **conceptual formula**, not permission to calculate from current active rows or to double-spend via offline replicas. Each projected value is version/UID-bound, and local pending credits/uses must be differentiated from last confirmed cross-device balance.
+- At zero allowance with offline/SSV uncertainty, separate `locally_durable_Flight` from `server_confirmed_entitlement`: **no deletion or hiding** of a true Flight to correct an accounting discrepancy. Owner must decide bounded grace, escrow, unrestricted core use or other P0-approved action.
+- **DELETE refund policy is genuinely OPEN**. A full refund on Delete makes one credit repeatedly reusable; no refund protects quota logic but may penalize a promptly corrected accidental entry. Restore should not be charged again when it is the **same stable Record**. The compromise (undo-time window, dispute refund or explicit compensation) needs a product decision and test evidence. Do not predeclare Delete-no-refund as owner-approved.
+
+### N4. P1 publisher liability: verified-first must not become unpayable-by-design [SOURCE + OPERATIONAL DESIGN]
+
+1. [Google AdMob rewarded policy](https://support.google.com/admob/answer/7313578), read 2026-11-08, explicitly states the **publisher must deliver the promised reward after completion** and is **fully and solely responsible** for granting rewards. It also says opting out must not impede normal app usage. This is a business **reward-fulfillment** obligation distinct from anti-fraud.
+2. [Google Flutter SSV](https://developers.google.com/admob/flutter/ssv) allows delay until SSV verification for critical balances, but Google's delivery retries are bounded (up to five at 1-second intervals); a prolonged outage can leave a client-earned event without a signed callback. Google also documents that the client callback is preferred for immediate UX when validation constraints permit; **neither approach guarantees zero missing rewards**.
+3. A `VERIFIED_GRANTED` state must require valid signed SSV and idempotent server commit. Separately a `CLIENT_EARNED_PENDING / SSV_MISSING` state must preserve the user's dispute path, safe credit visibility and a **publisher-funded compensation procedure** after case evaluation, with unique adjustment ID, operator identity, reason and audit. The publisher may choose to honor the completed promise using a clearly marked compensation grant; **do not forge the AdMob signed transaction**. No evidence yet that every lost client callback can be independently validated, so an automation granting all unsupported claims would invite fraud.
+4. Add **incident runbook** and change-management proof before launch: callback endpoint health/alert, failed callback monitoring, bounded reconciliation queue, pending-age thresholds chosen by operator, user contact/support text, approval audit, appeals, unique compensation grant, cost/fraud cap and operator escalation. Report missing-reward complaints per **actual earned callback or provider-verified attempt**, not per ad request, and do not leak flights/crew/airport details into logs.
+5. If the publisher cannot operate fair recovery with its actual staffing/budget, **block production rewarded-ads launch** rather than shipping a verified-first flow that indefinitely strands a legitimately completed viewer. The policy is about promises delivered to real people, not just cryptographic purity. No account/operator or staff coverage observed.
+
+**Why this matters to sponsor strategy:** A delayed/lost earned reward imposes trust/support cost on a niche professional app. This cost belongs in monetization contribution margin and may outweigh revenue at low early traffic. Pilot sponsor pitch should not claim cryptographically proven **user attention** solely from reward callback (it attests to provider earning event, not attention, conversion or advertiser outcome).
+
+### N5. Billing-reconciliation acceptance packet — DEFINED, NOT EXECUTED
+
+| Test | Event sequence | Required oracle (under candidate C and source-specific owner decisions) |
+| --- | --- | --- |
+| B01 | New manual Flight → Save tap retried with same original Op ID | One durable Flight, one consumption, no second debit |
+| B02 | Edit same Flight multiple times, including field recalculation | No new billable Flight consumption |
+| B03 | Record DELETE → same-ID RESTORE | No new CREATE consumption; Delete refund behavior explicitly policy-gated |
+| B04 | Old .lbk Backup restored to new Replica → server replay | No replayed grant or consumption double count; correct UID/replica identity |
+| B05 | Two offline replicas CREATE *same confirmed* airline Flight identity under different IDs → reconcile | One confirmed logical Flight, two original ops preserved, only one **net** billable logical CREATE after accepted identity/adjustment |
+| B06 | Same date/flight but conflicting sector; identity review required | Do not collapse or refund before user evidence/resolution; no Flight loss |
+| B07 | Import 1000 historical Flights on first use | Compare C1/C2/C3 acquisition and budget outcomes; **no bill policy selected** |
+| B08 | Import/re-Import `Update existing`/exact exported ID → review + commit | No second charge for same stable Flight |
+| B09 | Import-as-new through edited Excel/CSV intended to bypass manual-only meter | Measure arbitrage pathway, accept or mitigate **without silently blocking migration** |
+| B10 | User cancels/undoes a multi-Flight import before canonical commit | No charge before accepted commit; post-commit undo/refund semantics still product decision |
+| B11 | Previous Total baseline edit, RowsPerPage change, Page Total recalculation | Zero Flight create debit; unrelated domain values unaffected |
+| B12 | Simulator create followed by Flight create | Separate record kind, billing scope unspecified; do not infer both cost 1 from page row count |
+| B13 | Phone client earned reward, signed SSV delayed/lost beyond retry window | Honest pending and fair support/compensation path; **do not mark Google verification success** |
+| B14 | Duplicate provider transaction + manual goodwill compensation | Exactly one provider verified grant; goodwill only if uniquely approved, auditable and no double remedy |
+| B15 | Offline PWA lacks phone/ad/internet and reaches zero | Preserved recoverable Flight and truthful entitlement; no coerced ad or fake Sync |
+| B16 | Wrong UID signs in while client pending reward / old user deletes account | No grant/Flight leakage or owner relabeling; deletion lifecycle respected |
+
+**Evidence labels:** `DESIGNED` for B01–B16. No synthetic script, app unit test, device, account console or provider approval was executed in this cycle. An eventual test must record exact build/commit, input fixture, expected/actual data and review decision, not just mark the scenario `PASS`.
+
+### N6. Decision update and operational handoff
+
+**New product-dependent blocker:** Even if P0 approves the rewarded-ad UI and P1 verifies SSV, an economically and fairly enforceable **definition of chargeable new Flight** must be approved before claiming a count-limited logbook. Import/migration and cross-device identity merges make this **more material than selecting initial N or per-ad grant size**. Product owner/Engineering own `chargePolicyVersion`, Import source/exemption, Simulator scope, Delete/Restore, alias/reconcile and offline grace; Marketing assesses onboarding conversion, abuse/support and the ad-only model; Design Studio renders transparent disclosure and dispute UX; Web Manager validates ad-free managed PWA.
+
+**Study disposition:** Product-specific billing semantics and promised-reward incident liability clarified at source/design scope; **production Save blocking, actual AdMob, reward server and app/MDM device acceptance remain HOLD**. Do not edit LogMate MASTER/code without product owner Work authorization; no external publisher support request or test executed.

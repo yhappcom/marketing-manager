@@ -646,3 +646,70 @@ Google's first-party [Validate SSV callback documentation](https://developers.go
 5. **E/F business and operations:** acquire actual valid opt-in reach and signed aviation sponsor contract only when release readiness exists; no invented economics.
 
 **Decision:** New **fault-model proof and stable progress framework** are saved; no new C04 milestone claimed because a deterministic concurrency simulator is not Firestore. **Research 7/24 (29%), operational launch gates HOLD**. Marketing owns this checkpoint and policy questions; LogMate/Engineering owns backend/record semantics; Design Studio Rewards UX/accessible errors; Web Manager actual EFB/Files/PWA transport. No changes to product/design/web repositories.
+
+
+---
+
+## R. 2026-11-09 P1 recovery admission — actually executed ACK-loss / crash-fault model and Firestore service boundary
+
+**Decision focus (not another policy recap):** Previous §Q proved naive read→grant overpayment under concurrent SSV and compensation workers. Here we test the **distinct loss-of-payment failure** caused by returning HTTP 200 before durable grant, splitting receipt and fulfillment across two commits, or losing the HTTP ACK *after* a successful atomic commit. Preserve the 24-checkpoint framework from §Q. **No Firebase emulator, real Firestore, AdMob publisher console, Google-origin signed callback, LogMate app or managed iPad was accessed.** The only repository edited is Marketing Manager.
+
+### R1. First-party technical facts checked 2026-11-09 [SOURCE]
+
+- [Firebase Firestore transactions](https://firebase.google.com/docs/firestore/manage-data/transactions) establish **all-or-none writes** over multiple documents; reads must precede writes; a transaction function can be retried by SDK due to contention and must not mutate external/application state inside the callback. A failed transaction writes nothing. Documented failure bounds include **10 MiB request, 20-second lock deadline, 270-second total transaction, 60-second idle expiry**. These are actual vendor operational limits, **not acceptance already measured for LogMate**.
+- [Firestore contention](https://firebase.google.com/docs/firestore/transaction-data-contention) differentiates optimistic mobile/web SDK emulation and server SDK concurrency mode. The reward payout handler must be server authoritative; do not compute global credits from the native/PWA last-known balance.
+- [Firebase Firestore Emulator mismatch](https://firebase.google.com/docs/emulator-suite/connect_firestore) states that the emulator does not faithfully implement all production transaction behavior, index requirements and operational limits; **C04 needs both isolated emulator AND separate real Firestore staging**.
+- [Google AdMob SSV](https://developers.google.com/admob/flutter/ssv) requires **HTTP 200** on successful processing and retries undelivered callbacks **up to five times at one-second intervals**; do not infer eventual delivery from this finite retry window. Current Google provider key/signature validation and reward/nonce binding remain independent prerequisites.
+- [Firebase multi-project guidance](https://firebase.google.com/docs/projects/multiprojects) supports separate development and production Firebase environments; actual test project must have explicitly different credentials and dataset from LogMate production, plus strict synthetic-identity fixture and cost safeguards.
+
+### R2. Executed synthetic fault-injection model [VALIDATION — research-only]
+
+**Source:** [`research/experiments/d10_ssv_ack_crash_recovery_20261109.js`](../../research/experiments/d10_ssv_ack_crash_recovery_20261109.js).
+
+- A standalone, deterministic pure-JavaScript **in-memory model** was executed in a V8 isolate on 2026-11-09 KST: **18/18 assertions PASS**. The actual functions executed were serialized into the checked-in reproducible JavaScript file; independent Node CLI / real SDK execution **NOT CLAIMED**.
+- For **one authenticated UID / one original attempted reward**, enumerated four sequential deliveries from six candidate `(SSV|approved compensation) × (fail BEFORE commit|fail AFTER commit BEFORE HTTP ACK|succeed)` types: **6⁴ = 1296 event sequences**. All **1296** satisfy `0 ≤ unique fulfilled attempts ≤ 1`, `balance = 4 × number of fulfilled attempts`, and `receipt exists ⇔ fulfillment exists` in the chosen ideal **atomic-commit model**. In **1280** sequences at least one transaction was modeled as committed, and all **1280** ended with exactly one usable +4 reward; **16** sequences had no committed delivery at all.
+- Observed logical failures in **two deliberately unsafe counterexample handlers**: (1) HTTP 200 sent before commit then worker dies ⇒ callback marked successful but reward unpersisted; (2) persist provider-receipt document and crash before grant ⇒ retry checks only receipt and returns 200 without ever creating a usable reward. These are **model-generated counterexamples, not observed production incidents**.
+- In the correct conceptual branch, **pre-commit crash** leaves both receipt and grant absent, requesting re-delivery; **post-commit ACK loss** leaves both present and subsequent duplicate returns success without a second grant. Late SSV after compensation and compensation after SSV preserve one fulfillment and two independent immutable audit receipts.
+- Additional tests: incorrect UID, reward amount, unsigned SSV status flag, unapproved compensation, cross-UID reuse of global provider transaction ID, deleted-owner fencing and separate legitimate attempts. All are **synthetic control flags**, not cryptographic verification or real account deletion.
+- **Limit:** the test assumes ideal atomic whole-state replacement. Its PASS is partially a property of that assumption, not proof of actual Firebase transaction configuration, transaction callback purity, IAM security, real endpoint response semantics, operation retries, Google signing, SSV loss recovery or durable user data. **C04 remains OPEN** and the 24-checkpoint score remains **7/24 (~29%)**.
+
+### R3. Before/after-crash state matrix for engineering [DESIGN PROPOSAL]
+
+| Failure injection | Durable receipt | Durable usable fulfillment | Caller-visible result | Required recovery / oracle |
+| --- | --- | --- | --- | --- |
+| Failed/invalid Google signature or UID/offer | None | None | Rejected; no grant | Quarantine without owner leakage; audit reason carefully |
+| Transaction fails before commit | None | None | 5xx/unconfirmed retry status | Retry safe; do not send 200 or mark paid |
+| **Transaction commits; HTTP success/ACK lost** | Yes | Yes | Timeout/unknown to sender | Exact retry finds committed transaction/attempt, returns 200, **no second payout** |
+| Transaction commits; SSV arrives again | Same existing receipt | Same one fulfillment | 200 | Do not increment again |
+| Approved manual compensation commits while SSV absent | Compensation receipt | One fulfillment | Admin success | Later SSV receipt attaches to same attempt **without another payout** |
+| Late SSV arrives after compensation | Compensation + signed receipt | Still one fulfillment | 200 when safely durably recorded | Two audit events, one usable grant, do not rewrite original provider provenance |
+| Unsafe **200 before committing** | None if crash | None | **200** | **NO-GO**: Google may stop re-delivering, user loses reward |
+| Unsafe **receipt commit then fulfillment separate** | Yes | None after crash | Unknown then 200 on naive dedup | **NO-GO**: receipt-only check suppresses retry and strands user |
+| Account deleted and late SSV arrives | Tombstone/owner-deletion outcome needs separate rule | No new active UID credits | User/account unavailable | Owner-deletion precedence, legally safe audit retention and provider HTTP response policy require product/ops design |
+
+**Provider HTTP outcome is not implied by data-domain rejection.** A verified late SSV for a deleted account may require a durably recorded `processed_without_grant` operational disposition, but **which HTTP code Google should receive and what minimal permitted audit survives deletion remain OPEN**; do not guess that 410 or 200 automatically solves consent/account deletion requirements.
+
+### R4. Concrete C04 implementation/test admission package — no production write
+
+Proposed backend document authority (exact schema **OPEN**; Product/Engineering owns it):
+1. A short-lived, authenticated opaque `attemptId` maps to one Firebase UID, owner/deletion epoch, ad unit, immutable offer version and promised number of added logical Flight entries. **No crew, route or employer data** sent in `custom_data`.
+2. Server checks raw signed Google callback and trusted `key_id` before entering payout transaction. Globally unique provider `transaction_id` must not be reused for another attempt/UID. Publisher-approved compensation has its own independent unique audit ID and must refer to the original attempt.
+3. **Single Firestore server-side transaction:** read attempt, owner epoch/deletion status, provider transaction guard, prior receipt and prior fulfillment **before writing**; create append-only receipt and **at most one** fulfillment for that attempt, plus any materialized balance update **in same atomic commit**. If fulfillment exists, retain new valid provider receipt but make zero incremental credit. On conflict/transaction retry, re-evaluate from fresh durable state. Never call external HTTP, notify a user, or mutate unrelated state inside a retryable callback.
+4. Send `HTTP 200` to Google **only after** successful commit or confirmed idempotent replay. On unknown commit, perform read-only reconciliation by immutable attempt/transaction keys before deciding final response; **never** issue a fresh anonymous reward attempt to cover an unknown receipt.
+5. Keep **client earned but unverified/pending** and **publisher compensation** separate; provider callback loss can exceed the bounded re-delivery window. Provide auditable, non-coercive manual investigation and one-fulfillment correction; no blanket unsigned credit.
+6. Isolate Firebase staging project, synthetic test UIDs, official **signed SSV provider test** through authorized publisher tooling, test ad units, monitoring and cost limits; **no real Flight/crew logs or production tokens**. Must test real Firestore SDK concurrency mode and validate deletion/retention with LogMate owner policy.
+
+**C04 test evidence required before changing checkpoint:** two+ independent process workers, controlled commit/ACK failure injection, same provider transaction cross-UID replay attempt, SSV/compensation race in both orders, forced retry/ABORTED/timeout, service restart, stale cached balance/PWA view and owner deletion while pending. Capture environment ID (redacted), code SHA, authenticated attempt+receipt+fulfillment document count, exact final usable balance, server timestamps, error codes and trace; run against both Emulator and **isolated real Firestore**. An Emulator-only PASS, synthetic-only PASS or absent operator environment is insufficient.
+
+### R5. Progress and cross-domain disposition
+
+| Checkpoint | Before this run | After | Why |
+| --- | --- | --- | --- |
+| C01 synthetic accounting | DONE | DONE | §§O/Q stand |
+| C02 local ECDSA | DONE | DONE | §P 22/22 test remains bounded to local key |
+| **C03 actual Google SSV** | OPEN | OPEN | No authorized AdMob publisher callback |
+| **C04 real Firestore concurrent atomic grant** | OPEN | OPEN | This run's **18/18 + 1296 are pure JS**, not database runtime |
+| C05 recovery/deletion operations | OPEN | OPEN | Only failure model; no staff/real workflow acceptance |
+| **Overall A–F 24 gates** | **7/24 (29.17%)** | **7/24 (29.17%)** | No unearned progress from more model cases |
+
+**RELATED DOMAIN CHECK:** LogMate `MASTER.md` and approved [Manual Delta Sync](https://github.com/yhappcom/logmate/blob/main/docs/specs/local-first-manual-delta-sync-contract.md) own the product data/owner-contract and actual backend; Design Studio owns truthful pending/earned/expired/disputed UX and Apple ad reporting; Web Manager owns the **ad-free** EFB iPad PWA Sync/Files/MDM transport test; Marketing owns official ad policy interpretation, reward fairness, test evidence and economic support burden. All product/Design/Web repos read-only. **Product Save hard block, ad serving, PWA release and direct-sponsor economics remain production HOLD.**

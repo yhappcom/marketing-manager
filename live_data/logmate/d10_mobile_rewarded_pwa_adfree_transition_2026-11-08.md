@@ -191,3 +191,78 @@ Primary SDK sources (rechecked 2026-11-08):
 | **P3** | Paid aviation digital media category exists; documented app publication and ad readiness gates | Actual LogMate audience/fill/eCPM, sponsor outreach, signed contract and net realized economics |
 
 **Decision remains:** P0–P3 **research/source-design progressed** but all operational launch/saving-restriction gates HOLD. Preserve the full old 2026-10-12 study and exact first D10 evidence; continue only on evidence that closes a genuine gate.
+
+
+---
+
+## K. 2026-11-08 policy cross-reading and direct server-grant transfer refinement
+
+**Decision delta (material):** Research J correctly distinguished callback and confirmed grant, but assumed native's own Manual Sync was necessarily required before PWA could obtain the rewarded right. A **server-authoritative SSV grant** changes the transfer dependency: PWA can receive already-verified rights from the reward backend on its **own confirmed Manual Sync**, without requiring an extra native Flight-ledger Sync. This is **architectural feasibility**, not implemented behavior or a change to the LogMate Manual Sync contract.
+
+### K1. P0 official text cross-reading (checked 2026-11-08) [SOURCE / CONFLICT / INTERPRETATION OPEN]
+
+| Policy layer | Exact official scope | Admission judgment |
+| --- | --- | --- |
+| AdMob [rewarded-unit policy](https://support.google.com/admob/answer/7313578) | Requires clear reward/action disclosure per instance, affirmative opt-in for standard rewarded, skip/dismiss, reward delivery, and no adverse impact on **normal usage** from declining; forbids nonreward "watch to support us" persuasion | Native opt-in separate Rewards page is format-compliant candidate; **what counts as normal usage at a depleted professional Flight-save quota is UNDETERMINED**. A generous free allowance is not an explicit policy waiver. |
+| Google Play [Better Ads FAQ](https://support.google.com/googleplay/android-developer/answer/12271244) | Explicit opt-in rewarded ads are excluded **from the unexpected full-screen interruption policy**, with examples of unlocking game features/content; all other Developer Program Policies still apply | There is **positive official precedent for an opt-in unlock**, so do NOT falsely state all rewarded feature gates are forbidden. Conversely this is not a blanket allowance for blocking Flight capture or AdMob's normal-usage language. |
+| Apple [App Review 3.2.2(x)](https://developer.apple.com/app-store/review/guidelines/) | Allows app-internal incentives for specific actions including watching an ad, while forbidding forced store-related actions to access functions | Positive indication that an ad-linked app reward is not inherently prohibited on iOS. No specific LogMate quota approved. |
+| Apple [App Review 3.1.4](https://developer.apple.com/app-store/review/guidelines/) | In the **Hardware-Specific Content** section, says users may **not be required to engage in advertising or marketing activities to unlock app functionality** | **Important new caveat:** this sentence is embedded in a hardware-content exception section; it is **not safe to generalize it as a blanket cross-app ban** without resolving scope against 3.2.2(x). Nonetheless any mandatory exhaustion gate warrants explicit Apple review notes and account-specific interpretation. |
+| Apple [App Review 2.5.18; 3.2.2(iii)](https://developer.apple.com/app-store/review/guidelines/) | Clear advertisement disclosure, easy close/skip, reporting of inappropriate ads; no artificially increasing impressions or an app primarily designed to display ads | Preserve Rewards-only placement, no automatic repeat / forced view pressure. |
+| AdMob [2023 policy update](https://support.google.com/admob/answer/9391084) | Indirect/nonmonetary, nontransferable within-publisher-platform rewards allowed; logged-in same-user redemption is an example | Same verified UID using additional credits on native and PWA is **plausibly nontransferable within one publisher platform**, NOT a confirmed provider ruling on cross-device reward portability. |
+
+**Operator-specific P0 escalation is now two distinct questions, not just one generic provider ticket:** (1) ask AdMob whether a professional-record **hard-depletion** state counts as interference with normal use, and whether offline/grace solves it; (2) separately ask Apple how 3.1.4 hardware-context advertising-unlock wording should be applied together with 3.2.2(x) for this specific native app. Do not assert formal written permission, submission or reviewer response. Google Play's opt-in Better Ads exemption **does not** resolve the AdMob question.
+
+### K2. P1 authoritative grant bypasses a redundant phone Flight Sync [SOURCE + ARCHITECTURAL INFERENCE]
+
+**Official technical bases (checked 2026-11-08):**
+- [Google Flutter SSV](https://developers.google.com/admob/flutter/ssv): signed server reward callback contains provider transaction ID; custom_data must be set **before showing**; delayed callbacks possible; verified-first acceptable for economically important rewards; if endpoint unreachable Google retries only up to five times at one-second intervals.
+- [Cloud Firestore transactions](https://firebase.google.com/docs/firestore/manage-data/transactions): atomic multi-document read+write transactions, retry on concurrent edits, **client transaction fails offline**; batched writes can be queued offline but are **not evidence that server authority was consulted or its balance admitted**.
+- [LogMate local-first Manual Delta Sync](https://github.com/yhappcom/logmate/blob/main/docs/specs/local-first-manual-delta-sync-contract.md): local writes are independent; authenticated *Manual Sync* is the only actual Delta Push/Pull/Apply; app-start read-only change check must not silently apply data or advance the cursor/lastSyncAt; production implementation still not accepted.
+- [LogMate MASTER](https://github.com/yhappcom/logmate/blob/main/MASTER.md): Firebase UID is product owner authority; ordinary-client Firestore canonical writes remain protected; no implicit unrestricted web sync.
+
+**Proposed minimum pipeline (not implementation):**
+
+1. Authenticated native obtains a **short-lived, server-issued, single-use attempt nonce** tied server-side to the current Firebase UID, grant offer/version and expected provider ad unit; only the opaque nonce appears in `custom_data`. Authenticated request is **before** the video. Never send raw UID, flight, crew, route, employer or tokens to Google custom_data.
+2. User opts in with accurate stated reward; native loads/shows RewardedAd, SDK callback displays "Awaiting verification" (not a global confirmed amount). Server independently receives SSV; verify exact signed byte sequence/public key ID, ad unit, reward amount/item, nonce owner and expiry; replay/double-receipt protection by immutable provider+transaction ID and nonce.
+3. **Atomic backend commit** creates a verified grant for that UID and marks the attempt consumed; ack provider only after durable commit. Need a recovery/help path for lost callbacks, because limited delivery retries cannot guarantee every client-earned action generates a verified server receipt. Provisional client-only event is **not** silently counted as global spendable.
+4. The **PWA's own authorized foreground Manual Sync**, when network/operator policy permits, fetches verified reward events/entitlement projection for its same UID; verifies and atomically applies appropriate local entitlement view. A separate **phone Flight Manual Sync is not required for grant publication**, because AdMob SSV already wrote the backend entitlement. However the phone's UI also needs a verified-grant refresh to show accurate balance; do not equate its ad callback with a sync receipt.
+5. The normal Flight Delta/Receipt/lastSyncAt remains governed by product-owned Sync rules. App startup's one read-only change check may *inform* the user that rights could be available, but must not silently apply/advance a reward entitlement if that would violate the Manual Sync contract.
+
+**Important correction to J3:** Its earlier `t2 phone Manual Sync acknowledgement` is **necessary only for Flight changes or for an alternative local-only reward publishing design**, not for the recommended signed server-first reward model. Treat J3's four-step timeline as a conceptual *alternative*, superseded by this K2 pipeline for the current D10 **engineering feasibility recommendation**. Do not erase historical evidence.
+
+### K3. P2 local admission limits: three different products cannot be promised at once
+
+**Invariants to protect:**
+- F1: A real Flight that passed local durable save is never erased, reverted or concealed to fix a quota-accounting discrepancy.
+- F2: PWA contains **zero advertising SDK, ad rendering, or ad-dependent code path** under current owner direction.
+- F3: All verified grants carry the correct Firebase UID and immutable transaction identity, no cross-owner grant inheritance.
+- F4: Offline native/PWA creates and verified remote grants have **different authorities**; local belief in a quota does not certify global uniqueness.
+- F5: If user refuses or cannot load ads, they must not suffer a fabricated successful sync, silent data loss or coercive repeat-ad prompts.
+- F6: No public claim of universal offline sync, unlimited records or policy-cleared hard block before admission evidence.
+
+**Three mutually tensioned requirements:** strict *global* nonnegative credits; any device can create new flights offline indefinitely; no explicit safety exception / unbilled grace. These cannot all hold under network partition and independent replicas. Firebase offline batches and local transactions do not fix the distributed budget problem.
+
+| Candidate admission | Strongest property | Principal cost / UX risk | Engineering status |
+| --- | --- | --- | --- |
+| Strict server adjudication for every NEW Flight | Exact global quota | Offline EFB creates fail → violates local-first professional core; **reject as default** |
+| Per-replica advance allocation / escrow | Bounded double-spend in previously funded allocations | Stranded credits on unavailable device; new PWA no native grants while offline; owner deletion/reinstall recovery complexity | **Not implemented; research candidate** |
+| Local durable record capture + deferred quota accounting with explicit safety grace | Data protection offline and no coerced ad at moment of Flight entry | Credit overdraft/debt can occur; scarcity/revenue weakened; need policy review | **Preferred safety candidate for P0/P2 prototype**, not approved |
+| Unmetered core recording; rewarded option only for nonessential additional value | Best resilience and policy headroom | Weaker reason to watch ads; changes proposed reward offer | Contingency if hard/deferred storage reward fails review |
+
+**First acceptance priority:** test **A and B offline with last remaining entitlement, independent distinct flight CREATE**, one later server-verified grant, and PWA Manual Sync conflict; ensure both original flights remain, verified-grant transactions count once, and any provisional/overdraft status is truthful. Add 1,000-record import, rollback, UID replacement and removed-app recovery. **No app code/device test has run.**
+
+### K4. Sponsor phase unchanged
+
+No new verifiable LogMate pilot traffic or sponsor contract exists. Direct aviation ads remain a later revenue experiment and do not authorize native/PWA advertising expansion now. Keep current P3 measurement and paid-pilot contract gate from J4; avoid duplicate market generalities.
+
+### K5. Net result and owners
+
+**P0 materially improved, not cleared:** Apple 3.1.4/3.2.2(x) context tension + Google Play opt-in unlock example and AdMob no-interference condition explicitly reconciled by scope. Written provider/app-review acceptance remains **OPEN**.
+
+**P1 architectural simplification, not runtime PASS:** server-signed grant can be published without an additional native Flight Sync, PWA pulls on its own Manual Sync. Reward backend, SSV exact-once and compensation path **NOT IMPLEMENTED / NOT TESTED**.
+
+**P2 formal admission contract, not device PASS:** Firestore offline transaction failure and two-replica credit partition formally prevent claiming strict global quota plus unconstrained offline capture; product must decide escrow vs safety-grace vs unrestricted core. No assumption of PWA connectivity or automatic pairing.
+
+**P3 unchanged HOLD:** market existence ≠ LogMate contract.
+
+**RELATED DOMAIN HANDOFF:** LogMate product/engineering owns MASTER reconciliation, rewards transaction model and offline safety acceptance; Design Studio owns accessible Rewards/warning/error copy and ad attribution; Web Manager owns WebKit/EFB/MDM transport, Files/restore, no PWA ads; Marketing owns platform-policy questions, valid-user metrics and sponsor economics. No LogMate/Design/Web files or ad publisher accounts were modified.

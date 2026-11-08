@@ -101,3 +101,93 @@ Read 2026-11-08: marketing AGENTS, STATUS, LEARNING_ROADMAP, COMPANY_MARKETING_C
 Prior Research 437's **old Sync ad recommendation is historical**; its source observations remain preserved. New D10 direction is **chat owner direction pending recorded product MASTER change**. This study is a materially different integrated decision record, not a claim of validated launch.
 
 **Next evidence target:** exact P0 provider interpretation for exhausted quota and safety-first save behavior **plus** product-owner-master reconciliation; then P1 test-ad app and P2 entitlement fault matrix.
+
+
+---
+
+## J. 2026-11-08 P0→P3 evidence-driven follow-up — failure proof, policy submission packet and rollout boundary
+
+**Trigger:** The owner asked to continue research according to the P0 policy → P1 reward issuance → P2 PWA → P3 sponsor priorities. This section **adds distinct technical and business boundary evidence**; it does not assert that official review, a SDK run, a device trial or advertiser negotiation occurred. Existing sections A–I remain intact.
+
+### J1. P0 policy matrix: precise classification, not presumed approval [SOURCE / SYNTHESIS / OPEN]
+
+**Revalidated primary sources (2026-11-08):**
+- Google rewarded ad-unit policy: https://support.google.com/admob/answer/7313578
+- Google Play Ads and voluntarily opt-in rewarded format: https://support.google.com/googleplay/android-developer/answer/9857753
+- Apple App Review Guidelines 3.2.2(x) allows incentives for specific app actions, 3.2.2(iii) rejects artificial impressions: https://developer.apple.com/app-store/review/guidelines/
+- Google's rewarded opt-in UI/playbook: https://admob.google.com/intl/ko/home/resources/rewarded-ads-playbook/
+
+| Proposed variant | Source-backed mechanics | Determination **for LogMate** |
+| --- | --- | --- |
+| Single distinct, unambiguous "Watch rewarded ad for +N saves" button, no autoplay, skip supported | Google requires opt-in, pre-ad reward disclosure and ability to skip; Apple's rule permits specified incentives | **FORMAT-LEVEL ADMISSIBLE FOR RESEARCH**, not approved app |
+| Fixed additional non-cash, nontransferable in-app save entitlement | Google policy permits such in-app rewards and requires promised award fulfillment | **REWARD CATEGORY PLAUSIBLE**; expiry, transfer and mapping to app behavior must be verified |
+| Large free baseline plus incremental rewarded grants | Reduces frequency of needing ads | **MARKETING/UX HYPOTHESIS**; quota size does **not** create exemption from normal-usage clause |
+| User at zero capacity, no ad fill/network/mobile phone: must watch ad or cannot retain a newly flown sector | Google says skipping/no opt-in must not impede or interfere with normal platform/app usage | **P0 UNSATISFIED / HIGH RISK**, NOT a documented explicit blanket prohibition of any metered feature; seek scenario-specific provider interpretation |
+| Core Flight create/edit/restore still operational, only optional nonessential additional convenience rewarded | Closest to opt-in/no-interference principle | **LOWER RISK FALLBACK**, user value and business conversion remain unproven |
+
+**Do not conflate** (1) Play's exemption for genuinely opt-in rewarded full-screen ads from certain unexpected-fullscreen restrictions with (2) AdMob's separate reward refusal clause, (3) Apple Store review of app behavior, and (4) data-durability obligations. They are **four independent gates**.
+
+**Exact provider escalation packet ready for an authorized operator (NOT submitted):**
+
+> LogMate is a professional pilot logbook with durable local recording on iOS/Android and an ad-free iPad PWA. Native users may affirmatively view an AdMob RewardedAd from a separate Rewards page to receive a fixed, nontransferable number of additional Flight record creation entitlements. All records can be viewed/edited/exported without ads. A generous baseline is granted. In an edge case where the baseline plus reward credit is exhausted and ads cannot load (offline/no-fill, or the only active device is the ad-free iPad PWA), we are evaluating: (A) hard block of new flight creation; (B) a durable local emergency/provisional capture with later reconciliation; (C) no blocking of core saves. Under your current rewarded-ads policy requiring that declining or skipping not interfere with normal app use, is **each** scenario acceptable? If not, which exact changes would make the offer compliant? Are there special constraints for a Rewards-only entry page and optional additional-flight-save rights? Please point to the applicable rule and whether a binding account review or separate app review is required.
+
+Record *dated provider response, account/app identity and exact proposed UI* before changing P0. No provider response, account status, Play/App Store submission or approval has been observed.
+
+### J2. P1 SSV reliability and implementation choices [SOURCE / ENGINEERING HYPOTHESIS / VALIDATION OPEN]
+
+Primary SDK sources (rechecked 2026-11-08):
+- https://developers.google.com/admob/flutter/rewarded
+- https://developers.google.com/admob/flutter/ssv
+- https://developers.google.com/admob/flutter/privacy
+- https://developers.google.com/admob/flutter/quick-start
+
+**New critical constraint from SSV official FAQ:** Google's callback endpoint expects HTTP 200 and retries a failed/unreachable response **up to five times at one-second intervals**. A prolonged verification service outage therefore **cannot be assumed to heal via arbitrary automatic retry**; it can create an acknowledged client reward with no server-confirmed entitlement. Do not silently award verified global credits based solely on the client callback. Do not force the user to watch a second ad to compensate for platform/server failure.
+
+**Exact-once handling is an *application* property, not an SDK guarantee.** Server signs SSV; backend must verify ECDSA against Google's public key (public keys rotated; source recommends cache under 24h), bind an opaque one-use server-issued attempt nonce to Firebase UID, check ad unit/reward item/amount/expected offer version, store provider+transaction ID uniquely, and make grant+state transition transactional and idempotent. Do not put raw Firebase UID, routes, crew, employer or logbook contents in ad custom_data or ad targeting.
+
+**Proposed reward handling variants (not implementation selection):**
+1. **Verified-first:** client shows "Pending verification"; only a signed accepted server receipt becomes globally spendable. Stronger accounting; degrades immediate rewarded UX during delay or backend outages.
+2. **Provisional-first:** client callback marks a provisional local, non-transferable claim immediately, while only verified transactions increase global spendable credits. Suitable for honest UX but requires expiry/manual recovery and must not misstate the provisional as validated usable global quota.
+3. **Immediate globally spendable client-only grant:** smooth experience but readily spoofed and likely unreconcilable across phone/PWA; **REJECT as default**.
+
+**Verification fault lab:** V01 same SSV delivered 2–6 times → exactly 1 grant; V02 SSV before SDK callback → correct state; V03 SDK callback but no server receipt after callback retries → pending and governed support/recovery, no fabricated verification; V04 valid callback with wrong ad-unit/offer/UID mapping → quarantine; V05 stale key cache/new key_id → refresh/secure retry, never disable signature verification; V06 phone app crash after ad completion, before local write → server-sourced state on reauth/sync; V07 deleting account/recreating different UID → do not rebound old grants or leak; V08 consent declined/invalid ads → no unintended ad requests; V09 identical transaction under two accounts → reject second grant; V10 unexpected amount/reward version → no silent pricing mutation.
+
+**SDK release constraint newly observed:** As read 2026-11-08, detailed Google Flutter quick-start prerequisites specify Flutter **3.38.1+**; its rendered page summary inconsistently says 3.27.0+. Treat the detailed prerequisite as more restrictive pending clarification; compare to actual LogMate Flutter binary/lockfile in a bounded future test. LogMate pubspec.yaml declares Dart SDK ^3.12.0, **not proof of a particular installed Flutter toolchain**. Full-screen ad cannot be closed programmatically after show; use SDK lifecycle and accessible close/dismiss behavior, never promise arbitrary video duration or instant developer-controlled exit.
+
+### J3. P2 finite quota and two offline replicas: an impossibility example [SYNTHESIS / FAILURE MODEL]
+
+**Minimal counterexample, no invented real incident:**
+- Same verified UID has **one** remaining unique-record-create entitlement and two devices, native phone A and installed EFB PWA B. They last synced earlier and each locally reads balance 1.
+- Airplane/offline separation: A creates Flight `A1`; B creates different Flight `B1` without network. Neither can coordinate with the other.
+- Both independently show balance 0 and locally save successfully. After Manual Sync, the global system has **two distinct legitimate records** for one nominal entitlement.
+- Therefore **strict global no-overdraft and guaranteed offline creation on both devices cannot both be promised** without pre-reserving credits for replicas, an online authority or an explicitly defined grace/overdraft policy.
+- Preallocating the sole credit to A makes B's offline create unavailable, conflicting with protected-workflow expectations.
+
+**Recommended acceptance contract for feasibility research:** Record integrity takes priority; keep both offline-created flights, allow a bounded clearly labeled provisional overrun / grace, and reconcile entitlement counts only after an authenticated, successfully completed Manual Sync. No flight deletion, hidden loss, failed export or retroactive silent overwrite to restore an advertisement quota. Determine how preallocated allowances, multiple concurrent devices, imports and same logical flight dedup affect accounting before product adoption. This is a *product and engineering design proposal*, not an approved policy, algorithm or runtime proof.
+
+**EFB exact scenario contract:** native RewardedAd completion at t0 ≠ signed verified grant at t1 ≠ authenticated phone manual Sync acknowledgement at t2 ≠ authenticated PWA manual Sync/apply receipt at t3. Claim "PWA now has +N" only after the relevant authority's acknowledged update is present **in that PWA**, not because phone had a callback. If PWA is offline/MDM WAN blocked or has no compatible native companion, preserve its usable local recording/backup/recovery path and do not promise direct P2P or automatic transport.
+
+**P2 acceptance matrix:** P01 phone grant verifies but PWA never syncs; P02 PWA sync while offline; P03 phone and PWA use last 1 quota concurrently; P04 delayed reward verification after one device already consumed record allowance; P05 1,000-flight historical import / dedup / rollback without ad loops; P06 restore old backup and reapply already-earned grants; P07 independent UID A→B deletion and web-worker old/new client concurrency; P08 old PWA local state with stale allowance but good flight data; P09 flight edit / retry / auto-backup do not double charge; P10 iPad Home Screen vs managed EFB Web Clip real-device storage/Files/MDM tests. **NOT EXECUTED.**
+
+### J4. P3 sponsor economics and partner-market boundary [SOURCE / BUSINESS SYNTHESIS]
+
+- AOPA advertises aviation professionals/pilots through digital/native campaigns and media reporting: https://www.aopa.org/advertising/digital ; current media-kit marketing is an **existence-of-channel example**, not a quote for LogMate pricing or an airline-pilot-cohort purchase guarantee.
+- AdMob app readiness requires an app in a supported public store plus publisher app-ads.txt verification and subsequent readiness review: https://support.google.com/admob/answer/14538460 and https://support.google.com/admob/answer/10564477 . Testing the SDK before release is allowed with **test ad units**, but no assumption that an unlisted beta has production demand. This matters to the first-revenue timeline.
+- Native SDK vs PWA split confirmed: https://developers.google.com/admob/flutter/quick-start . PWA remains ad-free under owner direction even if external web-ad products exist.
+
+**Direct-sponsor decision should use observed qualified reach, not a fixed guessed MAU threshold:**
+- Monthly unique verified opt-in Rewards visitors, opt-in view rate, rewarded impression completion, sponsor eligibility geography, fraud-safe and privacy-safe outcome report, 30/90-day core-task retention and complaint rates.
+- First sponsor offer: **one bounded aviation partner campaign** (category suitability, clear sponsorship marking, duration, creative signoff, exact view/impression/click definitions, anti-fraud/no-guaranteed-outcome, cancellation/refund, data sharing/consent, invoicing/settlement). No requirement to make a currently ad-free PWA carry sponsor inventory.
+- Direct sale go/no-go: **signed paid pilot contract + delivered eligible reach + verified settlement net of servicing and lost retention**, then optimize a hybrid direct-first/network-fallback supply if platform architecture supports it; no fictitious contract price or demand.
+- Fee/operating-cost break-even must count support, privacy/legal review, server SSV, creative review, reporting and renewal labor, not merely `impressions × CPM`.
+
+### J5. New evidence and closure ledger
+
+| Priority | Newly closed at source/reasoning scope | Still OPEN before product GO |
+| --- | --- | --- |
+| **P0** | Exact Google opt-in/skip/reward clauses, Apple incentive distinction and **scenario-specific provider submission text** ready | Actual provider reply/Store review, hard-stop compatibility and user-safe exhausted state |
+| **P1** | SSV unique ID/signature/retry limits; client-verified timing tradeoffs; detailed SDK prerequisites current web-doc snapshot | Native binary/plugin compatibility test, signed backend, outage recovery, trustworthy grant idempotency runtime |
+| **P2** | Concrete two-offline-replica quota counterexample and four-step mobile→PWA state authority | Approved overdraft/preallocation semantics, current Sync implementation and managed iPad acceptance |
+| **P3** | Paid aviation digital media category exists; documented app publication and ad readiness gates | Actual LogMate audience/fill/eCPM, sponsor outreach, signed contract and net realized economics |
+
+**Decision remains:** P0–P3 **research/source-design progressed** but all operational launch/saving-restriction gates HOLD. Preserve the full old 2026-10-12 study and exact first D10 evidence; continue only on evidence that closes a genuine gate.

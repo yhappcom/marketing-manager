@@ -4,11 +4,14 @@
 
 This index is a navigation and correction layer, **not a replacement for original evidence**. Original study files, source links, historical observations, failed tests and negative results remain in place. [Knowledge base](MARKETING_KNOWLEDGE_BASE.md) summarizes reusable methods; [decision register](PRODUCTION_DECISION_REGISTER.md) contains current gates; [STATUS](STATUS.md) stays short; the [unaltered pre-consolidation STATUS](history/STATUS_SNAPSHOT_THROUGH_2026-11-07_1029_KST.md) preserves chronology exactly.
 
-## Independent evidence files (20 verified paths)
+**Index note (2026-11-08):** The D10 addition was newly created and fetched on the research branch; the historical recursive-tree census remains **20 paths at exact commit c1898f1a**. The index now includes an additional **known path**; it is not a new post-change recursive tree census or renewed validation of the other 20 files.
+
+## Independent evidence files (20 path-census verified at 2026-11-08 pinned commit; 1 new D10 addition afterward)
 
 | Source file | Decision | Evidence class and bounded conclusion | Still not proven |
 | --- | --- | --- | --- |
 | [`live_data/logmate/ad_monetization_readonly_evidence_2026-10-12.md`](live_data/logmate/ad_monetization_readonly_evidence_2026-10-12.md) | D10 | **Product source + platform-policy snapshot:** Manual Sync ad is proposed/dismissible, not production deployed | Actual SDK/release/sync and protected-workflow validation |
+| [`live_data/logmate/d10_mobile_rewarded_pwa_adfree_transition_2026-11-08.md`](live_data/logmate/d10_mobile_rewarded_pwa_adfree_transition_2026-11-08.md) | D10 | **2026-11-08 owner-chat direction + policy/source-bounded synthesis:** opt-in native rewarded / ad-free PWA / sponsor transition; MASTER still requires reconciliation | Provider-specific exhausted-quota approval, reward ledger/SSV, native-PWA manual Sync, device/sponsor validation |
 | [`live_data/logmate/d8_prelaunch_pilot_claim_scope_2026-10-24.md`](live_data/logmate/d8_prelaunch_pilot_claim_scope_2026-10-24.md) | D8, D9 | **Product/Design/Web provenance, original-source and synthetic evidence log:** Pilot claims discovery-only; source admission and owner-lifecycle gaps remain | Exact original variants, year/UID/company, file-backed owner lifecycle |
 | [`live_data/minttap/community_permission_pilot_v1.md`](live_data/minttap/community_permission_pilot_v1.md) | D3 | **Dated Reddit indexed/public audit:** Historical no-link MintTap post observed; permission not granted | Current rules and exact activity approval |
 | [`live_data/minttap/d1_fx_daily_refresh_dependency_2026-10-22.md`](live_data/minttap/d1_fx_daily_refresh_dependency_2026-10-22.md) | D1 | **Release-pinned source + isolated mock/provider probes:** FX data freshness/normalization/job coupling gaps, not a live outage | Provider/output runtime coverage and fresh claims |

@@ -713,3 +713,51 @@ Proposed backend document authority (exact schema **OPEN**; Product/Engineering 
 | **Overall A–F 24 gates** | **7/24 (29.17%)** | **7/24 (29.17%)** | No unearned progress from more model cases |
 
 **RELATED DOMAIN CHECK:** LogMate `MASTER.md` and approved [Manual Delta Sync](https://github.com/yhappcom/logmate/blob/main/docs/specs/local-first-manual-delta-sync-contract.md) own the product data/owner-contract and actual backend; Design Studio owns truthful pending/earned/expired/disputed UX and Apple ad reporting; Web Manager owns the **ad-free** EFB iPad PWA Sync/Files/MDM transport test; Marketing owns official ad policy interpretation, reward fairness, test evidence and economic support burden. All product/Design/Web repos read-only. **Product Save hard block, ad serving, PWA release and direct-sponsor economics remain production HOLD.**
+
+
+---
+
+## S. 2026-11-09 P1 C04 safe real-SDK Emulator test instrument — execution boundary, evidence and next admission
+
+**Cycle objective:** Move beyond repeated ideal-atomicity models (§§Q/R) toward **an executable Firestore *server SDK* test package**, while keeping LogMate product and any real Firebase project read-only/untouched. **No Firestore Emulator or actual Firestore database was used in this cycle**. This is acceptance-instrument construction, not C04 PASS.
+
+### S1. Primary-source findings verified 2026-11-09
+
+1. **Isolated demo Firebase project is the default safe starting point.** Official [Firestore Emulator guide](https://firebase.google.com/docs/emulator-suite/connect_firestore) explicitly explains that a `demo-` project has **no real Firebase resources**; when using a *real* Firebase project with some services not emulated, requests may hit those actual resources. Do not test connected Firebase Auth, Function, Firestore or any additional service against an accidentally real project. This is an independent P1 data-custody and cost risk, not a mere naming preference.
+2. The [Firebase Emulator Suite](https://firebase.google.com/docs/emulator-suite/install_and_configure) supports `firebase emulators:exec` to start local services for a command then automatically shut them down. The [Firestore server SDK documentation](https://firebase.google.com/docs/firestore/quickstart-server) and [emulator connection guide](https://firebase.google.com/docs/emulator-suite/connect_firestore) establish `FIRESTORE_EMULATOR_HOST` (without URL scheme) for privileged SDK routing. A *server SDK bypasses Firestore Security Rules*: a deny-all rules file is **not** proof that privileged backend calls are user-authorized. Authenticating the upstream HTTP endpoint and binding a verified UID remains separate C04/C05 work.
+3. [Google Firestore contention](https://firebase.google.com/docs/firestore/transaction-data-contention) and [transaction specification](https://firebase.google.com/docs/firestore/manage-data/transactions) require reading all transaction documents before writes, permit transactional callback retries, and specify atomic all-or-none commit. Research code therefore cannot make HTTP calls, pay via another API, or send callback success inside the retryable transaction function.
+4. The [Firestore Emulator limitations](https://firebase.google.com/docs/emulator-suite/connect_firestore) mean an Emulator run cannot alone prove production locking/contention, indexes or limits. **C04 requires separate isolated real-Firestore test evidence after an explicitly authorized test environment and cost controls**.
+5. Direct dependency versions chosen from the published [Firestore Node SDK](https://www.npmjs.com/package/@google-cloud/firestore) and [Firebase CLI](https://www.npmjs.com/package/firebase-tools) listings checked 2026-11-09: `@google-cloud/firestore@9.4.0`, `firebase-tools@15.35.0` for reproducible direct version intent. **No package install or dependency lockfile generated**; no runtime compatibility claim follows solely from version selection.
+
+### S2. Executable package now in Marketing Manager (research-only)
+
+[Directory README](../../research/experiments/d10_c04_firestore/README.md) · [server-SDK test source](../../research/experiments/d10_c04_firestore/c04_emulator.test.js) · [package specification](../../research/experiments/d10_c04_firestore/package.json) · [local-only emulator config](../../research/experiments/d10_c04_firestore/firebase.json) · [deny-all *client* Rules](../../research/experiments/d10_c04_firestore/firestore.rules).
+
+**Safety boundary in test code:** before importing `@google-cloud/firestore` or constructing a client, reject unless `GCLOUD_PROJECT` equals exactly `demo-logmate-c04` and `FIRESTORE_EMULATOR_HOST` is local `localhost`, `127.0.0.1` or `[::1]` port `8080`. No production credentials, user logs, real aviation records or provider transactions. Only short synthetic UID-like labels and UUID-namespaced research test data are written **if and when** the Emulator is subsequently run.
+
+**Six server-SDK scenarios READY, NOT RUN:**
+- Three independent Firestore **client objects in one Node process** concurrently attempt same-`attemptId` verified-*fixture* SSV + publisher compensation + duplicate SSV; expect one fulfillment and +4 once, plus both distinct receipts.
+- Compensation-first followed by Google-verification-*flag* receipt; two audit receipts, one reward.
+- Successful transaction followed by discarded handler response, then duplicate request; one receipt, one reward. This **simulates** post-commit ACK loss in the client flow but does **not** drop a real HTTP packet.
+- Forced exception prior to atomic commit: no partial receipt/balance; later authorized retry commits once.
+- Same purported provider transaction across two distinct synthetic UIDs: globally keyed receipt within the test-case scope prevents owner hijack, no second payout.
+- Fake unverified provider flag and owner `active:false`: no receipt or reward; **this is not a test of genuine Google ECDSA or LogMate's real deletion saga**.
+
+**Actual local validation during this research cycle:** the committed JavaScript source was **syntax parsed** using a V8 `Function` constructor. In a V8 mock-Node harness, `--guard-probe` correctly terminated without opening Firestore, empty environment raised `SAFETY_STOP`, and remote `FIRESTORE_EMULATOR_HOST=example.com:8080` raised `SAFETY_STOP`. **These three safety cases are limited to mocked Node/process/require; not the SDK or real Emulator.** The research runtime had Node 22 and Java 21 available, but **neither `firebase-tools` nor `@google-cloud/firestore` installed**, so no real SDK fixture was run. Do not label the six test cases PASS.
+
+### S3. Important new rejection conditions for C04
+
+- **Environment guard FAIL** ⇒ no database access, no fallback to a connected real project, no silent use of a user's Firebase credentials. Never weaken the guard to "try staging" without distinct owner/operator authorization.
+- **Emulator test PASS** ⇒ only `EMULATOR PASS`, not `REAL FIRESTORE PASS` and not `GOOGLE-SIGNED SSV PASS`. Three SDK client instances in one process do not prove separate OS worker crashes; downstream real Firestore test must run **two independent workers** and a genuine signed callback test in a separate C03 stream.
+- **Synthetic `signatureVerified:true`** is an intentionally injected fixture flag and must **never** cross a production HTTP trust boundary. Real backend must verify Google's exact signed original bytes, current keys, short-lived UID-bound nonce, offer mapping, and replay/owner epoch before the Firestore transaction.
+- **Deny-all Firestore Rules** are not a server IAM/endpoint authorization test. Server SDK uses privileged IAM. Threat model must include fake admin-compensation requests, service account misuse, default credential leaks and account deletion races.
+- **Recorded receipt and fulfillment**, plus derived or materialized balance, must be checked atomically. Trial partial-write hazards from §R remain a STOP; callback HTTP 200 must be sent only after durable commit/readback or recognized exact replay.
+- **Owner data deletion** is a lifecycle, not equivalent to toggling a test account's `active` Boolean. Test ledger erasure, surviving minimal lawful audit, delayed provider callback behavior and no cross-UID resurrection separately.
+
+### S4. Formal progress and next real gates
+
+**24-checkpoint scoreboard unchanged:** A 2/4, B 1/4, C 2/5, D 1/5, E 1/3, F 0/3 = **7/24 (29.17% unweighted evidence-gate coverage)**. The new C04 test package is a concrete execution instrument but cannot close **C04 actual Firestore** without Emulator test run **and** authorized real Firestore staging.
+
+**Immediate verifiable next step:** From the isolated research test directory with appropriate Node/Java/npm and enabled local dependencies, execute the exact six cases under a `demo-` Emulator with captured stdout, SDK and CLI versions, receipt/fulfillment counts and redacted logs; then seek a **separate** real Firestore *staging-only* two-worker stress acceptance and Google-origin signed C03 callback in authorized environments. If infrastructure/operator evidence remains unavailable, shift research emphasis toward B02 written provider case response, A03 exact import/deletion billing unit, and P3 hypothetical economics sensitivity, rather than repeatedly claiming further synthetic model PASS.
+
+**Cross-domain handoff:** LogMate/Engineering must own any real backend schema, product owner epoch, billing semantics, synthetic→staging validation and database IAM. Web Manager owns actual offline iPad PWA capability. Design Studio owns non-coercive Rewards/grant-pending/failure/reporting UX. Marketing maintains decision register, source scope and progress. **No LogMate/Design/Web write, Firebase project creation, ad unit activation, true provider verification, or advertising serving authorized.**

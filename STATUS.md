@@ -5,6 +5,8 @@
 
 > **Read in this order:** [AGENTS.md](AGENTS.md) → **this STATUS** → [PRODUCTION_DECISION_REGISTER.md](PRODUCTION_DECISION_REGISTER.md) → [RESEARCH_EVIDENCE_INDEX.md](RESEARCH_EVIDENCE_INDEX.md) and relevant original studies → [MARKETING_KNOWLEDGE_BASE.md](MARKETING_KNOWLEDGE_BASE.md) for reusable operating principles. Full pre-consolidation STATUS chronology is preserved **byte-for-byte** in [history/STATUS_SNAPSHOT_THROUGH_2026-11-07_1029_KST.md](history/STATUS_SNAPSHOT_THROUGH_2026-11-07_1029_KST.md); earlier [2026-10-30 snapshot](history/STATUS_SNAPSHOT_THROUGH_2026-10-30_0232_KST.md) is unchanged. This dashboard does not replace original evidence.
 
+**2026-11-09 complete research-path reconciliation:** Non-truncated recursive `main` Git-tree at `7acfa089` contains **21 independent `live_data/**/*.md` files** (README excluded), and all 21 exact paths are indexed in `RESEARCH_EVIDENCE_INDEX.md`; **0 unindexed paths**. This supersedes earlier statements that the latest full-tree census was pending. Path coverage does not validate each study's current content, operator evidence or production approval. D1 HOLD / D2 PRESSURE HOLD / D3 NATIVE-ONLY HOLD / D10 production HOLD remain unchanged. Next accessible evidence remains submitted D1 Console selection and served AAB; otherwise D2 operator traces, then D3 current rules/permission.
+
 ## Highest-priority decisions (current states)
 
 | Decision | State | Latest valid evidence and present blocker | Next production target |

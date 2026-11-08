@@ -761,3 +761,84 @@ Proposed backend document authority (exact schema **OPEN**; Product/Engineering 
 **Immediate verifiable next step:** From the isolated research test directory with appropriate Node/Java/npm and enabled local dependencies, execute the exact six cases under a `demo-` Emulator with captured stdout, SDK and CLI versions, receipt/fulfillment counts and redacted logs; then seek a **separate** real Firestore *staging-only* two-worker stress acceptance and Google-origin signed C03 callback in authorized environments. If infrastructure/operator evidence remains unavailable, shift research emphasis toward B02 written provider case response, A03 exact import/deletion billing unit, and P3 hypothetical economics sensitivity, rather than repeatedly claiming further synthetic model PASS.
 
 **Cross-domain handoff:** LogMate/Engineering must own any real backend schema, product owner epoch, billing semantics, synthetic→staging validation and database IAM. Web Manager owns actual offline iPad PWA capability. Design Studio owns non-coercive Rewards/grant-pending/failure/reporting UX. Marketing maintains decision register, source scope and progress. **No LogMate/Design/Web write, Firebase project creation, ad unit activation, true provider verification, or advertising serving authorized.**
+
+
+---
+
+## T. 2026-11-09 **Decision-first recovery** — hard-save gate NO-GO recommendation, revenue support economics, provider adjudication packet
+
+**Why this cycle changed:** The owner correctly challenged the preceding series of synthetic ledger, signing, contention, fault, and unrun Firestore test-harness cycles: model coverage increased while **no external production approval, real end-to-end runtime acceptance, or business decision gate moved**. This is a **research-process correction and a material marketing judgment**, not another technical test. Existing §Q framework stands; **7/24 checkpoint coverage remains unchanged**. **No new model tests or executable source files added** this cycle.
+
+### T1. Read-source boundary and dominant business decision [SOURCE / JUDGMENT]
+
+Rechecked 2026-11-09:
+- **[AdMob policies for rewarded units](https://support.google.com/admob/answer/7313578)** allow eligible nonmonetary/nontransferable in-platform rewards, but each instance needs clear offer terms and affirmative opt-in; skipping/refusing **must not interfere with normal app use** and the publisher is fully responsible for delivery. There is **no demonstrated AdMob approval** specifically for conditional Flight-save capacity.
+- **[Google Play Better Ads FAQ](https://support.google.com/googleplay/android-developer/answer/12271244)** limits the opted-in format exemption to *unexpected/interfering full-screen advertising* rules and says other Developer Program Policies still apply. It does not override AdMob's independent normal-use language.
+- **[Apple App Review](https://developer.apple.com/app-store/review/guidelines/)** 3.2.2(x) explicitly permits some in-app ad-watching incentives; Apple 3.1.4 contains the "cannot require advertising to unlock functionality" wording in the context of *hardware-specific content*. Neither alone yields a blanket Apple ban, and neither preapproves this feature. 2.5.18 still requires in-app ad targeting information and inappropriate-ad reporting.
+- **[AdMob Publisher Policies](https://support.google.com/admob/answer/10502938)** independently require publisher content value; an empty ad-button-only screen is not automatically safe. Real useful allowance/recovery screen is an unreviewed candidate.
+- **[LogMate MASTER](https://github.com/yhappcom/logmate/blob/main/MASTER.md), [approved Manual Delta Sync](https://github.com/yhappcom/logmate/blob/main/docs/specs/local-first-manual-delta-sync-contract.md), [Import contract](https://github.com/yhappcom/logmate/blob/main/docs/specs/import-contract.md), read-only main**: local-first Flight save and owner-controlled, **explicit** Sync, separate Import/previous totals, recoverable revision/record, no approved active reward quota. A purely server-admitted creation or a lost-record/rejected offline capture would be a new product-policy choice, not an automatic monetization enhancement. Marketing owner intent (rewarded native-only, ad-free PWA, direct sponsors later) **has not replaced product MASTER**.
+
+**Engineering-independent structural counterexample (not a policy verdict):**
+1. Phone native **online**, exhausted allowance, user declines a rewarded ad → if Flight Save is blocked, the user has no accepted alternative.
+2. Phone native **offline or no ad fill**, exhausted allowance → an ad cannot be loaded; if Flight Save is blocked, a legitimate user cannot record a new flight.
+3. Managed tablet **PWA only**, exhausted allowance, native phone unavailable → PWA intentionally contains **no ad SDK**, so it has **no on-device reward source**; server Manual Sync only retrieves rights earned elsewhere, not a general solution.
+4. Managed tablet **offline**, exhausted allowance → no ad, no online reward transfer and no allowed background sync. Independent local data custody still needs to function.
+5. Two offline replicas spend their last known credit independently → checking a cached number on each device cannot guarantee strict global metering; neither legitimate Flight can be silently deleted on reconciliation.
+
+A "generous initial N" only **delays** these cases; it does not resolve them. Better SSV/Firebase implementation also cannot eliminate the no-phone/no-network/no-fill cases.
+
+**Marketing decision-quality recommendation effective immediately (advisory, NOT a product change):**
+- **NO-GO for implementing or shipping a hard Flight-record Save block as the only next action.** Do not ask Engineering to enforce it while AdMob's *normal-use interpretation* and LogMate's core offline capture requirement remain unsettled. This is a risk-based **hold recommendation**, **not** a claim that Google/Apple already rejected the app.
+- **Preserve core local Flight creation/correction, Import, restore and backup regardless of ads** as the lower-risk V1 research baseline. Keep PWA entirely ad-free. Do not quietly reinterpret "extra Flight saves" as if it were a working benefit when there is no approved metering.
+- Treat the rewarded-ad concept as **conditionally viable** only if the owner establishes a **truthful, optional nonessential benefit** that does not constrain actual Flight preservation; alternatively obtain a documented case-specific policy interpretation and a genuinely equivalent no-ad safe capture route. If no meaningful optional reward exists, **defer rewarded units**, rather than ship a useless or coercive action. Non-interruptive native sponsorship / direct aviation partners remains a *later, audience-dependent* possibility, not a substitute revenue claim.
+- **Stop allocating further research cycles to similar synthetic SSV/ledger variants** unless a real provider, operator or device test exposes a new falsifiable implementation defect. Preserve previous artifacts as bounded technical readiness, not the leading product decision.
+
+### T2. Economic reality check — quantified **hypotheses**, not LogMate revenue [SYNTHESIS]
+
+Vendor definitions: [AdMob eCPM](https://support.google.com/admob/answer/15337570) is estimated earnings per **1,000 actual ad impressions**, not per request, completed reward or MAU; [match/show rates](https://support.google.com/admob/answer/10979428) distinguish ad return from actual display; [estimated vs finalized](https://support.google.com/admob/answer/6147072) can be revised for invalid impressions/clicks. Formula for an **explicitly hypothetical monthly cohort of 1,000 eligible native MAU**:
+
+`requests = native_MAU × opt_in_fraction × ad_requests_per_participant`
+`impressions = requests × match_fraction × show_fraction`
+`illustrative_gross_USD = impressions / 1000 × hypothetical_eCPM_USD`
+`illustrative_after_support_USD = illustrative_gross_USD - support_cases × hypothetical_cost_per_case`
+
+| Hypothetical scenario (not observed) | Opt-in | Requests / participant / month | Match × show | eCPM (invented test assumption) | Estimated impressions | Gross / 1,000 native MAU | Support example | Gross less **only** support |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Low | 5% | 2 | 50% × 80% | **$5** | 40 | **$0.20** | 0 cases × $5 | **$0.20** |
+| Middle | 20% | 3 | 70% × 80% | **$10** | 336 | **$3.36** | 1 case × $5 | **−$1.64** |
+| High-for-sensitivity | 50% | 6 | 90% × 100% | **$20** | 2,700 | **$54.00** | 3 cases × $5 | **$39.00** |
+
+**Every rate, price, count and support assumption above is a deliberately hypothetical scenario, NOT a reported AdMob rate, real LogMate volume, forecast, commitment or benchmark.** The results exclude backend/SSV processing, app engineering, account/setup/tax, privacy/compliance, fraud clawbacks, audience acquisition, retention loss and payouts; consequently even the high case is **not net profit**. Illustrative sensitivity: at an **assumed** $10 eCPM, one **assumed** $5 operator intervention requires 500 *additional valid impressions* just to cover that intervention before other costs. A wide revenue range, plus publisher reward-delivery duties, makes promised ad-only economics **unproven** without actual qualified pilot audience and verified finalized receipts.
+
+**Interpretation:** a large starting allowance lowers forced friction but also reduces exposure opportunities; trying to force more completions at exhaustion recreates the P0 policy and professional-data-custody risk. This is a **structural product/economic tradeoff**, not something solved by optimizing the SSV verifier. Do not infer that direct sponsorship yields revenue either: no qualified unique pilot audience, advertiser demand, written campaign or settlement has been observed.
+
+### T3. Explicit choices and delivery paths — **product decision still OPEN**
+
+| Variant | Core Flight preservation at zero credits/no network | Material P0 ambiguity | Real value of rewarded action | V1 research status |
+| --- | --- | --- | --- | --- |
+| **H. Hard stop**: no new Flight without earned capacity | **Fails** for PWA-only/offline/no-fill/decline | Highest | Direct, coercion risk | **RECOMMEND NO-GO now** |
+| **G. Bounded provisional grace**: always save locally, reconcile debt later | Local Flight preserved, but finite grace may ultimately encounter stop again; unknown negative-balance and renewability policy | Still needs review | Depends on whether usable capacity can actually be exhausted | **UNRESOLVED / no production GO** |
+| **U. Unmetered core Flight with genuinely optional extra** | **Passes design intent**, subject to real product test | Lower for ad-refusal normal-use; independent Ads inventory/UX/Store review still required | Unknown until tested with real users | **PREFERRED V1 research fallback** |
+| **N. No rewarded ads until qualified audience/sponsor evidence** | No quota at all; core preserved | Avoids rewarded-specific gate | None initially | **SAFE DEFER / economically conservative** |
+
+**False alternatives:** renaming a hard restriction to "optional", hiding exhausted quota until user presses Save, requiring a second personal phone on PWA, or counting provisional failed uploads as successful do **not** close these problems. A grace route must never delete or hide canonical Flights. A theoretical unlimited grace would be equivalent to unmetered core and needs honest offer wording.
+
+### T4. Operator-ready **two-question** AdMob policy review, **NOT SENT**
+
+[Official AdMob support route](https://support.google.com/admob/answer/9948073) provides *account-dependent* contact options through "Contact us"; do not imply a binding preapproval or that the operator account is connected. Before submitting, supply actual Rewards/Flight Save/no-fill/PWA screenshots or a precise proposed workflow, ad unit format, countries, initial allowance **when owner-approved**, skip/exit path and offline rules; preserve dated provider reply and specific applicable version.
+
+**Question 1 — normal-use boundary, precise:** “We are developing an offline-first airline-pilot flight logbook. The native Android/iOS app may offer a voluntarily watched Google rewarded ad granting additional **new Flight-entry capacity** after a generous free initial allowance. The iPad PWA has **no ads** and may lack access to the native phone. At exhausted capacity, if the pilot declines the ad, no ad fills, or the device is offline, does *blocking capture of another legitimate Flight record* violate AdMob's rule that declining/skipping may not interfere with normal usage? Would a guaranteed durable **offline Flight save with no ad requirement** resolve this concern, or would this specific proposed incentive still be unacceptable?” Ask for **both variant outcomes**, not a generic statement that rewarded ads exist.
+
+**Question 2 — inventory-value boundary, precise:** “For this SDK full-screen rewarded ad, the preceding native Rewards management screen independently displays current allowance, verified/pending grants, receipt support, opt-out, explanation and settings. Is that actual allowance/status screen an acceptable association under the no/low publisher-content rule, assuming it has genuine user value, or is a dedicated management surface itself insufficient?” Request source section and case applicability.
+
+**Apple independent review:** present iOS screenshot + feature pathway to App Review under guidelines 3.2.2(x), 3.1.4's hardware-specific scope and 2.5.18 in-app targeting info/report. Do not describe generic Apple text as preapproval.
+
+**No operator was contacted; no support ticket or review response exists.** Until response and exact owner policy arrive, P0 is **OPEN**.
+
+### T5. Research quality control and next evidence to count
+
+**Discontinue model-count reporting as the primary outcome.** Every subsequent LogMate cycle must lead with: `Decision changed? / evidence from independent provider or user or runtime? / policy ruling obtained? / measured real audience or finalized revenue? / source/production contradiction? / concrete next owner action?`. If all are negative, record **BLOCKED / NO NEW EVIDENCE** and avoid another synthetic test or repetitive GitHub document addition. The existing Marketing Learning Cycle automation still prioritizes other MintTap D1/D2 decisions; it is **not a LogMate-exclusive hourly research execution plan**, and its prompt must not be silently rewritten.
+
+**Next shortest closure path:** owner decides whether core Flight storage can ever be nonrecoverably blocked (marketing recommends **NO**), selects the actual optional reward (or defers rewards), and supplies real account/partner contacts if external policy adjudication is desired. Marketing can prepare grounded pilot demand measurement but cannot declare an opt-in rate without users. Only after that decision should Engineering invest in C03 real AdMob signed receipt and C04 actual Firebase, and Design Studio/Web Manager act on approved product-specific UX/device acceptance.
+
+**Score remains A 2/4, B 1/4, C 2/5, D 1/5, E 1/3, F 0/3 = 7/24 (~29%)**. This fraction measures mixed-scope **research checkpoint evidence**, not real monetization launch readiness. The number of currently passed **external operator/provider, real Firestore and physical EFB release gates remains zero**. Product MASTER and all other repos untouched. **Production hard-save gate and ad serving remain HOLD.**

@@ -266,3 +266,78 @@ No new verifiable LogMate pilot traffic or sponsor contract exists. Direct aviat
 **P3 unchanged HOLD:** market existence ≠ LogMate contract.
 
 **RELATED DOMAIN HANDOFF:** LogMate product/engineering owns MASTER reconciliation, rewards transaction model and offline safety acceptance; Design Studio owns accessible Rewards/warning/error copy and ad attribution; Web Manager owns WebKit/EFB/MDM transport, Files/restore, no PWA ads; Marketing owns platform-policy questions, valid-user metrics and sponsor economics. No LogMate/Design/Web files or ad publisher accounts were modified.
+
+
+---
+
+## L. 2026-11-08 P0 inventory eligibility / Apple ad reporting / P1 SSV fail-safe acceptance
+
+**Decision delta:** Prior D10 assessed rewarded-format consent and normal-usage refusal. The latest source cross-check establishes an **independent P0 risk for the standalone Rewards page as an advertising inventory surface**, an explicit **Apple in-app ad-reporting obligation**, an official **pre-review consultation route that cannot preapprove**, and byte-accurate/idempotent **P1 verification oracles**. These are material admission criteria, not a new advertising placement approval. **No vendor/operator action, trial, design or runtime acceptance performed.**
+
+### L1. P0 is a four-gate matrix, not one rewarded-ad policy [SOURCE / INTERPRETATION OPEN]
+
+| Separate gate | Primary source (checked 2026-11-08) | Operational implication / conclusion |
+| --- | --- | --- |
+| **R: Rewarded-unit implementation** | [AdMob reward policies](https://support.google.com/admob/answer/7313578) | Opt-in, upfront clearly described reward, skip, delivery of promised reward, *declining must not impair normal app usage*, no generic `watch to support our business` pressure. Stated save-grant reward is **plausible**, depleted-Flight-save interaction **OPEN**. |
+| **I: Ad inventory value** | [Google-served ads on screens without publisher-content](https://support.google.com/publisherpolicies/answer/11112688) | Google disallows ads on no/low publisher-content screens, under-construction or pure alert/navigation/behavioral surfaces; true user value should be focal. A separate *blank video-button screen* can trigger inventory risk **even if reward mechanics satisfy R**. No specific exception for a standalone rewarded-only page was established in the cited text; applicability to the exact LogMate rewarded overlay needs publisher determination. Adding token filler content is not a safe workaround. |
+| **S: App Store ad experience** | [Apple Review 2.5.18](https://developer.apple.com/app-store/review/guidelines/) | Ad indication, visible close/skip where relevant, age-appropriateness, ability for users to view ad-targeting information, and **in-app capability to report inappropriate or age-inappropriate ads**. This report-ads obligation was absent from the current D10 proposed Rewards contract. Requires product/design/provider support/complaint handling, not simply displaying an ad SDK. |
+| **A: App-specific Store approval** | [Apple App Review 3.2.2(x)/3.1.4](https://developer.apple.com/app-store/review/guidelines/), [Apple App Review appointment](https://developer.apple.com/kr/help/app-review/before-submitting-for-review/app-review-appointment), [complete review information](https://developer.apple.com/kr/help/app-review/before-submitting-for-review/complete-review/) | An App Review one-on-one appointment can clarify rules before submitting, **but cannot preapprove an app**. Real review needs accurate business model, test devices, fully functional demo account and exact exhausted-capacity scenario in review notes. Apple 3.1.4 is hardware-specific context; do not turn it into unsupported blanket ban. |
+
+**Inventory-focused design requirement (Design Studio owner, Marketing brief only):** A Rewards/Allowance screen should independently serve the real user task of understanding allowance rights, verified grants, pending rewards, exact sync freshness, consumption rules, failed reward help, and an ad-reporting route. Ad request is only a clearly marked, optional action within that context; do not auto-request/show solely because user navigated to a low-value empty page. **Real value makes the design more defensible, not automatically approved under the Google rule**. Do not fill the page with artificial text/articles for ad approval; product owns meaningful content.
+
+**Exact provider questions (not contacted):**
+- AdMob: Does the **standalone Rewards screen** with real allowance balance, grant history, pending-verification state, optional rewarded button and no other ad placements satisfy publisher-content/inventory-value policy for rewarded formats? Does Google's publisher-content screen rule apply to the SDK full-screen overlay or underlying Rewards surface? A blank ad-button-only alternative is rejected pending written provider guidance.
+- AdMob: Can a pilot logbook **require** another reward to save a new Flight once a generous free allowance expires, including (a) online + ad available, (b) no-fill/offline, and (c) iPad PWA with **no on-device ads**? Does durable emergency capture/grace change the normal-usage interpretation?
+- Apple: How would App Review 3.2.2(x) and the hardware-specific 3.1.4 wording apply to that exact scenario? What in-app ad reporting and advertiser targeting disclosure does 2.5.18 require for an SDK-controlled rewarded overlay?
+
+**Contact route source:** [AdMob publisher support options](https://support.google.com/admob/answer/9948073) describes `Contact us` through help center, with account-eligible options; **availability to current owner/account not checked**. Apple pre-review appointment is informational, not binding; actual store acceptance comes only with reviewed binary. No support message or submission sent.
+
+**P0 user-state/screen evidence packet for any provider consultation:** screenshots or prototype of (1) new account generous initial balance, (2) positive balance/no ads, (3) Rewards page with grant disclosure and opt-in/skip, (4) balance zero/ad available, (5) zero/no-fill/consent denied, (6) offline native, (7) PWA-only iPad with zero or stale quota, (8) urgent offline flight entry, (9) pending/failed SSV award, (10) Report Ad and support. Clearly mark *concept/mock vs released build* and never supply real pilots' logs. Define initial allowance as `N` until owner approves numeric level.
+
+### L2. P1 signed reward verification: identify the **bytes** and business offer separately [SOURCE / SYNTHESIS / VALIDATION OPEN]
+
+Rechecked [official Flutter SSV guide](https://developers.google.com/admob/flutter/ssv):
+
+- The SSV response includes `ad_unit`, `reward_amount`, `reward_item`, `transaction_id`, `timestamp`, `key_id`, `signature` and optional `custom_data`/`user_id`. **The provider reward amount/item are defined in the ad-unit settings**, not automatically derived from the text in LogMate's button.
+- Verify the original query data **without modifying/reordering/re-encoding** the signed parameters. The guide says last parameters `signature` and `key_id`, and demonstrates ECDSA public key verification. Percent-escaped `custom_data` must be processed carefully; decode only *after* verifying original signed bytes when mapping the nonce.
+- Public keys rotate; cache no longer than 24 hours. Invalid/unknown `key_id` or signature must **not** be accepted as a grant. A signed Google callback proves the provider event, **not** the caller's Firebase UID unless the one-time nonce was already authenticated and bound in a trusted server ledger.
+- Google's endpoint expects `HTTP 200 OK`; unsuccessful deliveries are retried **up to five times at one-second intervals**, not indefinitely. Never send 200 before durable idempotent commitment of the reward event, yet acknowledge that prolonged downtime can still lose the notification.
+- Google prefers prompt client-side reward with later SSV validation for UX in ordinary cases, but specifically permits waiting for verified SSV when reward validity is critical and delay is acceptable. **LogMate's cross-device spendable grant should be verified-first** as a security research preference, not a statement that immediate client grant is forbidden. The user needs a truthful pending state and fair failure-recovery route.
+
+**Provider-reward-to-product-offer authority:** Create immutable server-side offer records `offerId / offerVersion / adUnitId / configuredRewardItem / configuredRewardAmount / flightSaveGrantN / effectiveFrom` and bind signed attempt nonce before showing. Before crediting, compare SSV's configured reward fields with the offer version associated with that attempt. A creative that promises `+N saves` while the AdMob ad unit is configured with a mismatched reward type or amount needs a deliberate mapping and consistent user disclosure, **not** blind trust in whichever integer appears in the SSV. Do not retroactively alter granted or already-spent rights when future offers change.
+
+**Proposed minimal state machine (not implemented):**
+`READY` → [explicit opt-in; server attempt created] `OFFER_RESERVED` → [ad shown] `AD_IN_PROGRESS` → [client earned callback] `USER_REWARD_PENDING` → [SSV signature + nonce + offer + idempotent server transaction PASS] `VERIFIED_GRANTED` → [same-UID PWA foreground Manual Sync] `PWA_APPLIED`.
+
+Branch terminals: `CANCELLED`, `NO_FILL`, `INVALID_SIGNATURE` (quarantine), `SSV_MISSING` (documented dispute/recovery), `UID_DELETED`, `REPLAY` (no additional credit). Arrival order may be SSV-before-client, and local app crash/reinstall may erase client callback history: **derive authoritative grant from durable backend**, not client callback ordering.
+
+**Suggested recovery rather than unjustified payout:** On verified grant lost from app UI → refresh same-UID server entitlement. On client-earned event without verified SSV → record limited audit evidence/attempt ID, expose `Reward pending`, offer noncoercive support/reconciliation; authorized operator may issue a separately identified goodwill **compensation grant** after investigation with audit attribution, not forge a Google-signed grant or promise automatic approval. If no receipt and no independent proof, loss is unresolved and an operational/business risk. Never demand another ad merely to repair a failed prior reward.
+
+### L3. Executable P0–P2 acceptance **spec**, defined not run
+
+| ID | Setup / fault injection | Expected measurable oracle | Owner |
+| --- | --- | --- | --- |
+| R01 | Incomplete Rewards screen and only ad button | Treat inventory-value review as **OPEN**, don't assert acceptance from SDK PASS; exact proposed screen supplied for publisher review | Marketing + Design |
+| R02 | Valid Rewards screen; user declines or skips | No grant; core logbook view/edit/export and safety recording path remain; no nag/popup loop | Product + Design |
+| R03 | Zero allowance + online no-fill/denied consent | Explicit honest unavailable/alternative; no lost Flight; policy-hard-block remains disabled in test | Product |
+| R04 | PWA zero/stale balance + offline managed iPad | No ad SDK/network request or forced native dependency to retain independent local records; truthful sync status | Web + Product |
+| R05 | Rewarded creative shown then reported as inappropriate | User can reach report action; record handling/response path demonstrated, without collecting Flight or advertising profile data | Design + Support |
+| R06 | SSV original query valid vs reordered/decoded/re-encoded before verification | Valid signature accepted once; altered signed bytes fail; no fallback on unverifiable raw query | Engineering |
+| R07 | SSV valid but `ad_unit`/`reward_item`/`reward_amount` mismatches the immutable offer | Quarantined; no global credit; operator diagnosed from non-sensitive log | Engineering |
+| R08 | Missing `custom_data`, unknown nonce, expired or reused nonce, wrong Firebase UID | No cross-UID credit; duplicate request/transaction doesn't increase balance twice | Engineering |
+| R09 | 6 duplicate valid callbacks for same `transaction_id` | Exactly one durable verified grant; idempotent 200 after persistence; no excess credit | Engineering |
+| R10 | Client callback first; then 10-minute SSV outage beyond bounded retries | Honest pending state and support/recovery; zero *unverified global* grants; no forced rewatch | Engineering + Support |
+| R11 | SSV first, client callback later or client process crashes | Same-UID server grant reconstructs on recovery; no negative balance or double credit | Engineering |
+| R12 | Ad completed but user signs out and a different UID logs in | Original owner only receives any later verified grant; no new UID inherit/cross-owner leak | Engineering |
+| R13 | PWA manual sync after server grant; phone Flight Sync **not** performed | Same-UID grant is fetched and acknowledged in PWA if network/backend admission available; no claim without PWA receipt | Product + Web |
+| R14 | Native and PWA both offline spend last local allowance | Both unique Flights durable; no hidden delete; explicit safe pending quota reconciliation on reconnect | Product |
+| R15 | Restore old backup, import large historical Flight batch, batch undo, edit/save retry | No duplicated grant/charge, no fabricated saleable views; exact record vs 'new' accounting policy required | Product |
+| R16 | Test SDK on exact Flutter version, dark/light, screen-reader and iPad PWA | Native SDK limited to supported builds; PWA bundle has no ad SDK; no unrecoverable accessibility block | Product + Design |
+
+**Acceptance evidence format:** exact app/device/build/commit, date, actor, operating profile, input/callback fixtures, immutable expected oracle, actual result, trace provenance and reviewer. No optimistic summary-only PASS. R06–R12 should first run in isolated development/emulator scope using Google's SSV test mechanism or signature-valid signed fixtures, **not live impressions**. R01/2/5 require actual screen and provider review; R04/13/14 require physical managed-EFB device evidence.
+
+### L4. Closing the gap operationally
+
+**Prioritize by information gain:** P0 policy **two review surfaces** (reward mechanics and inventory eligibility) plus Apple's ad reporting, before creating any production quota restriction. Once a credible design and provider response exist, P1 signed SSV acceptance tests R06–R12, then P2 physical device R04/R13/R14 and imports. P3 direct aviation sponsor work stays at an evidence-dependent HOLD; no real advertiser response or user count exists.
+
+**Current result:** SOURCE/TEST-SPEC advanced. **No new supplier approval, screen implementation, test execution, Firebase entitlement writes, Apple appointment, AdMob contact or PR into LogMate.** User-approved ad-free PWA and high initial free quota remain proposed scope; **production hard-save-block STOP** until policy and protected-record admission evidence exists. The LogMate MASTER still owns any eventual product-spec reconciliation.

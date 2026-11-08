@@ -481,3 +481,53 @@ Branch terminals: `CANCELLED`, `NO_FILL`, `INVALID_SIGNATURE` (quarantine), `SSV
 **New product-dependent blocker:** Even if P0 approves the rewarded-ad UI and P1 verifies SSV, an economically and fairly enforceable **definition of chargeable new Flight** must be approved before claiming a count-limited logbook. Import/migration and cross-device identity merges make this **more material than selecting initial N or per-ad grant size**. Product owner/Engineering own `chargePolicyVersion`, Import source/exemption, Simulator scope, Delete/Restore, alias/reconcile and offline grace; Marketing assesses onboarding conversion, abuse/support and the ad-only model; Design Studio renders transparent disclosure and dispute UX; Web Manager validates ad-free managed PWA.
 
 **Study disposition:** Product-specific billing semantics and promised-reward incident liability clarified at source/design scope; **production Save blocking, actual AdMob, reward server and app/MDM device acceptance remain HOLD**. Do not edit LogMate MASTER/code without product owner Work authorization; no external publisher support request or test executed.
+
+
+---
+
+## O. 2026-11-08 executed in-memory reward/consumption model — late SSV after compensation double-credit correction
+
+**Study question:** The candidate billable-logical-Flight model in §N used two additive positive event streams, `verified provider grants + publisher compensation grants`. Does this over-credit an **individual ad attempt** when its publisher compensation is settled during an SSV outage and the original verified Google callback subsequently arrives? Can a model preserve two offline distinct Flights while making alias/operation replay deterministic?
+
+**Execution evidence:** Two purely in-memory, research-only JavaScript projection harnesses were **executed inside the current V8 code isolate** (2026-11-08 KST, no external network or product access). Initial exploratory model: **20/20 selected assertions passed**; it exposed the necessity of testing compensation/SSV overlap, original-record identity and event order more rigorously. Corrected second model: **26/26 selected assertions passed**, including **120 permutations** of a five-event `attempt → client earned → compensation → signed-state flag → new Flight` scenario, all returning the same final projection. **These are tests of our own model's chosen hypotheses, not of LogMate SDK or Google SSV cryptographic authenticity**. All signed-SSV flags were **synthetic trusted inputs**, not a real signature verification. No Firebase database or concurrent transactions were executed.
+
+**Reproduction source added:** [D10 research-only executable JavaScript fixture](../../research/experiments/d10_reward_ledger_synthetic_20261108.js), designed for `node research/experiments/d10_reward_ledger_synthetic_20261108.js`. The same functional model and 26 cases were run in a V8 isolate; the checked-in standalone file's **Node execution has not been separately confirmed**. It is not a Flutter/product integration artifact, cryptographic verifier, or production database schema.
+
+### O1. **Correction**: an advertisement attempt is one fulfillment domain, not two additive payouts
+
+Consider a fixed, clearly disclosed `+4` unit offer, under a *synthetic* provider-verified-flag model:
+
+| Event | Naive §N grant+comp additive projection | Corrected fulfillment projection |
+| --- | ---: | ---: |
+| Attempt A created, user receives SDK earned callback, SSV unavailable | 0 | 0 verified globally; keep user pending |
+| Authorized operator investigates and grants publisher compensation C for **attempt A** | +4 | +4 |
+| Later valid signed SSV arrives for transaction T **on same attempt A** | **+8 in total (wrong)** | **+4 in total (correct)** |
+| Callback T delivered again, or C replayed | Must still prevent further increments | Remains +4 |
+
+**§N3's naïve formula `UNIQUE_VERIFIED_GRANTS + UNIQUE_APPROVED_COMPENSATION` is therefore SUPERSEDED for rewards that refer to the **same original advertisement attempt**.** Preserve both immutable audit facts, but derive one **fulfilled offer** per owner-bound `attemptId`. A late SSV confirms the original event; it must not issue a second usable reward if compensation already fulfilled that same offer. Conversely, a compensation processing race after SSV must not pay again. In the model, `overlap=1` is a reconciliation/monitoring signal; in production this should be resolved under a transactional, idempotent authority and reviewed for fraud/operational error.
+
+**Recommended conceptual projection (not adopted product schema):**
+
+`usable_rewards(uid) = SUM_over_unique_owner_attempts(exactly_one_authorized_fulfillment_amount)`
+
+`available(uid) = initial_approved_allowance + usable_rewards(uid) - net_billable_logical_new_Flights(uid)`
+
+The **attempt** and **provider transaction** keys are distinct: global provider transaction ID uniqueness prevents cross-account replay; trusted server-issued nonce/attempt binds the grant to the right Firebase UID and offer version; publisher compensation references that same attempt; `clientEarned` alone never becomes server-verified credit. The checked-in test model **does not verify cryptographic signatures** and so cannot establish safe attribution of real Google events. Source boundaries: [AdMob reward obligation](https://support.google.com/admob/answer/7313578); [SSV signature + callback constraints](https://developers.google.com/admob/flutter/ssv); [event-sourcing idempotency/compensating events and PII caveats](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing).
+
+### O2. The evaluated synthetic invariants
+
+- **Reward fulfillment:** exact duplicate SSV transaction gives one payout; conflicting provider transaction reused for a different account is rejected; wrong UID/offer quantity/unknown attempt is rejected; pending client-only callback is not counted; a single original attempt cannot receive two independent compensations or two distinct provider transaction IDs without quarantine; *late SSV after publisher recovery* and *late publisher recovery after SSV* each produce **one** grant, with an overlap flag.
+- **Consumption:** duplicate original CREATE operation is one charge; Edit/Delete/retry do not automatically refund or recharge; two different original CREATE IDs for the same stable record ID must not silently generate two active billed records; confirmed alias of two distinct but identical logical Flights leads to one net billed Flight, while unresolved identity review does **not** refund; Flight and Simulator cannot be silently aliased.
+- **Cross-device safety:** two distinct offline Flights created by separate replicas with one initial remaining credit produce **two retained records and a projected balance of -1**, not a magically nonnegative balance. This proves the test model **represents overdraft**, not that a product has implemented any legal/policy-safe grace mechanism.
+- **Migration alternatives:** 1000 newly imported histories under an explicitly exempt candidate produce zero debit; charge-all variant produces 1000 debit. This is a contrast between **policy variants**, not an owner choice. Wrong-owner creates cannot change the queried UID's projection.
+- **Event ordering:** 120 permutations of five events produced equal balances; this shows the pure projection is arrival-order-insensitive for **that chosen fixture**. It does not establish network delivery guarantees, real Firebase transaction serializability or eventual business convergence for all possible event histories.
+
+### O3. Remaining failure gates and model limitations
+
+**Do not promote P1 to product PASS.** Only a portion of **T0 accounting-model** testing has run. Still OPEN: Google ECDSA signature check over original raw query bytes and public-key rotation; real HTTP 200-after-durable-commit replay; SSV test tool; IAM/Firestore Rules/UID deletion; database uniqueness and transactional concurrency; ad-unit reward amount/item vs product offer; consent/Store/publisher review; client-only earned claim support dispute; app startup/restore; physical offline iPad PWA and native runtime. The test uses abstract `verified:true` provided by the fixture; it has no way to know an ad was actually watched.
+
+**New privacy/retention dependency:** Microsoft event-sourcing guidance warns that append-only history can conflict with the right to delete personal data. LogMate's UID-owned account deletion policy has a documented deletion saga; a separate immutable reward/attempt/compensation ledger **must join that lifecycle**. Store only minimal opaque IDs/transaction data, separate marketing analytics from auth/Flight details, and define erasure/retention/legal-fraud-preservation criteria with responsible operators. Do **not** keep raw UID-linked reward history forever by treating an append-only research model as a deletion exception. Review with product owner and privacy lead before production.
+
+**Recommended next practical gate:** run the checked-in standalone model with a pinned JS runtime / CI evidence, then independent signed ECDSA SSV fixtures and a transactional dual-writer Emulator test **in a separately authorized engineering environment**, after the owner resolves billable Flight classification and provider's exhausted-capacity normal-usage interpretation. If a legitimate user's publisher compensation cannot be supported fairly, hold rewarded-ad launch. The Marketing Manager repo is the only one modified during this study; LogMate is read-only.
+
+**Disposition:** **research-model validation T0 partial PASS (26/26 selected synthetic checks, 120 arrival permutations); P0 provider approval OPEN; P1 real signed/backend tests OPEN; P2 EFB offline full acceptance OPEN; P3 sponsors NOT DEMONSTRATED. Product/ads activation HOLD unchanged.**

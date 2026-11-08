@@ -531,3 +531,48 @@ The **attempt** and **provider transaction** keys are distinct: global provider 
 **Recommended next practical gate:** run the checked-in standalone model with a pinned JS runtime / CI evidence, then independent signed ECDSA SSV fixtures and a transactional dual-writer Emulator test **in a separately authorized engineering environment**, after the owner resolves billable Flight classification and provider's exhausted-capacity normal-usage interpretation. If a legitimate user's publisher compensation cannot be supported fairly, hold rewarded-ad launch. The Marketing Manager repo is the only one modified during this study; LogMate is read-only.
 
 **Disposition:** **research-model validation T0 partial PASS (26/26 selected synthetic checks, 120 arrival permutations); P0 provider approval OPEN; P1 real signed/backend tests OPEN; P2 EFB offline full acceptance OPEN; P3 sponsors NOT DEMONSTRATED. Product/ads activation HOLD unchanged.**
+
+
+---
+
+## P. 2026-11-08 executed **ECDSA signed callback** fixture — protocol/sample distinction and remaining live proof
+
+**Evidence class:** SOURCE + executed research fixture / T0 partial cryptographic test. **Not** a genuine AdMob-origin callback, Google production public-key test, Firebase transaction, Flutter SDK run, or LogMate app acceptance. Current date 2026-11-08 KST.
+
+### P1. Primary-source protocol facts, observed directly
+
+Google's first-party [Validate SSV callback documentation](https://developers.google.com/admob/android/next-gen/ssv) (checked 2026-11-08) defines:
+- The **last two** query parameters are `signature` and `key_id`, in that order. The **preceding original query bytes** are the signed content; do not reorder, normalize or percent-decode then reserialize before ECDSA verification.
+- The relevant public key is selected by `key_id` from Google's trusted public-key service; ECDSA with SHA-256 and DER-encoded signature is documented in its Tink example. Public keys rotate and should not be cached beyond **24 hours**.
+- `custom_data` and `user_id` are **optional Google protocol fields**, not guaranteed to be present in every valid callback. LogMate's *particular reward contract* can and should require a verified pre-issued opaque `custom_data` attempt nonce for UID/offer attribution, without wrongly claiming it is protocol-mandatory. `user_id` is client-supplied and must not replace verified Firebase UID ownership.
+- `timestamp` is described as an epoch millisecond field, **but the official documentation's table uses a 16-digit example** (`1507770365237823`), and another URL example shows a different width. Therefore **do not enforce a fabricated 13-digit fixed length** from the label; production must explicitly define trustworthy epoch-unit/freshness interpretation against actual provider data, not merely accept every decimal value forever.
+- `transaction_id` is documented as **hex-encoded**, with an example 32-digit ID; the source **does not specify 32 characters as a mandatory invariant**. A verifier that rejects any other hex length purely because of this example is overstrict. Production should use bounded input validation and collision-resistant exact transaction identity, without inventing a provider fixed-width promise.
+- The Google guide recommends client callback for prompt UX but allows SSV-verified-first when validity is important. It describes an AdMob console SSV server test and failed HTTP 200 delivery retries of up to five at one-second intervals. No operator account or callback endpoint was accessed in this cycle.
+
+### P2. Reproducible executed fixture and exact provenance
+
+**Research fixture:** [`research/experiments/d10_ssv_crypto_fixture_20261108.py`](../../research/experiments/d10_ssv_crypto_fixture_20261108.py).
+
+- Python `cryptography` library, **locally generated, ephemeral P-256 ECDSA private/public test key pair**, SHA-256 and DER signature; URL-safe base64 signature representation; raw-query verification preceding business-rule mapping. No real Google private key, no downloaded Google public keys, no production network.
+- Tested: valid signed callback; changed signed reward, field order, percent-escape equivalence and signature; duplicate/unknown fields; unknown `key_id`, wrong trusted key; UID/nonce/offer mismatch; ad-unit/reward-kind/reward-amount mismatch; optional `user_id` semantics; absent `custom_data` rejected at **LogMate business attribution gate**, despite being permitted at provider protocol level; variable timestamp width and hex transaction ID length.
+- **Run chronology, including failed test:** Initial version ran **17/18 PASS** due to an incorrect *test mutation constructing the wrong signature/key_id tail*; corrected mutation yielded **18/18**. Then optional-field/timestamp checks extended to **21/21 PASS**. A final Google-document comparison identified the unsupported fixed 32-hex-length assumption; corrected and extended to **22/22 PASS**. These test-harness mistakes are reported as evidence of refinement, **not** production LogMate faults.
+- Final pinned local file: **8504 UTF-8 bytes**, SHA-256 `b27c229c16308c89b33d4de79814895e6ec72296616970d8682707048862b686`; Git blob SHA-1 `e175e6c3ceee3037701c4120d57625e1397dcdd1`. The GitHub file on research branch was fetched and its blob SHA matched the locally executed file **exactly**, establishing source-byte reproducibility. Run output was `{"passed":22,"total":22,"failed":[]}` at the final invocation.
+- **Do not overclaim:** This test proves only that the **test verifier** accepts/rejects **synthetic locally signed fixtures** under deliberately chosen rules. It does **not** show interoperability with Google production verification keys, correctness of real callbacks, identity security across network/Firebase, concurrency, traffic safety, publisher policy compliance, or actual app release readiness.
+
+### P3. New explicit operational guardrails from test
+
+**Two layers, not one:** (A) protocol verification of original signed bytes with current trusted Google key; (B) LogMate's **independent authorization**: server-mapped nonce→verified UID, offer/ad-unit/reward mapping, replay-proof transaction identity, durable idempotent backend grant, account deletion and unusual late callback triage. A Google signature proves Google signed a callback, not that a caller-controlled `user_id` owns the Firebase logbook.
+
+**Timestamp and validity boundary:** Do not force the sample's timestamp field length, but neither treat an arbitrary numeric timestamp as fresh. Test actual SDK/AdMob console callbacks and define maximum clock skew, late SSV recovery, offline/device limitations and manual reward dispute. Never make an expired pending attempt silently erase a legitimate user's completed reward. Unknown public `key_id` may require secure key cache refresh (24h max); **never** fall back to bypassing ECDSA verification.
+
+**Read-only product context:** [LogMate approved Manual Delta Sync](https://github.com/yhappcom/logmate/blob/main/docs/specs/local-first-manual-delta-sync-contract.md) remains not production-accepted; EFB PWA remains **ad-free** and requires its own explicit authorized Sync for server-verified rights. None of the fixture introduces reward code into mobile/PWA or modifies product source. Design Studio / Web Manager dependencies from §§H/K remain intact.
+
+### P4. Next evidence to close, in order
+
+1. **P0:** provider-app interpretation of hard exhausted new Flight save and genuinely useful Rewards inventory, plus Apple review 2.5.18 information/reporting and 3.2.2(x) scope. **OPEN / no contact**.
+2. **P1a:** AdMob console-issued **actual signed callback**, exact key retrieval/rotation and signed-body verification in a controlled endpoint, with callback trace without user Flight/crew data. **NOT RUN**.
+3. **P1b:** backend transaction uniqueness and same-attempt publisher compensation→late-SSV dedup under two concurrent workers; deletion lifecycle and authorized support recovery. **NOT RUN**.
+4. **P2:** simulated quota overrun in the existing flight-record source, then real ad-free managed-EFB PWA Manual Sync and Files custody acceptance. **NOT RUN**.
+5. **P3:** observed opted-in qualified pilot demand and first sponsor settlement, only after release-ready inventory exists. **NOT RUN**.
+
+**Disposition:** **T0 cryptographic research fixture PASS 22/22** after correction; **P0/production and P1 real server end-to-end remain HOLD**. The new research genuinely closes **fixture-level byte-preserving ECDSA handling**, not Google-origin callback authentication.

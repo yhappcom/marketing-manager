@@ -576,3 +576,73 @@ Google's first-party [Validate SSV callback documentation](https://developers.go
 5. **P3:** observed opted-in qualified pilot demand and first sponsor settlement, only after release-ready inventory exists. **NOT RUN**.
 
 **Disposition:** **T0 cryptographic research fixture PASS 22/22** after correction; **P0/production and P1 real server end-to-end remain HOLD**. The new research genuinely closes **fixture-level byte-preserving ECDSA handling**, not Google-origin callback authentication.
+
+
+---
+
+## Q. 2026-11-08 consolidated research program, measurable progress, and executed concurrency interleaving test
+
+**Scope:** Date-checked D10 program checkpoint, NOT product authorization. Product owner direction is native-only opt-in rewarded LogMate with ad-free EFB PWA; LogMate MASTER still contains historical Manual Sync ad plan and remains authoritative for current product truth. **No live rewarded ads, AdMob console account, real signed SSV, Firestore, physical iPad/MDM, pilot cohort or sponsor contract was accessed.**
+
+### Q1. Reusable progress contract — 24 distinct, **binary, evidence-gated** checkpoints
+
+**Scoring rule:** A checkpoint is `DONE` only when its *specific stated acceptance evidence* exists. `DESIGNED`, `SOURCED`, `SYNTHETIC PASS`, `IMPLEMENTED`, `EMULATOR PASS`, `LIVE PASS` and `OWNER APPROVED` are **not interchangeable**. Exact status depends on what each checkpoint asks for; a synthetic test cannot close a real-Firestore checkpoint. Pass count is unweighted, deliberately **NOT a production completion percentage, chance of approval, engineering implementation percentage, or revenue forecast**. Do not grant a new point for researching the same policy again. If evidence becomes contradicted, revoke the point and record why.
+
+| Track | ID | Acceptance checkpoint | Current status | Evidence/remaining oracle |
+| --- | --- | --- | --- | --- |
+| **A Strategy (2/4)** | A01 | Owner direction at marketing-research scope explicitly identifies native optional Rewards, PWA ad-free, eventual aviation sponsors | **DONE · owner-chat evidence**, NOT adopted LogMate MASTER | D10 §§A, K, owner 2026-11-08 |
+| A | A02 | Advertising-only / no paid upgrades, protected Home/flight/Sync UX constraints recorded | **DONE · research business constraint** | Company Marketing Context, D10 §A |
+| A | A03 | Product owner adopts an exact billable `new logical Flight` / import / delete / simulator consumption contract | **OPEN** | §§N/O; owner confirmation and product MASTER update needed |
+| A | A04 | Product owner fixes initial base N, reward amount, expiry and clear disclosed offer | **OPEN** | No approved numbers or live creative |
+| **B Policy (1/4)** | B01 | Current first-party AdMob opt-in/refusal/inventory and Apple/Play incentive/review policy mapped with exact scopes | **DONE · sourced only** | §§C, J–M and official help articles; NOT provider approval |
+| B | B02 | AdMob answers case-specific zero allowance/no-fill/offline/PWA-only normal-use interpretation | **OPEN** | Exact logged, dated publisher response |
+| B | B03 | Exact Rewards screen, in-app ad targeting transparency, reporting route and skip behavior reviewed/tested | **OPEN** | Design Studio interaction/real SDK result and provider/app review |
+| B | B04 | Apple/Play case-specific applicable store review actually accepted for submitted behavior | **OPEN** | Actual submission/review evidence |
+| **C Verified reward tech (2/5)** | C01 | Reproducible isolated entitlement ledger model passes replay/late SSV/compensation/alias cases | **DONE · T0 synthetic**, not backend | §O, 26/26 + 120 permutation fixture |
+| C | C02 | Real ECDSA verification against locally generated signed callback fixtures, tamper/owner tests | **DONE · T0 local crypto**, not Google origin | §P, 22/22 fixture |
+| C | C03 | **Actual Google-signed** SSV callback and key rotation validated in isolated operator test service | **OPEN** | AdMob SSV console test, signed raw request, key provenance and service trace |
+| C | C04 | **Actual Firestore** two+worker uniqueness/compensation/retry/ack-loss transaction suite passes | **OPEN** | Server SDK Emulator **and** real isolated Firestore instance; zero duplicate grant; no production DB |
+| C | C05 | Real recovery, account deletion, owner fencing, payout disputes and operational audit pass | **OPEN** | Signed payout ledger + redacted incident response evidence |
+| **D Offline EFB and product accounting (1/5)** | D01 | Current LogMate MASTER + Import + Manual Sync and offline contract read-only mapped to quota model | **DONE · source mapping**, not product acceptance | §§N and verified source SHAs |
+| D | D02 | Product approves exact Import/reImport, historical migration, duplicate/alias, Delete/Restore, Simulator charging | **OPEN** | User choice, authoritative product reconciliation and regression tests |
+| D | D03 | Controlled concurrent offline native/PWA last-credit, original Flight preservation and safe balance reconciliation passes | **OPEN** | Applied operations, no erased Flight; refund/grace explicit |
+| D | D04 | Same UID verified mobile reward arrives on ad-free PWA through actual successful **explicit** Manual Sync | **OPEN** | Real device/backend receipt, no inference from ad callback |
+| D | D05 | Installed managed iPad WebKit/MDM offline storage, backup/Files, cold-restart and recovery acceptance passes | **OPEN** | Recorded physical managed EFB sessions |
+| **E Economics/sponsors (1/3)** | E01 | Aviation digital ad inventory market existence verified as research premise | **DONE · first-party market precedent**, NOT LogMate advertiser demand | §J AOPA digital media |
+| E | E02 | Actual opted-in eligible native unique audience, valid rewarded fill, retained-pilot support cost and net unit economics measured | **OPEN** | Genuine eligible traffic and cost data |
+| E | E03 | Direct aviation sponsor paid test contract and settlement evidence | **OPEN** | Executed paid pilot, qualified reach and net settlement |
+| **F Operations (0/3)** | F01 | Publisher/ad units/store root app-ads.txt, verification/readiness and production account approvals | **OPEN** | Operator account screenshots/receipts |
+| F | F02 | Privacy consent/targeting disclosure/in-app reporting/account deletion with owner-approved policies tested | **OPEN** | Actual SDK/App UI/deletion trace |
+| F | F03 | Incident response, reward recovery, fraud limits, monitoring, cost guards and ad-disable kill-switch tested | **OPEN** | Redacted drill results, responsible operator and runbook |
+
+**Progress scoreboard (2026-11-08):** A 2/4 (50%); B 1/4 (25%); C 2/5 (40%); D 1/5 (20%); E 1/3 (~33%); F 0/3 (0%); **TOTAL 7/24 = 29.17%**. This **formalizes the prior conversational 7/24 estimate** using explicit, inspectable inclusion criteria, rather than presenting it as an externally measured engineering statistic. Because today's new concurrency run is **only an additional synthetic experiment** and C04 requires actual Firestore, **the count remains 7/24**. A/F production approvals and LogMate MASTER reconciliation remain blocking.
+
+### Q2. New first-party Firestore/SSV research that affects test design (2026-11-08)
+
+- [Firestore transaction serializability/contention](https://firebase.google.com/docs/firestore/transaction-data-contention) says **mobile/web SDKs emulate optimistic version-precondition transactions regardless of database concurrency mode**; server SDKs use built-in transactions and the database-level concurrency setting. A local display balance or a client-owned Firestore `set` is not a trusted global grant authority.
+- [Firestore transaction semantics](https://firebase.google.com/docs/firestore/manage-data/transactions) guarantees all-or-none committed writes, potential **retry of transaction function**, and **offline client transaction failure**. The transaction body **must not send an HTTP 200, send notifications, award an external balance, or modify app state as a side effect before commit**. Read required documents first; only after durable commit should the SSV endpoint acknowledge provider receipt.
+- [Firestore Emulator limitations](https://firebase.google.com/docs/emulator-suite/connect_firestore) explicitly say it does **not implement all production concurrent transaction behavior**, and it may release locks only after long delays. Indexes and many production limits are also not enforced. Emulator PASS is scoped and **cannot close C04**; use an isolated real Firestore test instance with safe synthetic UIDs, quotas and cost limits. Do not touch LogMate production Firebase.
+- [AdMob Flutter SSV](https://developers.google.com/admob/flutter/ssv) sends Google-signed callback to configured backend; delays and short unsuccessful-delivery retries remain. [Rewarded publisher policy](https://support.google.com/admob/answer/7313578) retains actual promised reward duty and no-ad refusal interference restriction. Thus neither server strictness nor more test cases closes B02.
+
+### Q3. Actually executed **research-only** concurrency proof, now reproducible
+
+**Source:** [`research/experiments/d10_concurrent_reward_cas_model_20261108.js`](../../research/experiments/d10_concurrent_reward_cas_model_20261108.js). A deterministic JavaScript event-interleaving model was executed in the current V8 isolate (not real Firestore). The **exact functions invoked to obtain the displayed result** were serialized using their `.toString()` into the checked-in standalone script, which has not independently been run with Node. Test includes 14 assertions, all **PASS**:
+
+- Two worker scenario: one **signed-verification-accepted fixture flag** SSV callback worker and one independently approved compensation worker, same UID/attempt/offer. Enumerated **6 legal read/commit orderings**. **Naive check-then-increment duplicated the reward in 4/6 schedules**; a modeled optimistic **version-compare/retry** projection produced **exactly one** reward in **6/6**.
+- Three worker scenario: same SSV, same compensation, and **one duplicate SSV receipt**. Enumerated **90 legal read/commit orderings**. Naive projection credited more than one award in **72/90**, while modeled conditional atomic update credited **one in 90/90**.
+- Extra assertions: stale-snapshot retry observed; full audit retains provider and publisher compensation receipts while granting one usable entitlement; transaction-ID redelivery is single; unknown attempt, wrong UID, wrong offer reward, unverified SSV, unapproved compensation and cross-attempt same provider transaction are rejected; distinct authorized attempts each grant once.
+- The concurrency model is **not** a real Firestore transaction; it assumes ideal atomic version comparison with immediate reload and does not exercise network/worker shutdown, transaction-timeout, database rules, multiple-region latency, actual `transaction_id` signature verification, account deletion or data restoration. It proves the **chosen unsafe algorithm has concrete counterexamples** and the **chosen abstract CAS algorithm withstands the enumerated schedules**, not that a production implementation is safe.
+
+**Concurrency design implication for LogMate Engineering:** Back end alone must own an immutable `attemptId → fulfilledOfferId` uniqueness boundary; server should atomically read attempt/owner/offer, payment state and provider transaction guard, then insert **one** entitlement fulfillment when unfilled. A later verified SSV after publisher compensation should add an authenticated provider receipt but **not increment usable balance again**. The transaction must use a version-checked, idempotent write, with both receipt and fulfillment auditable and no duplicate balance increment under concurrent server workers. Server-side admin SDK, not user-owned PWA/native storage, is the settlement authority; local pending/offline recording remains data-custody separate. Actual schema and backend not approved.
+
+**Fault-injection package for C04 actual acceptance:** Simultaneously send 2 workers, then 3+ workers, with retry/ACK loss and duplicate signed provider transaction; assert **one** fulfillment document and correct projection by UID/attempt; assert provider transaction ID cannot transfer across UIDs; simulate compensation first and late SSV, and vice versa; verify no rewards on invalid signature/unknown offer; simulate transaction retried/aborted and receipt worker failure; account deletion during delayed callback; verify no flight-log data appears in backend traces. Run in Emulator **and independent real test Firestore**, collect commit identity, test environment/SDK, exact transaction document receipts, actual failed and successful interleavings, operational cost and last rollback outcome.
+
+### Q4. Immediate next evidence ladder and blockers
+
+1. **C04 engineering test authorization:** build two-worker atomic attempt fulfillment in isolated test Firebase (not product), run concurrency/ACK/compensation and deletion cases. **No account/project access established in this cycle.**
+2. **C03 genuine AdMob SSV test callback:** configured publisher account and isolated HTTPS endpoint; verify Google key chain, signed bytes, ad unit/offer/UID nonce and provider transaction identity, with no live revenue tests.
+3. **B02 policy case review + A03/A04 owner choices:** provider interpretation of exhausted free allowance/no ad/no phone, actual usable Rewards/allowance screen, logical Flight/import/deletion billing unit and initial N. Keep policy HOLD while technical research continues.
+4. **D03–D05 product and managed-EFB test:** portable earned rights applied only by actual PWA Manual Sync; preserve local Flights under offline zero-capacity and restore/MDM restrictions; ensure PWA has no AdMob SDK.
+5. **E/F business and operations:** acquire actual valid opt-in reach and signed aviation sponsor contract only when release readiness exists; no invented economics.
+
+**Decision:** New **fault-model proof and stable progress framework** are saved; no new C04 milestone claimed because a deterministic concurrency simulator is not Firestore. **Research 7/24 (29%), operational launch gates HOLD**. Marketing owns this checkpoint and policy questions; LogMate/Engineering owns backend/record semantics; Design Studio Rewards UX/accessible errors; Web Manager actual EFB/Files/PWA transport. No changes to product/design/web repositories.

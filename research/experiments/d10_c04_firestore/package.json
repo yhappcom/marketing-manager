@@ -1,0 +1,19 @@
+{
+  "name": "d10-c04-firestore-emulator-harness",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "check:syntax": "node --check c04_emulator.test.js",
+    "test:guard": "node c04_emulator.test.js --guard-probe",
+    "test:emulator": "GCLOUD_PROJECT=demo-logmate-c04 firebase emulators:exec --only firestore --project demo-logmate-c04 'node c04_emulator.test.js'"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "9.4.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "15.35.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

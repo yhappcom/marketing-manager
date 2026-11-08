@@ -88,7 +88,8 @@ def verify(url, *, keys=KEYS, attempts=ATTEMPTS, uid="pilot-uid", offer=OFFER):
     if not args["timestamp"].isdecimal():
         raise Reject("INVALID_TIMESTAMP")
     tx = args["transaction_id"]
-    if len(tx) != 32 or any(c not in "0123456789abcdef" for c in tx):
+    # The documented transaction ID is hex; do not infer a fixed length from an example.
+    if not tx or any(c not in "0123456789abcdefABCDEF" for c in tx):
         raise Reject("INVALID_TRANSACTION")
     candidate = attempts.get(args.get("custom_data"))
     if candidate is None or candidate["uid"] != uid or candidate["offer"] != offer["version"]:
@@ -128,7 +129,8 @@ tests = [
   ("mismatched advertised reward item rejected", lambda: expect_reject(lambda: verify(signed_url(query_change("reward_item", "coins"))),"OFFER_MISMATCH")),
   ("mismatched advertised reward amount rejected", lambda: expect_reject(lambda: verify(signed_url(query_change("reward_amount", "5"))),"OFFER_MISMATCH")),
   ("missing nonce attempt rejected", lambda: expect_reject(lambda: verify(base,attempts={}),"UNBOUND_ATTEMPT")),
-  ("invalid transaction ID rejected", lambda: expect_reject(lambda: verify(signed_url(query_change("transaction_id", "bad"))),"INVALID_TRANSACTION")),
+  ("invalid transaction ID rejected", lambda: expect_reject(lambda: verify(signed_url(query_change("transaction_id", "not-hex"))),"INVALID_TRANSACTION")),
+  ("shorter hex ID not rejected merely for sample length", lambda: verify(signed_url(query_change("transaction_id", "ab12cd34")))["grant"] == 4),
   ("invalid timestamp format rejected", lambda: expect_reject(lambda: verify(signed_url(query_change("timestamp", "abcd"))),"INVALID_TIMESTAMP")),
   ("official 16-digit timestamp style accepted", lambda: verify(signed_url(query_change("timestamp", "1507770365237823")))["grant"] == 4),
   ("optional signed user_id cannot override nonce owner", lambda: verify(signed_url(SIGNED_QUERY+"&user_id=other_uid"))["uid"] == "pilot-uid"),

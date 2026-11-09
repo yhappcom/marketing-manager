@@ -34,7 +34,7 @@
 | **R06** | Apple preorder vs Play prereg limits, approval and metric differences sourced | **DONE — DESK, this cycle** | Primary sources above |
 | **O01** | Product/brand owner approves final public descriptor, trademark and target-country Store availability appropriately reviewed | **OPEN** | Owner/brand/legal |
 | **O02** | Feature claim registry signed off against actually accepted product/Engine release truth | **OPEN** | Product and Engineering evidence, no Marketing technical testing |
-| **O03** | Web owner confirms actually live landing, verified identity/privacy/consent and accurate claims | **OPEN** | Web Manager/operator |
+| **O03** | Web owner confirms actually live landing, verified identity/privacy/consent and accurate claims | **OPEN — PARTIAL VERIFIED PUBLIC PAGES** | [2026-11-09 actual /about + policy/support audit](LOGMATE_O03_PUBLIC_SITE_MARKETING_HANDOFF_20261109.md); no owner marketing sign-off, approved current features or consent/lead flow |
 | **O04** | Actual qualified search queries, clicks, sources and indexed pages observed | **OPEN** | Authorized Search Console/analytics |
 | **O05** | Voluntary, consented airline pilot market conversations observed and records retained minimally | **OPEN** | Marketing; prior 12 qualitative interview target, zero completed |
 | **O06** | Candidate value-message preference supported by observed participants/real market evidence | **OPEN** | No preference test completed |
@@ -50,3 +50,12 @@
 **O01 / O02 first**, because named-identity and feature-truth risks make any store/landing promise premature. Marketing recommends presenting the prior internal example **LogMate: Pilot Logbook** to the product/brand owner for legal/name/target-market review; do not rename the app. Product/Engine supplies accepted current capabilities; Marketing does not test them. **O03/O04** then require Web Manager-confirmed live site, owned Search Console evidence and lawful consent. **O07/O08** only when the app release owner can substantiate launch timetable and actual App Store/Play status. If no new external evidence is available, report NO NEW MARKET/OPERATOR EVIDENCE; do not manufacture a new micro-study, ranking, opt-in rate or model-count improvement.
 
 **Owner constraints:** zero-cost marketing default, no paid upgrades, Home/Flight/Import/Backup/Manual Sync protected from intrusive ads, no unsupported EFB/PWA claims. r/flying/EAA permission restrictions remain in D10 §W. No customer outreach, App Store/Play Console action, website publishing, business contract or non-Marketing repository modification occurred.
+
+
+### 2026-11-09 O03 reality correction — 5 live first-party pages, incomplete marketing landing
+
+The [dedicated current public-site audit](LOGMATE_O03_PUBLIC_SITE_MARKETING_HANDOFF_20261109.md) obtained **fresh HTTP 200 + readable bodies** at **logmate.minttap.app/about/**, **/privacy/**, **/terms/**, **/support/** and **/account-deletion/**. About includes developer MintTap, an actual pilot-logbook introduction, a descriptive search snippet and trust links; Support publicly lists an actual contact channel. Previous inability to browse minttap.app was a **tool limitation**, not proof of product site nonexistence. The root hosts Flutter canvas; HTML/markdown extract contained a hidden typography marker, not a source-readable marketing hero. **Do not infer human app failure from that extraction.**
+
+**O03 remains OPEN, evidence partial** because Web Manager/owner has not explicitly approved a conversion-oriented LogMate marketing page; there is no verified prelaunch status, actual user-interest signup or consent/withdrawal, and currently broad About features lack a release-specific Product/Engine claim audit (Import, final Sync/managed EFB remain open in MASTER). Support address is not subscriber consent. Web Manager owns any publication and routing; Marketing owns customer-facing proposal only.
+
+**Score unchanged:** desk R 6/6, actual O 0/10, overall 6/16 = 37.5%. This is materially better **site evidence**, not a newly completed marketing operational acceptance. Next strongest closure target is Web Manager-approved product entry page and owner-approved truthful CTA with optional consent, alongside O01 brand and O02 feature-claim approval.

@@ -1,12 +1,12 @@
 # Marketing Manager — independent research evidence index
 
-**As-of:** 2026-11-09 KST. **Scope:** Complete, non-truncated recursive Git-tree enumeration of `main` at commit `7acfa0892922b09787519691ac5f39876de4cf05`: **21 independent `live_data/**/*.md` files**, excluding `live_data/minttap/README.md`. All 21 exact tree paths appear in this index (21/21 path reconciliation, zero unmatched). This is a **Git-tree path existence and index-coverage check**, not renewed reading of every study's content or a census of non-`live_data` research. **Do not infer gaps from research-number sequences.**
+**As-of:** 2026-11-09 KST. **Scope:** Complete, non-truncated recursive Git-tree enumeration of `main` at commit `624eefb57eb37d0c88c449c51dda3c9f20ac84c7`: **21 independent `live_data/**/*.md` files**, excluding `live_data/minttap/README.md`. All 21 exact tree paths appear in this index (21/21 path reconciliation, zero unmatched). This is a **Git-tree path existence and index-coverage check**, not renewed reading of every study's content or a census of non-`live_data` research. **Do not infer gaps from research-number sequences.**
 
 This index is a navigation and correction layer, **not a replacement for original evidence**. Original study files, source links, historical observations, failed tests and negative results remain in place. [Knowledge base](MARKETING_KNOWLEDGE_BASE.md) summarizes reusable methods; [decision register](PRODUCTION_DECISION_REGISTER.md) contains current gates; [STATUS](STATUS.md) stays short; the [unaltered pre-consolidation STATUS](history/STATUS_SNAPSHOT_THROUGH_2026-11-07_1029_KST.md) preserves chronology exactly.
 
-**Index note (2026-11-09):** The historical 20-path census at `c1898f1a` remains historical. The current complete tree at `7acfa089` confirms those indexed paths plus D10, with no unindexed independent `live_data/**/*.md` path. No decision is approved by this inventory check. Re-run after future commits.
+**Index note (2026-11-09):** The historical 20-path census at `c1898f1a` remains historical. The current complete tree at `624eefb57eb37d0c88c449c51dda3c9f20ac84c7` confirms those indexed paths plus D10, with no unindexed independent `live_data/**/*.md` path. No decision is approved by this inventory check. Re-run after future commits.
 
-## Independent evidence files (21 paths reconciled against complete `main` Git-tree at `7acfa089`)
+## Independent evidence files (21 paths reconciled against complete `main` Git-tree at `624eefb57eb37d0c88c449c51dda3c9f20ac84c7`)
 
 | Source file | Decision | Evidence class and bounded conclusion | Still not proven |
 | --- | --- | --- | --- |

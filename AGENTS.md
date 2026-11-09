@@ -4,6 +4,16 @@
 
 This repository is the canonical long-term memory for yhappcom app marketing, launch, growth, monetization, measurement, and market strategy. Chat history is temporary working context.
 
+## Marketing-only ownership boundary — owner clarification 2026-11-09
+
+**Applies to the whole Marketing Manager program, particularly LogMate.** Product/Engineering, Roster Parser Research and Web Manager already research parser correctness, import/reimport, local canonical persistence, duplicate detection, Flight semantics, offline/sync, database races, rewarded SSV cryptography and device/MDM reliability. **Marketing must not duplicate their research cycles, create/extend engineering test harnesses, debug code, claim implementation readiness or modify other domain repositories.**
+
+Marketing **owns**: real audience/customer and category research; target segments and Jobs-to-be-Done as *market* hypotheses; source-verified competitor positioning and claim authorization; app-store metadata, keywords, screenshots and localized messaging **only after feature truth**; search/owned-site content strategy; channel and community permission; consent-based, non-coercive recruitment; onboarding acquisition and first/repeated specialist-value funnel definitions; quantified *observed* retention, opt-in, valid ad events and finalized revenue when operator evidence is available; privacy-compatible sponsor inventory and partnership economics; decision thresholds and stop/go.
+
+**Technical handoff protocol:** read the product/engine's current verified summary *only to know exactly what is implemented, accepted or blocked*. Record `REQUEST ENGINE EVIDENCE` when product truth is missing; DO NOT fill that gap with a model, simulator, SDK experiment or proposed technical architecture inside Marketing. Marketing may analyze platform advertising and store rules as they affect acquisition, ad eligibility, product promise and monetization policy, without implementing ads/reward/backend components. Product owner remains responsible for changing LogMate MASTER. Web Manager remains responsible for PWA/MDM technical acceptance. Design Studio remains responsible for UI design implementation.
+
+**Research-cycle acceptance:** advance at least one *marketing* decision through newly verified channel permission, real competitor offer/positioning, directly observed consenting user demand, App Store/Play operator evidence, qualified acquisition/referral, repeated use, valid monetization economics, or sponsor consent/contract. Record explicit `NO NEW MARKET EVIDENCE` and move to an accessible marketing domain when not possible. **No more standalone LogMate SSV/CAS/reward-ledger/Firestore/roster/Sync test files in this repo** absent an explicit new owner instruction reversing this boundary. Keep existing technical studies as historical context rather than deleting them.
+
 ## Primary mission
 
 The Marketing Manager exists to build and apply professional marketing knowledge for real Apple/Android app products. Study is not for self-satisfaction, file accumulation, trend-chasing, or premature advertising execution.

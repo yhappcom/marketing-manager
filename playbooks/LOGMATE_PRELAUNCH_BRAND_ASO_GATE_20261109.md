@@ -77,3 +77,35 @@ These are linguistically plausible **research queries**, not a Google Trends, Ap
 | **AD-01 business** | Actual compliant ad opt-in/earned valid impressions, cost and finalized payouts, or signed aviation sponsor campaign | Ads operator+Marketing; hard save requirement HOLD |
 
 **New immediate research/owner decision:** Name/brand search ambiguity is a concrete marketing risk independent of parser correctness. **Prioritize BR-01 disambiguation and source-grounded owned messaging before speculative keyword-volume rank claims.** No customer interviews, published pages, trademark registrations, store changes, payments or paid campaigns occurred in this cycle. Historical D10 mixed research checklist **7/24 (29.17%) unchanged**; not a marketing completion score.
+
+
+## 7. 2026-11-09 marketing channel permission and parent-domain brand routing
+
+**Decision advanced:** Relevant pilot forums are not free promotional inventory; a product page nested under a company domain does not receive its own independently selectable Google Search site name. This is MARKETING ONLY; no technical work, site publication, outreach or external operating outcome was performed.
+
+### First-party channel rulings
+
+| Channel | Current first-party rule | Marketing recommendation |
+| --- | --- | --- |
+| [PPRuNe professional pilots](https://www.pprune.org/accidents-close-calls/667147-pprune-rules-you-signed-up.html) | Prohibits **advertising or promotion of business/commercial ventures**, spamming and duplicate posting. Professional airline-specific forums exist, but their audience fit does not confer permission. | **NO unsolicited LogMate product posts, disguised free-app mentions, commercial beta requests or DM campaigns.** A truly action-specific exception requires current written moderator authorization; none obtained. |
+| [Pilots of America Rules of Conduct](https://www.pilotsofamerica.com/community/help/RoC/) | Prohibits **solicitations and advertisements, except The Classifieds**. US pilot community has broad aviation/GA participants; professional-airline targeting unknown. | **NO general-board app promotion or test-user solicitation.** A Classifieds post is only a conditional possibility after verifying current subsection rules; not established as free, permitted for this app, or high-fit. |
+| [Earlier r/flying and EAA directory source checks](../live_data/logmate/d10_mobile_rewarded_pwa_adfree_transition_2026-11-08.md#w-2026-11-09-owner-directed-marketing-only-scope-and-acquisition-channel-viability-decision) | Commercial free-app/beta post restrictions, and EAA directory forbids commercial use of contact listings without Headquarters permission. | Preserve prior NO-PROMOTION/NO-SCRAPE posture. More blocked communities do not count as a diversified acquisition funnel. |
+
+**Channel decision:** prioritize authorized company-owned content and truly permissioned voluntary research over professional forum growth hacks. This avoids clear policy conflicts, but does not prove owned search will generate traffic.
+
+### Critical Google company-domain vs product-brand result
+
+- [Google Search Central site-name specification](https://developers.google.com/search/docs/appearance/site-names) states Google Search site names are selected at **domain/subdomain level, not subdirectory level**. If the owner later hosts a LogMate page under a path of the company's known domain **minttap.app**, that path does NOT get a distinct independently settable LogMate search site name. The site name could be the company MintTap brand. This is a conditional scenario; no such product path has been observed.
+- [Google title-link guidance](https://developers.google.com/search/docs/appearance/title-link) separately considers the **individual page title**, headings and other page-specific signals. After owner approval, a page title such as **LogMate — Pilot Logbook** can distinguish this aviation product even if the whole site's displayed name remains MintTap. Google may algorithmically rewrite the title; this is not a ranking guarantee.
+- A **separate subdomain** is eligible for its own site name, but Google still determines the visible text and a distinct subdomain or domain is **not mandatory**. [Google SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says matching domain/URL keywords alone have little ranking influence. Web Manager owns URL/domain and publication; Marketing makes no DNS/technical changes.
+- [Search Console performance reports](https://support.google.com/webmasters/answer/7576553) provide **queries, pages, impressions, clicks, CTR, average position and device/country filters**. [Search Console caveats](https://support.google.com/webmasters/answer/10268906) explain that anonymized queries may be omitted, so branded/unbranded split is only an approximation. No real Search Console dataset or query volume was available to Marketing in this cycle.
+
+### Two practical owned-page hypotheses, not live pages
+
+**A. Product identity page:** after exact brand approval, explain what LogMate is intended to be, the specific pilot audience, actual current development state, developer relationship and confirmed privacy/support contact. Include a genuine opt-in contact CTA only if it exists and is consent compliant; no invented active waitlist or beta enrollment.
+
+**B. One standalone educational reference:** “Switching pilot logbooks: questions to ask before moving flight history”. Useful, vendor-cited *consumer* checklist for CSV/PDF ownership and export, previous totals, duplicate/reimport policy, source provenance, and preserving old records until successful verification. Marketing owns audience copy and independent references; the Engine owns actual Import/dedup tests. Do not imply LogMate already implements any currently-open feature or attempt search-engine bulk article generation.
+
+**Release gates still OPEN:** O01 owner-approved brand and legal/store clearance; O02 actual verified product claims; O03 actual published and authorized company landing/privacy/consent; O04 authenticated Search Console queries/clicks and qualified traffic; O05 consenting pilot interest. No owner permission, published product path, actual query, lead, Store install, ad view, sponsor deal or revenue was observed. Direct public open attempts on minttap.app returned tool errors, **not evidence the site is absent**.
+
+**Progress unchanged:** R desk evidence 6/6, O actual owner/operator/customer 0/10; overall 6/16 = 37.5% marketing checklist coverage. No technical tests and no other repos edited.
